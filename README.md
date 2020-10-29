@@ -378,3 +378,22 @@ host.
  <br> <br>
  At this point the boot is as fast as it can be.
  ![final-boottime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/final-boottime.png)
+ 
+ ## 6. Miscellaneous
+ #### Get latest ad-hosts
+ I use Steven Black adhosts for adblocking the whole system without any other extra app. This blocks basic ads but not youtube or spotify ads. <br>
+ To get it go [here](https://github.com/StevenBlack/hosts).
+ 
+ I am using Unified hosts + fakenews + gambling + porn
+ 
+ ##### Q. How to?
+ **Ans.** Steps - 
+ 1. Go here get a certain file open its link. 
+ 2. Save as text to Downloads.
+ 3. Rename hosts.txt to hosts.
+ 4. Open terminal type
+ ```bash
+ sudo nautilus
+ ```
+ 5. Go to filesystem root > home > yourusername > Downloads > copy the hosts file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
+ Note - If it doesn't ask to replace you went wrong somewhere.

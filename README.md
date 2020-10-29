@@ -276,4 +276,12 @@
  ![4](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/4.png)
  ###### Over Amplification
  ![sound](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/sound.png)
- 
+ #### Disable annoying Keyring
+ Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br>
+ *There is a easy way to disable this*
+ ```steps
+ Open app password and keys (Seahorse) > Go to Login > Change Password > Type old passpord continue > Don't type and password continue > Make unencrypted
+ ```
+ ![key](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/key.png)
+ ![unen](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/unen.png) <br>
+

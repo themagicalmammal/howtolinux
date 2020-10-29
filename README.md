@@ -25,7 +25,7 @@
  sudo apt update && sudo apt upgrade && flatpak update
  ```
  
- - **Proprietary Drivers**
+ - **Proprietary Drivers** <br>
  *You can get proprietary drivers directly from Pop shop but you still get problems you can refer to a guide.*
  
  [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br>
@@ -39,18 +39,16 @@
  
 ##### Minimise Button
  Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful. You can also get the maximize button but its not that usefull because double clicking the windows does the job.<br>
- ![gnome-minimise](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/gnome-minimise.png)
+ ![gnome-minimise](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/gnome-minimise.png)<br>
 ##### Battery Percentage
- This option is also a pretty useful option but only for a laptop.
+ This option is also a pretty useful option but only for a laptop.<br>
 ##### Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br>
- ![custom-font-size](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/custom-font-size.png)
+ ![custom-font-size](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/custom-font-size.png)<br>
  
  - **Add custom resolution** </br>
  If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.<br>
  ![set-of-refreshrates](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/set-of-refreshrates.png)
- ![set-of-resolutions](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/set-of-resolutions.png) <br>
- My screen can support 1600x900 highest but that looks too big to me. So I add 1920x1080 for custom resolution
  
  ##### To add custom resolution do this steps. 
  **1. Check xrandr**  <br>
@@ -61,7 +59,8 @@
  My original maximum resolution is 1600 900 which is 16:9 aspect ratio. So if I choose a different aspect ratio some part of my display will be blacked out. <br>
  
  So, I can go for 1920x1080 or 1536x864 <br>
- *To find out which fits you best you can do tests by adding different resolutions*<br>
+ *To find out which fits you best you can do tests by adding different resolutions*
+ <br>
  **3. How to add?**
  ##### - cvt
  ```bash

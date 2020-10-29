@@ -253,4 +253,17 @@
  ```
  Java
  Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
-
+ 
+ - Entertainment Apps
+ Spotify for Music
+ ```bash
+ flatpak install spotify
+ ```
+ Steam for Gaming
+ ```bash
+ flatpak install steam #6th one
+ ```
+ Multimedia Codecs
+ ```bash
+ sudo apt install ubuntu-restricted-extras
+ ```

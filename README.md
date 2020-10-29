@@ -26,6 +26,12 @@
  ```
  Press Y
  
+ - Proprietary Drivers
+ You can get proprietary drivers directly from Pop shop but you still get problems you can refer to a guide.
+ 
+ [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) 
+ [Guide for AMD](https://linuxconfig.org/how-to-install-the-latest-amd-radeon-drivers-on-ubuntu-18-04-bionic-beaver-linux#:~:text=In%20order%20to%20get%20the,the%20form%20of%20a%20tarball.)
+ 
  - Gnome Tweaks
  Install Gnome Tweaks
  ```bash

@@ -284,4 +284,17 @@
  ```
  ![key](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/key.png)
  ![unen](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/unen.png) <br>
-
+ 
+ ## 5. Optimising Boot time
+ My original boot time was 1min 4sec after removing apps it is now 58sec.
+ ![originalboottime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/originalboottime.png)
+ 
+ #### Disabling plymouth
+ ```bash
+ sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
+ ```
+ ![boottime1](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/boottime1.png)
+ 
+ #### Remove network-dispatcher
+ ```bash
+ sudo apt remove --purge networkd-dispatcher

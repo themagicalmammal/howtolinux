@@ -298,3 +298,31 @@
  #### Remove network-dispatcher
  ```bash
  sudo apt remove --purge networkd-dispatcher
+ ```
+ 
+ Install Stacer for optimising boot
+ ```bash
+ sudo apt install stacer
+ ```
+ 
+ #### Masking and disabling useless services
+ - **ModemManager** - is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
+ ```bash
+ sudo systemctl disable ModemManager.service
+ sudo systemctl mask ModemManager.service
+ ```
+ - **Fwupd** - is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
+ Disable thunderbolt_power <br>
+ ```bash
+ sudo nano /etc/fwupd/daemon.conf
+ ```
+ Make it 
+ ```bash
+ BlacklistPlugins=test;invalid;thunderbolt_power
+ ```
+ ![blacklist_thunderbold](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/blacklist_thunderbold.png)
+ Remove fwupd from boot
+ ```bash
+ sudo systemctl disable fwupd.service
+ sudo systemctl mask fwupd.service
+ ```

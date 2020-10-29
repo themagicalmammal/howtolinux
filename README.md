@@ -267,3 +267,13 @@
  ```bash
  sudo apt install ubuntu-restricted-extras
  ```
+ ## 4. Important Tweaks
+ #### Setting Tweaks
+ ###### Privacy Tweaks
+ ![1](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/1.png)
+ ![2](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/2.png)
+ ![3](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/3.png)
+ ![4](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/4.png)
+ ###### Over Amplification
+ ![sound](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/sound.png)
+ 

@@ -39,7 +39,7 @@
  Functionality which I use in gnome-tweaks are -
  
 ##### Minimise Button
- Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful.
+ Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful. You can also get the maximize button but its not that usefull because double clicking the windows does the job.
  <gnome-minimise>
 ##### Battery Percentage
  This option is also a pretty useful option but only for a laptop.
@@ -225,3 +225,16 @@
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
  Note - If you need usb creator get [Etcher](https://www.balena.io/etcher/)
+ 
+ - Social Apps
+ Telegram
+ Personally I use Kotogram client
+ ```bash
+ flatpak install io.github.kotatogram
+ ```
+ Whatsapp
+ Gtkwhatsapp has more better features
+ ```bash
+ flatpak install com.gigitux.gtkwhats
+ ```
+

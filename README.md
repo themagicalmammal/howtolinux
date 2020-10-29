@@ -237,4 +237,20 @@
  ```bash
  flatpak install com.gigitux.gtkwhats
  ```
+  
+ - Programming Apps
+ Atom by Github
+ ```bash
+ flatpak install atom #5th one
+ ```
+ Pycharm
+ ```bash
+ flatpak install pycharm-community
+ ```
+ Github-Desktop
+ ```bash
+ sudo apt install github-desktop
+ ```
+ Java
+ Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
 

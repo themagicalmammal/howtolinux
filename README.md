@@ -305,6 +305,7 @@
  sudo systemctl disable ModemManager.service
  sudo systemctl mask ModemManager.service
  ```
+ Note - If you are not using this and don't want wifi disable wpa_supplicant.service.
  - **Fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
  Disable thunderbolt_power <br>
  ```bash
@@ -356,5 +357,21 @@ host.
  ```bash
  sudo systemctl mask udisks2.service
  ```
+ - **system76-power** power controls for laptop not required on a desktop pc.
+ ```bash
+ sudo systemctl disable system76-power.service
+ sudo systemctl mask system76-power.service
+ ```
  - Disabling startup application preferences
  ![application-pref](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/application-pref.png)
+ 
+ Now my boot time reduces to 
+ ![prekernelbootime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/prekernelbootime.png)
+
+ #### Getting a custom kernel
+ 1. Xanmod is the more popular choice among intel based hardware. It is built to provide a stable, responsive and smooth desktop experience. <br>
+ To get xanmod go [here](https://xanmod.org/)
+ 2. Liquorix is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with amd hardware. <br>
+ To get liquorix go [here](https://liquorix.net/)
+ <br>
+ Initial benchmarks on intel makes xanmod a winner whereas amd hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has better thermal response.

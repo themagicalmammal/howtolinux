@@ -18,6 +18,14 @@
 ## 2. Post Installation
  There is some basic things you need to do after its installation.
  
+ - Update your System
+ Get latest updates via terminal or pop shop
+ For Terminal use
+ ```bash
+ sudo apt update && sudo apt upgrade && flatpak update
+ ```
+ Press Y
+ 
  - Gnome Tweaks
  Install Gnome Tweaks
  ```bash

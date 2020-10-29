@@ -173,8 +173,55 @@
  
  Remove LibreOffice
  ```bash
- sudo apt remove --purge libreoffice*
+ sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
  
  Alternative, WPS Office
  Get the deb package [here](https://www.wps.com/)
+ 
+ - Useless apps (According to Me)
+ Calculator
+ ```bash
+ sudo apt remove --purge gnome-calculator && sudo apt autoremove
+ ```
+ Calendar
+ ```bash
+ sudo apt remove --purge gnome-calendar && sudo apt autoremove
+ ```
+ Character Map
+ ```bash
+ sudo apt remove --purge Gucharmap* && sudo apt autoremove
+ ```
+ Contacts
+ ```bash
+ sudo apt remove --purge gnome-contacts* && sudo apt autoremove
+ ```
+ Document Scanner
+ ```bash
+ sudo apt remove --purge sane* simple-scan && sudo apt autoremove
+ ```
+ Gnome Fonts
+ ```bash
+ sudo apt remove --purge gnome-font-viewer && sudo apt autoremove
+ ```
+ Gnome Help
+ ```bash
+ sudo apt remove --purge yelp* && sudo apt autoremove
+ ```
+ Gnome Power Manager
+ ```bash
+ sudo apt remove --purge gnome-power-manager && sudo apt autoremove
+ ```
+ Pinyin (Only for chinese users)
+ ```bash
+ sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
+ ```
+ Vim
+ ```bash
+ sudo apt remove --purge gvim* vim* && sudo apt autoremove
+ ```
+ Popsicle USB creator
+ ```bash
+ sudo apt remove --purge popsicle* && sudo apt autoremove
+ ```
+ Note - If you need usb creator get [Etcher](https://www.balena.io/etcher/)

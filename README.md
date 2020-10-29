@@ -31,7 +31,8 @@
 ##### Battery Percentage
  This option is also a pretty useful option but only for a laptop.
 ##### Optimising Font
- I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.1x font with antialiasing to subpixel.
+ I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.
+ <custom-font-size>
  
  - Add custom resolution
  If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.
@@ -67,6 +68,41 @@
  xrandr --addmode eDP-1 "1920x1080_60.00"
  ```
  <addmode>
+ 
+ Done, well not quite
+ **Problem 1**: What about the other refresh rates?
+ **Problem 2**: The resolution goes away after reboot and you have to add it again.
+ 
+ ##### Solution for Problem 1:
+ You have to experiment with cvt a bit to find which refresh rates should be.
+ As my refresh rate is from 0-120 I did some expermientation and added some resolution.
+ 
+ Like if your refresh rate supports 120 you can directly do this.
+ ```bash
+ cvt 1920 1080 120
+ ```
+ <custom-120>
+ 
+ Finally I added these resolutions
+ ```bash
+ xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
+ xrandr --addmode eDP-1 "1920x1080_120.00"
+ xrandr --newmode "1920x1080_119.91"  369.25  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
+ xrandr --addmode eDP-1 "1920x1080_119.91"
+ xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+ xrandr --addmode eDP-1 "1920x1080_60.00"
+ xrandr --newmode "1920x1080_59.89"  172.75  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+ xrandr --addmode eDP-1 "1920x1080_59.89"
+ ```
+ ##### Solution for Problem 2:
+ Add all the final lines to .profile so every time a session is created the lines will run and resolution will be automatically added.
+ ```bash
+ sudo gedit ~/.profile
+ ```
+ <profile>
+ 
+ Finally it will look like
+ <custom-resolution-final>
  
  ## 3. Preferred Apps
  Pop os ships with a basic set of apps which generally every person use but I dont use all of them and also I use some alternatives which I like better.

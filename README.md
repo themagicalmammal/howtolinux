@@ -27,11 +27,46 @@
  
 ##### Minimise Button
  Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful.
- <picture-1>
+ <gnome-minimise>
 ##### Battery Percentage
  This option is also a pretty useful option but only for a laptop.
 ##### Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.1x font with antialiasing to subpixel.
+ 
+ - Add custom resolution
+ If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.
+ <set-of-refreshrates>
+ <set-of-resolutions>
+ My screen can support 1600x900 highest but that looks too big to me. So I add 1920x1080 for custom resolution
+ 
+ To add custom resolution do this steps.
+ 1. Check xrandr
+ You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1
+ <xrandr>
+ 2. Find resolution which will fit
+ My original maximum resolution is 1600 900 which is 16:9 aspect ratio. So if I choose a different aspect ratio some part of my display will be blacked out.
+ 
+ So, I can go for 1920x1080 or 1536x864
+ To find out which fits you best you can do tests by adding different resolution
+ 3. How to add?
+ - cvt
+ Type
+ ```bash
+ cvt 1920 1080 #Your custom resolution
+ ```
+ <cvt>
+ - xrandr --newmode
+ Copy line after modline
+ ```bash
+ xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+ ```
+ <newmode>
+ - xrandr --addmode
+ Add that resolution name with display name
+ ```bash
+ xrandr --addmode eDP-1 "1920x1080_60.00"
+ ```
+ <addmode>
  
  ## 3. Preferred Apps
  Pop os ships with a basic set of apps which generally every person use but I dont use all of them and also I use some alternatives which I like better.

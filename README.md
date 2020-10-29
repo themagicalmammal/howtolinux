@@ -24,7 +24,6 @@
  ```bash
  sudo apt update && sudo apt upgrade && flatpak update
  ```
- Press Y
  
  - Proprietary Drivers
  You can get proprietary drivers directly from Pop shop but you still get problems you can refer to a guide.
@@ -155,6 +154,16 @@
  ```bash
  sudo apt install thunderbird
  ```
- 
  3. MailSpring
  Go [here](https://linuxconfig.org/how-to-install-mailspring-on-ubuntu-18-04-bionic-beaver-linux)
+ 
+ - VLC Media player
+ Best video player for any platform
+ ```bash
+ sudo apt install vlc
+ ```
+ 
+ Get rid of stock video player
+ ```bash
+ sudo apt remove --purge totem* && sudo apt autoremove
+ ```

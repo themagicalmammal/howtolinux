@@ -374,4 +374,7 @@ host.
  2. Liquorix is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with amd hardware. <br>
  To get liquorix go [here](https://liquorix.net/)
  <br>
- Initial benchmarks on intel makes xanmod a winner whereas amd hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has better thermal response.
+ Initial benchmarks on intel makes xanmod a winner whereas amd hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has better thermal response. I use xanmod normal release lts felt slow for me on both my pc's.
+ <br> <br>
+ At this point the boot is as fast as it can be.
+ ![final-boottime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/final-boottime.png)

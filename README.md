@@ -352,3 +352,9 @@ host.
  sudo systemctl disable gpu-manager.service
  sudo systemctl mask gpu-manager.service
  ```
+ - **Udisk2** disabling this removes the capability to automount the system.
+ ```bash
+ sudo systemctl mask udisks2.service
+ ```
+ - Disabling startup application preferences
+ ![application-pref](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/application-pref.png)

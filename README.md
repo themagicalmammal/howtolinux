@@ -139,3 +139,22 @@
  sudo apt update && sudo apt install vivaldi-stable 
  ```
  
+ - Email Client
+ I dont use email client for me chrome is enough.
+ ```bash
+ sudo apt remove --purge geary* && sudo apt autoremove
+ ```
+ 
+ Alternatives 
+ 
+ 1. Evolution
+ ```bash
+ sudo apt install evolution
+ ```
+ 2. Thunderbird
+ ```bash
+ sudo apt install thunderbird
+ ```
+ 
+ 3. MailSpring
+ Go [here](https://linuxconfig.org/how-to-install-mailspring-on-ubuntu-18-04-bionic-beaver-linux)

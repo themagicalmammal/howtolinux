@@ -33,3 +33,24 @@
 ##### Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.1x font with antialiasing to subpixel.
  
+ ## 3. Preferred Apps
+ Pop os ships with a basic set of apps which generally every person use but I dont use all of them and also I use some alternatives which I like better.
+ 
+ - Chrome
+ I prefer Chrome & Vivaldi, as Chrome is a most popular browser also I has been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimised for older hardware.
+ 
+ To remove FireFox
+ ```bash
+ sudo apt remove --purge firefox*
+ ```
+ To install Chrome
+ ```bash
+ sudo apt install google-chrome-stable
+ ```
+ To install Vivaldi
+ ```bash
+ wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+ sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main' 
+ sudo apt update && sudo apt install vivaldi-stable 
+ ```
+ 

@@ -295,23 +295,17 @@
  ```
  ![boottime1](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/boottime1.png)
  
- #### Remove network-dispatcher
+ #### Remove *Network-dispatcher* is a dispatcher daemon for systemd-networkd connection status changes.
  ```bash
  sudo apt remove --purge networkd-dispatcher
- ```
- 
- Install Stacer for optimising boot
- ```bash
- sudo apt install stacer
- ```
- 
+ ``` 
  #### Masking and disabling useless services
- - **ModemManager** - is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
+ - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
  ```bash
  sudo systemctl disable ModemManager.service
  sudo systemctl mask ModemManager.service
  ```
- - **Fwupd** - is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
+ - **Fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
  Disable thunderbolt_power <br>
  ```bash
  sudo nano /etc/fwupd/daemon.conf
@@ -325,4 +319,36 @@
  ```bash
  sudo systemctl disable fwupd.service
  sudo systemctl mask fwupd.service
+ ```
+  - **Avahi-daemon** is supposed to provide zero-configuration network discovery, and make it super-easy to find printers and other hosts on your network. I always disable it and don’t miss it.
+ ```bash
+ sudo systemctl disable avahi-daemon.service
+ sudo systemctl mask avahi-daemon.service
+ ```
+ - *AppArmor* is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
+ - *Apport* collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
+ ```bash
+ sudo apt remove --purge apport* apparmor* && sudo apt autoremove
+ ```
+ - **Saned** is the SANE (Scanner Access Now Easy) daemon that  allows  remote
+clients  to  access  image  acquisition  devices available on the local
+host.
+ ```bash
+ sudo systemctl disable saned.service
+ sudo systemctl mask saned.service
+ ```
+ - **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool. (My system didn't suffer must removing it but if yours does unmask and enable it. But if your system heats even a bit after removing this add this back.)
+ ```bash
+ sudo systemctl disable thermald.service
+ sudo systemctl mask thermald.service
+ ```
+ - **Switcheroo-control** is D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 gpu's.
+ ```bash
+ sudo systemctl disable switcheroo-control.service
+ sudo systemctl mask switcheroo-control.service
+ ```
+ - **Gpu-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your gpu.
+ ```bash
+ sudo systemctl disable gpu-manager.service
+ sudo systemctl mask gpu-manager.service
  ```

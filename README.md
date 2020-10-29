@@ -167,3 +167,14 @@
  ```bash
  sudo apt remove --purge totem* && sudo apt autoremove
  ```
+ 
+ - Office
+ I directly use chrome extension for office which you can checkout [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
+ 
+ Remove LibreOffice
+ ```bash
+ sudo apt remove --purge libreoffice*
+ ```
+ 
+ Alternative, WPS Office
+ Get the deb package [here](https://www.wps.com/)

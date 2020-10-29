@@ -14,3 +14,22 @@
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 - [Reference to Benchmarks b/w File Systems](https://www.unixmen.com/review-ext4-vs-btrfs-vs-xfs/)
 - [Reference for How to brtfs on Pop os](https://mutschler.eu/linux/install-guides/pop-os-btrfs/)
+
+## 2. Post Installation
+ There is some basic things you need to do after its installation.
+ 
+ - Gnome Tweaks
+ Install Gnome Tweaks
+ ```bash
+ sudo apt install gnome-tweaks
+ ```
+ Functionality which I use in gnome-tweaks are -
+ 
+##### Minimise Button
+ Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful.
+ <picture-1>
+##### Battery Percentage
+ This option is also a pretty useful option but only for a laptop.
+##### Optimising Font
+ I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.1x font with antialiasing to subpixel.
+ 

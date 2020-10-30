@@ -439,6 +439,10 @@ host.
  You can also select the timing which fits your sleep cycle.
  ![nightlight](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/nightlight.png)
  
+ #### Tile Windows
+ The beautiful thing I like about Pop-OS is it's feature rich environment to increase work efficiency.
+ ![Tile-windows](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/Tile-windows.png)
+ 
  #### Customization
  ##### 1. We need to add gnome-shell-integration for Chrome.
  ![gsi](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/gsi.png)

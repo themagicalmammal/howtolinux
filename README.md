@@ -466,3 +466,5 @@ host.
  3. Select Color Scheme - Classic
  
  ![bigsurlikelook](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bigsurlikelook.png)
+ ##### 7. Add activity hot corner and change format of date according to you.
+ ![overlay](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/overlay.png)

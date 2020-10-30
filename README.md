@@ -242,7 +242,7 @@
  #### - Programming Apps
  1. **Atom by GitHub**
  ```bash
- flatpak install atom #5th one
+ flatpak install io.atom.Atom
  ```
  2. **Pycharm**
  ```bash
@@ -452,10 +452,17 @@ host.
  ##### 5. Download the theme place it in .themes folder in Home and Download the icons place it in .icons folder in Home.
  ##### 6. Select the themes you installed in gnome-tweak tool.
  
- **Tip** - How to fix terminal theme
+ ##### **Tip** - How to fix terminal theme
  1. Go to Preferences
  2. Add Profiles
  3. Name it bigsur
  3. Go to colors, then select *choose use colors from system theme*
  4. Set bigsur default
  5. Close and reopen the terminal
+ 
+ ##### **Tip** - How to fix gedit/text-editor theme
+ 1. Go to Preferences
+ 2. Go to Font & Colors
+ 3. Select Color Scheme - Classic
+ 
+ ![bigsurlikelook](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bigsurlikelook.png)

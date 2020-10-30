@@ -1,5 +1,5 @@
 # How to Pop/Ubuntu?
-###### This is done exclusively on Pop 20.10 but this should work on almost every ubuntu based distro's with Gnome/Unity/Budgie.
+###### This is done exclusively on Pop OS 20.10 but this should work on every Ubuntu based Distro's with Gnome/Unity/Budgie.
  These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 laptop with ssd and other one is a 3rd Gen 6 years old desktop. These tweaks are added on the basis of my experience over 5 months using pop on them both.
 
 ## 1. Installation
@@ -459,7 +459,7 @@ host.
  ![bleachbit](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bleachbit.png)
  *Note*:- After doing this the first boot might be slow don't worry it's perfectly normal.
 
- #### Night-Light
+ #### Night Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
  To enable it go to Settings > Display > Night light <br>
  You can also select the timing which fits your sleep cycle.
@@ -524,3 +524,4 @@ host.
  echo "sudo wine Among\ Us.exe" > start.sh | chmod 777 start.sh
  ```
  5. Run ./start.sh on terminal.
+![megettingkilled](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/megettingkilled.png)

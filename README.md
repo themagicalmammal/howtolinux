@@ -7,6 +7,7 @@
  
  So Create 2 partitions
  - 512 mb for EFI boot
+ - 4096 or 8192 for linux-swap (If you want)
  - Remaining for EXT4 system
  
 #### Q. Should I use Brtfs or Ext4?

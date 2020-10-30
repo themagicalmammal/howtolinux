@@ -362,6 +362,14 @@ host.
  sudo systemctl disable system76-power.service
  sudo systemctl mask system76-power.service
  ```
+ - **apt-daily-upgrade** bug -
+ ```bash
+ sudo systemctl disable apt-daily.service
+ sudo systemctl disable apt-daily.timer
+ sudo systemctl disable apt-daily-upgrade.timer
+ sudo systemctl disable apt-daily-upgrade.service
+ ```
+ 
  - Disabling startup application preferences
  ![application-pref](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/application-pref.png)
  

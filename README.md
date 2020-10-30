@@ -394,7 +394,7 @@ host.
  
  I am using Unified hosts + fakenews + gambling + porn
  
- ##### Q. How to?
+ ###### Q. How to?
  **Ans.** Steps - 
  1. Go here get a certain file open its link. 
  2. Save as text to Downloads.
@@ -405,3 +405,9 @@ host.
  ```
  5. Go to filesystem root > home > yourusername > Downloads > copy the hosts file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
  Note - If it doesn't ask to replace you went wrong somewhere.
+ 
+ #### Night-Light
+ Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
+ To enable it go to Settings > Display > Night light <br>
+ You can also select the timing which fits your sleep cycle.
+ ![nightlight](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/nightlight.png)

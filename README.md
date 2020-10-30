@@ -411,3 +411,11 @@ host.
  To enable it go to Settings > Display > Night light <br>
  You can also select the timing which fits your sleep cycle.
  ![nightlight](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/nightlight.png)
+ 
+ #### Customization
+ ##### 1. We need to add gnome-shell-integration for Chrome.
+ ![gsi](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/gsi.png)
+ ##### 2. Then go to [Gnome.org](https://extensions.gnome.org/) and get your extensions. <br>
+ **Important Extensions**
+ - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
+ - [Impatience](https://extensions.gnome.org/extension/277/impatience/)

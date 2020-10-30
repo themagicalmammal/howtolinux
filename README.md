@@ -1,4 +1,4 @@
-# Tweaks for Pop OS 20.10
+# Tweaks for Pop OS 20.x or Ubuntu 20.x based distros
  These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 laptop with ssd and other one is a 3rd Gen 6 years old desktop. These tweaks are added on the basis of my experience over 5 months using pop on them both.
   
 ## 1. Installation
@@ -405,7 +405,7 @@ host.
  ```
  5. Go to filesystem root > home > yourusername > Downloads > copy the hosts file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
  Note - If it doesn't ask to replace you went wrong somewhere.
- 
+
  #### Night-Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
  To enable it go to Settings > Display > Night light <br>
@@ -419,3 +419,14 @@ host.
  **Important Extensions**
  - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
  - [Impatience](https://extensions.gnome.org/extension/277/impatience/)
+ **Some More Cool Extensions**
+ - [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
+ - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
+ - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
+ ##### 3. Go to GNOME Tweaks > Windows Titlebar > Left
+ **Note:-** This glitches the gnome-tweak tool for some reason don't worry about it and increase size of the window.
+ ##### 4. After installing User themes extension we can get custom themes. If you need custom themes go to [Gnome-look](https://www.gnome-look.org/browse/cat/) <br>
+ **I use this setup**
+ Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/)
+ 
+ ##### 5. Download the theme place it in .themes folder in Home and Download the icons place it in .icons folder in Home.

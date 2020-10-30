@@ -1,15 +1,15 @@
 # How to Pop/Ubuntu?
 ###### This is done exclusively on Pop 20.10 but this should work on almost every ubuntu based distro's with Gnome/Unity/Budgie.
  These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 laptop with ssd and other one is a 3rd Gen 6 years old desktop. These tweaks are added on the basis of my experience over 5 months using pop on them both.
-  
+
 ## 1. Installation
- While doing a install there are certain things you need to know if you want a faster boot. On my laptop I select a clean install and let the interface do its job. While on my desktop I select advanced partition, now there is a reason for that. If I select clean install it creates 2 extra partitions one is for recovery which I never use. And second one is swap now you might thing that why should i not keep swap. Let me explain over period of last 3 months I witnessed the fact that my swap is never used because on my desktop I do pretty basic stuff. While on my laptop I build kernels so swap gets used time to time. Also if you keep these 2 extra partitions every time you boot systemd mounts them which make the boot slow.
- 
- So Create 2 partitions
+ While doing a install there are certain things you need to know if you want a faster boot. On my laptop I select a clean install and let the interface do its job. While on my desktop I select advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time you boot systemd mounts them which make the boot slow.
+
+ So Create 3 partitions
  - 512 mb for EFI boot
- - 4096 or 8192 for linux-swap (If you want)
+ - 4096/6144/8192 for linux-swap (If you want)
  - Remaining for EXT4 system
- 
+
 #### Q. Should I use Brtfs or Ext4?
 **Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it and it now ships with Fedora 33. Also, I have started to use this on my laptop but not my desktop. Now there is a reason for that, initial benchmarks show that brtfs is slower than ext4 though brtfs has more advanced features than ext4. So In my opinion if you have a older pc go for ext4 but if you have a newer one you can go for brtfs.
 
@@ -19,26 +19,26 @@
 
 ## 2. Post Installation
  There is some basic things you need to do after its installation.
- 
+
  - **Update your System** <br>
  *Get latest updates via terminal or pop shop.* <br>
  For Terminal use
  ```bash
  sudo apt update && sudo apt upgrade && flatpak update
  ```
- 
+
  - **Proprietary Drivers** <br>
  *You can get proprietary drivers directly from Pop shop but you still get problems you can refer to a guide.*
- 
+
  [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br>
  [Guide for AMD](https://linuxconfig.org/how-to-install-the-latest-amd-radeon-drivers-on-ubuntu-18-04-bionic-beaver-linux#:~:text=In%20order%20to%20get%20the,the%20form%20of%20a%20tarball.)
- 
+
  - **Gnome Tweaks**
  ```bash
  sudo apt install gnome-tweaks
  ```
  ###### Tweaks I am using -
- 
+
 ##### Minimise Button
  Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful. You can also get the maximize button but its not that usefull because double clicking the windows does the job.<br>
  ![gnome-minimise](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/gnome-minimise.png)<br>
@@ -47,19 +47,19 @@
 ##### Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br>
  ![custom-font-size](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/custom-font-size.png)<br>
- 
+
  - **Add custom resolution** </br>
  If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.<br>
  ![set-of-refreshrates](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/set-of-refreshrates.png)
- 
- ##### To add custom resolution do this steps. 
+
+ ##### To add custom resolution do this steps.
  **1. Check xrandr**  <br>
  You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1
  ![xrandr](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/xrandr.png)
  <br>
  **2. Find resolution which will fit**  <br>
  My original maximum resolution is 1600 900 which is 16:9 aspect ratio. So if I choose a different aspect ratio some part of my display will be blacked out. <br>
- 
+
  So, I can go for 1920x1080 or 1536x864 <br>
  *To find out which fits you best you can do tests by adding different resolutions*
  <br>
@@ -70,7 +70,7 @@
  ```
  ![cvt](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/cvt.png)
  ##### - xrandr --newmode
- Copy line after modline 
+ Copy line after modline
  ```bash
  xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
  ```
@@ -81,25 +81,25 @@
  xrandr --addmode eDP-1 "1920x1080_60.00"
  ```
  ![addmode](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/addmode.png)
- 
+
  #### Done???
  **Well not quite**
- 
+
  **Problem 1**: What about other refresh rates? <br>
  **Problem 2**: The resolution goes away after reboot. <br>
- 
+
  ##### Solution for Problem 1:
  You have to experiment with cvt a bit to find which refresh rates should be.
  As my refresh rate is from 0 - 120. I did some expermientation and added some resolution. <br>
- 
+
  Like if your refresh rate supports 120 you can directly do this.
  ```bash
  cvt 1920 1080 120
  ```
  <custom-120>
- 
+
  Finally I added these resolutions
- ```atom
+ ```bash
  xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
  xrandr --addmode eDP-1 "1920x1080_120.00"
  xrandr --newmode "1920x1080_119.91"  369.25  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
@@ -115,16 +115,16 @@
  sudo gedit ~/.profile
  ```
  ![profile](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/profile.png)
- 
+
  Finally it will look like
  ![custom-resolution-final](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/custom-resolution-final.png)
- 
+
  ## 3. Preferred Apps
  Pop os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
- 
+
  #### - Chrome
  I prefer Chrome & Vivaldi, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware.
- 
+
  To remove Firefox
  ```bash
  sudo apt remove --purge firefox*
@@ -136,18 +136,18 @@
  2. **Vivaldi**
  ```bash
  wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
- sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main' 
- sudo apt update && sudo apt install vivaldi-stable 
+ sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+ sudo apt update && sudo apt install vivaldi-stable
  ```
- 
+
  #### - Email Client
  I don't use email client for me chrome is enough.
  ```bash
  sudo apt remove --purge geary* && sudo apt autoremove
  ```
- 
- Alternatives 
- 
+
+ Alternatives
+
  1. **Evolution**
  ```bash
  sudo apt install evolution
@@ -158,29 +158,29 @@
  ```
  3. **MailSpring** <br>
  Go [here](https://linuxconfig.org/how-to-install-mailspring-on-ubuntu-18-04-bionic-beaver-linux)
- 
+
  #### - VLC Media player
  Best video player for any platform
  ```bash
  sudo apt install vlc
  ```
- 
+
  Get rid of the stock video player
  ```bash
  sudo apt remove --purge totem* && sudo apt autoremove
  ```
- 
+
  #### - Office
  I directly use chrome extension for the office which you can see [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
- 
+
  Remove LibreOffice
  ```bash
  sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
- 
+
  Alternative, **WPS Office** <br>
  Get the deb package [here](https://www.wps.com/)
- 
+
  #### - Useless apps (According to Me)
  Calculator
  ```bash
@@ -227,7 +227,7 @@
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
  Note - If you need a Live USB creator you can get [Etcher](https://www.balena.io/etcher/)
- 
+
  #### - Social Apps
  1. **Telegram** <br>
  Personally I use Kotogram client
@@ -243,7 +243,7 @@
  ```bash
  flatpak install com.discordapp.Discord
  ```
-  
+
  #### - Programming Apps
  1. **Atom by GitHub**
  ```bash
@@ -259,12 +259,12 @@
  ```
  4. **Java** <br>
  Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
- 
+
  #### - Entertainment Apps
  1. **Spotify for Music**
  **With Ad-block support**
  ```bash
- curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
  sudo apt-get update && sudo apt-get install spotify-client
  ```
@@ -283,7 +283,7 @@
  ```bash
  sudo apt install aria2 uget
  ```
- 
+
  ##### Wine
  1. Check if your system is 32-bit or 64-bit, If you already know just skip this part.
  ```bash
@@ -302,7 +302,7 @@
  ```bash
  wine --version
  ```
- 
+
  ## 4. Important Tweaks
  #### Setting Tweaks
  ###### Privacy Tweaks
@@ -320,21 +320,21 @@
  ```
  ![key](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/key.png)
  ![unen](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/unen.png) <br>
- 
+
  ## 5. Optimising Boot time
  My original boot time was 1min 4sec after removing apps it is now 58sec.
  ![originalboottime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/originalboottime.png)
- 
+
  #### Disabling plymouth
  ```bash
  sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
  ```
  ![boottime1](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/boottime1.png)
- 
+
  #### Remove *Network-dispatcher* is a dispatcher daemon for systemd-networkd connection status changes.
  ```bash
  sudo apt remove --purge networkd-dispatcher
- ``` 
+ ```
  #### Masking and disabling useless services
  - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
  ```bash
@@ -347,7 +347,7 @@
  ```bash
  sudo nano /etc/fwupd/daemon.conf
  ```
- Make it 
+ Make it
  ```bash
  BlacklistPlugins=test;invalid;thunderbolt_power
  ```
@@ -393,23 +393,23 @@ host.
  ```bash
  sudo systemctl mask udisks2.service
  ```
- - **system76-power** power controls for laptop not required on a desktop pc.
+ - **System76-power** power controls for laptop not required on a desktop pc.
  ```bash
  sudo systemctl disable system76-power.service
  sudo systemctl mask system76-power.service
  ```
- - **apt-daily-upgrade** bug -
+ - **Apt-daily-upgrade** bug -
  ```bash
  sudo systemctl disable apt-daily.service
  sudo systemctl disable apt-daily.timer
  sudo systemctl disable apt-daily-upgrade.timer
  sudo systemctl disable apt-daily-upgrade.service
  ```
- 
+
  - Disabling startup application preferences
  ![application-pref](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/application-pref.png)
- 
- Now my boot time reduces to 
+
+ Now my boot time reduces to
  ![prekernelbootime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/prekernelbootime.png)
 
  #### Getting a custom kernel
@@ -422,17 +422,17 @@ host.
  <br> <br>
  At this point the boot is as fast as it can be.
  ![final-boottime](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/final-boottime.png)
- 
+
  ## 6. Miscellaneous
  #### Get latest ad-hosts
  I use Steven Black adhosts for adblocking the whole system without any other extra app. This blocks basic ads but not youtube or spotify ads. <br>
  To get it go [here](https://github.com/StevenBlack/hosts).
- 
+
  I am using Unified hosts + fakenews + gambling + porn
- 
+
  ###### Q. How to?
- **Ans.** Steps - 
- 1. Go here get a certain file open its link. 
+ **Ans.** Steps -
+ 1. Go here get a certain file open its link.
  2. Save as text to Downloads.
  3. Rename hosts.txt to hosts.
  4. Open terminal type
@@ -441,7 +441,7 @@ host.
  ```
  5. Go to filesystem root > home > yourusername > Downloads > copy the hosts file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
  Note - If it doesn't ask to replace you went wrong somewhere.
- 
+
  #### Clean your System
  **Terminal**
  ```bash
@@ -453,22 +453,22 @@ host.
  **Tool**
  I personally use bleachbit because it is good at remove unnecessary junk from your computer.
  ```bash
- sudo apt install bleachbit 
+ sudo apt install bleachbit
  ```
  Open BleachBit(root) > Select every option except free disk > Clean
  ![bleachbit](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bleachbit.png)
  *Note*:- After doing this the first boot might be slow don't worry it's perfectly normal.
- 
+
  #### Night-Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
  To enable it go to Settings > Display > Night light <br>
  You can also select the timing which fits your sleep cycle.
  ![nightlight](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/nightlight.png)
- 
+
  #### Tile Windows
  The beautiful thing I like about Pop-OS is it's feature rich environment to increase work efficiency.
  ![Tile-windows](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/Tile-windows.png)
- 
+
  #### Customization
  ##### 1. We need to add gnome-shell-integration for Chrome.
  ![gsi](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/gsi.png)
@@ -487,10 +487,10 @@ host.
  Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/)
  Cursor - [Layan](https://www.gnome-look.org/s/Gnome/p/1365214/)
  Icons - [Tela circle icon](https://www.pling.com/p/1359276/)
- 
+
  ##### 5. Download the theme place it in .themes folder in Home and Download the icons place it in .icons folder in Home.
  ##### 6. Select the themes you installed in gnome-tweak tool.
- 
+
  ##### **Tip** - How to fix terminal theme
  1. Go to Preferences
  2. Add Profiles
@@ -498,20 +498,29 @@ host.
  3. Go to colors, then select *choose use colors from system theme*
  4. Set bigsur default
  5. Close and reopen the terminal
- 
+
  ##### **Tip** - How to fix gedit/text-editor theme
  1. Go to Preferences
  2. Go to Font & Colors
  3. Select Color Scheme - Classic
- 
+
  ![bigsurlikelook](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bigsurlikelook.png)
  ##### 7. Add activity hot corner and change format of date according to you.
  ![overlay](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/overlay.png)
- 
+
  ## 7. Bonus
  #### Among US for Free (Without Steam)
  As we know that the only way we can get Among Us on linux is with Steam which is paid. <br>
  Well thats not it. We can run a Windows version which is free and for it we nee to install wine. <br>
  **Steps to Install Among US*
  1. Install Wine (Go to Others Section in this repo)
- 2. 
+ 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
+ 3. To run it type
+ ```bash
+ sudo wine Among\ Us.exe
+ ```
+ 4. What I do is create a file start.sh & run it.
+ ```bash
+ echo "sudo wine Among\ Us.exe" > start.sh | chmod 777 start.sh
+ ```
+ 5. Run ./start.sh on terminal.

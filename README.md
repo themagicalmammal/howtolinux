@@ -2,7 +2,7 @@
 ###### This is done exclusively on Pop OS 20.10 but this should work on every Ubuntu based Distro's with Gnome/Unity/Budgie DE's.
  These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 lappy with ssd and other one is a 3rd Gen 6 years old desktop. These tweaks are added on the basis of my experience over 5 months using pop on them both.
 
-## 1. Installation
+## 1 Installation
  While doing a install there are certain things you need to know if you want a faster boot. On my lappy I select a clean install and let the interface do its job. While on my desktop I select advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time you boot systemd mounts them which make the boot slow.
 
  So create these 3 partitions :-
@@ -115,7 +115,7 @@
  ```
  ![profile](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/profile.png)
 
- **Now it should look like this**
+ **Now it should look like this** <br /> <br />
  ![custom-resolution-final](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-resolution-final.png)
 
  ## 3. Preferred Apps
@@ -145,7 +145,7 @@
  sudo apt remove --purge geary* && sudo apt autoremove
  ```
 
- Alternatives
+ Alternatives,
 
  1. **Evolution**
  ```bash
@@ -220,8 +220,8 @@
  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
  sudo apt-get update && sudo apt-get install spotify-client
  ```
- If you are not a premium user but don't like ads, get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux).
- ![spotify-adfree](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/spotify-adfree.png)
+ If you are not a premium user but don't like ads, get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux). <br />  <br />
+ ![spotify-adfree](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
  2. **Steam for Gaming**
  ```bash
  flatpak install steam #6th one
@@ -241,7 +241,7 @@
  ```bash
  lscpu
  ```
- 2. Install wine according to your arcitecture.
+ 2. Install wine according to your arcitecture. <br />
  For 64-bit
  ```bash
  sudo apt install wine64
@@ -335,7 +335,7 @@
  ```bash
  sudo apt remove --purge networkd-dispatcher
  ```
- #### Masking and Disabling some useless services
+ ### Masking and Disabling some useless services
  - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
  ```bash
  sudo systemctl disable ModemManager.service
@@ -417,10 +417,9 @@ host.
  1. **Xanmod** is the more popular choice among intel based hardware. It is built to provide a stable, responsive and smooth desktop experience. <br />
  To get xanmod go [here](https://xanmod.org/)
  2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
- To get liquorix go [here](https://liquorix.net/)
- <br />
- Initial benchmarks on intel makes xanmod a winner whereas AMD hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy.
- <br /> <br />
+ To get liquorix go [here](https://liquorix.net/) <br /> <br />
+ Initial benchmarks on intel makes xanmod a winner whereas AMD hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br /> 
+ 
  **Note** - At this point this boots as fast as it can be.<br />
 
  ### Final Boot Time
@@ -428,7 +427,7 @@ host.
 
  ## 6. Miscellaneous
  ### Get latest Ad-Hosts
- I use Steven Black adhosts for adblocking the whole system without any other extra app. This blocks basic ads but not youtube or spotify ads. <br />
+ I use **Steven Black** Adhosts for ad-blocking the whole system without any other extra app. This blocks basic ads but not Youtube or Spotify ads. <br />
  To get it go [here](https://github.com/StevenBlack/hosts). <br />
 
  I am using Unified hosts + fakenews + gambling + porn <br />
@@ -507,7 +506,7 @@ host.
 **Tip** - How to fix gedit/text-editor theme
  1. Go to Preferences
  2. Go to Font & Colors
- 3. Select Color Scheme - Classic <br /> <br />
+ 3. Select Color Scheme - Classic <br />
 
  ![bigsurlikelook](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/bigsurlikelook.png)
  #### 7. Add Activity Hot Corner & Format time.
@@ -528,7 +527,9 @@ host.
  ```bash
  echo "sudo wine Among\ Us.exe" > start.sh | chmod 777 start.sh
  ```
- 5. Run ./start.sh on terminal. <br /> <br />
-
+ 5. Open terminal inside the folder 
+ ```bash
+ ./start.sh 
+ ```
 ![startamong](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/startamong.jpg)
 ![killamong](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/killamong.jpg)

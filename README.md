@@ -98,7 +98,7 @@
  <custom-120>
  
  Finally I added these resolutions
- ```bash
+ ```atom
  xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
  xrandr --addmode eDP-1 "1920x1080_120.00"
  xrandr --newmode "1920x1080_119.91"  369.25  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
@@ -277,6 +277,26 @@
  ```bash
  sudo apt install ubuntu-restricted-extras
  ```
+ #### Other Apps
+ ##### Wine
+ 1. Check if your system is 32-bit or 64-bit, If you already know just skip this part.
+ ```bash
+ lscpu
+ ```
+ 2. Install wine according to your arcitecture.
+ For 64-bit
+ ```bash
+ sudo apt install wine64
+ ```
+ For 32-bit
+ ```bash
+ sudo apt install wine32
+ ```
+ 3. To check the version installed.
+ ```bash
+ wine --version
+ ```
+ 
  ## 4. Important Tweaks
  #### Setting Tweaks
  ###### Privacy Tweaks
@@ -481,3 +501,9 @@ host.
  ![bigsurlikelook](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bigsurlikelook.png)
  ##### 7. Add activity hot corner and change format of date according to you.
  ![overlay](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/overlay.png)
+ 
+ ## 7. Bonus
+ #### Among US for Free (Without Steam)
+ As we know that the only way we can get AmongUs on linux is with Steam which is paid. <br>
+ Well thats no it. We can run a Windows version which is free and for it we install wine. <br>
+ **Steps to Install Among US*

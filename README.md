@@ -277,7 +277,12 @@
  ```bash
  sudo apt install ubuntu-restricted-extras
  ```
- #### Other Apps
+ #### Others
+ ##### uGet (Download Manager)
+ ```bash
+ sudo apt install aria2 uget
+ ```
+ 
  ##### Wine
  1. Check if your system is 32-bit or 64-bit, If you already know just skip this part.
  ```bash
@@ -504,6 +509,8 @@ host.
  
  ## 7. Bonus
  #### Among US for Free (Without Steam)
- As we know that the only way we can get AmongUs on linux is with Steam which is paid. <br>
- Well thats no it. We can run a Windows version which is free and for it we install wine. <br>
+ As we know that the only way we can get Among Us on linux is with Steam which is paid. <br>
+ Well thats not it. We can run a Windows version which is free and for it we nee to install wine. <br>
  **Steps to Install Among US*
+ 1. Install Wine (Go to Others Section in this repo)
+ 2. 

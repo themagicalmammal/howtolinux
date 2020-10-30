@@ -238,6 +238,10 @@
  ```bash
  flatpak install com.gigitux.gtkwhats
  ```
+ 3. **Discord** <br>
+ ```bash
+ flatpak install com.discordapp.Discord
+ ```
   
  #### - Programming Apps
  1. **Atom by GitHub**

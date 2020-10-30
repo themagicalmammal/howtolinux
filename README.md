@@ -407,12 +407,12 @@ host.
  Note - If it doesn't ask to replace you went wrong somewhere.
  
  #### Clean your System
- **Terminal Method**
+ **Terminal**
  ```bash
  sudo apt autoremove
  sudo rm -rf ~/.cache/thumbnails/*
- sudo apt clean
- sudo apt autoclean
+ sudo apt-get clean
+ sudo apt-get autoclean
  ```
  **Tool**
  I personally use bleachbit because it is good at remove unnecessary junk from your computer.
@@ -420,6 +420,7 @@ host.
  sudo apt install bleachbit 
  ```
  Open BleachBit(root) > Select every option except free disk > Clean
+ ![bleachbit](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bleachbit.png)
  
  #### Night-Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>

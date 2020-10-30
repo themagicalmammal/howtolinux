@@ -257,9 +257,14 @@
  
  #### - Entertainment Apps
  1. **Spotify for Music**
+ **With Ad-block support**
  ```bash
- flatpak install spotify
+ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+ sudo apt-get update && sudo apt-get install spotify-client
  ```
+ If you are not a premium user but don't like ads, get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux).
+ ![spotify-adfree](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/spotify-adfree.png)
  2. **Steam for Gaming**
  ```bash
  flatpak install steam #6th one

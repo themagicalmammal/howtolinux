@@ -405,7 +405,16 @@ host.
  ```
  5. Go to filesystem root > home > yourusername > Downloads > copy the hosts file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
  Note - If it doesn't ask to replace you went wrong somewhere.
-
+ 
+ #### Clean your System
+ **Terminal Method**
+ ```bash
+ sudo apt autoremove
+ sudo rm -rf ~/.cache/thumbnails/*
+ sudo apt clean
+ sudo apt autoclean
+ ```
+ Run the root version > Select all options (Except Free disk) > Clean
  #### Night-Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
  To enable it go to Settings > Display > Night light <br>

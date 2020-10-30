@@ -414,7 +414,13 @@ host.
  sudo apt clean
  sudo apt autoclean
  ```
- Run the root version > Select all options (Except Free disk) > Clean
+ **Tool**
+ I personally use bleachbit because it is good at remove unnecessary junk from your computer.
+ ```bash
+ sudo apt install bleachbit 
+ ```
+ Open BleachBit(root) > Select every option except free disk > Clean
+ 
  #### Night-Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
  To enable it go to Settings > Display > Night light <br>

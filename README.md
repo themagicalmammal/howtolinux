@@ -1,4 +1,5 @@
-# Tweaks for Pop OS 20.x or Ubuntu 20.x based distros
+# How to Pop/Ubuntu?
+###### This is done exclusively on Pop 20.10 but this should work on almost every ubuntu based distro's with Gnome/Unity/Budgie.
  These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 laptop with ssd and other one is a 3rd Gen 6 years old desktop. These tweaks are added on the basis of my experience over 5 months using pop on them both.
   
 ## 1. Installation
@@ -421,6 +422,7 @@ host.
  ```
  Open BleachBit(root) > Select every option except free disk > Clean
  ![bleachbit](https://github.com/themagicalmammal/pop-os-tweaks/blob/master/Screenshots/bleachbit.png)
+ *Note*:- After doing this the first boot might be slow don't worry it's perfectly normal.
  
  #### Night-Light
  Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br>
@@ -444,5 +446,16 @@ host.
  ##### 4. After installing User themes extension we can get custom themes. If you need custom themes go to [Gnome-look](https://www.gnome-look.org/browse/cat/) <br>
  **I use this setup**
  Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/)
+ Cursor - [Layan](https://www.gnome-look.org/s/Gnome/p/1365214/)
+ Icons - [Tela circle icon](https://www.pling.com/p/1359276/)
  
  ##### 5. Download the theme place it in .themes folder in Home and Download the icons place it in .icons folder in Home.
+ ##### 6. Select the themes you installed in gnome-tweak tool.
+ 
+ **Tip** - How to fix terminal theme
+ 1. Go to Preferences
+ 2. Add Profiles
+ 3. Name it bigsur
+ 3. Go to colors, then select *choose use colors from system theme*
+ 4. Set bigsur default
+ 5. Close and reopen the terminal

@@ -1,24 +1,24 @@
 # How to Pop/Ubuntu?
-###### This is done exclusively on Pop OS 20.10 but this should work on every Ubuntu based Distro's with Gnome/Unity/Budgie DE's.
- These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 lappy with ssd and other one is a 3rd Gen 6 years old desktop. These tweaks are added on the basis of my experience over 5 months using pop on them both.
+###### This is done exclusively on Pop OS 20.10 but this should work on every Ubuntu-based Distros with Gnome/Unity/Budgie DE's.
+ These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 lappy with SSD and another one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over 5 months using pop on them both.
 
 ## 1 Installation
- While doing a install there are certain things you need to know if you want a faster boot. On my lappy I select a clean install and let the interface do its job. While on my desktop I select advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time you boot systemd mounts them which make the boot slow.
+ While doing an install there are certain things you need to know if you want a faster boot. On my lappy, I select a clean install and let the interface do its job. While on my desktop I select an advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time your boot system mounts them which makes the boot slow.
 
- So create these 3 partitions :-
- - 512 mb for EFI boot
- - 4096/6144/8192 for linux-swap (If you want)
+ To create these 3 partitions:-
+ - 512 MB for EFI boot
+ - 4096/6144/8192 for Linux-swap (If you want)
  - Remaining for EXT4 system
 
 #### Q. Should I use Brtfs or Ext4?
-**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it and it now ships with Fedora 33. Also, I have started to use this on my lappy but not my desktop. Now there is a reason for that, initial benchmarks show that brtfs is slower than ext4 though brtfs has more advanced features than ext4. So In my opinion if you have a older pc go for ext4 but if you have a newer one you can go for brtfs.
+**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it and it now ships with Fedora 33. Also, I have started to use this on my lappy but not my desktop. Now there is a reason for that, initial benchmarks show that brtfs is slower than ext4 though brtfs has more advanced features than ext4. So In my opinion, if you have an older pc go for ext4 but if you have a newer one you can go for brtfs.
 
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 - [Reference to Benchmarks b/w File Systems](https://www.unixmen.com/review-ext4-vs-btrfs-vs-xfs/)
 - [Reference for How to brtfs on Pop os](https://mutschler.eu/linux/install-guides/pop-os-btrfs/)
 
 ## 2. Post Installation
- There is some basic things you need to do after its installation.
+ There are some basic things you need to do after installation.
 
  - **Update your System** <br />
  *Get latest updates via terminal or pop shop.* <br />
@@ -28,7 +28,7 @@
  ```
 
  - **Proprietary Drivers** <br />
- *You can get proprietary drivers directly from Pop shop but you still get problems you can refer to a guide.*
+ *You can get proprietary drivers directly from the Pop shop but you still get problems you can refer to a guide.*
 
  1. [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br />
  2. [Guide for AMD](https://linuxconfig.org/how-to-install-the-latest-amd-radeon-drivers-on-ubuntu-18-04-bionic-beaver-linux#:~:text=In%20order%20to%20get%20the,the%20form%20of%20a%20tarball.)
@@ -38,11 +38,11 @@
  ```
  #### Tweaks I am using -
 
-#### 1. Minimise Button
- Minimise is a important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use Super key a lot but for me minimise button is very useful. You can also get the maximize button but its not that usefull because double clicking the titlebar does the job.<br /> <br />
+#### 1. Minimize Button
+ Minimise is an important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use the Super key a lot but for me, the minimize button is very useful. You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
  ![gnome-minimise](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
 #### 2. Battery Percentage
- This option is also a pretty useful option but only for a lappy.<br>
+ This option is also pretty useful but only for a lappy.<br>
 #### 3. Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br /> <br />
  ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png)<br>
@@ -51,13 +51,13 @@
  If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.<br /> <br />
  ![set-of-refreshrates](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/set-of-refreshrates.png)
 
- ### To add custom resolution do this steps.
+ ### To add custom resolution do these steps.
  **1. Check xrandr**  <br />
  You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
  ![xrandr](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/xrandr.png)
  <br /> <br />
  **2. Find resolution which will fit**  <br />
- My original maximum resolution is 1600 900 which is 16:9 aspect ratio. So if I choose a different aspect ratio some part of my display will be blacked out. <br />
+ My original maximum resolution is 1600 900 which is a 16:9 aspect ratio. So if I choose a different aspect ratio some part of my display will be blacked out. <br />
 
  So, I can go for 1920x1080 or 1536x864 <br />
  *To find out which fits you best you can do tests by adding different resolutions*
@@ -89,7 +89,7 @@
 
  ##### Solution for Problem 1:
  You have to experiment with cvt a bit to find which refresh rates should be.
- As my refresh rate is from 0 - 120. I did some expermientation and added some resolution. <br />
+ As my refresh rate is from 0 - 120. I did some experimentation and added some resolution. <br />
 
  Like if your refresh rate supports 120 you can directly do this.
  ```bash
@@ -142,7 +142,7 @@
  ### - Email Client
  I don't use email client for me chrome is enough.
  ```bash
- sudo apt remove --purge geary* && sudo apt autoremove
+ sudo apt remove --purge Geary* && sudo apt autoremove
  ```
 
  Alternatives,
@@ -242,7 +242,7 @@
  ```bash
  lscpu
  ```
- 2. Install wine according to your arcitecture. <br />
+ 2. Install wine according to your architecture. <br />
  For 64-bit
  ```bash
  sudo apt install wine64
@@ -329,14 +329,14 @@
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
  ### Disable annoying Keyring
  Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br />
- *There is a easy way to disable this*
+ *There is an easy way to disable this*
  ```steps
- Open app password and keys (Seahorse) > Go to Login > Change Password > Type old passpord continue > Don't type and password continue > Make unencrypted
+ Open app password and keys (Seahorse) > Go to Login > Change Password > Type old password continue > Don't type and password continue > Make unencrypted
  ```
  ![key](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/key.png)
  ![unen](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/unen.png) <br />
 
- ## 5. Optimising Boot time
+ ## 5. Optimizing Boot time
  My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
  ![originalboottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/originalboottime.png)
 
@@ -357,7 +357,7 @@
  sudo systemctl disable ModemManager.service
  sudo systemctl mask ModemManager.service
  ```
- **Note** - If you are not using this and don't want wifi disable wpa_supplicant.service.
+ **Note** - If you are not using this and don't want wifi to disable wpa_supplicant.service.
  - **Fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
  Disable thunderbolt_power <br />
  ```bash
@@ -373,7 +373,7 @@
  sudo systemctl disable fwupd.service
  sudo systemctl mask fwupd.service
  ```
-  - **Avahi-daemon** is supposed to provide zero-configuration network discovery, and make it super-easy to find printers and other hosts on your network. I always disable it and don’t miss it.
+  - **Avahi-daemon** is supposed to provide zero-configuration network discovery and make it super-easy to find printers and other hosts on your network. I always disable it and don’t miss it.
  ```bash
  sudo systemctl disable avahi-daemon.service
  sudo systemctl mask avahi-daemon.service
@@ -383,19 +383,18 @@
  ```bash
  sudo apt remove --purge apport* apparmor* && sudo apt autoremove
  ```
- - **Saned** is the SANE (Scanner Access Now Easy) daemon that  allows  remote
-clients  to  access  image  acquisition  devices available on the local
-host.
+ - **Saned** is the SANE (Scanner Access Now Easy) daemon that allows remote
+clients to access image acquisition devices available on the localhost.
  ```bash
  sudo systemctl disable saned.service
  sudo systemctl mask saned.service
  ```
- - **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool. (My system didn't suffer must removing it but if yours does unmask and enable it. But if your system heats even a bit after removing this add this back.)
+ - **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool. (My system didn't suffer must be removing it but if yours does unmask and enable it. But if your system heats even a bit after removing this add this back.)
  ```bash
  sudo systemctl disable thermald.service
  sudo systemctl mask thermald.service
  ```
- - **Switcheroo-control** is D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 gpu's.
+ - **Switcheroo-control** is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
  ```bash
  sudo systemctl disable switcheroo-control.service
  sudo systemctl mask switcheroo-control.service
@@ -417,7 +416,7 @@ host.
  ```
  4. Restart
 
- - **Gpu-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your gpu.
+ - **Gpu-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
  ```bash
  sudo systemctl disable gpu-manager.service
  sudo systemctl mask gpu-manager.service
@@ -446,12 +445,12 @@ host.
  ![prekernelbootime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/prekernelbootime.png)
 
  ### Custom kernel
- Custom Kernel's are known and used by less people, but these kernels does add a significant boost to performance and battery.
- 1. **Xanmod** is the more popular choice among intel based hardware. It is built to provide a stable, responsive and smooth desktop experience. <br />
+ Custom Kernels are known and used by fewer people, but these kernels do add a significant boost to performance and battery.
+ 1. **Xanmod** is the more popular choice among intel based hardware. It is built to provide a stable, responsive, and smooth desktop experience. <br />
  To get xanmod go [here](https://xanmod.org/)
  2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
  To get liquorix go [here](https://liquorix.net/) <br /> <br />
- Initial benchmarks on intel makes xanmod a winner whereas AMD hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br />
+ Initial benchmarks on intel make xanmod a winner whereas AMD hardware generally goes better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br />
 
  **Note** - At this point this boots as fast as it can be.<br />
 
@@ -474,7 +473,7 @@ host.
  ```bash
  sudo nautilus
  ```
- 5. Go to filesystem root > home > yourusername > Downloads > copy the hosts file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
+ 5. Go to filesystem root > home > your username > Downloads > copy the host's file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
  Note - If it doesn't ask to replace you went wrong somewhere.
 
  ### Clean your System
@@ -486,7 +485,7 @@ host.
  sudo apt-get autoclean
  ```
  **Tool** <br />
- I personally use bleachbit because it is good at remove unnecessary junk from your computer.
+ I use bleachbit because it is good to remove unnecessary junk from your computer.
  ```bash
  sudo apt install bleachbit
  ```
@@ -495,7 +494,7 @@ host.
  **Note**:- After doing this the first boot might be slow don't worry it's perfectly normal.
 
  ### Night Light
- Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use night light.<br /> <br />
+ Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use a night light.<br /> <br />
  **Steps ->** Settings > Display > Night light <br />
  *You can also select the timing which fits your sleep cycle.*<br /> <br />
  ![nightlight](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/nightlight.png)
@@ -517,9 +516,9 @@ host.
  - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
  #### 3. Left Titlebar buttons
  **Steps ->** GNOME Tweaks > Windows Titlebar > **Left** <br />
- **Note:-** This glitches the gnome-tweak tool for some reason don't worry about it and increase size of the window.
+ **Note:-** This glitches the gnome-tweak-tool for some reason don't worry about it and increase the size of the window.
  #### 4. Custom themes
- *If you need custom themes go to [Gnome-look](https://www.gnome-look.org/browse/cat/)* <br />
+ *Go to [Gnome-look](https://www.gnome-look.org/browse/cat/)* <br />  <br />
  **My setup** <br />
  Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/) <br />
  Cursor - [Layan](https://www.gnome-look.org/s/Gnome/p/1365214/) <br />
@@ -547,8 +546,8 @@ host.
 
  ## 7. Bonus
  #### Among US for Free (Without Steam)
- As we know that the only way we can get Among Us on linux is with Steam which is paid. <br />
- Well thats not it. We can run a Windows version which is free and for it we nee to install wine. <br /> <br />
+ As we know that the only way we can get Among Us on Linux is with Steam which is paid. <br />
+ Well, that's not it. We can run a Windows version which is free and for it, we need to install wine. <br /> <br />
  **Steps**
  1. Install Wine (Go to Others Section in this repo)
  2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)

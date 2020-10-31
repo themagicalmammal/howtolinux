@@ -124,12 +124,12 @@
 
  ### - Browser
  I personally I prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br /> <br />
- 
- **MENTION ABOUT OPENSOURCE - Chrome is not a open source browser, Vivaldi is a partly open-source and also Vivaldi doesn't support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes to Opera which is also a partly open source browser.** <br /> 
- 
+
+ **MENTION ABOUT OPENSOURCE - Chrome is not a open source browser, Vivaldi is a partly open-source and also Vivaldi doesn't support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes to Opera which is also a partly open source browser.** <br />
+
  **Firefox & TOR are the only opensource browsers on this list. Meaning these are better alternatives if you are looking for privacy.**
- 
- 1. **Chrome** 
+
+ 1. **Chrome**
  ```bash
  sudo apt install google-chrome-stable
  ```
@@ -148,16 +148,16 @@
   ```
   4. **TOR**
  ```bash
- sudo add-apt-repository ppa:micahflee/ppa && sudo apt update 
+ sudo add-apt-repository ppa:micahflee/ppa && sudo apt update
  sudo apt install torbrowser-launcher
  ```
-  
+
   **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging chrome-based browsers, then non-chrome-based browsers can help you out.** <br /> <br />
  To remove Firefox (Not Recommended)
  ```bash
  sudo apt remove --purge firefox*
- ``` 
- 
+ ```
+
  ### - Email Client
  I don't use email client for me chrome is enough.
  ```bash
@@ -197,7 +197,7 @@
  sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
  Alternatives, <br />
- 
+
  **Open Office** <br />
  Guide to install is [here](https://linuxhint.com/openoffice_installation_ubuntu/) <br />
 
@@ -419,9 +419,9 @@ clients to access image acquisition devices available on the localhost.
  sudo systemctl disable saned.service
  sudo systemctl mask saned.service
  ```
-  
+
  - **Thermald** [Unsafe to remove]  daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
- **If your system heats after removing this even by a bit add it back** 
+ **If your system heats after removing this even by a bit add it back**
  ```bash
  sudo systemctl disable thermald.service
  sudo systemctl mask thermald.service
@@ -485,14 +485,14 @@ clients to access image acquisition devices available on the localhost.
  Initial benchmarks on intel make xanmod a winner whereas AMD hardware generally goes better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br />
 
  **Note** - At this point this boots as fast as it can be.<br />
- 
+
  ### Temporary Solution if your System creates problems with Custom Kernel
  1. Open Nautilus in admin mode
  ```bash
  sudo nautilus
  ```
  2. Go to **efi partition > loader > Open loader.conf** <br /> <br />
- 
+
  Edit this
  ```atom
  default Pop_OS-current
@@ -507,7 +507,7 @@ clients to access image acquisition devices available on the localhost.
  ```bash
  uname -r
   ```
-  
+
  ### Removing the Custom Kernel Permanently
  1. First do the temporary solution
  2. Then, we will remove kernel apt modules <br />
@@ -532,14 +532,14 @@ clients to access image acquisition devices available on the localhost.
  ```
  5. Cleaning out files <br />
  **After doing all this the systemd files still exist.** <br />
- **Steps to Clean out those files** 
+ **Steps to Clean out those files**
  1.  Open Nautilus in admin mode
  ```bash
  sudo nautilus
  ```
  2. Go to efi paritions > EFI > Pop_OS------Somethinghuge----- > **Delete initrd.img vmlinuz.efi**
  3. Then, go to efi paritions > loader > entries > **Delete Pop_OS-current.conf**
- 
+
  ### Final Boot Time
  ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)
 
@@ -648,9 +648,7 @@ clients to access image acquisition devices available on the localhost.
  ```bash
  ./start.sh
  ```
-![startamong](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/startamong.jpg)
-![killamong](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/killamong.jpg)
 
  <img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />
- 
+
  To post your quries and suggestions. Go to [this](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers/) redit page.

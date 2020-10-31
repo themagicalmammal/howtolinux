@@ -80,16 +80,17 @@
  ```bash
  xrandr --addmode eDP-1 "1920x1080_60.00"
  ```
- ![addmode](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/addmode.png)
-
- #### Done???
- **Well not quite**
-
- **Problem 1**: What about other refresh rates? <br />
- **Problem 2**: The resolution goes away after reboot. <br />
-
- ##### Solution for Problem 1:
- You have to experiment with cvt a bit to find which refresh rates should be.
+ ![addmode](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/addmode.png) <br />
+ 
+  #### [Problem] The resolution goes away after reboot.
+ **Ans -** Add all the final lines to .profile so every time a session is created the lines will run and resolution will be automatically added.
+ ```bash
+ sudo gedit ~/.profile
+ ```
+ ![profile](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/profile.png)
+ 
+ #### [Problem] What about other refresh rates? <br />
+ **Ans -** You have to experiment with cvt a bit to find which refresh rates should be.
  As my refresh rate is from 0 - 120. I did some experimentation and added some resolution. <br />
 
  Like if your refresh rate supports 120 you can directly do this.
@@ -109,16 +110,16 @@
  xrandr --newmode "1920x1080_59.89"  172.75  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
  xrandr --addmode eDP-1 "1920x1080_59.89"
  ```
- ##### Solution for Problem 2:
- Add all the final lines to .profile so every time a session is created the lines will run and resolution will be automatically added.
- ```bash
- sudo gedit ~/.profile
- ```
- ![profile](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/profile.png)
 
  **Now it should look like this** <br /> <br />
  ![custom-resolution-final](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-resolution-final.png)
 
+ #### [Problem] How to get rid of custom resolution?
+ **Ans -** Simple if you have added to your .profile open it again and remove those lines and Reboot.
+ 
+ #### [BUG] Problems regarding Hybrid Graphics Switching.
+ **Ans -** If you have Hybrid or Multiple Graphics Cards your display name will change if you switch graphics. So keep in mind you have to change the xrandr --addmode <displayname> if you switch graphics.
+ 
  ## 3. Preferred Apps
  Pop Os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
 
@@ -355,10 +356,11 @@
  #### Over Amplification
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
  ### Disable annoying keyring
+ #### While this disables annoying keyring every time you open a browser you have to keep in mind that this is also a privacy concern.
  Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br />
- *There is an easy way to disable this*
- ```steps
- Open app password and keys (Seahorse) > Go to Login > Change Password > Type old password continue > Don't type and password continue > Make unencrypted
+ **Steps**
+ ```atom
+ App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
  ```
  ![key](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/key.png)
  ![unen](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/unen.png) <br />
@@ -377,11 +379,11 @@
  The built-in extensions I use are - <br /> <br />
  ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png) 
  #### The one's I have disabled are -
- 1. Alt-Tab: Raise First Window - Make Alt+Tab only raise the first window in the group. By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
- 2. Always show workspaces - Always show workspaces in the overview
- 3. Desktop Icons - Add icons to the desktop
- 4. Pop Battery Icon Fix - Fixes the battery icon in Pop!_OS to correctly match the current battery level. (I use this only on my laptop)
- 5. System76 Power Management - system76-power is a utility for managing graphics and power profiles. This helps if you have Hybrid or NVIDIA graphics. (I only use this on my laptop)
+ 1. **Alt-Tab**- Raise First Window - Make Alt+Tab only raise the first window in the group. By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
+ 2. **Always show workspaces** - Always show workspaces in the overview
+ 3. **Desktop Icons** - Add icons to the desktop
+ 4. **Pop Battery Icon Fix** - Fixes the battery icon in Pop!_OS to correctly match the current battery level. (I use this only on my laptop)
+ 5. **System76 Power Management** - system76-power is a utility for managing graphics and power profiles. This helps if you have Hybrid or NVIDIA graphics. (I only use this on my laptop)
 
  ### Disabling Pop Shop on Boot
  Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram.
@@ -553,7 +555,7 @@ clients to access image acquisition devices available on the localhost.
  ```
  4. Finally, removing there repositories <br />
  For XanMod <br />
- Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and open it and uninstall it
+ Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and Uninstall it. <br />
  For Liquorix <br />
  ```bash
  sudo add-apt-repository ppa:damentz/liquorix
@@ -678,7 +680,7 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) <br />
- [Reddit](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) Page to post your queries and suggestions.
+ [Reddit Page](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) Page to post your queries and suggestions.
 
 ### Thanks for Suggestions
 1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.

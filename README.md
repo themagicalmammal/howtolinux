@@ -142,9 +142,7 @@
  sudo apt-get update
  sudo apt-get install opera-stable
   ```
-  [https://pkgs.org/download/chromium-browser]
-
- To remove Firefox [Not Recommended]
+ To remove Firefox **(Not Recommended)**
  ```bash
  sudo apt remove --purge firefox*
  ``` 
@@ -281,7 +279,7 @@
  ```
 
  ### - Debloating
- ###### Remove useless stuff that you don't need. If you use this stuff don't remove theme.
+ ###### Remove useless stuff that you don't need. If you use this stuff don't remove them. And atleast read what it does before your remove them.
  - Calculator - you know what a calculator is, I generally use the chrome calculator directly.
  ```bash
  sudo apt remove --purge gnome-calculator && sudo apt autoremove
@@ -294,35 +292,35 @@
  ```bash
  sudo apt remove --purge Gucharmap* && sudo apt autoremove
  ```
- - Contacts
+ - Contacts - Gnome contacts tool important for a work pc.
  ```bash
  sudo apt remove --purge gnome-contacts* && sudo apt autoremove
  ```
- - Document Scanner
+ - Document Scanner - Important tool for a work pc.
  ```bash
  sudo apt remove --purge sane* simple-scan && sudo apt autoremove
  ```
- - Gnome Fonts
+ - Gnome Fonts - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
  ```bash
  sudo apt remove --purge gnome-font-viewer && sudo apt autoremove
  ```
- - Gnome Help
+ - Gnome Help - Useful for newcomers
  ```bash
  sudo apt remove --purge yelp* && sudo apt autoremove
  ```
- - Gnome Power Manager
+ - Gnome Power Manager - can show historical and current battery information and programs waking up that use power. I never use it.
  ```bash
  sudo apt remove --purge gnome-power-manager && sudo apt autoremove
  ```
- - Pinyin (Only for Chinese users)
+ - Pinyin (Only for Chinese users) - Pinyin is the Romanization of the Chinese characters based on their pronunciation.
  ```bash
  sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
  ```
- - Vim
+ - Vim - Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. I removed this because I use nano/gedit/atom.
  ```bash
  sudo apt remove --purge gvim* vim* && sudo apt autoremove
  ```
- - Popsicle USB creator
+ - Popsicle USB creator - If you create USB's you should keep this tool but I am a old Etcher user and want to stick with it that's why I removed this
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```

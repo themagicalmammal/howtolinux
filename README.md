@@ -239,6 +239,7 @@
  Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
 
  ### - Entertainment Apps
+ 
  1. **Spotify for Music**
  **With Ad-block support**
  ```bash
@@ -246,16 +247,20 @@
  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
  sudo apt update && sudo apt install spotify-client
  ```
- If you are not a premium user but don't like ads, get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux). <br />  <br />
+ If you don't like ads, you can get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux). <br /> 
+ **But, if you like Spotify please buy the Premium, ad-free spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
  ![spotify-adfree](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
+ 
  2. **Steam for Gaming**
  ```bash
  flatpak install steam #6th one
  ```
+ 
  3. **Multimedia Codecs**
  ```bash
  sudo apt install ubuntu-restricted-extras
  ```
+ 
  ### Others
  #### uGet (Download Manager)
  ```bash

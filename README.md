@@ -142,6 +142,7 @@
  sudo apt-get update
  sudo apt-get install opera-stable
   ```
+  [https://pkgs.org/download/chromium-browser]
 
  To remove Firefox [Not Recommended]
  ```bash
@@ -367,7 +368,7 @@
  ```
  ### Masking and Disabling some useless services
  #### DISCLAIMER
- ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM IF YOU DO NOT READ THIS CAREFULLY. PLEASE READ AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
+ ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
  - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
  ```bash
  sudo systemctl disable ModemManager.service
@@ -394,8 +395,9 @@
  sudo systemctl disable avahi-daemon.service
  sudo systemctl mask avahi-daemon.service
  ```
- - **AppArmor** is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
+ - **AppArmor** [Unsafe to remove] is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
  - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
+ **Apparmour is used my many apps like Chromium not to mention removing it is a security threat so please proceed carefully**
  ```bash
  sudo apt remove --purge apport* apparmor* && sudo apt autoremove
  ```
@@ -406,7 +408,8 @@ clients to access image acquisition devices available on the localhost.
  sudo systemctl mask saned.service
  ```
   
- - **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool. (My system didn't suffer must be removing it but if yours does unmask and enable it. But if your system heats even a bit after removing this add this back.)
+ - **Thermald** [Unsafe to remove]  daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
+ **If your system heats after removing this even by a bit add it back** 
  ```bash
  sudo systemctl disable thermald.service
  sudo systemctl mask thermald.service

@@ -156,7 +156,8 @@
  sudo apt install thunderbird
  ```
  3. **MailSpring** <br />
- Go [here](https://linuxconfig.org/how-to-install-mailspring-on-ubuntu-18-04-bionic-beaver-linux)
+ 1. Install the [gvfs-bin](https://pkgs.org/download/gvfs-bin) dependency.
+ 2. Get the deb file [here](https://github.com/Foundry376/Mailspring/releases/tag/1.7.8)
 
  #### - Video Player
  VLC is the best video player for any platform

@@ -196,8 +196,6 @@
  ```bash
  flatpak install com.discordapp.Discord
  ```
- 4. **Messenger** <br />
- Get deb package [here](https://github.com/Aluxian/Messenger-for-Desktop/releases)
 
  ### - Programming Apps
  1. **Atom by GitHub**
@@ -262,16 +260,15 @@
  sudo apt install synaptic
  ```
  #### Nautilus (admin)
- **You can add a command *Open as Administrator* .**
+ ###### You can add a command *Open as Administrator*
  ```bash
  sudo apt install nautilus-admin && nautilus -q
  ```
  #### Timeshift
- **Timeshift is a system restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots.**
+ ###### Timeshift is a system restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots.
  ```bash
  sudo apt install timeshift
  ```
-
 
  ### - Debloating
  ###### Remove useless stuff that you don't need.
@@ -319,7 +316,7 @@
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
- Alternative for Popsicle, [Etcher](https://www.balena.io/etcher/)
+ **Alternative for Popsicle,** [Etcher](https://www.balena.io/etcher/)
 
  ## 4. Important Tweaks
  ### Setting Tweaks

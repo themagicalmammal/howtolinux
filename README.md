@@ -471,7 +471,26 @@ clients to access image acquisition devices available on the localhost.
  Initial benchmarks on intel make xanmod a winner whereas AMD hardware generally goes better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br />
 
  **Note** - At this point this boots as fast as it can be.<br />
-
+ 
+ ### Temporary Solution if your System creates problems with Custom Kernel
+ 1. Open Nautilus in admin mode
+ ```bash
+ sudo nautilus
+ ```
+ 2. Go to **efi partition > loader > Open loader.conf** <br /> <br />
+ 
+ Edit this
+ ```atom
+ default Pop_OS-current
+  ```
+ To this
+ ```atom
+ default Pop_OS-oldkern
+  ```
+ 3. Reboot  <br />
+ 
+ **Now you are back to your original kernel**
+ 
  ### Final Boot Time
  ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)
 

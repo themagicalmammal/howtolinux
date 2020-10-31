@@ -123,9 +123,9 @@
  Pop Os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
 
  ### - Browser
- I personally I prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br /> <br />
+ I personally prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br /> <br />
 
- **MENTION ABOUT OPENSOURCE - Chrome is not a open source browser, Vivaldi is a partly open-source and also Vivaldi doesn't support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes to Opera which is also a partly open source browser.** <br />
+ **MENTION ABOUT OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also Vivaldi doesn't support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera which is also a partly open-source browser.** <br />
 
  **Firefox & TOR are the only opensource browsers on this list. Meaning these are better alternatives if you are looking for privacy.**
 
@@ -201,7 +201,7 @@
  **Open Office** <br />
  Guide to install is [here](https://linuxhint.com/openoffice_installation_ubuntu/) <br />
 
- **Since, WPS OFFICE is a chinese app there is a privacy concern for users using it so, current links have been removed because of that.**
+ **Since, WPS OFFICE is a Chinese app there is a privacy concern for users using it so, current links have been removed because of that.**
 
  ### - Social Apps
  1. **Telegram** <br />
@@ -293,7 +293,7 @@
  ```
 
  ### - Debloating
- ###### Remove useless stuff that you don't need. If you use this stuff don't remove them. And atleast read what it does before your remove them.
+ ###### Remove useless stuff that you don't need. If you use this stuff don't remove them. And at least read what it does before your remove them.
  - **Calculator** - you know what a calculator is, I generally use the chrome calculator directly.
  ```bash
  sudo apt remove --purge gnome-calculator && sudo apt autoremove
@@ -302,7 +302,7 @@
  ```bash
  sudo apt remove --purge gnome-calendar && sudo apt autoremove
  ```
- - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert then in to a text string. I have no known use for it.
+ - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert them into a text string. I have no known use for it.
  ```bash
  sudo apt remove --purge Gucharmap* && sudo apt autoremove
  ```
@@ -326,7 +326,7 @@
  ```bash
  sudo apt remove --purge gnome-power-manager && sudo apt autoremove
  ```
- - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of the Chinese characters based on their pronunciation.
+ - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
  ```bash
  sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
  ```
@@ -334,7 +334,7 @@
  ```bash
  sudo apt remove --purge gvim* vim* && sudo apt autoremove
  ```
- - **Popsicle USB creator** - If you create USB's you should keep this tool but I am a old Etcher user and want to stick with it that's why I removed this
+ - **Popsicle USB creator** - If you create USB's you should keep this tool but I am an old Etcher user and want to stick with it that's why I removed this
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
@@ -344,7 +344,7 @@
  ```bash
  sudo apt install <appname>
  ```
- *Appname doesn't require * symbol*
+ *App name doesn't require * symbol*
  ## 4. Important Tweaks
  ### Setting Tweaks
  #### Privacy Tweaks
@@ -372,25 +372,19 @@
  sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
  ```
  ![boottime1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/boottime1.png)
-
- ### Remove Network Dispatcher
- - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
- ```bash
- sudo apt remove --purge networkd-dispatcher
- ```
  ### Disabling Unnessary Extensions
  Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
- The built-in extensions I use are -
- ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png)
- ##### The one's I have disabled are -
- 1. Alt Tab: Raise First Window - Make Alt+Tab only raise the first window in group. By default Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
- 2. Always show workspaces - Always show workspaces in overview
+ The built-in extensions I use are - <br /> <br />
+ ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png) 
+ #### The one's I have disabled are -
+ 1. Alt-Tab: Raise First Window - Make Alt+Tab only raise the first window in the group. By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
+ 2. Always show workspaces - Always show workspaces in the overview
  3. Desktop Icons - Add icons to the desktop
  4. Pop Battery Icon Fix - Fixes the battery icon in Pop!_OS to correctly match the current battery level. (I use this only on my laptop)
  5. System76 Power Management - system76-power is a utility for managing graphics and power profiles. This helps if you have Hybrid or NVIDIA graphics. (I only use this on my laptop)
 
  ### Disabling Pop Shop on Boot
- Pop Shop always opens on startup of system there is a way to stop that. This also helps in saving some ram.
+ Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram.
  **Steps**
  1. Edit Appcenter deamon from opening it at start
  ```bash
@@ -404,6 +398,10 @@
  ### Masking and Disabling some useless services
  #### DISCLAIMER
  ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
+ - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
+ ```bash
+ sudo apt remove --purge networkd-dispatcher
+ ```
  - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
  ```bash
  sudo systemctl disable ModemManager.service
@@ -432,7 +430,7 @@
  ```
  - **AppArmor** [Unsafe to remove] is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
  - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
- **Apparmour is used my many apps like Chromium not to mention removing it is a security threat so please proceed carefully**
+ **Apparmour has used my many apps like Chromium not to mention removing it is a security threat so please proceed carefully**
  ```bash
  sudo apt remove --purge apport* apparmor* && sudo apt autoremove
  ```
@@ -502,15 +500,17 @@ clients to access image acquisition devices available on the localhost.
  ### Custom kernel
  Custom Kernels are known and used by fewer people, but these kernels do add a significant boost to performance and battery.
  1. **Xanmod** is the more popular choice among intel based hardware. It is built to provide a stable, responsive, and smooth desktop experience. <br />
- To get xanmod go [here](https://xanmod.org/)
+ To get Xanmod go [here](https://xanmod.org/)
  2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
- To get liquorix go [here](https://liquorix.net/) <br /> <br />
- Initial benchmarks on intel make xanmod a winner whereas AMD hardware generally goes better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br />
+ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
+ Initial benchmarks on intel make Xanmod a winner whereas AMD hardware generally goes better with Liquorix. Also if you are having heating issues go for Liquorix it has a better thermal response. I use Xanmod normal because lts release felt slow for me on both my pc & lappy. <br />
 
+ [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1) <br />
  **Note** - At this point this boots as fast as it can be.<br />
+ [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1)
 
  ### Temporary Solution if your System creates problems with Custom Kernel
- 1. Open Nautilus in admin mode
+ 1. Open Nautilus in admin mode via Terminal
  ```bash
  sudo nautilus
  ```
@@ -556,7 +556,7 @@ clients to access image acquisition devices available on the localhost.
  5. Cleaning out files <br />
  **After doing all this the systemd files still exist.** <br />
  **Steps to Clean out those files**
- 1.  Open Nautilus in admin mode
+ 1.  Open Nautilus in admin mode via Terminal
  ```bash
  sudo nautilus
  ```
@@ -655,7 +655,7 @@ clients to access image acquisition devices available on the localhost.
 
  ## 7. Bonus
  #### Among US if you have Steam Glitches
- #### For everyone following this method, Among US is available for everyone in Steam for Linux. If you really like this game and want to show respect to developers, Please buy the Full version. I have only posted this method because Steam for Linux doesn't work well on my Desktop at all. So, I had to find a alternative instead of install Windows I had to chose this. And in no way I want to encourage piracy.
+ #### For everyone following this method, Among US is available for everyone in Steam for Linux. If you really like this game and want to show respect to developers, Please buy the Full version. I have only posted this method because Steam for Linux doesn't work well on my Desktop at all. So, I had to find an alternative instead of install Windows I had to chose this. And in no way do I want to encourage piracy.
  **Steps**
  1. Install Wine (Go to Others Section in this repo)
  2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
@@ -673,9 +673,9 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  <img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />
- To post your quries and suggestions. Go to [this](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers/) redit page.
+ [Reddit Page](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers/) to post your queries and suggestions.
 
 ### Thanks for Suggestions
-1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about extension & Pop Shop on boot.
+1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 2. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention about opensource & Vivaldi vaapi.
-3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention about Firefox & chrome-based bug & idea about Disclaimer & reverting back to stock kernel.
+3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention about Firefox & Chrome-based bug & Idea about Disclaimer & Reverting back to stock kernel.

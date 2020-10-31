@@ -280,47 +280,47 @@
 
  ### - Debloating
  ###### Remove useless stuff that you don't need. If you use this stuff don't remove them. And atleast read what it does before your remove them.
- - Calculator - you know what a calculator is, I generally use the chrome calculator directly.
+ - **Calculator** - you know what a calculator is, I generally use the chrome calculator directly.
  ```bash
  sudo apt remove --purge gnome-calculator && sudo apt autoremove
  ```
- - Calendar - I put this on a list because I never need the calender even on my phone
+ - **Calendar** - I put this on a list because I never need the calender even on my phone
  ```bash
  sudo apt remove --purge gnome-calendar && sudo apt autoremove
  ```
- - Character Map - is a Unicode character map that allows you to select characters from a table and insert then in to a text string. I have no known use for it.
+ - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert then in to a text string. I have no known use for it.
  ```bash
  sudo apt remove --purge Gucharmap* && sudo apt autoremove
  ```
- - Contacts - Gnome contacts tool important for a work pc.
+ - **Contacts** - Gnome contacts tool important for a work pc.
  ```bash
  sudo apt remove --purge gnome-contacts* && sudo apt autoremove
  ```
- - Document Scanner - Important tool for a work pc.
+ - **Document Scanner** - Important tool for a work pc.
  ```bash
  sudo apt remove --purge sane* simple-scan && sudo apt autoremove
  ```
- - Gnome Fonts - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
+ - **Gnome Fonts** - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
  ```bash
  sudo apt remove --purge gnome-font-viewer && sudo apt autoremove
  ```
- - Gnome Help - Useful for newcomers
+ - **Gnome Help** - Useful for newcomers
  ```bash
  sudo apt remove --purge yelp* && sudo apt autoremove
  ```
- - Gnome Power Manager - can show historical and current battery information and programs waking up that use power. I never use it.
+ - **Gnome Power Manager** - can show historical and current battery information and programs waking up that use power. I never use it.
  ```bash
  sudo apt remove --purge gnome-power-manager && sudo apt autoremove
  ```
- - Pinyin (Only for Chinese users) - Pinyin is the Romanization of the Chinese characters based on their pronunciation.
+ - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of the Chinese characters based on their pronunciation.
  ```bash
  sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
  ```
- - Vim - Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. I removed this because I use nano/gedit/atom.
+ - **Vim** - Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. I removed this because I use nano/gedit/atom.
  ```bash
  sudo apt remove --purge gvim* vim* && sudo apt autoremove
  ```
- - Popsicle USB creator - If you create USB's you should keep this tool but I am a old Etcher user and want to stick with it that's why I removed this
+ - **Popsicle USB creator** - If you create USB's you should keep this tool but I am a old Etcher user and want to stick with it that's why I removed this
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
@@ -328,9 +328,9 @@
  #### Reverting
  If you accidently removed any of them you can add them back by
  ```bash
- sudo apt install <appname>(No *)
+ sudo apt install <appname>
  ```
- 
+ *Appname doesn't require * symbol*
  ## 4. Important Tweaks
  ### Setting Tweaks
  #### Privacy Tweaks
@@ -488,8 +488,43 @@ clients to access image acquisition devices available on the localhost.
  default Pop_OS-oldkern
   ```
  3. Reboot  <br />
- 
- **Now you are back to your original kernel**
+ **Now you are back to your original kernel** <br />
+ ###### To confirm this type
+ ```bash
+ uname -r
+  ```
+  
+ ### Removing the Custom Kernel Permanently
+ 1. First do the temporary solution
+ 2. First remove kernel apt modules <br />
+ For XanMod <br />
+ ```bash
+ sudo apt remove --purge linux-xanmod && sudo apt-get --purge autoremove
+ ```
+ For Liquorix <br />
+ ```bash
+ sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 && sudo apt-get --purge autoremove
+ ```
+ 3. Remove FQ-PIE Queue Discipline for systemd only for XanMod users
+ ```bash
+ sudo rm /etc/sysctl.d/90-override.conf
+ ```
+ 4. Remove there repositories <br />
+ For XanMod <br />
+ Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and open it and uninstall it
+ For Liquorix <br />
+ ```bash
+ sudo add-apt-repository ppa:damentz/liquorix
+ ```
+ 5. Cleaning out files <br />
+ **After doing all this the systemd files still exist.** <br />
+ **Steps to Clean out those files** 
+ 1.  Open Nautilus in admin mode
+ ```bash
+ sudo nautilus
+ ```
+ 2. Go to efi paritions > EFI > Pop_OS------Somethinghuge----- > **Delete initrd.img vmlinuz.efi**
+ 3. Then, go to efi paritions > loader > entries > **Delete Pop_OS-current.conf**
  
  ### Final Boot Time
  ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)
@@ -516,7 +551,7 @@ clients to access image acquisition devices available on the localhost.
  ### Clean your System
  **Terminal**
  ```bash
- sudo apt autoremove
+ sudo apt --purge autoremove
  sudo rm -rf ~/.cache/thumbnails/*
  sudo apt-get clean
  sudo apt-get autoclean

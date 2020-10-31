@@ -45,10 +45,12 @@
  This option is also pretty useful but only for a lappy.<br>
  #### 3. Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br /> <br />
- ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png)<br>
+ ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
 
 
- - **Custom resolution** </br>
+
+ - **Custom Resolution with Xrandr** </br>
+ **Please read all the problems & bugs with this, so that you know what problems might come & how to fix them** <br />
  If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.<br /> <br />
  ![set-of-refreshrates](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/set-of-refreshrates.png)
 
@@ -335,12 +337,13 @@
  ```bash
  sudo apt remove --purge gvim* vim* && sudo apt autoremove
  ```
- - **Popsicle USB creator** - If you create USB's you should keep this tool but I am an old Etcher user and want to stick with it that's why I removed this
+ - **Popsicle USB creator** - If you create USB's you should keep this tool but I am an old Etcher user and want to stick with it that's why I removed this.<br />
+ **Get [Etcher](https://www.balena.io/etcher/)** <br />
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
- **Alternative for Popsicle,** [Etcher](https://www.balena.io/etcher/) <br />
- #### Reverting
+ 
+ ### Reverting
  If you accidently removed any of them you can add them back by
  ```bash
  sudo apt install <appname>
@@ -348,17 +351,17 @@
  *App name doesn't require * symbol*
  ## 4. Important Tweaks
  ### Setting Tweaks
- #### Privacy Tweaks
+ #### - Privacy Tweaks
  ![1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/1.png)
  ![2](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/2.png)
  ![3](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/3.png)
  ![4](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/4.png)
- #### Over Amplification
+ #### - Over Amplification
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
  ### Disable annoying keyring
  #### While this disables annoying keyring every time you open a browser you have to keep in mind that this is also a privacy concern.
- Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br />
- **Steps**
+ Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br /> <br />
+ **Steps** 
  ```atom
  App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
  ```
@@ -374,10 +377,12 @@
  sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
  ```
  ![boottime1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/boottime1.png)
+ 
  ### Disabling Unnessary Extensions
  Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
  The built-in extensions I use are - <br /> <br />
  ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png) 
+ 
  #### The one's I have disabled are -
  1. **Alt-Tab**- Raise First Window - Make Alt+Tab only raise the first window in the group. By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
  2. **Always show workspaces** - Always show workspaces in the overview
@@ -386,7 +391,7 @@
  5. **System76 Power Management** - system76-power is a utility for managing graphics and power profiles. This helps if you have Hybrid or NVIDIA graphics. (I only use this on my laptop)
 
  ### Disabling Pop Shop on Boot
- Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram.
+ Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />
  **Steps**
  1. Edit Appcenter deamon from opening it at start
  ```bash
@@ -396,8 +401,8 @@
  ```bash
  Exec=io.elemantry.appcenter -s
  ```
- ### Way to clear high buff/cache
- Computer accumulates high buff/cache over time and make the user force reboot. To clear buff cache you can use this.
+ ### Clearing High buff/cache
+ Computer accumulates high buff/cache over time and make the user force reboot. To clear buff cache you can use this. <br />
  ```bash
  free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h
  ```
@@ -513,8 +518,9 @@ clients to access image acquisition devices available on the localhost.
  Initial benchmarks on intel make Xanmod a winner whereas AMD hardware generally goes better with Liquorix. Also if you are having heating issues go for Liquorix it has a better thermal response. I use Xanmod normal because lts release felt slow for me on both my pc & lappy. <br />
 
  [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1) <br />
- **Note** - At this point this boots as fast as it can be.<br />
- [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1)
+ [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) <br />
+ 
+**Note** - At this point this boots as fast as it can be.<br />
 
  ### Temporary Solution if your System creates problems with Custom Kernel
  1. Open Nautilus in admin mode via Terminal
@@ -540,12 +546,13 @@ clients to access image acquisition devices available on the localhost.
 
  ### Removing the Custom Kernel Permanently
  1. First do the temporary solution
- 2. Then, we will remove kernel apt modules <br />
- For XanMod <br />
+ 2. Then, we will remove kernel apt modules <br /> <br />
+ 
+ For XanMod
  ```bash
  sudo apt remove --purge linux-xanmod && sudo apt-get --purge autoremove
- ```
- For Liquorix <br />
+ ``` 
+ For Liquorix
  ```bash
  sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 && sudo apt-get --purge autoremove
  ```
@@ -554,21 +561,24 @@ clients to access image acquisition devices available on the localhost.
  sudo rm /etc/sysctl.d/90-override.conf
  ```
  4. Finally, removing there repositories <br />
+ 
  For XanMod <br />
  Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and Uninstall it. <br />
+ 
  For Liquorix <br />
  ```bash
  sudo add-apt-repository ppa:damentz/liquorix
  ```
  5. Cleaning out files <br />
- **After doing all this the systemd files still exist.** <br />
- **Steps to Clean out those files**
- 1.  Open Nautilus in admin mode via Terminal
+ **After doing all this the systemd files still exist.** <br /> <br />
+ 
+ 6. **Steps to Clean out those files**
+  -  Open Nautilus in admin mode via Terminal
  ```bash
  sudo nautilus
  ```
- 2. Go to efi paritions > EFI > Pop_OS------Somethinghuge----- > **Delete initrd.img vmlinuz.efi**
- 3. Then, go to efi paritions > loader > entries > **Delete Pop_OS-current.conf**
+  - Go to efi paritions > EFI > Pop_OS------Somethinghuge----- > **Delete initrd.img vmlinuz.efi**
+  - Then, go to efi paritions > loader > entries > **Delete Pop_OS-current.conf**
 
  ### Final Boot Time
  ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)
@@ -578,7 +588,7 @@ clients to access image acquisition devices available on the localhost.
  I use **Steven Black** Adhosts for ad-blocking the whole system without any other extra app. This blocks basic ads but not Youtube or Spotify ads. <br />
  To get it go [here](https://github.com/StevenBlack/hosts). <br />
 
- I am using Unified hosts + fakenews + gambling + porn <br />
+ I use **Unified hosts + fakenews + gambling + porn** <br />
 
  #### Q. How to?
  **Ans.** Steps -
@@ -680,7 +690,7 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) <br />
- [Reddit Page](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) Page to post your queries and suggestions.
+ Reddit Page to post your queries and suggestions.
 
 ### Thanks for Suggestions
 1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.

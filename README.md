@@ -38,14 +38,15 @@
  ```
  #### Tweaks I am using -
 
-#### 1. Minimize Button
+ #### 1. Minimize Button
  Minimise is an important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use the Super key a lot but for me, the minimize button is very useful. You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
  ![gnome-minimise](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
-#### 2. Battery Percentage
+ #### 2. Battery Percentage
  This option is also pretty useful but only for a lappy.<br>
-#### 3. Optimising Font
+ #### 3. Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br /> <br />
  ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png)<br>
+
 
  - **Custom resolution** </br>
  If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.<br /> <br />
@@ -122,8 +123,11 @@
  Pop Os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
 
  ### - Browser
- I personally I prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br />
- **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging chrome-based browsers, then non-chrome-based browsers can help you out.**
+ I personally I prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br /> <br />
+ 
+ **MENTION ABOUT OPENSOURCE - Chrome is not a open source browser, Vivaldi is a partly open-source and also Vivaldi doesn't support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes to Opera which is also a partly open source browser.** <br /> 
+ 
+ **Firefox & TOR are the only opensource browsers on this list. Meaning these are better alternatives if you are looking for privacy.**
  
  1. **Chrome** 
  ```bash
@@ -142,7 +146,14 @@
  sudo apt-get update
  sudo apt-get install opera-stable
   ```
- To remove Firefox **(Not Recommended)**
+  4. **TOR**
+ ```bash
+ sudo add-apt-repository ppa:micahflee/ppa && sudo apt update 
+ sudo apt install torbrowser-launcher
+ ```
+  
+  **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging chrome-based browsers, then non-chrome-based browsers can help you out.** <br /> <br />
+ To remove Firefox (Not Recommended)
  ```bash
  sudo apt remove --purge firefox*
  ``` 
@@ -496,7 +507,7 @@ clients to access image acquisition devices available on the localhost.
   
  ### Removing the Custom Kernel Permanently
  1. First do the temporary solution
- 2. First remove kernel apt modules <br />
+ 2. Then, we will remove kernel apt modules <br />
  For XanMod <br />
  ```bash
  sudo apt remove --purge linux-xanmod && sudo apt-get --purge autoremove
@@ -509,7 +520,7 @@ clients to access image acquisition devices available on the localhost.
  ```bash
  sudo rm /etc/sysctl.d/90-override.conf
  ```
- 4. Remove there repositories <br />
+ 4. Finally, removing there repositories <br />
  For XanMod <br />
  Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and open it and uninstall it
  For Liquorix <br />

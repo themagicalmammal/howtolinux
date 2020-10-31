@@ -121,7 +121,7 @@
  ## 3. Preferred Apps
  Pop Os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
 
- #### - Browser
+ ### - Browser
  I prefer Chrome & Vivaldi, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware.
 
  To remove Firefox
@@ -139,7 +139,7 @@
  sudo apt update && sudo apt install vivaldi-stable
  ```
 
- #### - Email Client
+ ### - Email Client
  I don't use email client for me chrome is enough.
  ```bash
  sudo apt remove --purge geary* && sudo apt autoremove
@@ -159,7 +159,7 @@
  1. Install the [gvfs-bin](https://pkgs.org/download/gvfs-bin) dependency.
  2. Get the deb file [here](https://github.com/Foundry376/Mailspring/releases/tag/1.7.8)
 
- #### - Video Player
+ ### - Video Player
  VLC is the best video player for any platform
  ```bash
  sudo apt install vlc
@@ -170,7 +170,7 @@
  sudo apt remove --purge totem* && sudo apt autoremove
  ```
 
- #### - Office
+ ### - Office
  I directly use chrome extension for the office which you can see [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
 
  Remove LibreOffice
@@ -181,7 +181,7 @@
  Alternative, **WPS Office** <br />
  Get the deb package [here](https://www.wps.com/)
 
- #### - Social Apps
+ ### - Social Apps
  1. **Telegram** <br />
  Personally I use Kotogram client
  ```bash
@@ -196,8 +196,10 @@
  ```bash
  flatpak install com.discordapp.Discord
  ```
+ 4. **Messenger** <br />
+ Get deb package [here](https://github.com/Aluxian/Messenger-for-Desktop/releases)
 
- #### - Programming Apps
+ ### - Programming Apps
  1. **Atom by GitHub**
  ```bash
  flatpak install io.atom.Atom
@@ -213,13 +215,13 @@
  4. **Java** <br />
  Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
 
- #### - Entertainment Apps
+ ### - Entertainment Apps
  1. **Spotify for Music**
  **With Ad-block support**
  ```bash
  curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
- sudo apt-get update && sudo apt-get install spotify-client
+ sudo apt update && sudo apt install spotify-client
  ```
  If you are not a premium user but don't like ads, get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux). <br />  <br />
  ![spotify-adfree](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
@@ -231,13 +233,13 @@
  ```bash
  sudo apt install ubuntu-restricted-extras
  ```
- #### Others
+ ### Others
  #### uGet (Download Manager)
  ```bash
  sudo apt install aria2 uget
  ```
-
  #### Wine
+ ###### To run Windows programs on linux.
  1. Check if your system is 32-bit or 64-bit, If you already know just skip this part.
  ```bash
  lscpu
@@ -255,53 +257,69 @@
  ```bash
  wine --version
  ```
+ #### Synaptic Package manager
+ ```bash
+ sudo apt install synaptic
+ ```
+ #### Nautilus (admin)
+ **You can add a command *Open as Administrator* .**
+ ```bash
+ sudo apt install nautilus-admin && nautilus -q
+ ```
+ #### Timeshift
+ **Timeshift is a system restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots.**
+ ```bash
+ sudo apt install timeshift
+ ```
 
- #### - Debloating
- Calculator
+
+ ### - Debloating
+ ###### Remove useless stuff that you don't need.
+ - Calculator
  ```bash
  sudo apt remove --purge gnome-calculator && sudo apt autoremove
  ```
- Calendar
+ - Calendar
  ```bash
  sudo apt remove --purge gnome-calendar && sudo apt autoremove
  ```
- Character Map
+ - Character Map
  ```bash
  sudo apt remove --purge Gucharmap* && sudo apt autoremove
  ```
- Contacts
+ - Contacts
  ```bash
  sudo apt remove --purge gnome-contacts* && sudo apt autoremove
  ```
- Document Scanner
+ - Document Scanner
  ```bash
  sudo apt remove --purge sane* simple-scan && sudo apt autoremove
  ```
- Gnome Fonts
+ - Gnome Fonts
  ```bash
  sudo apt remove --purge gnome-font-viewer && sudo apt autoremove
  ```
- Gnome Help
+ - Gnome Help
  ```bash
  sudo apt remove --purge yelp* && sudo apt autoremove
  ```
- Gnome Power Manager
+ - Gnome Power Manager
  ```bash
  sudo apt remove --purge gnome-power-manager && sudo apt autoremove
  ```
- Pinyin (Only for Chinese users)
+ - Pinyin (Only for Chinese users)
  ```bash
  sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
  ```
- Vim
+ - Vim
  ```bash
  sudo apt remove --purge gvim* vim* && sudo apt autoremove
  ```
- Popsicle USB creator
+ - Popsicle USB creator
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
- Note - If you need a Live USB creator you can get [Etcher](https://www.balena.io/etcher/)
+ Alternative for Popsicle, [Etcher](https://www.balena.io/etcher/)
 
  ## 4. Important Tweaks
  ### Setting Tweaks

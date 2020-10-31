@@ -695,7 +695,7 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) <br />
- Reddit Page to post your queries and suggestions.
+ [Reddit Page](https://www.reddit.com/user/themagicalmammal/comments/jlpz1k/a_guide_to_everything_in_pop_os/) to post your queries and suggestions.
 
 ### Thanks for Suggestions
 1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.

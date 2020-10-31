@@ -363,7 +363,7 @@
  ![key](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/key.png)
  ![unen](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/unen.png) <br />
 
- ## 5. Optimizing Boot time
+ ## 5. Optimizing Boot time & Ram Management
  My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
  ![originalboottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/originalboottime.png)
 
@@ -378,6 +378,29 @@
  ```bash
  sudo apt remove --purge networkd-dispatcher
  ```
+ ### Disabling Unnessary Extensions
+ Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
+ The built-in extensions I use are -
+ ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png)
+ ##### The one's I have disabled are -
+ 1. Alt Tab: Raise First Window - Make Alt+Tab only raise the first window in group. By default Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
+ 2. Always show workspaces - Always show workspaces in overview
+ 3. Desktop Icons - Add icons to the desktop
+ 4. Pop Battery Icon Fix - Fixes the battery icon in Pop!_OS to correctly match the current battery level. (I use this only on my laptop)
+ 5. System76 Power Management - system76-power is a utility for managing graphics and power profiles. This helps if you have Hybrid or NVIDIA graphics. (I only use this on my laptop)
+
+ ### Disabling Pop Shop on Boot
+ Pop Shop always opens on startup of system there is a way to stop that. This also helps in saving some ram.
+ **Steps**
+ 1. Edit Appcenter deamon from opening it at start
+ ```bash
+ sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
+ ```
+ 2. Put # here before this line
+ ```bash
+ Exec=io.elemantry.appcenter -s
+ ```
+
  ### Masking and Disabling some useless services
  #### DISCLAIMER
  ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
@@ -631,7 +654,7 @@ clients to access image acquisition devices available on the localhost.
  ![overlay](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/overlay.png)
 
  ## 7. Bonus
- #### Among US for Free
+ #### Among US if you have Steam Glitches
  #### For everyone following this method, Among US is available for everyone in Steam for Linux. If you really like this game and want to show respect to developers, Please buy the Full version. I have only posted this method because Steam for Linux doesn't work well on my Desktop at all. So, I had to find a alternative instead of install Windows I had to chose this. And in no way I want to encourage piracy.
  **Steps**
  1. Install Wine (Go to Others Section in this repo)
@@ -650,5 +673,9 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  <img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />
-
  To post your quries and suggestions. Go to [this](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers/) redit page.
+
+### Thanks for Suggestions
+1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about extension & Pop Shop on boot.
+2. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention about opensource & Vivaldi vaapi.
+3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention about Firefox & chrome-based bug & idea about Disclaimer & reverting back to stock kernel.

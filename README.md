@@ -394,7 +394,12 @@
  ```bash
  Exec=io.elemantry.appcenter -s
  ```
-
+ ### Way to clear high buff/cache
+ Computer accumulates high buff/cache over time and make the user force reboot. To clear buff cache you can use this.
+ ```bash
+ free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h
+ ```
+ 
  ### Masking and Disabling some useless services
  #### DISCLAIMER
  ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
@@ -672,8 +677,8 @@ clients to access image acquisition devices available on the localhost.
  ./start.sh
  ```
 
- <img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />
- [Reddit Page](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers/) to post your queries and suggestions.
+ [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) <br />
+ [Reddit](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) Page to post your queries and suggestions.
 
 ### Thanks for Suggestions
 1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.

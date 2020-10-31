@@ -384,6 +384,23 @@ host.
  sudo systemctl disable switcheroo-control.service
  sudo systemctl mask switcheroo-control.service
  ```
+ - **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver, as well as an LLMNR and MulticastDNS resolver and responder.
+ 1. Disable & Mask the systemd-resolved service
+ ```bash
+ sudo systemctl stop systemd-resolved.service
+ sudo systemctl disable systemd-resolved.service
+ sudo systemctl mask systemd-resolved.service
+ ```
+ 2. Then put dns=default in the [main] section of
+ ```bash
+ sudo nano /etc/NetworkManager/NetworkManager.conf
+ ```
+ 3. Delete the symlink /etc/resolv.conf
+ ```bash
+ sudo rm /etc/resolv.conf
+ ```
+ 4. Restart
+
  - **Gpu-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your gpu.
  ```bash
  sudo systemctl disable gpu-manager.service
@@ -418,8 +435,8 @@ host.
  To get xanmod go [here](https://xanmod.org/)
  2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
  To get liquorix go [here](https://liquorix.net/) <br /> <br />
- Initial benchmarks on intel makes xanmod a winner whereas AMD hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br /> 
- 
+ Initial benchmarks on intel makes xanmod a winner whereas AMD hardware generally go better with liquorix. Also if you are having heating issues go for liquorix it has a better thermal response. I use xanmod normal because lts felt slow for me on both my pc & lappy. <br />
+
  **Note** - At this point this boots as fast as it can be.<br />
 
  ### Final Boot Time
@@ -527,9 +544,9 @@ host.
  ```bash
  echo "sudo wine Among\ Us.exe" > start.sh | chmod 777 start.sh
  ```
- 5. Open terminal inside the folder 
+ 5. Open terminal inside the folder
  ```bash
- ./start.sh 
+ ./start.sh
  ```
 ![startamong](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/startamong.jpg)
 ![killamong](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/killamong.jpg)

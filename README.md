@@ -196,9 +196,12 @@
  ```bash
  sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
+ Alternatives, <br />
+ 
+ **Open Office** <br />
+ Guide to install is [here](https://linuxhint.com/openoffice_installation_ubuntu/) <br />
 
- Alternative, **WPS Office** <br />
- Get the deb package [here](https://www.wps.com/)
+ **Since, WPS OFFICE is a chinese app there is a privacy concern for users using it so, current links have been removed because of that.**
 
  ### - Social Apps
  1. **Telegram** <br />

@@ -631,9 +631,8 @@ clients to access image acquisition devices available on the localhost.
  ![overlay](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/overlay.png)
 
  ## 7. Bonus
- #### Among US for Free (Without Steam)
- As we know that the only way we can get Among Us on Linux is with Steam which is paid. <br />
- Well, that's not it. We can run a Windows version which is free and for it, we need to install wine. <br /> <br />
+ #### Among US for Free
+ #### For everyone following this method, Among US is available for everyone in Steam for Linux. If you really like this game and want to show respect to developers, Please buy the Full version. I have only posted this method because Steam for Linux doesn't work well on my Desktop at all. So, I had to find a alternative instead of install Windows I had to chose this. And in no way I want to encourage piracy.
  **Steps**
  1. Install Wine (Go to Others Section in this repo)
  2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)

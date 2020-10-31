@@ -122,23 +122,32 @@
  Pop Os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
 
  ### - Browser
- I prefer Chrome & Vivaldi, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware.
-
- To remove Firefox
- ```bash
- sudo apt remove --purge firefox*
- ```
- 1. **Chrome**
+ I personally I prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br />
+ **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging chrome-based browsers, then non-chrome-based browsers can help you out.**
+ 
+ 1. **Chrome** 
  ```bash
  sudo apt install google-chrome-stable
  ```
- 2. **Vivaldi**
+ 2. **Vivaldi** [Chrome-based]
  ```bash
  wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
  sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
  sudo apt update && sudo apt install vivaldi-stable
  ```
+ 3. **Opera**
+ ```bash
+ sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
+ wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
+ sudo apt-get update
+ sudo apt-get install opera-stable
+  ```
 
+ To remove Firefox [Not Recommended]
+ ```bash
+ sudo apt remove --purge firefox*
+ ``` 
+ 
  ### - Email Client
  I don't use email client for me chrome is enough.
  ```bash
@@ -271,16 +280,16 @@
  ```
 
  ### - Debloating
- ###### Remove useless stuff that you don't need.
- - Calculator
+ ###### Remove useless stuff that you don't need. If you use this stuff don't remove theme.
+ - Calculator - you know what a calculator is, I generally use the chrome calculator directly.
  ```bash
  sudo apt remove --purge gnome-calculator && sudo apt autoremove
  ```
- - Calendar
+ - Calendar - I put this on a list because I never need the calender even on my phone
  ```bash
  sudo apt remove --purge gnome-calendar && sudo apt autoremove
  ```
- - Character Map
+ - Character Map - is a Unicode character map that allows you to select characters from a table and insert then in to a text string. I have no known use for it.
  ```bash
  sudo apt remove --purge Gucharmap* && sudo apt autoremove
  ```
@@ -316,8 +325,13 @@
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
- **Alternative for Popsicle,** [Etcher](https://www.balena.io/etcher/)
-
+ **Alternative for Popsicle,** [Etcher](https://www.balena.io/etcher/) <br />
+ #### Reverting
+ If you accidently removed any of them you can add them back by
+ ```bash
+ sudo apt install <appname>(No *)
+ ```
+ 
  ## 4. Important Tweaks
  ### Setting Tweaks
  #### Privacy Tweaks
@@ -327,7 +341,7 @@
  ![4](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/4.png)
  #### Over Amplification
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
- ### Disable annoying Keyring
+ ### Disable annoying keyring
  Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br />
  *There is an easy way to disable this*
  ```steps
@@ -352,6 +366,8 @@
  sudo apt remove --purge networkd-dispatcher
  ```
  ### Masking and Disabling some useless services
+ #### DISCLAIMER
+ ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM IF YOU DO NOT READ THIS CAREFULLY. PLEASE READ AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
  - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
  ```bash
  sudo systemctl disable ModemManager.service
@@ -389,6 +405,7 @@ clients to access image acquisition devices available on the localhost.
  sudo systemctl disable saned.service
  sudo systemctl mask saned.service
  ```
+  
  - **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool. (My system didn't suffer must be removing it but if yours does unmask and enable it. But if your system heats even a bit after removing this add this back.)
  ```bash
  sudo systemctl disable thermald.service

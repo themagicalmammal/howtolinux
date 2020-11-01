@@ -3,18 +3,21 @@
  These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 lappy with SSD and another one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over 5 months using pop on them both.
 
 ## 1 Installation
- While doing an install there are certain things you need to know if you want a faster boot. On my lappy, I select a clean install and let the interface do its job. While on my desktop I select an advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time your boot system mounts them which makes the boot slow.
+ While doing an install there are certain things you need to know if you want a faster boot. What I do is select Advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time your boot system mounts them which makes the boot slow.
 
  To create these 3 partitions:-
- - 512 MB for EFI boot
- - 4096/6144/8192 for Linux-swap (If you want)
+ - 512 MB for EFI boot (Enough even if you have a multi-boot system)
+ - 4096/6144/8192 for Linux-Swap (Not needed on a huge ram system)
  - Remaining for EXT4 system
 
 #### Q. Should I use Brtfs or Ext4?
-**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it and it now ships with Fedora 33. Also, I have started to use this on my lappy & desktop. I installed brtfs on my desktop & noticed that brtfs is surprisingly fast & now I don't know if this is the case with every distro, but on pop my desktop feels smoother compared to before
-- [Reference to Brtfs' Rise](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
+**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I have started to use this on both of my systems on pop. I installed brtfs on my desktop & noticed that brtfs is surprisingly fast. But, I don't know if this is the case with every distro, but on pop my desktop feels smoother compared to before
+
+- [Reference on Rise of Brtfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
-- [Reference to Benchmarks b/w File Systems](https://www.unixmen.com/review-ext4-vs-btrfs-vs-xfs/)
+
+##### How to brtfs on Pop?
+**Ans.** Doesn't work with clean install, you have to go to advanced partition select format brtfs either of gparted or installer.
 
 ## 2. Post Installation
  There are some basic things you need to do after installation.
@@ -45,8 +48,6 @@
  #### 3. Optimising Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br /> <br />
  ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
-
-
 
  - **Custom Resolution with Xrandr** </br>
  **Please read all the problems & bugs with this, so that you know what problems might come & how to fix them** <br />

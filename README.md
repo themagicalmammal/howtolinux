@@ -746,3 +746,4 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
 3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
 5. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and my misconception about recovery
+6. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel

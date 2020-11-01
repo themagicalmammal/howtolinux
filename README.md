@@ -707,4 +707,4 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
 ### Thanks for Suggestions
 1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 2. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chrome-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
-3. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi.
+3. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.

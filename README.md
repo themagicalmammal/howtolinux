@@ -11,11 +11,10 @@
  - Remaining for EXT4 system
 
 #### Q. Should I use Brtfs or Ext4?
-**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it and it now ships with Fedora 33. Also, I have started to use this on my lappy but not my desktop. Now there is a reason for that, initial benchmarks show that brtfs is slower than ext4 though brtfs has more advanced features than ext4. So In my opinion, if you have an older pc go for ext4 but if you have a newer one you can go for brtfs.
-
+**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it and it now ships with Fedora 33. Also, I have started to use this on my lappy & desktop. I installed brtfs on my desktop & noticed that brtfs is surprisingly fast & now I don't know if this is the case with every distro, but on pop my desktop feels smoother compared to before
+- [Reference to Brtfs' Rise](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 - [Reference to Benchmarks b/w File Systems](https://www.unixmen.com/review-ext4-vs-btrfs-vs-xfs/)
-- [Reference for How to brtfs on Pop os](https://mutschler.eu/linux/install-guides/pop-os-btrfs/)
 
 ## 2. Post Installation
  There are some basic things you need to do after installation.
@@ -527,29 +526,7 @@ clients to access image acquisition devices available on the localhost.
  
 **Note** - At this point this boots as fast as it can be.<br />
 
- ### Temporary Solution if your System creates problems with Custom Kernel
- 1. Open Nautilus in admin mode via Terminal
- ```bash
- sudo nautilus
- ```
- 2. Go to **efi partition > loader > Open loader.conf** <br /> <br />
-
- Edit this
- ```atom
- default Pop_OS-current
-  ```
- To this
- ```atom
- default Pop_OS-oldkern
-  ```
- 3. Reboot  <br />
- **Now you are back to your original kernel** <br />
- ###### To confirm this type
- ```bash
- uname -r
-  ```
-
- ### Removing the Custom Kernel Permanently
+ ### Getting rid of Custom Kernel
  1. First do the temporary solution
  2. Then, we will remove kernel apt modules <br /> <br />
  
@@ -574,17 +551,15 @@ clients to access image acquisition devices available on the localhost.
  ```bash
  sudo add-apt-repository ppa:damentz/liquorix
  ```
- 5. Cleaning out files <br />
- **After doing all this the systemd files still exist.** <br /> <br />
- 
- 6. **Steps to Clean out those files**
-  -  Open Nautilus in admin mode via Terminal
+ 5.Get the Name of the Kernel
  ```bash
- sudo nautilus
+ uname -r
  ```
-  - Go to efi paritions > EFI > Pop_OS------Somethinghuge----- > **Delete initrd.img vmlinuz.efi**
-  - Then, go to efi paritions > loader > entries > **Delete Pop_OS-current.conf**
-
+ 6. Remove the Kernel
+ ```bash
+ sudo apt-get remove <kernel name>
+ ```
+ 
  ### Final Boot Time
  ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)
 

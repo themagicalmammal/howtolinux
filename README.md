@@ -96,7 +96,7 @@ You can also get the maximize button but it's not that useful because double-cli
   #### [Problem] The resolution goes away after a reboot.
  **Ans -** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
  ```bash
- sudo gedit ~/.profile
+ nano ~/.profile
  ```
  ![profile](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/profile.png)
  
@@ -148,41 +148,47 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
 
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 
- 1. **Chrome**
+ **Chromium Based Browsers**
+ 1. **[Chrome](https://www.google.com/chrome/)** 
  ```bash
  sudo apt install google-chrome-stable
  ```
- 2. **Vivaldi** [Chromium-based]
+ 2. **[Vivaldi](https://vivaldi.com/)**
  ```bash
  wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
  sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
  sudo apt update && sudo apt install vivaldi-stable
  ```
- 3. **Opera**
+ 3. **[Opera](https://www.opera.com/)**
  ```bash
  sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
  wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
  sudo apt-get update
  sudo apt-get install opera-stable
   ```
-  4. **TOR**
+  **Non Chromium Based**
+  1. **[Firefox](https://www.mozilla.org/en-US/firefox/new/)** <br />
+  Comes pre-installed with Pop & Ubuntu.<br />
+  
+  2. **[TOR](https://www.torproject.org/download/)**
  ```bash
  sudo add-apt-repository ppa:micahflee/ppa && sudo apt update
  sudo apt install torbrowser-launcher
  ```
-  5. I have not listed **Chromium** since it needs snap to install. But it is a good option since we can get VAAPI on it with the help of third party patches.<br />
+ I have not listed **Chromium** since it needs snap to install.<br />
   
-  **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging Chromium-based browsers, then Non-Chromium-based browsers can help you out.** <br /> <br />
+  **You should always keep a Non-Chrome based browser to be on the safe side because in case of driver/library error which bugs Chromium-based browsers, Non-Chromium-based browsers can help you out.** <br /> <br />
  To remove Firefox (Not Recommended)
  ```bash
  sudo apt remove --purge firefox*
  ```
 
  ### - Email Client
- Chrome is good enough for me.
- **Geary** (A good option, Ships default with Pop)
+ Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.
+ 
+ **If you want to remove Geary**
  ```bash
- sudo apt remove --purge Geary* && sudo apt autoremove
+ sudo apt remove --purge geary* && sudo apt autoremove
  ```
 
  Alternatives,
@@ -296,20 +302,17 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  2. Install wine according to your architecture. <br />
  ```bash
- sudo apt install wine64
+ sudo apt install wine
  ```
- **Problem :** There is a problem with this as 64 bit doesn't allow you to run 32 bit apps. So to fix that. <br />
+ **For 64-bit system this command enables 32-bit support** <br />
  ```bash
  sudo dpkg --add-architecture i386
- ```
- For 32-bit
- ```bash
- sudo apt install wine32
  ```
  3. To check the version installed.
  ```bash
  wine --version
  ```
+ 
  **Notice about Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
  
  #### Synaptic Package manager
@@ -393,7 +396,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 
  ### Disable annoying Keyring
  #### This provides security for browsers on a autologin-based system.(Easy way to understand it)
- If you have a autologin system, whenever you open a browser(except firefox), the system asks for a key every time you open the browser, which is very annoying. <br /> <br />
+ If you have a autologin system, whenever you open a browser(except firefox), the system asks for a key every. <br /> <br />
  **Steps to Disable it** 
  ```atom
  App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
@@ -584,7 +587,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
 
  ### Getting rid of Custom Kernel
  **IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.**<br />
- 1. Removing the Kernel apt modules <br /> <br />
+ 1. Removing the Kernel apt modules <br />
 
  For XanMod
  ```bash
@@ -619,7 +622,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  ```
  7. Getting, remaining Kernel files 
  ```bash
- apt list --installed | grep "xanmod"/"liquorix"
+ apt list --installed *xanmod* *liquorix*
  ```
  8. Removing the remaining Kernel files
  ```bash
@@ -730,7 +733,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  ```
  4. What I do is create a file start.sh & run it.
  ```bash
- echo "wine Among\ Us.exe" > start.sh | chmod 777 start.sh
+ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
  ```
  5. Open terminal inside the folder
  ```bash
@@ -741,7 +744,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
   [Pop OS](https://www.reddit.com/r/pop_os/comments/jm1j5i/a_guide_to_setting_up_popubuntu/)/[Ubuntu](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/) to post your queries and suggestions.
 
 ### Thanks for Suggestions
-1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3).
+1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3).
 2. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.

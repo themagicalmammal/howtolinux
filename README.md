@@ -1,36 +1,36 @@
-# How to Pop/Ubuntu?
-###### This is done exclusively on Pop OS 20.10 but this should work on every Ubuntu-based Distros with Gnome/Unity/Budgie DE's.
- These are the set of tweaks I use on my pop os. I have 2 PC's one of them is 7th Gen i5 lappy with SSD and another one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over 5 months using pop on them both.
+# How to Popbuntu?
+###### This is done exclusively on Pop OS 20.10 but, this should work on every Ubuntu-based Distros.
+ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over five months using pop on them both.
 
 ## 1 Installation
- While doing an install there are certain things you need to know if you want a faster boot. What I do is select Advanced partition, now there is a reason for that. If I select clean install it creates extra partitions one is for recovery which I never use. Also if you keep these extra partitions every time your boot system mounts them which makes the boot slow.
+ While doing an installation, there are certain things you need to know if you want a faster boot. What I do is select Advanced partition, now there is a reason for that. If I select clean install, it will create extra partitions like recovery. These partitions mount each time you boot, which makes the boot process slow.
 
- To create these 3 partitions:-
+ To create these three partitions:-
  - 512 MB for EFI boot (Enough even if you have a multi-boot system)
- - 4096/6144/8192 for Linux-Swap (Not needed on a huge ram system)
+ - 4096/6144/8192 for Linux-Swap (Not needed if you have a huge ram)
  - Remaining for EXT4 system
 
 #### Q. Should I use Brtfs or Ext4?
-**Ans.** Depends, Now brtfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I have started to use this on both of my systems on pop. I installed brtfs on my desktop & noticed that brtfs is surprisingly fast. But, I don't know if this is the case with every distro, but on pop my desktop feels smoother compared to before
+**Ans.** It depends, As Brtfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Brtfs on my desktop & noticed that Brtfs is surprisingly fast. But, I do not know if this is the case with every distro.
 
 - [Reference on Rise of Brtfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 
-##### How to brtfs on Pop?
-**Ans.** Doesn't work with clean install, you have to go to advanced partition select format brtfs either of gparted or installer.
+##### How to Brtfs on Pop?
+**Ans.** Does not work with the clean install. You have to go to advanced partition select format Brtfs either of GParted or installer.
 
 ## 2. Post Installation
  There are some basic things you need to do after installation.
 
  - **Update your System** <br />
- *Get latest updates via terminal or pop shop.* <br />
+ *Get the latest updates via terminal or pop shop.* <br />
  For Terminal use
  ```bash
  sudo apt update && sudo apt upgrade && flatpak update
  ```
 
  - **Proprietary Drivers** <br />
- *You can get proprietary drivers directly from the Pop shop but you still get problems you can refer to a guide.*
+ *You can get proprietary drivers directly from the Pop shop. But, if you still get some bug, then refer to this guide.*
 
  1. [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br />
  2. [Guide for AMD](https://linuxconfig.org/how-to-install-the-latest-amd-radeon-drivers-on-ubuntu-18-04-bionic-beaver-linux#:~:text=In%20order%20to%20get%20the,the%20form%20of%20a%20tarball.)
@@ -41,28 +41,31 @@
  #### Tweaks I am using -
 
  #### 1. Minimize Button
- Minimise is an important button for gnome. I always wonder why they didn't add it. While I think you can live without it if you use the Super key a lot but for me, the minimize button is very useful. You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
+ Minimize is an important button for gnome. I always wonder why they did not add it. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
+
+You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
  ![gnome-minimise](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
  #### 2. Battery Percentage
  This option is also pretty useful but only for a lappy.<br>
- #### 3. Optimising Font
- I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with antialiasing to subpixel.<br /> <br />
+ #### 3. Optimizing Font
+ I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with anti aliasing to Subpixel.<br /> <br />
  ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
 
  - **Custom Resolution with Xrandr** </br>
  **Please read all the problems & bugs with this, so that you know what problems might come & how to fix them** <br />
- If your display supports higher refresh rate go for it. Because higher refresh rates are smoother. My display is capable for 120hz.<br /> <br />
+ If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.<br /> <br />
  ![set-of-refreshrates](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/set-of-refreshrates.png)
 
- ### To add custom resolution do these steps.
+ ### Custom Resolution
+ #### Steps
  **1. Check xrandr**  <br />
  You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
  ![xrandr](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/xrandr.png)
  <br /> <br />
  **2. Find resolution which will fit**  <br />
- My original maximum resolution is 1600 900 which is a 16:9 aspect ratio. So if I choose a different aspect ratio some part of my display will be blacked out. <br />
+ My original maximum resolution is 1600 900, which is a 16:9 aspect ratio. So if I choose a different aspect ratio, then some parts of my display will blackout. <br />
 
- So, I can go for 1920x1080 or 1536x864 <br />
+ So, I can go for 1920x1080 or 1792x1008 <br />
  *To find out which fits you best you can do tests by adding different resolutions*
  <br /> <br />
  **3. How to add?**
@@ -84,24 +87,23 @@
  ```
  ![addmode](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/addmode.png) <br />
  
-  #### [Problem] The resolution goes away after reboot.
- **Ans -** Add all the final lines to .profile so every time a session is created the lines will run and resolution will be automatically added.
+  #### [Problem] The resolution goes away after a reboot.
+ **Ans -** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
  ```bash
  sudo gedit ~/.profile
  ```
  ![profile](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/profile.png)
  
  #### [Problem] What about other refresh rates? <br />
- **Ans -** You have to experiment with cvt a bit to find which refresh rates should be.
- As my refresh rate is from 0 - 120. I did some experimentation and added some resolution. <br />
+ **Ans -** You have to experiment with cvt a bit to find which refresh rates should be. My refresh rate is from 60hz to 120hz. I did some experimentation and added some resolution. <br />
 
- Like if your refresh rate supports 120 you can directly do this.
+ Like if your display supports 120 hertz
  ```bash
  cvt 1920 1080 120
  ```
  <custom-120>
 
- Finally I added these resolutions
+ Finally, I added these resolutions
  ```bash
  xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
  xrandr --addmode eDP-1 "1920x1080_120.00"
@@ -117,20 +119,20 @@
  ![custom-resolution-final](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-resolution-final.png)
 
  #### [Problem] How to get rid of custom resolution?
- **Ans -** Simple if you have added to your .profile open it again and remove those lines and Reboot.
+ **Ans -** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
  
  #### [BUG] Problems regarding Hybrid Graphics Switching.
- **Ans -** If you have Hybrid or Multiple Graphics Cards your display name will change if you switch graphics. So keep in mind you have to change the xrandr --addmode <displayname> if you switch graphics.
+ **Ans -** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the xrandr --addmode <displayname> if you switch Graphics.
  
  ## 3. Preferred Apps
- Pop Os ships with a basic set of apps which generally every person uses but I don't use all of them and also I use some alternatives which I like better.
+ Pop has apps that you need. But, if you do not like them, you can also get alternatives.
 
  ### - Browser
- I personally prefer Chrome, as Chrome is the most popular browser also I have been using Chrome since probably 2012 and Vivaldi is the fastest browser and is optimized for older hardware which makes it fast on my old desktop. <br /> <br />
+Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. <br /> <br />
 
- **MENTION ABOUT OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also Vivaldi doesn't support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera which is also a partly open-source browser.** <br />
+ **MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also Vivaldi does not support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera as well.** <br />
 
- **Firefox & TOR are the only opensource browsers on this list. Meaning these are better alternatives if you are looking for privacy.**
+ **Firefox & TOR are the only open-source browsers on this list. Meaning these are better alternatives if you are looking for privacy.**
 
  1. **Chrome**
  ```bash
@@ -162,7 +164,7 @@
  ```
 
  ### - Email Client
- I don't use email client for me chrome is enough.
+ Chrome is good enough for me.
  ```bash
  sudo apt remove --purge Geary* && sudo apt autoremove
  ```
@@ -193,7 +195,7 @@
  ```
 
  ### - Office
- I directly use chrome extension for the office which you can see [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
+ I directly use Chrome extension for the office, which you can get [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
 
  Remove LibreOffice
  ```bash
@@ -204,7 +206,7 @@
  **Open Office** <br />
  Guide to install is [here](https://linuxhint.com/openoffice_installation_ubuntu/) <br />
 
- **Since, WPS OFFICE is a Chinese app there is a privacy concern for users using it so, current links have been removed because of that.**
+ **WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
 
  ### - Social Apps
  1. **Telegram** <br />
@@ -247,13 +249,13 @@
  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
  sudo apt update && sudo apt install spotify-client
  ```
- If you don't like ads, you can get [ad-free spotify](https://github.com/abba23/spotify-adblock-linux). <br /> 
- **But, if you like Spotify please buy the Premium, ad-free spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
+ If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br /> 
+ **But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
  ![spotify-adfree](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
  
  2. **Steam for Gaming**
  ```bash
- flatpak install steam #6th one
+ flatpak install com.valvesoftware.Steam
  ```
  
  3. **Multimedia Codecs**
@@ -267,8 +269,8 @@
  sudo apt install aria2 uget
  ```
  #### Wine
- ###### To run Windows programs on linux.
- 1. Check if your system is 32-bit or 64-bit, If you already know just skip this part.
+ ###### To run Windows programs on Linux.
+ 1. Check if your system is 32/64 bit Skip, this if you already know.
  ```bash
  lscpu
  ```
@@ -295,18 +297,18 @@
  sudo apt install nautilus-admin && nautilus -q
  ```
  #### Timeshift
- ###### Timeshift is a system restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots.
+ ###### Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
  ```bash
  sudo apt install timeshift
  ```
 
  ### - Debloating
- ###### Remove useless stuff that you don't need. If you use this stuff don't remove them. And at least read what it does before your remove them.
- - **Calculator** - you know what a calculator is, I generally use the chrome calculator directly.
+ ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
+ - **Calculator** - You know what a calculator is.
  ```bash
  sudo apt remove --purge gnome-calculator && sudo apt autoremove
  ```
- - **Calendar** - I put this on a list because I never need the calender even on my phone
+ - **Calendar** - I put this on a list because I never need the Calendar even on my phone
  ```bash
  sudo apt remove --purge gnome-calendar && sudo apt autoremove
  ```
@@ -338,34 +340,35 @@
  ```bash
  sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
  ```
- - **Vim** - Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. I removed this because I use nano/gedit/atom.
+ - **Vim** - Vim is a highly configurable text editor built to configure any kind of text very efficient fashion. I have removed this because I use Nano/Gedit/Atom.
  ```bash
  sudo apt remove --purge gvim* vim* && sudo apt autoremove
  ```
- - **Popsicle USB creator** - If you create USB's you should keep this tool but I am an old Etcher user and want to stick with it that's why I removed this.<br />
+ - **Popsicle USB creator** - If you create a live USB, you should keep this tool but, Etcher seems a better option.<br />
  **Get [Etcher](https://www.balena.io/etcher/)** <br />
  ```bash
  sudo apt remove --purge popsicle* && sudo apt autoremove
  ```
  
  ### Reverting
- If you accidently removed any of them you can add them back by
+ If you accidentally remove any, you can add them back by
  ```bash
  sudo apt install <appname>
  ```
  *App name doesn't require * symbol*
  ## 4. Important Tweaks
  ### Setting Tweaks
- #### - Privacy Tweaks
+ #### -- Privacy Tweaks
  ![1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/1.png)
  ![2](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/2.png)
  ![3](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/3.png)
  ![4](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/4.png)
- #### - Over Amplification
+ #### -- Over Amplification
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
+
  ### Disable annoying keyring
- #### While this disables annoying keyring every time you open a browser you have to keep in mind that this is also a privacy concern.
- Whenever you open Chrome/Vivaldi any browser the system asks for a key which according to me is very annoying. <br /> <br />
+ #### While this disables annoying keyring every time you open a browser, you have to keep in mind that this is also a privacy concern.
+ Whenever you open any browser, the system asks for a key, which is very annoying. <br /> <br />
  **Steps** 
  ```atom
  App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
@@ -377,28 +380,28 @@
  My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
  ![originalboottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/originalboottime.png)
 
- ### Disabling plymouth
+ ### Disabling Plymouth
  ```bash
  sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
  ```
  ![boottime1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/boottime1.png)
  
- ### Disabling Unnessary Extensions
+ ### Disabling Unnecessary Extensions
  Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
  The built-in extensions I use are - <br /> <br />
  ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png) 
  
- #### The one's I have disabled are -
- 1. **Alt-Tab**- Raise First Window - Make Alt+Tab only raise the first window in the group. By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application, but only raises the most recent window in the selected group
- 2. **Always show workspaces** - Always show workspaces in the overview
- 3. **Desktop Icons** - Add icons to the desktop
- 4. **Pop Battery Icon Fix** - Fixes the battery icon in Pop!_OS to correctly match the current battery level. (I use this only on my laptop)
- 5. **System76 Power Management** - system76-power is a utility for managing graphics and power profiles. This helps if you have Hybrid or NVIDIA graphics. (I only use this on my laptop)
+ #### I have disabled these
+ 1. **Alt-Tab** -  By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.
+ 2. **Always show workspaces** - Always show workspaces in the overview.
+ 3. **Desktop Icons** - Add icons to the desktop.
+ 4. **Pop Battery Icon Fix** - Fixes the battery icon to match the current battery level. (Useless for desktop pc)
+ 5. **System76 Power Management** - system76-power is a utility for managing graphics and power profiles. (Useful for hybrid and NVIDIA GPU)
 
  ### Disabling Pop Shop on Boot
  Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />
  **Steps**
- 1. Edit Appcenter deamon from opening it at start
+ 1. Edit App center daemon from opening it at start
  ```bash
  sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
  ```
@@ -419,12 +422,12 @@
  ```bash
  sudo apt remove --purge networkd-dispatcher
  ```
- - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you don’t have a mobile broadband interface — built-in, paired with a mobile phone via Bluetooth, or USB dongle — you don’t need this.
+ - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you do not have a mobile broadband interface, you do not need this.
  ```bash
  sudo systemctl disable ModemManager.service
  sudo systemctl mask ModemManager.service
  ```
- **Note** - If you are not using this and don't want wifi to disable wpa_supplicant.service.
+ **Note** - If you are not using this and don't want Wi-Fi to disable wpa_supplicant.service.
  - **Fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
  Disable thunderbolt_power <br />
  ```bash
@@ -440,14 +443,14 @@
  sudo systemctl disable fwupd.service
  sudo systemctl mask fwupd.service
  ```
-  - **Avahi-daemon** is supposed to provide zero-configuration network discovery and make it super-easy to find printers and other hosts on your network. I always disable it and don’t miss it.
+  - **Avahi-daemon** is supposed to provide zero-configuration network discovery and make it super-easy to find printers and other hosts on your network. I always disable it and do not miss it.
  ```bash
  sudo systemctl disable avahi-daemon.service
  sudo systemctl mask avahi-daemon.service
  ```
- - **AppArmor** [Unsafe to remove] is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
+ - **AppArmor** [Unsafe to remove] is a Linux kernel security module that allows the system administrator to restrict program capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
  - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
- **Apparmour has used my many apps like Chromium not to mention removing it is a security threat so please proceed carefully**
+ **Apparmour has used my many apps like Chromium not to mention removing it is a security threat, So please proceed carefully**
  ```bash
  sudo apt remove --purge apport* apparmor* && sudo apt autoremove
  ```
@@ -459,7 +462,7 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  - **Thermald** [Unsafe to remove]  daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
- **If your system heats after removing this even by a bit add it back**
+ **If your system heats after removing this even a bit, add it back**
  ```bash
  sudo systemctl disable thermald.service
  sudo systemctl mask thermald.service
@@ -469,7 +472,7 @@ clients to access image acquisition devices available on the localhost.
  sudo systemctl disable switcheroo-control.service
  sudo systemctl mask switcheroo-control.service
  ```
- - **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver, as well as an LLMNR and MulticastDNS resolver and responder.
+ - **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
  1. Disable & Mask the systemd-resolved service
  ```bash
  sudo systemctl stop systemd-resolved.service
@@ -495,7 +498,7 @@ clients to access image acquisition devices available on the localhost.
  ```bash
  sudo systemctl mask udisks2.service
  ```
- - **System76-power** power controls for lappy not required on a desktop pc.
+ - **System76-power** Power Controls for lappy not required on a desktop PC.
  ```bash
  sudo systemctl disable system76-power.service
  sudo systemctl mask system76-power.service
@@ -515,48 +518,49 @@ clients to access image acquisition devices available on the localhost.
  ![prekernelbootime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/prekernelbootime.png)
 
  ### Custom kernel
- Custom Kernels are known and used by fewer people, but these kernels do add a significant boost to performance and battery.
- 1. **Xanmod** is the more popular choice among intel based hardware. It is built to provide a stable, responsive, and smooth desktop experience. <br />
- To get Xanmod go [here](https://xanmod.org/)
+ Custom Kernels are known and used by fewer people, but these kernels add a significant boost to performance and battery.
+ 1. **Xanmod** is the more popular choice among intel based hardware. It provides a stable, responsive, and smooth desktop experience. <br />
+To get Xanmod go [here](https://xanmod.org/)
  2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
- To get Liquorix go [here](https://liquorix.net/) <br /> <br />
- Initial benchmarks on intel make Xanmod a winner whereas AMD hardware generally goes better with Liquorix. Also if you are having heating issues go for Liquorix it has a better thermal response. I use Xanmod normal because lts release felt slow for me on both my pc & lappy. <br />
+To get Liquorix go [here](https://liquorix.net/) <br /> <br />
+
+ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally goes better with Liquorix. Also, if you are having heating issues go for Liquorix for a better thermal response. I use Xanmod normal because long term release felt slow for me on both my PC & lappy. <br />
 
  [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1) <br />
  [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) <br />
  
-**Note** - At this point this boots as fast as it can be.<br />
+**Note** - At this point, this boots as fast as it can be.<br />
 
  ### Getting rid of Custom Kernel
- 1. First do the temporary solution
- 2. Then, we will remove kernel apt modules <br /> <br />
- 
+ 1. Removing the Kernel apt modules <br /> <br />
+
  For XanMod
  ```bash
  sudo apt remove --purge linux-xanmod && sudo apt-get --purge autoremove
  ``` 
+
  For Liquorix
  ```bash
  sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 && sudo apt-get --purge autoremove
  ```
- 3. Remove FQ-PIE Queue Discipline for systemd only for XanMod users
+ 2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
  ```bash
  sudo rm /etc/sysctl.d/90-override.conf
  ```
- 4. Finally, removing there repositories <br />
+ 4. Removing  the Kernel Repos <br />
  
  For XanMod <br />
- Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and Uninstall it. <br />
+ Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and uninstall it. <br />
  
  For Liquorix <br />
  ```bash
  sudo add-apt-repository ppa:damentz/liquorix
  ```
- 5.Get the Name of the Kernel
+ 5. Getting, Name of the Kernel
  ```bash
  uname -r
  ```
- 6. Remove the Kernel
+ 6. Removing the Kernel
  ```bash
  sudo apt-get remove <kernel name>
  ```
@@ -566,22 +570,22 @@ clients to access image acquisition devices available on the localhost.
 
  ## 6. Miscellaneous
  ### Get latest Ad-Hosts
- I use **Steven Black** Adhosts for ad-blocking the whole system without any other extra app. This blocks basic ads but not Youtube or Spotify ads. <br />
+ I use **Steven Black** Ad-Hosts for ad-blocking the whole system without any other extra app. This blocks basic ads but not YouTube or Spotify ads. <br />
  To get it go [here](https://github.com/StevenBlack/hosts). <br />
 
- I use **Unified hosts + fakenews + gambling + porn** <br />
+ I use **Unified hosts + fake news + gambling + porn** <br />
 
  #### Q. How to?
  **Ans.** Steps -
- 1. Go here get a certain file open its link.
- 2. Save as text to Downloads.
- 3. Rename hosts.txt to hosts.
- 4. Open terminal type
+ 1. Get a host
+ 2. Save as text to Downloads
+ 3. Rename hosts.txt to hosts
+ 4. Open terminal & type
  ```bash
  sudo nautilus
  ```
- 5. Go to filesystem root > home > your username > Downloads > copy the host's file > go back to filesystem root > etc - paste it here, it will ask to replace do so.
- Note - If it doesn't ask to replace you went wrong somewhere.
+ 5. Go to file system root > Home > Your Username > Downloads > Copy the Hosts file > Go back to Root > Etc - Then Paste it here, it will ask to Replace, do so.
+ Note - If it does not ask you to replace, you might have gone wrong somewhere.
 
  ### Clean your System
  **Terminal**
@@ -592,7 +596,7 @@ clients to access image acquisition devices available on the localhost.
  sudo apt-get autoclean
  ```
  **Tool** <br />
- I use bleachbit because it is good to remove unnecessary junk from your computer.
+ I use Bleachbit because it is good to remove unnecessary junk from your computer.
  ```bash
  sudo apt install bleachbit
  ```
@@ -601,13 +605,13 @@ clients to access image acquisition devices available on the localhost.
  **Note**:- After doing this the first boot might be slow don't worry it's perfectly normal.
 
  ### Night Light
- Night light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it "unsleepy" that's why we use a night light.<br /> <br />
+ Night Light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it *unsleepy* that's why we use a night light.<br /> <br />
  **Steps ->** Settings > Display > Night light <br />
  *You can also select the timing which fits your sleep cycle.*<br /> <br />
  ![nightlight](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/nightlight.png)
 
  ### Tile Windows
- The beautiful thing I like about Pop-OS is it's feature rich environment to increase work efficiency.<br /> <br />
+ The beautiful thing I like about Pop OS is its feature rich environment to increase work efficiency.<br /> <br />
  ![Tile-windows](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/Tile-windows.png)
 
  ### Customization
@@ -632,28 +636,28 @@ clients to access image acquisition devices available on the localhost.
  Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 
  #### 5. Place the theme in .themes & the icons in .icons in Home.
- #### 6. In Gnome-tweak-tool select your theme
+ #### 6. In the Gnome tweak tool, Select your theme.
 
 **Tip** - How to fix terminal theme
- 1. Go to Preferences
- 2. Add Profiles
- 3. Name it bigsur
- 3. Go to colors, then select *choose use colors from system theme*
- 4. Set bigsur default
- 5. Close and reopen the terminal
+ 1. Go to Preferences.
+ 2. Add Profiles.
+ 3. Name it Big_Sur.
+ 3. Go to colors, then select *choose use colors from system theme*.
+ 4. Set Big_Sur default.
+ 5. Close and reopen the terminal.
 
 **Tip** - How to fix gedit/text-editor theme
- 1. Go to Preferences
- 2. Go to Font & Colors
- 3. Select Color Scheme - Classic <br />
+ 1. Go to Preferences.
+ 2. Go to Font & Colors.
+ 3. Select Color Scheme - Classic. <br />
 
  ![bigsurlikelook](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/bigsurlikelook.png)
  #### 7. Add Activity Hot Corner & Format time.
  ![overlay](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/overlay.png)
 
  ## 7. Bonus
- #### Among US if you have Steam Glitches
- #### For everyone following this method, Among US is available for everyone in Steam for Linux. If you really like this game and want to show respect to developers, Please buy the Full version. I have only posted this method because Steam for Linux doesn't work well on my Desktop at all. So, I had to find an alternative instead of install Windows I had to chose this. And in no way do I want to encourage piracy.
+ #### Among Us if Steam Glitches
+ #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated edition, and in no way, I want to encourage piracy.
  **Steps**
  1. Install Wine (Go to Others Section in this repo)
  2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
@@ -670,10 +674,10 @@ clients to access image acquisition devices available on the localhost.
  ./start.sh
  ```
 
- [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/r/pop_os/comments/jlfwd4/created_a_pop_os_guide_for_new_comers) <br />
- [Reddit Page](https://www.reddit.com/user/themagicalmammal/comments/jlpz1k/a_guide_to_everything_in_pop_os/) to post your queries and suggestions.
+ <!---<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" /> <br />
+ Reddit Page to post your queries and suggestions.--->
 
 ### Thanks for Suggestions
 1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
-2. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention about opensource & Vivaldi vaapi.
-3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention about Firefox & Chrome-based bug & Idea about Disclaimer & Reverting back to stock kernel.
+2. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chrome-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
+3. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi.

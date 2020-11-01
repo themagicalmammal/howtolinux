@@ -606,13 +606,18 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  ```bash
  sudo add-apt-repository ppa:damentz/liquorix
  ```
+ **IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN KILL YOUR SYSTEM**
  5. Getting, Name of the Kernel
  ```bash
  uname -r
  ```
- 6. Removing the Kernel
+ 6. Remove other Kernel files 
  ```bash
- sudo apt-get remove <kernel name>
+ apt list --installed | grep "xanmod"/"liquorix"
+ ```
+ 7. Removing the Kernel
+ ```bash
+ sudo apt-get remove <kernel name> <kernel files>
  ```
  [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
  

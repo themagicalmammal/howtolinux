@@ -578,10 +578,12 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
 
  [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1) <br />
  [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) <br />
+ [Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (It is not in English but you will get the point.) <br />
  
 **Note** - At this point, this boots as fast as it can be.<br />
 
  ### Getting rid of Custom Kernel
+ **IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.**<br />
  1. Removing the Kernel apt modules <br /> <br />
 
  For XanMod
@@ -606,19 +608,24 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  ```bash
  sudo add-apt-repository ppa:damentz/liquorix
  ```
- **IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN KILL YOUR SYSTEM**
- 5. Getting, Name of the Kernel
+ 
+ 5. Getting, name of the Kernel
  ```bash
  uname -r
  ```
- 6. Remove other Kernel files 
+ 6. Removing the Kernel
+ ```bash
+ sudo apt-get remove <kernel name>
+ ```
+ 7. Getting, remaining Kernel files 
  ```bash
  apt list --installed | grep "xanmod"/"liquorix"
  ```
- 7. Removing the Kernel
+ 8. Removing the remaining Kernel files
  ```bash
- sudo apt-get remove <kernel name> <kernel files>
+ sudo apt-get remove <name of kernel files>
  ```
+ 
  [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
  
  ### Final Boot Time

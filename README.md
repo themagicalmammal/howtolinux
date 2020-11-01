@@ -564,6 +564,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  ```bash
  sudo apt-get remove <kernel name>
  ```
+ [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
  
  ### Final Boot Time
  ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)

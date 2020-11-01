@@ -12,10 +12,10 @@
  - Remaining for EXT4 system <br />
  
  **What about swap?** <br />
- **Note-** If you have a strong hardware with huge ram then you don't need ram but if you want you can create a swap file. <br />
+ **Note-** If you have a strong hardware with huge ram then you don't need swap but if you still want you can create a swap file. <br />
  There are two ways of getting swap <br />
-  - General Method - creating a swap partition (linux-swap) of lets just say size 4096 MB (should be from 4096 to 8192 MB) <br />
-  - Swap File - Well this is a relatively new concept but you can create a swap file & use it, this is done after installation. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap. And best part is you can resize this and remove this whenever you want to. To learn how to do so refer [this](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/) guide. <br />
+  - General Method - creating a swap partition (linux-swap) of lets just say size 4096 MB (should be from 1024 to 8192 MB) <br />
+  - Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. To learn how to do so refer [this](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/). <br />
   
  **A thought about Encryption** <br />
  Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
@@ -750,7 +750,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
   [Pop OS](https://www.reddit.com/r/pop_os/comments/jm1j5i/a_guide_to_setting_up_popubuntu/)/[Ubuntu](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/) to post your queries and suggestions.
 
 ### Thanks for Suggestions
-1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & swap file.
+1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & Swap file.
 2. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.

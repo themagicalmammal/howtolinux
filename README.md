@@ -3,18 +3,25 @@
  These are the set of tweaks I use on my Pop OS. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over five months using pop on them both.
 
 ## 1 Installation
- While doing an installation, there are certain things you need to know if you want a faster boot. What I do is select Advanced partition, now there is a reason for that. If I select clean install, it will create extra partitions like recovery. These partitions mount each time you boot, which makes the boot process slow.
+**Only for Advanced Users** <br />
+ If you are on a disk space crunch you can follow these method. I am a minimalist and I never use a recovery partition. But it is recommended to keep Recovery partition to be on the safe side. 
 
- To create these three partitions:-
+ Partitions I create:-
  - 512 MB for EFI boot (Enough even if you have a multi-boot system)
  - 4096/6144/8192 for Linux-Swap (Not needed if you have a huge ram)
- - Remaining for EXT4 system
+ - Remaining for EXT4 system <br />
+ 
+ **A thought about Encryption** <br />
+ Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
 #### Q. Should I use Brtfs or Ext4?
 **Ans.** It depends, As Brtfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Brtfs on my desktop & noticed that Brtfs is surprisingly fast. But, I do not know if this is the case with every distro.
 
 - [Reference on Rise of Brtfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
+
+#### Q. What about ZFS?
+**Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article.
 
 ##### How to Brtfs on Pop?
 **Ans.** Does not work with the clean install. You have to go to advanced partition select format Brtfs either of GParted or installer.
@@ -30,10 +37,8 @@
  ```
 
  - **Proprietary Drivers** <br />
- *You can get proprietary drivers directly from the Pop shop. But, if you still get some bug, then refer to this guide.*
-
- 1. [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br />
- 2. [Guide for AMD](https://linuxconfig.org/how-to-install-the-latest-amd-radeon-drivers-on-ubuntu-18-04-bionic-beaver-linux#:~:text=In%20order%20to%20get%20the,the%20form%20of%20a%20tarball.)
+ *You can get proprietary drivers directly from the Pop/Ubuntu Shop or Terminal.* <br />
+ [For NVIDIA Problems](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br />
  
  - **Gnome Tweaks**
  ```bash
@@ -128,7 +133,7 @@ You can also get the maximize button but it's not that useful because double-cli
  ## 3. Preferred Apps
  Pop has apps that you need. But, if you do not like them, you can also get alternatives.
  
- ### - Snap Vs Flatpak (Package Manager)
+ ### - Snap Vs Flatpak (Package Manager except apt,dpkg)
  Snap can incorporate more apps than Flatpak. It runs how the developer intended. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
  
  [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) <br />
@@ -137,15 +142,17 @@ You can also get the maximize button but it's not that useful because double-cli
  ### - Browser
 Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. <br /> <br />
 
- **MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also Vivaldi does not support [video hardware acceleration](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera as well.** <br />
+ **MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also these browsers do not support [VAAPI](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera as well.** <br />
 
- **Firefox & TOR are the only open-source browsers on this list. Meaning these are better alternatives if you are looking for privacy.**
+ **Firefox & TOR are the only open-source browsers on this list. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI. ** <br />
+
+To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 
  1. **Chrome**
  ```bash
  sudo apt install google-chrome-stable
  ```
- 2. **Vivaldi** [Chrome-based]
+ 2. **Vivaldi** [Chromium-based]
  ```bash
  wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
  sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
@@ -163,8 +170,9 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  sudo add-apt-repository ppa:micahflee/ppa && sudo apt update
  sudo apt install torbrowser-launcher
  ```
-
-  **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging chrome-based browsers, then non-chrome-based browsers can help you out.** <br /> <br />
+  5. I have not listed **Chromium** since it needs snap to install. But it is a good option since we can get VAAPI on it with the help of third party patches.<br />
+  
+  **You should keep Firefox or a non-chrome based browser to be on the safe side because in case of driver/library error bugging Chromium-based browsers, then Non-Chromium-based browsers can help you out.** <br /> <br />
  To remove Firefox (Not Recommended)
  ```bash
  sudo apt remove --purge firefox*
@@ -172,6 +180,7 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
 
  ### - Email Client
  Chrome is good enough for me.
+ **Geary** (A good option, Ships default with Pop)
  ```bash
  sudo apt remove --purge Geary* && sudo apt autoremove
  ```
@@ -204,13 +213,13 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  ### - Office
  I directly use Chrome extension for the office, which you can get [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
 
- Remove LibreOffice
+ To remove LibreOffice
  ```bash
  sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
  Alternatives, <br />
 
- **Open Office** <br />
+ **Open Office** (LibreOffice is a way better option) <br />
  Guide to install is [here](https://linuxhint.com/openoffice_installation_ubuntu/) <br />
 
  **WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
@@ -262,7 +271,11 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  
  2. **Steam for Gaming**
  ```bash
- flatpak install com.valvesoftware.Steam
+ sudo apt install steam
+ ```
+ If it doesn't work, turn on multiverse.
+ ```bash
+ sudo add-apt-repository multiverse && sudo apt update
  ```
  
  3. **Multimedia Codecs**
@@ -282,9 +295,12 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  lscpu
  ```
  2. Install wine according to your architecture. <br />
- For 64-bit
  ```bash
  sudo apt install wine64
+ ```
+ **Problem :** There is a problem with this as 64 bit doesn't allow you to run 32 bit apps. So to fix that. <br />
+ ```bash
+ sudo dpkg --add-architecture i386
  ```
  For 32-bit
  ```bash
@@ -294,6 +310,8 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  ```bash
  wine --version
  ```
+ **Notice about Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
+ 
  #### Synaptic Package manager
  ```bash
  sudo apt install synaptic
@@ -321,7 +339,7 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  ```
  - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert them into a text string. I have no known use for it.
  ```bash
- sudo apt remove --purge Gucharmap* && sudo apt autoremove
+ sudo apt remove --purge gucharmap* && sudo apt autoremove
  ```
  - **Contacts** - Gnome contacts tool important for a work pc.
  ```bash
@@ -373,10 +391,10 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  #### -- Over Amplification
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
 
- ### Disable annoying keyring
- #### While this disables annoying keyring every time you open a browser, you have to keep in mind that this is also a privacy concern.
- Whenever you open any browser, the system asks for a key, which is very annoying. <br /> <br />
- **Steps** 
+ ### Disable annoying Keyring
+ #### This provides security for browsers on a autologin-based system.(Easy way to understand it)
+ If you have a autologin system, whenever you open a browser(except firefox), the system asks for a key every time you open the browser, which is very annoying. <br /> <br />
+ **Steps to Disable it** 
  ```atom
  App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
  ```
@@ -696,11 +714,11 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
  3. To run it type
  ```bash
- sudo wine Among\ Us.exe
+ wine Among\ Us.exe
  ```
  4. What I do is create a file start.sh & run it.
  ```bash
- echo "sudo wine Among\ Us.exe" > start.sh | chmod 777 start.sh
+ echo "wine Among\ Us.exe" > start.sh | chmod 777 start.sh
  ```
  5. Open terminal inside the folder
  ```bash
@@ -711,6 +729,8 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  Reddit Page to post your queries and suggestions.--->
 
 ### Thanks for Suggestions
-1. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
-2. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chrome-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
-3. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
+1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3).
+2. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
+3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
+4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
+5. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and my misconception about recovery

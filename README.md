@@ -406,7 +406,7 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  sudo systemctl restart gdm3
  ```
  4. Then select it in login <br />
- ![loginwayland](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/loginwayland.png)
+ ![wayland](https://www.maketecheasier.com/assets/uploads/2018/03/ubuntu-select-display-server-featured-800x400.jpg.webp) 
  5. To confirm (Output: wayland)
   ```bash
  echo $XDG_SESSION_TYPE

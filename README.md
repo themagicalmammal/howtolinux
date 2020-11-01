@@ -34,6 +34,7 @@
 
  1. [Guide for NVIDIA](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br />
  2. [Guide for AMD](https://linuxconfig.org/how-to-install-the-latest-amd-radeon-drivers-on-ubuntu-18-04-bionic-beaver-linux#:~:text=In%20order%20to%20get%20the,the%20form%20of%20a%20tarball.)
+ 
  - **Gnome Tweaks**
  ```bash
  sudo apt install gnome-tweaks
@@ -381,10 +382,35 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
  ![originalboottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/originalboottime.png)
 
  ### Disabling Plymouth
+ **For Pop OS** <br />
  ```bash
  sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
  ```
+ **For Ubuntu** <br />
+ Go through [this](https://www.kevin-custer.com/blog/disabling-the-plymouth-boot-screen-in-ubuntu-20-04/) guide. <br /> <br />
  ![boottime1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/boottime1.png)
+ 
+ 
+ ### Getting Wayland a default display manager
+ **BEFORE YOU DO THIS, WAYLAND IS BETTER THAN Xorg ONLY IS SOME CASES, DON'T DO THIS IF YOU HAVE NVIDIA GRAPHICS AND SWITCH BACK TO Xorg IF WAYLAND GLITCHES**
+ 1. Edit the /etc/gdm3/custom.conf to either disable or enable Wayland.
+  ```bash
+ sudo nano /etc/gdm3/custom.conf
+ ```
+ 2. Add # before this line
+   ```atom
+ WaylandEnable=false
+ ```
+ 3. Then
+  ```bash
+ sudo systemctl restart gdm3
+ ```
+ 4. Then select it in login <br />
+ ![loginwayland](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/loginwayland.png)
+ 5. To confirm (Output: wayland)
+  ```bash
+ echo $XDG_SESSION_TYPE
+ ```
  
  ### Disabling Unnecessary Extensions
  Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>

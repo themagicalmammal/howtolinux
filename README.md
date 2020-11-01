@@ -127,7 +127,13 @@ You can also get the maximize button but it's not that useful because double-cli
  
  ## 3. Preferred Apps
  Pop has apps that you need. But, if you do not like them, you can also get alternatives.
-
+ 
+ ### - Snap Vs Flatpak (Package Manager)
+ Snap can incorporate more apps than Flatpak. It runs how the developer intended. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
+ 
+ [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) <br />
+ [Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/)
+ 
  ### - Browser
 Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. <br /> <br />
 

@@ -15,7 +15,9 @@
  **Note-** If you have a strong hardware with huge ram then you don't need swap but if you still want you can create a swap file. <br />
  There are two ways of getting swap <br />
   - General Method - creating a swap partition (linux-swap) of lets just say size 4096 MB (should be from 1024 to 8192 MB) <br />
-  - Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. To learn how to do so refer [this](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/). <br />
+
+  - Swap File (Might have errors) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. To learn how to do so refer [this](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/). <br />
+  **Pop users sometimes have problem with these method. So you might have to do some testing.**<br />
   
  **A thought about Encryption** <br />
  Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.

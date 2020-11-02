@@ -33,7 +33,7 @@
 **Ans.** Does not work with the clean install. You have to go to Advanced partition select format Btrfs either of GParted or installer. <br />  <br />
 If you can't find btrfs in GParted install this,
  ```bash
- sudo apt btrfs-progs
+ sudo apt install btrfs-progs
  ```
  
 ## 2. Post Installation

@@ -725,6 +725,14 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  - [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
  - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
  - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
+ - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) <br /> <br />
+ ![dashtodock](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/dashtodock.png)
+ - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />
+ ![dashtopanel](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/dashtopanel.png)
+ To get the start button I [have](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/start.png). <br />
+ **Only if you get either of the Dash** <br />
+ - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
+ 
  #### 3. Left Titlebar buttons
  **Steps ->** GNOME Tweaks > Windows Titlebar > **Left** <br />
  **Note:-** This glitches the gnome-tweak-tool for some reason don't worry about it and increase the size of the window.

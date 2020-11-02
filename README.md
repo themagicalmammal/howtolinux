@@ -402,7 +402,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  *App name doesn't require * symbol*
  ## 4. Important Tweaks
- ### Setting Tweaks
+ ### Settings
  #### -- Privacy Tweaks
  ![1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/1.png)
  ![2](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/2.png)
@@ -410,7 +410,10 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ![4](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/4.png)
  #### -- Over Amplification
  ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
-
+ #### -- Accessibility
+ 1. Disable Cursor blinking, this doesn't save any resources, this is just a choice.
+ 2. Optimise repeat keys speed <br /> <br />
+ ![repeatkeys](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/repeatkeys.png)
  ### Disable annoying Keyring
  #### This provides security for browsers on a autologin-based system.(Easy way to understand it)
  If you have a autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />

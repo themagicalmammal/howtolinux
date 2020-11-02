@@ -237,7 +237,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
  Alternatives, <br />
- **Free Office** (If you just moved from Windows and need something like MS-Office) <br />
+ **Free Office** (Something like MS-Office) <br />
  Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
  
  **Open Office** (LibreOffice is a way better option) <br />
@@ -349,7 +349,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
  - **Calculator** - You know what a calculator is.
  ```bash
- sudo apt remove --purge gnome-calculator && sudo apt autoremove
+ sudo apt remove --purge gnome-calculator
  ```
  - **Calendar** - I put this on a list because I never need the Calendar even on my phone
  ```bash
@@ -365,11 +365,11 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  - **Document Scanner** - Important tool for a work pc.
  ```bash
- sudo apt remove --purge sane* simple-scan && sudo apt autoremove
+ sudo apt remove --purge sane* simple-scan
  ```
  - **Gnome Fonts** - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
  ```bash
- sudo apt remove --purge gnome-font-viewer && sudo apt autoremove
+ sudo apt remove --purge gnome-font-viewer
  ```
  - **Gnome Help** - Useful for newcomers
  ```bash
@@ -377,7 +377,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  - **Gnome Power Manager** - can show historical and current battery information and programs waking up that use power. I never use it.
  ```bash
- sudo apt remove --purge gnome-power-manager && sudo apt autoremove
+ sudo apt remove --purge gnome-power-manager
  ```
  - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
  ```bash
@@ -390,7 +390,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  - **Popsicle USB creator** - If you create a live USB, you should keep this tool but, Etcher seems a better option.<br />
  **Get [Etcher](https://www.balena.io/etcher/)** <br />
  ```bash
- sudo apt remove --purge popsicle* && sudo apt autoremove
+ sudo apt remove --purge popsicle*
  ```
  
  ### Reverting

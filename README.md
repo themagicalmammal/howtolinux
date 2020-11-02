@@ -44,7 +44,7 @@
 
  - **Proprietary Drivers** <br />
  *You can get proprietary drivers directly from the Pop/Ubuntu Shop or Terminal.* <br />
- [For NVIDIA Problems](https://askubuntu.com/questions/61396/how-do-i-install-the-nvidia-drivers) <br />
+ *If you get issues with NVIDIA get the NVIDIA iso.*<br />
  
  - **Gnome Tweaks**
  ```bash

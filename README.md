@@ -608,7 +608,9 @@ clients to access image acquisition devices available on the localhost.
  ### Custom kernel
  Custom Kernels are known and used by fewer people, but these kernels add a significant boost to performance and battery.
  1. **Xanmod** is the more popular choice among intel based hardware. It provides a stable, responsive, and smooth desktop experience. <br />
-To get Xanmod go [here](https://xanmod.org/)
+To get Xanmod go [here](https://xanmod.org/)  <br />
+While installing this don't forget to add, **Setting the FQ-PIE Queuing Discipline**. <br />
+
  2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
 To get Liquorix go [here](https://liquorix.net/) <br /> <br />
 

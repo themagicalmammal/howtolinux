@@ -425,6 +425,16 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  Go through [this](https://www.kevin-custer.com/blog/disabling-the-plymouth-boot-screen-in-ubuntu-20-04/) guide. <br /> <br />
  ![boottime1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/boottime1.png)
  
+ ### EarlyOOM
+ It is a cool new feature enabled in Fedora 33. What do you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for the heavy usage of old and new hardware alike. It only consumes 0.5 to 2 MB in the background. <br /> <br />
+ To install it 
+ ```bash
+ sudo apt install earlyoom
+ ```
+ To check it's status
+ ```bash
+ systemctl status earlyoom
+ ```
  
  ### Getting Wayland a default display manager
  **BEFORE YOU DO THIS, WAYLAND IS BETTER THAN Xorg ONLY IS SOME CASES, DON'T DO THIS IF YOU HAVE NVIDIA GRAPHICS AND SWITCH BACK TO Xorg IF WAYLAND GLITCHES**

@@ -438,8 +438,10 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ``` 
  <br />
  
- ### Getting Wayland a default display manager
- **BEFORE YOU DO THIS, WAYLAND IS BETTER THAN Xorg ONLY IS SOME CASES, DON'T DO THIS IF YOU HAVE NVIDIA GRAPHICS AND SWITCH BACK TO Xorg IF WAYLAND GLITCHES**
+ ### Wayland (Display Manager)
+ **Before you do this, Please read what Wayland is** <br />
+ Wayland is a display manager. X.org is the default display manager. But, X.org is old and is very bloated, thus uses more resources. So in this way, Wayland can be a better option. But, Wayland is a newer display manager and has many bugs, and one of them being **NVIDIA**, it glitches a lot. So, if you have an NVIDIA GPU, Wayland is a bad option. Also, if you don't have NVIDIA GPU, still there may be bugs, so if you experience bugs/glitches please get rid of it(Remove #).
+ 
  1. Edit the /etc/gdm3/custom.conf to either disable or enable Wayland.
   ```bash
  sudo nano /etc/gdm3/custom.conf

@@ -402,13 +402,13 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 
  ### Disable annoying Keyring
  #### This provides security for browsers on a autologin-based system.(Easy way to understand it)
- If you have a autologin system, whenever you open a browser(except firefox), the system asks for a key every. <br /> <br />
+ If you have a autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
  **Steps to Disable it** 
  ```atom
  App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
  ```
- ![key](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/key.png)
- ![unen](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/unen.png) <br />
+ ![key](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/chngpass.png)
+ ![unen](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/disablekeyring.png) <br />
 
  ## 5. Optimizing Boot time & Ram Management
  My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
@@ -439,7 +439,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  sudo systemctl restart gdm3
  ```
  4. Then select it in login <br />
- ![wayland](https://www.maketecheasier.com/assets/uploads/2018/03/ubuntu-select-display-server-featured-800x400.jpg.webp) 
+ ![wayland](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/wayland.png) 
  5. To confirm (Output: wayland)
   ```bash
  echo $XDG_SESSION_TYPE

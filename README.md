@@ -26,10 +26,6 @@
 - [Reference on Rise of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 
-#### Q. What about ZFS?
-**NOT SUPPORTED FOR POP OS, YET**
-**Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately it is becoming a trend. You can checkout [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs).
-
 #### How to Btrfs on Pop?
 **Ans.** Does not work with the clean install. You have to go to Advanced partition select format Btrfs either of GParted or installer. <br />  <br />
 If you can't find btrfs in GParted install this,
@@ -37,6 +33,12 @@ If you can't find btrfs in GParted install this,
  sudo apt install btrfs-progs
  ```
  
+#### Q. What about ZFS?
+**ONLY FOR UBUNTU** <br />
+**Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately it is becoming a trend. You can checkout [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs). <br />
+
+If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20-04-with-zfs).
+
 ## 2. Post Installation
  There are some basic things you need to do after installation.
 

@@ -1,5 +1,5 @@
 # How to Popbuntu?
-###### This is done exclusively on Pop OS 20.10 but, this should work on every Ubuntu-based Distros.
+###### This is done exclusively on Pop OS 20.10 but, this should work on almost every Ubuntu-based Distros.
  These are the set of tweaks I use on my Pop OS. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over five months using pop on them both.
 
 ## 1 Installation
@@ -20,18 +20,22 @@
  **A thought about Encryption** <br />
  Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
-#### Q. Should I use Brtfs or Ext4?
-**Ans.** It depends, As Brtfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Brtfs on my desktop & noticed that Brtfs is surprisingly fast. But, I do not know if this is the case with every distro.
+#### Q. Should I use Btrfs or Ext4?
+**Ans.** It depends, As Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Btrfs on my desktop & noticed that Btrfs is surprisingly fast. But, I do not know if this is the case with every distro.
 
-- [Reference on Rise of Brtfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
+- [Reference on Rise of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 
 #### Q. What about ZFS?
-**Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article.
+**Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately it is becoming a trend. You can checkout [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs).
 
-##### How to Brtfs on Pop?
-**Ans.** Does not work with the clean install. You have to go to advanced partition select format Brtfs either of GParted or installer.
-
+#### How to Btrfs on Pop?
+**Ans.** Does not work with the clean install. You have to go to Advanced partition select format Btrfs either of GParted or installer. <br />  <br />
+If you can't find btrfs in GParted install this,
+ ```bash
+ sudo apt btrfs-progs
+ ```
+ 
 ## 2. Post Installation
  There are some basic things you need to do after installation.
 
@@ -52,7 +56,7 @@
  ```
  #### Tweaks I am using -
 
- #### 1. Minimize Button
+#### 1. Minimize Button
  Minimize is an important button for gnome. I always wonder why they did not add it. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
 
 You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />

@@ -197,7 +197,17 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```bash
  sudo apt remove --purge firefox*
  ```
-
+ **Extensions I use for Chrome** <br />
+ These extensions exists for almost all browsers. <br />
+ ![Chromeextensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/Chromeextensions.png)
+ 1. Absolute Enable Right Click & Copy - Force Enable Right Click & Copy
+ 2. Ghostery - Ghostery is a powerful privacy extension. Block ads, stop trackers and speed up websites
+ 3. GNOME Shell integration - This extension provides integration with GNOME Shell and the corresponding extensions repository
+ 4. Grammarly - Write your best with Grammarly
+ 5. Random User-Agent - Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
+ 6. The Great Suspender - Make your computer run smoothly by suspending the tabs you aren't using
+ 7. Touch VPN - Unblock any website and stay secure with Touch VPN. One-click connect to our fast VPN. 
+ 
  ### - Email Client
  Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.
  
@@ -730,7 +740,8 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />
  ![dashtopanel](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/dashtopanel.png)
  To get the start button I [have](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/start.png). <br />
- **Only if you get either of the Dash** <br />
+
+ **Only works with Dash** <br />
  - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
  
  #### 3. Left Titlebar buttons

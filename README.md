@@ -4,11 +4,11 @@
 
 ## 1 Installation
 **Only for Advanced Users** <br />
- If you are on a disk space crunch you can follow these method. I am a minimalist and I never use a recovery partition. But it is recommended to keep Recovery partition to be on the safe side. 
+ Go through this, if you are on a disk space crunch or use Swap-file instead of a Linux-swap(partition). It is recommended to keep the Recovery partition to be on the safe side the example of this is 20.10, while upgrading 20.04 to 20.10 failed for many people, but recovery will help you out at those times. 
 
  Partitions I create:-
- - 512 MB for EFI boot (Enough even if you have a multi-boot system)
- - Recovery (If you need it) <br />
+ - 500 MB for EFI boot (Enough even if you have a multi-boot system)
+ - Recovery (Add it, unless you are on a space crunch) <br />
  - Remaining for EXT4 system <br />
  
  **What about swap?** <br />

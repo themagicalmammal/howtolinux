@@ -313,11 +313,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  #### Wine
  ###### To run Windows programs on Linux.
- 1. Check if your system is 32/64 bit Skip, this if you already know.
- ```bash
- lscpu
- ```
- 2. Install wine according to your architecture. <br />
+ 1. Install wine according to your architecture. <br />
  ```bash
  sudo apt install wine
  ```
@@ -325,12 +321,12 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```bash
  sudo dpkg --add-architecture i386
  ```
- 3. To check the version installed.
+ 2. To check the version installed.
  ```bash
  wine --version
  ```
  
- **Notice about Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
+ **Saftey with Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
  
  #### Synaptic Package manager
  ```bash
@@ -484,7 +480,8 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  2. **Always show workspaces** - Always show workspaces in the overview.
  3. **Desktop Icons** - Add icons to the desktop.
  4. **Pop Battery Icon Fix** - Fixes the battery icon to match the current battery level. (Useless for desktop pc)
- 5. **System76 Power Management** - system76-power is a utility for managing graphics and power profiles. (Useful for hybrid and NVIDIA GPU)
+ 5. **Pop Shop Details** - Adds a Show Details item to applications if Pop Shop is installed.
+ 6. **System76 Power** - system76-power is a utility for managing graphics and power profiles. (Useful for hybrid and NVIDIA GPU)
 
  ### Disabling Pop Shop on Boot
  Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />

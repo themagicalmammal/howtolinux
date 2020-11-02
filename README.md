@@ -230,9 +230,11 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  sudo apt remove --purge libreoffice* && sudo apt autoremove
  ```
  Alternatives, <br />
-
+ **Free Office** (If you just moved from Windows and need something like MS-Office) <br />
+ Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
+ 
  **Open Office** (LibreOffice is a way better option) <br />
- Guide to install is [here](https://linuxhint.com/openoffice_installation_ubuntu/) <br />
+ Guide the deb file [here](https://www.openoffice.org/download/) <br />
 
  **WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
 

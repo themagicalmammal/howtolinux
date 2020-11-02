@@ -27,6 +27,7 @@
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 
 #### Q. What about ZFS?
+**NOT SUPPORTED FOR POP OS, YET**
 **Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately it is becoming a trend. You can checkout [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs).
 
 #### How to Btrfs on Pop?

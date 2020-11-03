@@ -4,22 +4,21 @@
 
 # Index
 ## 1. [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
-- **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create--)
-- [What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)
-- [How to Btrfs on Pop?](https://github.com/themagicalmammal/howtopopbuntu#how-to-btrfs-on-pop)
-- [What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs)**
+- **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create--)**
+- **[What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)**
+- **[How to Btrfs on Pop?](https://github.com/themagicalmammal/howtopopbuntu#how-to-btrfs-on-pop)**
+- **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs)**
 2. 
 
 ## 1 Installation
 **Only for Advanced Users** <br />
  Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove Recovery partition to be on the safe side, the example of this is the upgrade of 20.04 to 20.10, which failed for many people, but recovery was the only way out. 
 
-#### Partitions to create -
+#### Partitions to Create
  - 500 MB for Efi boot (Enough even for multi-boot)
  - Recovery (Useful, unless are low on space) <br />
- - Remaining for Ext4/Brtfs/Zfs System <br />
-**Before selecting read about Brtfs & Zfs** <br />
- 
+ - (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System <br />
+
 #### What about Swap?
  There are two ways of getting swap (You can choose which is better)<br />
   - Easy Method - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />

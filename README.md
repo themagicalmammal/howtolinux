@@ -29,9 +29,24 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Video Player](https://github.com/themagicalmammal/howtopopbuntu#video-player)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps)**
+ 1. **[Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram)**
+ 2. **[Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp)**
+ 3. **[Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps)**
+ 1. **[Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github)**
+ 2. **[Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm)**
+ 3. **[GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop)**
+ 4. **[Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps)**
+ 1. **[Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music)**
+ 2. **[Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming)**
+ 3. **[Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps)**
+ 1. **[uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager)**
+ 2. **[Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)**
+ 3. **[Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager)**
+ 4. **[Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode)**
+ 5. **[Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift)**
 - **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)

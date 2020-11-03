@@ -206,6 +206,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  4. **[Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)** - Helps when you write something for fixing mistakes, helps me complete writing stuff fast.
  5. **[Random User-Agent](https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=en)** - Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
  6. **[The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en)** - Make your computer run smoothly by suspending the tabs you aren't using
+ 7. **[Touch VPN](https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd/related?hl=en-US)** - Simple setup. Relatively nominal footprint, as far as my diags/utils have determined at this early stage and consuming a minor spot in memory. 
  
  ### - Email Client
  Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.

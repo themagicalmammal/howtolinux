@@ -831,20 +831,47 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  ![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overlay.png)
 
  ## 7. Bonus
- #### Among Us if Steam Glitches
- #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated edition, and in no way, I want to encourage piracy.
+ ### Among Us Only if Steam Glitches
+ #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
  **Steps**
- 1. Install Wine (Go to Others Section in this repo)
+ 1. Install Wine (Go to Others Section in this Repo)
  2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
  3. To run it type
  ```bash
  wine Among\ Us.exe
  ```
- 4. What I do is create a file start.sh & run it.
+ 
+ **Create a desktop icon**
+ 1. Find the path of Among Us (Open terminal inside among us folder)
+ ```bash
+ pwd
+ ```
+ 2. Make a file amongus.desktop
+ Replace this with <output-of-pwd> below
+ 3. Inside it place this code
+ ```bash
+[Desktop Entry]
+Type=Application
+Name=Among Us
+Comment=AmongUs EXE
+GenericName=Game
+Icon=steam_icon_415890
+Exec=wine <output-of-pwd>/Among\ Us.exe
+Terminal=false
+Categories=Game;Graphics;Wine;
+ ```
+ **
+ 4. Place this icons inside usr/share/applications with
+ ```bash
+ sudo nautilus
+ ```
+ 
+ **Create a shell script for starting**
+ 1. What I do is create a file start.sh & run it.
  ```bash
  echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
  ```
- 5. Open terminal inside the folder
+ 2. Open terminal inside the folder
  ```bash
  ./start.sh
  ```

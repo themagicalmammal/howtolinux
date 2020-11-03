@@ -543,11 +543,9 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  sudo systemctl disable avahi-daemon.service
  sudo systemctl mask avahi-daemon.service
  ```
- - **AppArmor** [Unsafe to remove] is a Linux kernel security module that allows the system administrator to restrict program capabilities with per-program profiles. Profiles can allow capabilities like network access, raw socket access, and the permission to read, write, or execute files on matching paths.
  - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
- **Apparmour has used my many apps like Chromium not to mention removing it is a security threat, So please proceed carefully**
  ```bash
- sudo apt remove --purge apport* apparmor* && sudo apt autoremove
+ sudo apt remove --purge apport* && sudo apt autoremove
  ```
  - **Saned** is the SANE (Scanner Access Now Easy) daemon that allows remote
 clients to access image acquisition devices available on the localhost.

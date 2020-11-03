@@ -448,12 +448,25 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier, since swaps are slower than RAMs and they can cause a reduction in performance. <br />
  
  Values according to me for Ram:Ratio should be as follows, 32:0, 16:10, 8:20, 4:50, 2:70 <br />
+ **20 is just a example value, don't mindlessly use it** <br />
  ```bash
  sudo sysctl vm.swappiness=20
  ```
- **20 is just a example value, don't mindlessly use it** <br />
+ **This values do not stick. To add them permanently. Add the above line to sysctl.conf.** <br />
+ ```bash
+ sudo nano /etc/sysctl.conf
+ ```
  
- ### Adjusting the Swappiness Property
+ ### Adjusting  the Cache Pressure Setting
+ Another issue, the system stores cache about stuff that you frequently open & this makes the system faster, as if it opens again, rather than reloading the data it will use the cache. But, on lower ram device this is a bad option since this will seriously slow your system down. <br />
+ Adjust this like you adjusted swappiness property, values for RAM:Pressure should be as follows, 1:100, 2:90, 4:80, 8:60, 16:50.
+ ```bash
+ sudo sysctl vm.vfs_cache_pressure=50
+ ```
+  **Add the above line to sysctl.conf.** <br />
+ ```bash
+ sudo nano /etc/sysctl.conf
+ ```
  
  ### EarlyOOM
  It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for the heavy usage. This is a very important feature for old hardware. It only consumes 0.5 to 2 MB in the background. <br /> <br />

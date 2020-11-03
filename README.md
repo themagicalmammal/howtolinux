@@ -3,10 +3,11 @@
  These are the set of tweaks I use on my Pop OS. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over five months using pop on them both.
 
 # Index
-1. [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
-- [Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create--)
+## 1. [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
+- **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create--)
+- [What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)
 - [How to Btrfs on Pop?](https://github.com/themagicalmammal/howtopopbuntu#how-to-btrfs-on-pop)
-- [What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs)
+- [What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs)**
 2. 
 
 ## 1 Installation
@@ -25,7 +26,11 @@
 
   - Better Method (Swap File) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. **btrfs filesystem doesn't let to create snapshots if there is a working swap file on the subvolume**<br />
   
-  **Post Installation Steps**
+  **Post Installation Steps** <br /> 
+  
+ **Brtfs** <br />
+ Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  <br /> <br />
+ 
   **Ext4** <br />
   1. Instruction set for Swap file
  ```bash
@@ -49,11 +54,8 @@
  sudo nano /etc/fstab
  ```
  5. Reboot  <br />
- 
- **Brtfs** <br />
- Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  <br /> <br />
   
-#### A thought about Encryption
+#### Q. Should I Encrypt?
  Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
 #### Q. Should I use Btrfs or Ext4?
@@ -69,8 +71,7 @@ If you can't find btrfs in GParted install this,
  sudo apt install btrfs-progs
  ```
  
-#### Q. What about ZFS?
-**ONLY FOR UBUNTU** <br />
+#### Q. What about ZFS? (UBUNTU ONLY)
 **Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately it is becoming a trend. You can checkout [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs). <br />
 
 If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20-04-with-zfs).

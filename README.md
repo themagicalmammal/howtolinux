@@ -9,12 +9,12 @@
  Partitions I create:-
  - 500 MB for EFI boot (Enough even if you have a multi-boot system)
  - Recovery (Add it, unless you are on a space crunch) <br />
+ - First read about swap bellow
  - Remaining for EXT4 system <br />
  
  **What about swap?** <br />
- **Note-** If you have a strong hardware with huge ram then you don't need swap but if you still want you can create a swap file. <br />
- There are two ways of getting swap <br />
-  - General Method - creating a swap partition (linux-swap) of lets just say size 4096 MB (should be from 1024 to 8192 MB) <br />
+ There are two ways of getting swap (You can choose which is better)<br />
+  - General Method **(Recommended for Pop)** - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB).<br />
 
   - Swap File (Might have errors) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. To learn how to do so refer [this](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/). <br />
   **Pop users sometimes have problem with these method. So you might have to do some testing.**<br />

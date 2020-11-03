@@ -65,23 +65,23 @@ If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20
  Minimize is an important button for gnome. I always wonder why they did not add it. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
 
 You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
- ![gnome-minimise](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
+ ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
  #### 2. Battery Percentage
  This option is also pretty useful but only for a lappy.<br>
  #### 3. Optimizing Font
  I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with anti aliasing to Subpixel.<br /> <br />
- ![custom-font-size](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
+ ![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
 
  - **Custom Resolution with Xrandr** </br>
  **Please read all the problems & bugs with this, so that you know what problems might come & how to fix them** <br />
  If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.<br /> <br />
- ![set-of-refreshrates](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/set-of-refreshrates.png)
+ ![set-of-refreshrates](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/set-of-refreshrates.png)
 
  ### Custom Resolution
  #### Steps
  **1. Check xrandr**  <br />
  You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
- ![xrandr](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/xrandr.png)
+ ![xrandr](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/xrandr.png)
  <br /> <br />
  **2. Find resolution which will fit**  <br />
  My original maximum resolution is 1600 900, which is a 16:9 aspect ratio. So if I choose a different aspect ratio, then some parts of my display will blackout. <br />
@@ -94,26 +94,26 @@ You can also get the maximize button but it's not that useful because double-cli
  ```bash
  cvt 1920 1080 #Your custom resolution
  ```
- ![cvt](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/cvt.png)
+ ![cvt](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/cvt.png)
  #### - xrandr --newmode
  Copy line after modline
  ```bash
  xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
  ```
- ![newmode](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/newmode.png)
+ ![newmode](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/newmode.png)
  #### - xrandr --addmode
  Add the resolution with display name
  ```bash
  xrandr --addmode eDP-1 "1920x1080_60.00"
  ```
- ![addmode](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/addmode.png) <br />
+ ![addmode](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/addmode.png) <br />
  
   #### [Problem] The resolution goes away after a reboot.
  **Ans -** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
  ```bash
  nano ~/.profile
  ```
- ![profile](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/profile.png)
+ ![profile](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/profile.png)
  
  #### [Problem] What about other refresh rates? <br />
  **Ans -** You have to experiment with cvt a bit to find which refresh rates should be. My refresh rate is from 60hz to 120hz. I did some experimentation and added some resolution. <br />
@@ -137,7 +137,7 @@ You can also get the maximize button but it's not that useful because double-cli
  ```
 
  **Now it should look like this** <br /> <br />
- ![custom-resolution-final](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/custom-resolution-final.png)
+ ![custom-resolution-final](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-resolution-final.png)
 
  #### [Problem] How to get rid of custom resolution?
  **Ans -** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
@@ -199,7 +199,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  **Extensions I use on my Chrome** <br />
  Generally, these extensions exists for almost all browsers. <br />
- ![Chromeextensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/Chromeextensions.png)
+ ![Chromeextensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/Chromeextensions.png)
  1. **[Absolute Enable](https://chrome.google.com/webstore/detail/absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika?hl=en)** - Force Enable Right Click & Copy on disabled websites.
  2. **[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)** - uBlock Origin is not an "ad blocker", it's a wide-spectrum content blocker with CPU and memory efficiency as a primary feature.
  3. **[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)** - This extension provides integration with GNOME Shell and the corresponding extensions repository, make it easy to add extensions via your browser.
@@ -300,7 +300,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```
  If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br /> 
  **But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
- ![spotify-adfree](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
+ ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
  
  2. **Steam for Gaming**
  ```bash
@@ -410,12 +410,12 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ## 4. Important Tweaks
  ### Settings
  #### -- Privacy Tweaks
- ![1](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/1.png)
- ![2](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/2.png)
- ![3](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/3.png)
- ![4](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/4.png)
+ ![1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/1.png)
+ ![2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/2.png)
+ ![3](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/3.png)
+ ![4](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/4.png)
  #### -- Over Amplification
- ![sound](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/sound.png)
+ ![sound](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/sound.png)
  #### -- Accessibility
  1. Disable Cursor blinking, this doesn't save any resources, this is just a choice.
  2. Optimise repeat keys speed <br /> <br />
@@ -427,12 +427,12 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```atom
  App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
  ```
- ![key](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/chngpass.png)
- ![unen](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/disablekeyring.png) <br />
+ ![key](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/chngpass.png)
+ ![unen](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring.png) <br />
 
  ## 5. Optimizing Boot time & Ram Management
  My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
- ![originalboottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/originalboottime.png)
+ ![originalboottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/originalboottime.png)
 
  ### Disabling Plymouth
  **For Pop OS** <br />
@@ -497,7 +497,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  sudo systemctl restart gdm3
  ```
  4. Then select it in login <br />
- ![wayland](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/wayland.png) 
+ ![wayland](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/wayland.png) 
  5. To confirm (Output: wayland)
   ```bash
  echo $XDG_SESSION_TYPE
@@ -507,7 +507,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ### Disabling Unnecessary Extensions
  Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
  The built-in extensions I use are - <br /> <br />
- ![extensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/extensions.png) 
+ ![extensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/extensions.png) 
  
  #### I have disabled these
  1. **Alt-Tab** -  By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.
@@ -556,7 +556,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  ```bash
  BlacklistPlugins=test;invalid;thunderbolt_power
  ```
- ![blacklist_thunderbold](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/blacklist_thunderbold.png)
+ ![blacklist_thunderbold](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/blacklist_thunderbold.png)
  Remove fwupd from boot
  ```bash
  sudo systemctl disable fwupd.service
@@ -635,10 +635,10 @@ clients to access image acquisition devices available on the localhost.
  ```
 
  - Disabling **Startup Application Preferences** <br /> <br />
- ![application-pref](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/application-pref.png)
+ ![application-pref](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/application-pref.png)
 
  #### Boot time after disabling those stuff
- ![prekernelbootime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/prekernelbootime.png)
+ ![prekernelbootime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/prekernelbootime.png)
 
  ### Custom kernel
  Custom Kernels are known and used by fewer people, but these kernels add a significant boost to performance and battery.
@@ -704,7 +704,7 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
  
  ### Final Boot Time
- ![final-boottime](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/final-boottime.png)
+ ![final-boottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/final-boottime.png)
 
  ## 6. Miscellaneous
  ### Get latest Ad-Hosts
@@ -739,22 +739,22 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  sudo apt install bleachbit
  ```
  **Steps ->** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
- ![bleachbit](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/bleachbit.png)
+ ![bleachbit](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bleachbit.png)
  **Note**:- After doing this the first boot might be slow don't worry it's perfectly normal.
 
  ### Night Light
  Night Light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it *unsleepy* that's why we use a night light.<br /> <br />
  **Steps ->** Settings > Display > Night light <br />
  *You can also select the timing which fits your sleep cycle.*<br /> <br />
- ![nightlight](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/nightlight.png)
+ ![nightlight](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/nightlight.png)
 
  ### Tile Windows
  The beautiful thing I like about Pop OS is its feature rich environment to increase work efficiency.<br /> <br />
- ![Tile-windows](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/Tile-windows.png)
+ ![Tile-windows](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/Tile-windows.png)
 
  ### Customization
  #### 1. We need to add gnome-shell-integration for Chrome.
- ![gsi](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/gsi.png)
+ ![gsi](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gsi.png)
  #### 2. Then go to [Gnome.org](https://extensions.gnome.org/) and get your extensions. <br />
  ##### Important Extensions
  - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
@@ -764,10 +764,10 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
  - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
  - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) <br /> <br />
- ![dashtodock](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/dashtodock.png)
+ ![dashtodock](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/dashtodock.png)
  - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />
- ![dashtopanel](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/dashtopanel.png)
- To get the start button I [have](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/start.png). <br />
+ ![dashtopanel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/dashtopanel.png)
+ To get the start button I [have](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/start.png). <br />
 
  **Only works with Dash** <br />
  - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
@@ -798,9 +798,9 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  2. Go to Font & Colors.
  3. Select Color Scheme - Classic. <br />
 
- ![bigsurlikelook](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/bigsurlikelook.png)
+ ![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bigsurlikelook.png)
  #### 7. Add Activity Hot Corner & Format time.
- ![overlay](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/overlay.png)
+ ![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overlay.png)
 
  ## 7. Bonus
  #### Among Us if Steam Glitches

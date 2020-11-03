@@ -200,13 +200,12 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  **Extensions I use on my Chrome** <br />
  Generally, these extensions exists for almost all browsers. <br />
  ![Chromeextensions](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/Chromeextensions.png)
- 1. **Absolute Enable** - Force Enable Right Click & Copy
- 2. **Ghostery** - Ghostery is a powerful privacy extension. Block ads, stop trackers and speed up websites
- 3. **GNOME Shell integration** - This extension provides integration with GNOME Shell and the corresponding extensions repository
- 4. **Grammarly** - Write your best with Grammarly
- 5. **Random User-Agent** - Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
- 6. **The Great Suspender** - Make your computer run smoothly by suspending the tabs you aren't using
- 7. **Touch VPN** - Unblock any website and stay secure with Touch VPN. One-click connect to our fast VPN. 
+ 1. **[Absolute Enable](https://chrome.google.com/webstore/detail/absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika?hl=en)** - Force Enable Right Click & Copy on disabled websites.
+ 2. **[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)** - uBlock Origin is not an "ad blocker", it's a wide-spectrum content blocker with CPU and memory efficiency as a primary feature.
+ 3. **[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)** - This extension provides integration with GNOME Shell and the corresponding extensions repository, make it easy to add extensions via your browser.
+ 4. **[Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)** - Helps when you write something for fixing mistakes, helps me complete writing stuff fast.
+ 5. **[Random User-Agent](https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=en)** - Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
+ 6. **[The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en)** - Make your computer run smoothly by suspending the tabs you aren't using
  
  ### - Email Client
  Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.

@@ -4,14 +4,14 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 
 
 # Index
-## 1. [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation-1)
+## [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
 - **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create)**
 - **[What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)**
 - **[Should I Encrypt?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-encrypt)**
 - **[Should I use Btrfs or Ext4?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-use-btrfs-or-ext4)**
 - **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs-ubuntu-only)**
 
-## 2. [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation-1)
+## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
 - **[Gnome Tweaks & my tweaks](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--my-tweaks)**
  1. [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button)
  2. [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)
@@ -22,7 +22,7 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
  2. [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-)
  3. [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution)
  4. [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)
-## 3. [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps-1)
+## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser)**
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
@@ -34,14 +34,34 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps)**
 - **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
 
-## 4. [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
-- **[]()**
-- **[]()**
-<!--
-## 5. []()
-## 6. []()
-## 7. []()
-## [Thanks for Suggestions](https://github.com/themagicalmammal/howtopopbuntu#thanks-for-suggestions)-->
+## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
+- **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings)**
+ 1. [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks)
+ 2. [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)
+ 3. [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)
+- **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
+## [Optimize Boot time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
+- **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
+- **[Adjusting the Swappiness Property](https://github.com/themagicalmammal/howtopopbuntu#adjusting-the-swappiness-property)**
+- **[Adjusting the Cache Pressure](https://github.com/themagicalmammal/howtopopbuntu#adjusting--the-cache-pressure-setting)**
+- **[EarlyOOM](https://github.com/themagicalmammal/howtopopbuntu#earlyoom)**
+- **[Wayland](https://github.com/themagicalmammal/howtopopbuntu#wayland-display-manager)**
+- **[Disabling Extensions](https://github.com/themagicalmammal/howtopopbuntu#disabling-unnecessary-extensions)**
+- **[Disable Pop Shop on boot](https://github.com/themagicalmammal/howtopopbuntu#disabling-pop-shop-on-boot)**
+- **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
+- **[Optimising the boot](https://github.com/themagicalmammal/howtopopbuntu#optimising-the-boot)**
+- **[Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#custom-kernel)**
+ - [Getting rid of Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)
+- **[Final Boot Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
+## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
+- **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
+- **[Clean your System](https://github.com/themagicalmammal/howtopopbuntu#clean-your-system)**
+- **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
+- **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
+- **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
+## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
+- **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#among-us-if-steam-glitches)**
+## [Thanks for Suggestions](https://github.com/themagicalmammal/howtopopbuntu#thanks-for-suggestions)
 
 
 ## 1. Installation
@@ -498,7 +518,7 @@ App password & keys > Login > Change Password > Type your Current Pass > Continu
 ![unen](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring.png) <br />
 
 
-## 5. Optimizing Boot time & Ram Management
+## 5. Optimize Boot time & Ram Usage
 My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
 ![originalboottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/originalboottime.png)
 
@@ -596,13 +616,13 @@ sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
 ```bash
 Exec=io.elemantry.appcenter -s
 ```
-### Clearing High buff/cache
+### Clearing buff/cache
 Computer accumulates high buff/cache over time and make the user force reboot. To clear buff cache you can use this. <br />
 ```bash
 free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h
 ```
 
-### Masking and Disabling some useless services
+### Optimising the boot
 #### DISCLAIMER
 ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
 - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
@@ -645,17 +665,21 @@ clients to access image acquisition devices available on the localhost.
 sudo systemctl disable saned.service
 sudo systemctl mask saned.service
 ```
-
-- **Thermald** [Unsafe to remove]  daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
-**If your system heats after removing this even a bit, add it back**
+- **GPU-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
 ```bash
-sudo systemctl disable thermald.service
-sudo systemctl mask thermald.service
+sudo systemctl disable gpu-manager.service
+sudo systemctl mask gpu-manager.service
 ```
-- **Switcheroo-control** is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
+- **Udisk2** disabling this removes the capability to automount the system.
 ```bash
-sudo systemctl disable switcheroo-control.service
-sudo systemctl mask switcheroo-control.service
+sudo systemctl mask udisks2.service
+```
+- **Apt-daily-upgrade** bug -
+```bash
+sudo systemctl disable apt-daily.service
+sudo systemctl disable apt-daily.timer
+sudo systemctl disable apt-daily-upgrade.timer
+sudo systemctl disable apt-daily-upgrade.service
 ```
 - **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
 1. Disable & Mask the systemd-resolved service
@@ -673,36 +697,32 @@ sudo nano /etc/NetworkManager/NetworkManager.conf
 sudo rm /etc/resolv.conf
 ```
 4. Restart
-
-- **Gpu-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
+- [Required on Dual-GPU based system] **Switcheroo-control** is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
 ```bash
-sudo systemctl disable gpu-manager.service
-sudo systemctl mask gpu-manager.service
+sudo systemctl disable switcheroo-control.service
+sudo systemctl mask switcheroo-control.service
 ```
-- **Udisk2** disabling this removes the capability to automount the system.
-```bash
-sudo systemctl mask udisks2.service
-```
-- **System76-power** Power Controls for lappy not required on a desktop PC.
+- [Required on laptops] **System76-power** Power Controls for lappy not required on a desktop PC.
 ```bash
 sudo systemctl disable system76-power.service
 sudo systemctl mask system76-power.service
 ```
-- **Apt-daily-upgrade** bug -
+- [Unsafe to remove] **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
+**If your system heats after removing this even a bit, add it back**
 ```bash
-sudo systemctl disable apt-daily.service
-sudo systemctl disable apt-daily.timer
-sudo systemctl disable apt-daily-upgrade.timer
-sudo systemctl disable apt-daily-upgrade.service
+sudo systemctl disable thermald.service
+sudo systemctl mask thermald.service
 ```
-**To Enable them again** <br />
+
+**Enable them back** <br />
 Let the service name be xyz.service
 ```bash
 sudo systemctl unmask xyz.service
 sudo systemctl enable xyz.service
 ```
 
-- Disabling **Startup Application Preferences** <br /> <br />
+- Disabling **Startup Application Preferences** <br />
+
 ![application-pref](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/application-pref.png)
 
 #### Boot time after disabling those stuff
@@ -780,7 +800,7 @@ sudo apt-get remove <name of kernel files>
 
 
 ## 6. Miscellaneous
-### Get latest Ad-Hosts
+### Ad-Hosts
 I use **Steven Black** Ad-Hosts for ad-blocking the whole system without any other extra app. This blocks basic ads but not YouTube or Spotify ads. <br />
 To get it go [here](https://github.com/StevenBlack/hosts). <br />
 
@@ -877,7 +897,7 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 
 
 ## 7. Bonus
-### Among Us Only if Steam Glitches
+### Among Us if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
 **Steps**
 1. Install Wine (Go to Others Section in this Repo)
@@ -923,11 +943,11 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 ```
 
 
-[<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/user/themagicalmammal) <br />
+## [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/user/themagicalmammal) <br />
 [Pop OS](https://www.reddit.com/r/pop_os/comments/jm1j5i/a_guide_to_setting_up_popubuntu/)/[Ubuntu](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/) to post your queries and suggestions.
 
 
-### Thanks for Suggestions
+## Thanks for Suggestions
 1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & Swap file.
 2. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.

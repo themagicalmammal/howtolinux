@@ -4,30 +4,47 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 
 
 # Index
-## 1. [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
+## 1. [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation-1)
 - **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create)**
 - **[What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)**
 - **[Should I Encrypt?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-encrypt)**
 - **[Should I use Btrfs or Ext4?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-use-btrfs-or-ext4)**
 - **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs-ubuntu-only)**
 
-## 2. [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
-- **[Tweaks I use](https://github.com/themagicalmammal/howtopopbuntu#tweaks-i-am-using--)**
-- **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution)**
-- **[]()**
-- **[]()**
+## 2. [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation-1)
+- **[Gnome Tweaks & my tweaks](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--my-tweaks)**
+ 1. [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button)
+ 2. [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)
+ 3. [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)
+ 
+- **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr)**
+ 1. [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot)
+ 2. [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-)
+ 3. [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution)
+ 4. [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)
+## 3. [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps-1)
+- **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
+- **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser)**
+- **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
+- **[Video Player](https://github.com/themagicalmammal/howtopopbuntu#video-player)**
+- **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
+- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps)**
+- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps)**
+- **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps)**
+- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps)**
+- **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
+
+## 4. [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
 - **[]()**
 - **[]()**
 <!--
-## 3. []()
-## 4. []()
 ## 5. []()
 ## 6. []()
 ## 7. []()
 ## [Thanks for Suggestions](https://github.com/themagicalmammal/howtopopbuntu#thanks-for-suggestions)-->
 
 
-## 1 Installation
+## 1. Installation
 **Only for Advanced Users** <br />
 Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove Recovery partition to be on the safe side, the example of this is the upgrade of 20.04 to 20.10, which failed for many people, but recovery was the only way out. 
 
@@ -203,7 +220,7 @@ Snap can incorporate more apps than Flatpak. It runs how the developer intended.
 [Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/)
 
 ### Browser
-Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. <br /> <br />
+Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. <br />
 
 **MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also these browsers do not support [VAAPI](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera as well.** <br />
 

@@ -13,15 +13,15 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 
 ## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
 - **[Gnome Tweaks & my tweaks](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--my-tweaks)**
- 1. [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button)
- 2. [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)
- 3. [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)
+ 1. **[Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button)**
+ 2. **[Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)**
+ 3. **[Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
  
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr)**
- 1. [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot)
- 2. [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-)
- 3. [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution)
- 4. [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)
+ 1. **[Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot)**
+ 2. **[Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-)**
+ 3. **[Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution)**
+ 4. **[Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser)**
@@ -36,9 +36,9 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
 - **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings)**
- 1. [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks)
- 2. [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)
- 3. [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)
+ 1. **[Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks)**
+ 2. **[Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)**
+ 3. **[Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)**
 - **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
 ## [Optimize Boot time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
 - **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
@@ -51,7 +51,7 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 - **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
 - **[Optimising the boot](https://github.com/themagicalmammal/howtopopbuntu#optimising-the-boot)**
 - **[Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#custom-kernel)**
- - [Getting rid of Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)
+ - **[Removing of Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#removing-custom-kernel)**
 - **[Final Boot Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
 ## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
 - **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**

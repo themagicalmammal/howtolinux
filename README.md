@@ -90,7 +90,7 @@ Go through this, because this can be a very helpful step. I am currently using b
 
 #### What about Swap?
 There are two ways of getting swap (You can choose which is better)<br />
-- Easy Method - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />
+- Easy Method (Brtfs should choose this) - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />
 
 - Better Method (Swap File) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. **btrfs filesystem doesn't let to create snapshots if there is a working swap file on the subvolume**<br />
 

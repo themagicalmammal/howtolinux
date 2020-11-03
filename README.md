@@ -603,6 +603,12 @@ clients to access image acquisition devices available on the localhost.
  sudo systemctl disable apt-daily-upgrade.timer
  sudo systemctl disable apt-daily-upgrade.service
  ```
+ **To Enable them again** <br />
+ Let the service name be xyz.service
+ ```bash
+ sudo systemctl unmask xyz.service
+ sudo systemctl enable xyz.service
+ ```
 
  - Disabling **Startup Application Preferences** <br /> <br />
  ![application-pref](https://github.com/themagicalmammal/how-to-popbuntu/blob/master/Screenshots/application-pref.png)

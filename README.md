@@ -681,7 +681,11 @@ To get Liquorix go [here](https://liquorix.net/) <br /> <br />
  
  For Liquorix <br />
  ```bash
- sudo add-apt-repository ppa:damentz/liquorix
+ sudo add-apt-repository -r ppa:damentz/liquorix
+ ```
+ **Tip: -r can be after or before the repo, so you can also write,**
+ ```bash
+ sudo add-apt-repository ppa:damentz/liquorix -r
  ```
  
  5. Getting, name of the Kernel

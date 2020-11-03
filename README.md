@@ -14,7 +14,7 @@
  
  **What about swap?** <br />
  There are two ways of getting swap (You can choose which is better)<br />
-  - General Method **(Recommended for Pop)** - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB).<br />
+  - General Method **(Recommended for Pop)** - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />
 
   - Swap File (Might have errors) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. To learn how to do so refer [this](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/). <br />
   **Pop users sometimes have problem with these method. So you might have to do some testing.**<br />
@@ -443,6 +443,17 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
  Go through [this](https://www.kevin-custer.com/blog/disabling-the-plymouth-boot-screen-in-ubuntu-20-04/) guide. <br />
  
  **This reduces my boot time to 35sec** <br />
+ 
+ ### Adjusting the Swappiness Property
+ This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier, since swaps are slower than RAMs and they can cause a reduction in performance. <br />
+ 
+ Values according to me for Ram:Ratio should be as follows, 32:0, 16:10, 8:20, 4:50, 2:70 <br />
+ ```bash
+ sudo sysctl vm.swappiness=20
+ ```
+ **20 is just a example value, don't mindlessly use it** <br />
+ 
+ ### Adjusting the Swappiness Property
  
  ### EarlyOOM
  It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for the heavy usage. This is a very important feature for old hardware. It only consumes 0.5 to 2 MB in the background. <br /> <br />

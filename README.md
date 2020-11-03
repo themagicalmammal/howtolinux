@@ -1,6 +1,6 @@
 # How to Popbuntu?
 ###### This is done exclusively on Pop OS 20.10 but, this should work on almost every Ubuntu-based Distros.
-These are the set of tweaks I use on my Pop OS. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over five months using pop on them both.
+These is a extensive Guide on the set of things I use. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over six months using pop on them.
 
 
 # Index
@@ -12,7 +12,7 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 - **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs-ubuntu-only)**
 
 ## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
-- **[Gnome Tweaks & my tweaks](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--my-tweaks)**
+- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks-the-ones-i-use)**
  1. **[Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button)**
  2. **[Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)**
  3. **[Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
@@ -38,7 +38,7 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 - **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings)**
  1. **[Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks)**
  2. **[Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)**
- 3. **[Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)**
+ 3. **[Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
 - **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
 ## [Optimize Boot time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
 - **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
@@ -51,7 +51,7 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 - **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
 - **[Optimising the boot](https://github.com/themagicalmammal/howtopopbuntu#optimising-the-boot)**
 - **[Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#custom-kernel)**
- - **[Removing of Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#removing-custom-kernel)**
+ - **[Removing Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)**
 - **[Final Boot Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
 ## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
 - **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
@@ -142,7 +142,7 @@ sudo apt update && sudo apt upgrade && flatpak update
 *You can get proprietary drivers directly from the Pop/Ubuntu Shop or Terminal.* <br />
 *If you get issues with NVIDIA get the NVIDIA iso.*<br />
 
-### Gnome Tweaks & my tweaks
+### Gnome Tweaks & the ones I use
 ```bash
 sudo apt install gnome-tweaks
 ```
@@ -343,40 +343,39 @@ Guide the deb file [here](https://www.openoffice.org/download/) <br />
 **WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
 
 ### Social Apps
-1. **Telegram** <br />
+#### 1. Telegram
 Personally I use Kotogram client
 ```bash
 flatpak install io.github.kotatogram
 ```
-2. **Whatsapp** <br />
+#### 2. Whatsapp
 Gtkwhatsapp has better features
 ```bash
 flatpak install com.gigitux.gtkwhats
 ```
-3. **Discord** <br />
+#### 3. Discord
 ```bash
 flatpak install com.discordapp.Discord
 ```
 
 ### Programming Apps
-1. **Atom by GitHub**
+#### 1. Atom by GitHub
 ```bash
 flatpak install io.atom.Atom
 ```
-2. **Pycharm**
+#### 2. Pycharm
 ```bash
 flatpak install pycharm-community
 ```
-3. **GitHub-Desktop**
+#### 3. GitHub-Desktop
 ```bash
 sudo apt install github-desktop
 ```
-4. **Java** <br />
+#### 4. Java
 Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
 
 ### Entertainment Apps
-
-1. **Spotify for Music**
+#### 1. Spotify for Music
 **With Ad-block support**
 ```bash
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
@@ -387,7 +386,7 @@ If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/
 **But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
 ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
 
-2. **Steam for Gaming**
+#### 2. Steam for Gaming
 ```bash
 sudo apt install steam
 ```
@@ -396,17 +395,17 @@ If it doesn't work, turn on multiverse.
 sudo add-apt-repository multiverse && sudo apt update
 ```
 
-3. **Multimedia Codecs**
+#### 3. Multimedia Codecs
 ```bash
 sudo apt install ubuntu-restricted-extras
 ```
 
 ### Other Apps
-#### uGet (Download Manager)
+#### 1. uGet (Download Manager)
 ```bash
 sudo apt install aria2 uget
 ```
-#### Wine
+#### 2. Wine
 ###### To run Windows programs
 1. Install wine according to your architecture. <br />
 ```bash
@@ -423,16 +422,16 @@ wine --version
 
 **Saftey with Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
 
-#### Synaptic Package manager
+#### 3. Synaptic Package manager
 ```bash
 sudo apt install synaptic
 ```
-#### Nautilus (admin)
+#### 4. Nautilus (admin mode)
 ###### Adds right click property *Open as Administrator*
 ```bash
 sudo apt install nautilus-admin && nautilus -q
 ```
-#### Timeshift
+#### 5. Timeshift
 ###### Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 ```bash
 sudo apt install timeshift

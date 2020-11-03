@@ -61,7 +61,7 @@ These are the set of tweaks I use on my Pop OS. I have two computers one is a 7t
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
 - **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#among-us-if-steam-glitches)**
-## [Thanks for Suggestions](https://github.com/themagicalmammal/howtopopbuntu#thanks-for-suggestions)
+## [Reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
 
 
 ## 1. Installation

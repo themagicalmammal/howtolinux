@@ -804,7 +804,7 @@ I use **Unified hosts + fake news + gambling + porn** <br />
 2. Save it to Downloads
 3. Then
 ```bash
-sudo mv $HOME/Downloads/hosts.txt $HOME/Downloads/hosts && sudo mv $HOME/Downloads/hosts /etc/hosts
+sudo mv $(xdg-user-dir DOWNLOADS)/hosts.txt /etc/hosts
 ```
 
 ### Clean your System
@@ -921,7 +921,7 @@ Categories=Game;Graphics;Wine;
 3. Then move it to applications
 
 ```bash
-sudo mv $HOME/Documents/amongus.desktop $HOME/.local/share/applications
+mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
 ```
 
 #### OR

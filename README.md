@@ -15,12 +15,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Update your System](https://github.com/themagicalmammal/howtopopbuntu#update-your-system)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
 - **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
- 
-- **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr)**
- 1. **[Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot)**
- 2. **[Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-)**
- 3. **[Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution)**
- 4. **[Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
+- **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser)**

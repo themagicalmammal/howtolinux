@@ -900,33 +900,35 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 wine Among\ Us.exe
 ```
 
-**Create a desktop icon**
-1. Find the path of Among Us (Open terminal inside among us folder)
+**Create a Desktop Icon**
+1. Open terminal inside Among Us folder(where exe is placed)
 ```bash
 pwd
 ```
-2. Make a file amongus.desktop
-Replace this with <output-of-pwd> below
-3. Inside it place this code
+Replace this with (outputofpwd) below <br />
+2. Create a file **amongus.desktop** and save it to Documents <br />
+Place this code inside it
+ 
 ```bash
 [Desktop Entry]
 Type=Application
 Name=Among Us
-Comment=AmongUs EXE
+Comment=Among US ExE
 GenericName=Game
-Icon=steam_icon_415890
-Exec=wine <output-of-pwd>/Among\ Us.exe
+Icon=Among_Us
+Exec=wine (outputofpwd)/Among\ Us.exe
 Terminal=false
 Categories=Game;Graphics;Wine;
 ```
-**
-4. Place this icons inside usr/share/applications with
+Get the icon [here](https://github.com/themagicalmammal/howtopopbuntu/icons/Among_Us.svg) <br />
+3. Then move it applications
 ```bash
-sudo nautilus
+sudo mv $HOME/Documents/amongus.desktop $HOME/.local/share/applications
 ```
 
-**OR Create a shell script**
-1. What I do is create a file start.sh & run it.
+**OR** <br />
+**Create a Shell Script** <br />
+1. Create a file start.sh
 ```bash
 echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 ```
@@ -947,3 +949,4 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
 5. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and my misconception about recovery
 6. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
+

@@ -1,5 +1,5 @@
 # How to Popbuntu?
-###### This is done exclusively on Pop OS 20.10 but, this should work on almost every Ubuntu-based Distros.
+###### This is done exclusively on Pop Os 20.10 but, this should work on almost every Ubuntu-based Distros.
 These is a extensive Guide on the set of things I use. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over six months using pop on them.
 
 
@@ -12,10 +12,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs-ubuntu-only)**
 
 ## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
-- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks-the-ones-i-use)**
- 1. **[Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button)**
- 2. **[Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)**
- 3. **[Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
+- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks-the-ones-i-use) -> [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
  
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr)**
  1. **[Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot)**
@@ -28,32 +25,14 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
 - **[Video Player](https://github.com/themagicalmammal/howtopopbuntu#video-player)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
-- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps)**
- 1. **[Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram)**
- 2. **[Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp)**
- 3. **[Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord)**
-- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps)**
- 1. **[Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github)**
- 2. **[Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm)**
- 3. **[GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop)**
- 4. **[Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
-- **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps)**
- 1. **[Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music)**
- 2. **[Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming)**
- 3. **[Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
-- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps)**
- 1. **[uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager)**
- 2. **[Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)**
- 3. **[Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager)**
- 4. **[Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode)**
- 5. **[Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift)**
+- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord)**
+- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
+- **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
+- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift)**
 - **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
-- **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings)**
- 1. **[Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks)**
- 2. **[Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification)**
- 3. **[Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
+- **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings) -> [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks), [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification), [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
 - **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
 ## [Optimize Boot time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
 - **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
@@ -76,7 +55,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
 - **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#among-us-if-steam-glitches)**
-## [Reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
+## [Reddit Page](https://github.com/themagicalmammal/howtopopbuntu#-)
 
 
 ## 1. Installation

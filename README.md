@@ -266,7 +266,6 @@ Comes pre-installed with Pop & Ubuntu.<br />
 
 2. **[TOR](https://www.torproject.org/download/)**
 ```bash
-sudo add-apt-repository ppa:micahflee/ppa && sudo apt update
 sudo apt install torbrowser-launcher
 ```
 I have not listed **Chromium** since it needs snap to install.<br />
@@ -918,13 +917,13 @@ Categories=Game;Graphics;Wine;
 ```
 
 <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="50" height="50" />
-3. Then move it applications
+3. Then move it to applications
 
 ```bash
 sudo mv $HOME/Documents/amongus.desktop $HOME/.local/share/applications
 ```
 
-**OR** <br />
+#### OR
 **Create a Shell Script** <br />
 1. Create a file start.sh
 ```bash

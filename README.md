@@ -25,7 +25,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
-- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor)**
+- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
 - **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
@@ -52,7 +52,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
 - **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#among-us-if-steam-glitches)**
-## [Reddit Page](https://github.com/themagicalmammal/howtopopbuntu#-)
+## [reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
 
 
 ## 1. Installation
@@ -430,6 +430,8 @@ sudo apt install timeshift
 ```bash
 sudo apt install Htop
 ```
+#### 7. Opensnitch (Firewall)
+Helps you to review which services connect the internet. Also, by stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch go [here](https://github.com/gustavo-iniguez-goya/opensnitch).
 
 ### - Debloating
 ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
@@ -886,7 +888,7 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 
 
 ## 7. Bonus
-### Among Us if Steam Glitches
+### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
 **Steps**
 1. Install Wine (Go to Others Section in this Repo)
@@ -917,7 +919,7 @@ Terminal=false
 Categories=Game;Graphics;Wine;
 ```
 
-<img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="50" height="50" />
+
 3. Then move it to applications
 
 ```bash

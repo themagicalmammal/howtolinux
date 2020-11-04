@@ -795,21 +795,17 @@ sudo apt-get remove <name of kernel files>
 ## 6. Miscellaneous
 ### Ad-Hosts
 I use **Steven Black** Ad-Hosts for ad-blocking the whole system without any other extra app. This blocks basic ads but not YouTube or Spotify ads. <br />
-To get it go [here](https://github.com/StevenBlack/hosts). <br />
 
 I use **Unified hosts + fake news + gambling + porn** <br />
 
 #### Q. How to?
-**Ans.** Steps -
-1. Get a host
-2. Save as text to Downloads
-3. Rename hosts.txt to hosts
-4. Open terminal & type
+**Ans. Steps -**
+1. Get a [host](https://github.com/StevenBlack/hosts)
+2. Save it to Downloads
+3. Then
 ```bash
-sudo nautilus
+sudo mv $HOME/Downloads/hosts.txt $HOME/Downloads/hosts && sudo mv $HOME/Downloads/hosts /etc/hosts
 ```
-5. Go to file system root > Home > Your Username > Downloads > Copy the Hosts file > Go back to Root > Etc - Then Paste it here, it will ask to Replace, do so.
-Note - If it does not ask you to replace, you might have gone wrong somewhere.
 
 ### Clean your System
 **Terminal**
@@ -920,8 +916,10 @@ Exec=wine (outputofpwd)/Among\ Us.exe
 Terminal=false
 Categories=Game;Graphics;Wine;
 ```
-Get the icon [here](https://github.com/themagicalmammal/howtopopbuntu/icons/Among_Us.svg) <br />
+
+<img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="50" height="50" />
 3. Then move it applications
+
 ```bash
 sudo mv $HOME/Documents/amongus.desktop $HOME/.local/share/applications
 ```
@@ -943,10 +941,10 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 
 
 ## Thanks for Suggestions
-1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & Swap file.
+1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
 2. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
 5. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and my misconception about recovery
 6. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
-
+7. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file

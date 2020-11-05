@@ -63,17 +63,19 @@ Go through this, because this can be a very helpful step. I am currently using b
 #### Partitions to Create
 - 500 MB for Efi boot (Enough even for multi-boot)
 - Recovery (Very Useful, only Pop Os for Ubuntu you need to manually backup) <br />
+- Swap partiton (First, read [What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap))
 - (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System <br />
 
 #### What about Swap?
 There are two ways of getting swap (You can choose which is better)<br />
-- Easy Way (Brtfs users should not choose this) - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />
+- General Method - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swapiness property (given bellow).<br />
 
-- Best Way (Swap File) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. **btrfs filesystem doesn't let to create snapshots if there is a working swap file on the subvolume**<br />
+**[BRTFS] -> [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with general method or create swap file in a different partition.**
+- Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to.<br />
 
 **Post Installation Steps** <br /> 
 
-**Brtfs** <br />
+**Brtfs [Snapshots won't work]** <br />
 Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  <br />
 
 **Ext4** <br />
@@ -907,7 +909,7 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 ### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
 **Steps**
-1. Install Wine (Go to Others Section in this Repo)
+1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
 3. To run it type
 ```bash

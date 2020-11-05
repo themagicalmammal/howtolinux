@@ -13,6 +13,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 
 ## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
 - **[Update your System](https://github.com/themagicalmammal/howtopopbuntu#update-your-system)**
+- **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
 - **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
@@ -57,18 +58,18 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 
 ## 1. Installation
 **Only for Advanced Users** <br />
-Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove Recovery partition to be on the safe side, the example of this is the upgrade of 20.04 to 20.10, which failed for many people, but recovery was the only way out. 
+Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove Recovery partition to be on the safe side, it helps out a lot.
 
 #### Partitions to Create
 - 500 MB for Efi boot (Enough even for multi-boot)
-- Recovery (Useful, unless are low on space) <br />
+- Recovery (Very Useful, only Pop Os for Ubuntu you need to manually backup) <br />
 - (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System <br />
 
 #### What about Swap?
 There are two ways of getting swap (You can choose which is better)<br />
-- Easy Method (Brtfs users should not choose this) - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />
+- Easy Way (Brtfs users should not choose this) - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2:6, 4:6, 8:4, 16:2, 32:0 (all values in GB). Also, you have to adjust the swapiness property (given bellow).<br />
 
-- Better Method (Swap File) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. **btrfs filesystem doesn't let to create snapshots if there is a working swap file on the subvolume**<br />
+- Best Way (Swap File) - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to. **btrfs filesystem doesn't let to create snapshots if there is a working swap file on the subvolume**<br />
 
 **Post Installation Steps** <br /> 
 
@@ -138,6 +139,12 @@ When you run apt-get upgrade, it only upgrades that which has a new release avai
 
 However, when you run apt-get dist-upgrade, it will intelligently install or remove packages as needed, in order to complete the upgrade. Apt-get dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files might eventually break the system.
 
+### Updating your recovery (Pop Os)
+If you upgrade to a newer release the recovery also needs to be upgraded, you can do a it via Terminal. <br />
+```bash
+pop-upgrade recovery upgrade from-release
+```
+ 
 ### Proprietary Drivers
 *You can get proprietary drivers directly from the Pop/Ubuntu Shop or Terminal.* <br />
 *If you get issues with NVIDIA get the NVIDIA iso.*<br />

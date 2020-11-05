@@ -126,8 +126,17 @@ There are some basic things you need to do after installation.
 *Get the latest updates via terminal or pop shop.* <br />
 For Terminal use
 ```bash
-sudo apt update && sudo apt upgrade && flatpak update
+sudo apt-get update && sudo apt-get upgrade -y && flatpak update
 ```
+For Forced update
+```bash
+sudo apt-get install -f && sudo apt-get dist-upgrade
+```
+
+### Difference b/w upgrade and dist-upgrade
+When you run apt-get upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
+
+However, when you run apt-get dist-upgrade, it will intelligently install or remove packages as needed, in order to complete the upgrade. Apt-get dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files might eventually break the system.
 
 ### Proprietary Drivers
 *You can get proprietary drivers directly from the Pop/Ubuntu Shop or Terminal.* <br />

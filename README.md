@@ -919,6 +919,7 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 #### 7. Add Activity Hot Corner & Format time.
 ![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overlay.png)
 
+### To fix qt5 applications like KolourPaint to respect system theming, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
 
 ## 7. Bonus
 ### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us if Steam Glitches
@@ -984,3 +985,4 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 6. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery
 7. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
 8. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file
+9. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix

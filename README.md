@@ -136,6 +136,9 @@ For Forced update
 sudo apt install -f && sudo apt dist-upgrade
 ```
 
+### Why use apt not apt-get?
+**Ans.** Apt was made according to an end-user perspective. It mostly does everything apt-get does. So for normal users, apt-get is not useful. But, for a developer that writes scripts and does automation, like writing a Dockerfile to build images, they would prefer apt-get over apt.
+
 ### Difference b/w upgrade and dist-upgrade
 When you run apt upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
 
@@ -172,7 +175,7 @@ I use custom resolution on my pc so fonts seem small to me so it make it better 
 If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.<br /> <br />
 ![set-of-refreshrates](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/set-of-refreshrates.png)
 
-#### Steps
+#### Steps ->
 **1. Check xrandr**  <br />
 You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
 ![xrandr](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/xrandr.png)
@@ -203,14 +206,14 @@ xrandr --addmode eDP-1 "1920x1080_60.00"
 ![addmode](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/addmode.png) <br />
 
 #### [Problem] The resolution goes away after a reboot.
-**Ans -** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
+**Ans.** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
 ```bash
 nano ~/.profile
 ```
 ![profile](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/profile.png)
 
 #### [Problem] What about other refresh rates? <br />
-**Ans -** You have to experiment with cvt a bit to find which refresh rates should be. My refresh rate is from 60hz to 120hz. I did some experimentation and added some resolution. <br />
+**Ans.** You have to experiment with cvt a bit to find which refresh rates should be. My refresh rate is from 60hz to 120hz. I did some experimentation and added some resolution. <br />
 
 Like if your display supports 120 hertz
 ```bash
@@ -234,10 +237,10 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 ![custom-resolution-final](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-resolution-final.png)
 
 #### [Problem] How to get rid of custom resolution?
-**Ans -** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
+**Ans.** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
 
 #### [BUG] Problems regarding Hybrid Graphics Switching.
-**Ans -** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the xrandr --addmode <displayname> if you switch Graphics.
+**Ans.** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the xrandr --addmode <displayname> if you switch Graphics.
 
 ## 3. Preferred Apps
 Pop has apps that you need. But, if you do not like them, you can also get alternatives.
@@ -523,7 +526,7 @@ sudo apt install <appname>
 ### Disable annoying Keyring
 #### This provides security for browsers on a autologin-based system.(Easy way to understand it)
 If you have a autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
-**Steps to Disable it** 
+**Steps to Disable it ->** 
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
@@ -620,7 +623,7 @@ The built-in extensions I use are - <br /> <br />
 
 ### Disabling Pop Shop on Boot
 Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />
-**Steps**
+**Steps ->**
 1. Edit App center daemon from opening it at start
 ```bash
 sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
@@ -819,7 +822,7 @@ I use **Steven Black** Ad-Hosts for ad-blocking the whole system without any oth
 I use **Unified hosts + fake news + gambling + porn** <br />
 
 #### Q. How to?
-**Ans. Steps -**
+**Ans. Steps ->**
 1. Get a [host](https://github.com/StevenBlack/hosts)
 2. Save it to Downloads
 3. Then
@@ -908,7 +911,7 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 ## 7. Bonus
 ### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
-**Steps**
+**Steps ->**
 1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
 3. To run it type

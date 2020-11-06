@@ -986,3 +986,4 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 7. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
 8. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file
 9. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix
+10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on swap

@@ -24,7 +24,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
 - **[Video Player](https://github.com/themagicalmammal/howtopopbuntu#video-player)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
-- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit)**
+- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-python), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
@@ -75,7 +75,7 @@ There are two ways of getting swap (You can choose which is better)<br />
 **Also if you are on a newer Ubuntu-based system which uses Ubiquity installer it will automatically create a swap file any time Ext4 is used for root.**
 - Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to.<br />
 
-**Post Installation Steps** <br /> 
+**Post Installation Steps** <br />
 
 **Brtfs [Snapshots won't work]** <br />
 Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  <br />
@@ -152,7 +152,7 @@ If you upgrade to a newer release the recovery also needs to be upgraded, you ca
 ```bash
 pop-upgrade recovery upgrade from-release
 ```
- 
+
 ### Proprietary Drivers
 *You can get proprietary drivers directly from the Pop/Ubuntu Shop or Terminal.* <br />
 *If you get issues with NVIDIA get the NVIDIA iso.*<br />
@@ -265,7 +265,7 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 
 **Chromium Based Browsers**
-1. **[Chrome](https://www.google.com/chrome/)** 
+1. **[Chrome](https://www.google.com/chrome/)**
 ```bash
 sudo apt install google-chrome-stable
 ```
@@ -306,7 +306,7 @@ Generally, these extensions exists for almost all browsers. <br />
 4. **[Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)** - Helps when you write something for fixing mistakes, helps me complete writing stuff fast.
 5. **[Random User-Agent](https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=en)** - Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
 6. **[The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en)** - Make your computer run smoothly by suspending the tabs you aren't using
-7. **[Touch VPN](https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd/related?hl=en-US)** - Simple setup. Relatively nominal footprint, as far as my diags/utils have determined at this early stage and consuming a minor spot in memory. 
+7. **[Touch VPN](https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd/related?hl=en-US)** - Simple setup. Relatively nominal footprint, as far as my diags/utils have determined at this early stage and consuming a minor spot in memory.
 
 ### Email Client
 Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.
@@ -371,7 +371,7 @@ Official Telegram client
 ```bash
 flatpak install org.telegram -y
 ```
-#### 2. Whatsapp
+#### 2. Whatsapp (GtkWhatsapp)
 [Unofficial Whatsapp client](https://github.com/gigitux/gtkwhats) with more features
 ```bash
 flatpak install com.gigitux.gtkwhats -y
@@ -381,11 +381,14 @@ Official Discord client
 ```bash
 flatpak install com.discordapp.Discord -y
 ```
-#### 4. Reddit
+#### 4. Reddit (Giara)
 [Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit
 ```bash
-flatpak install org.gabmus.giara
+flatpak install org.gabmus.giara -y
 ```
+#### 5. Facebook Messenger (Caprine)
+[Unofficial Facebook messenger](https://github.com/sindresorhus/caprine) <br />
+Get the [deb here](https://github.com/sindresorhus/caprine/releases)
 
 ### Programming Apps
 #### 1. Atom by GitHub
@@ -411,7 +414,7 @@ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update && sudo apt install spotify-client
 ```
-If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br /> 
+If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br />
 **But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
 ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
 
@@ -544,7 +547,7 @@ sudo apt install <appname>
 ### Disable annoying Keyring
 #### This provides security for browsers on a autologin-based system.(Easy way to understand it)
 If you have a autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
-**Steps to Disable it ->** 
+**Steps to Disable it ->**
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
@@ -592,14 +595,14 @@ sudo nano /etc/sysctl.conf
 
 ### EarlyOOM
 It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for the heavy usage. This is a very important feature for old hardware. It only consumes 0.5 to 2 MB in the background. <br /> <br />
-To install it 
+To install it
 ```bash
 sudo apt install earlyoom
 ```
 To check it's status
 ```bash
 systemctl status earlyoom
-``` 
+```
 <br />
 
 ### Wayland (Display Manager)
@@ -619,7 +622,7 @@ WaylandEnable=false
 sudo systemctl restart gdm3
 ```
 4. Then select it in login <br />
-![wayland](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/wayland.png) 
+![wayland](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/wayland.png)
 5. To confirm (Output: wayland)
 ```bash
 echo $XDG_SESSION_TYPE
@@ -629,7 +632,7 @@ echo $XDG_SESSION_TYPE
 ### Disabling Unnecessary Extensions
 Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
 The built-in extensions I use are - <br /> <br />
-![extensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/extensions.png) 
+![extensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/extensions.png)
 
 #### I have disabled these
 1. **Alt-Tab** -  By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.
@@ -786,7 +789,7 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 For XanMod
 ```bash
 sudo apt remove --purge linux-xanmod && sudo apt --purge autoremove
-``` 
+```
 
 For Liquorix
 ```bash
@@ -818,7 +821,7 @@ uname -r
 ```bash
 sudo apt remove <kernel name>
 ```
-7. Getting, remaining Kernel files 
+7. Getting, remaining Kernel files
 ```bash
 apt list --installed *xanmod* *liquorix*
 ```
@@ -946,7 +949,7 @@ pwd
 Replace this with (outputofpwd) below <br />
 2. Create a file **amongus.desktop** and save it to Documents <br />
 Place this code inside it
- 
+
 ```bash
 [Desktop Entry]
 Type=Application

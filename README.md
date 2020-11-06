@@ -13,6 +13,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 
 ## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
 - **[Update your System](https://github.com/themagicalmammal/howtopopbuntu#update-your-system)**
+- **[Why use apt not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
 - **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
@@ -323,8 +324,16 @@ sudo apt install evolution
 sudo apt install thunderbird
 ```
 3. **MailSpring** <br />
-1. Install the [gvfs-bin](https://pkgs.org/download/gvfs-bin) dependency.
-2. Get the deb file [here](https://github.com/Foundry376/Mailspring/releases/tag/1.7.8)
+Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. <br />
+**If it throws gvfs dependency error. Follow these Steps ->**
+1. Install these libraries
+```bash
+sudo apt install libsecret-1-dev gconf2 python2 python-is-python2
+```
+2. Install the deb,
+```bash
+sudo dpkg --ignore-depends=gvfs-bin -i mailspring*.deb
+```
 
 ### Video Player
 VLC is the best video player for any platform

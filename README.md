@@ -129,17 +129,17 @@ There are some basic things you need to do after installation.
 *Get the latest updates via terminal or pop shop.* <br />
 For Terminal use
 ```bash
-sudo apt-get update && sudo apt-get upgrade -y && flatpak update
+sudo apt update && sudo apt upgrade -y && flatpak update
 ```
 For Forced update
 ```bash
-sudo apt-get install -f && sudo apt-get dist-upgrade
+sudo apt install -f && sudo apt dist-upgrade
 ```
 
 ### Difference b/w upgrade and dist-upgrade
-When you run apt-get upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
+When you run apt upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
 
-However, when you run apt-get dist-upgrade, it will intelligently install or remove packages as needed, in order to complete the upgrade. Apt-get dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files might eventually break the system.
+However, when you run apt dist-upgrade, it will intelligently install or remove packages as needed, in order to complete the upgrade. Dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files might eventually break the system.
 
 ### Updating your recovery (Pop Os)
 If you upgrade to a newer release the recovery also needs to be upgraded, you can do a it via Terminal. <br />
@@ -272,8 +272,8 @@ sudo apt update && sudo apt install vivaldi-stable
 ```bash
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install opera-stable
+sudo apt update
+sudo apt install opera-stable
 ```
 **Non Chromium Based**
 1. **[Firefox](https://www.mozilla.org/en-US/firefox/new/)** <br />
@@ -764,12 +764,12 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 
 For XanMod
 ```bash
-sudo apt remove --purge linux-xanmod && sudo apt-get --purge autoremove
+sudo apt remove --purge linux-xanmod && sudo apt --purge autoremove
 ``` 
 
 For Liquorix
 ```bash
-sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 && sudo apt-get --purge autoremove
+sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 && sudo apt --purge autoremove
 ```
 2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
 ```bash
@@ -795,7 +795,7 @@ uname -r
 ```
 6. Removing the Kernel
 ```bash
-sudo apt-get remove <kernel name>
+sudo apt remove <kernel name>
 ```
 7. Getting, remaining Kernel files 
 ```bash
@@ -803,7 +803,7 @@ apt list --installed *xanmod* *liquorix*
 ```
 8. Removing the remaining Kernel files
 ```bash
-sudo apt-get remove <name of kernel files>
+sudo apt remove <name of kernel files>
 ```
 
 [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
@@ -832,8 +832,8 @@ sudo mv $(xdg-user-dir DOWNLOADS)/hosts.txt /etc/hosts
 ```bash
 sudo apt --purge autoremove
 sudo rm -rf ~/.cache/thumbnails/*
-sudo apt-get clean
-sudo apt-get autoclean
+sudo apt clean
+sudo apt autoclean
 ```
 **Tool** <br />
 I use Bleachbit because it is good to remove unnecessary junk from your computer.

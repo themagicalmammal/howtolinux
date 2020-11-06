@@ -28,7 +28,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-python), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
-- **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
+- **[Debloat](https://github.com/themagicalmammal/howtopopbuntu#--debloat)**
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
 - **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings) -> [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks), [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification), [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
@@ -275,7 +275,14 @@ wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key 
 sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 sudo apt update && sudo apt install vivaldi-stable
 ```
-3. **[Opera](https://www.opera.com/)**
+3. **[Brave](https://brave.com/)**
+```bash
+sudo apt install apt-transport-https
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update && sudo apt install brave-browser
+```
+4. **[Opera](https://www.opera.com/)**
 ```bash
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
@@ -475,7 +482,7 @@ sudo apt install Htop
 #### 7. Opensnitch (Firewall)
 Helps you to review which services connect the internet. Also, by stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch go [here](https://github.com/gustavo-iniguez-goya/opensnitch).
 
-### - Debloating
+### - Debloat
 ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
 - **Calculator** - You know what a calculator is.
 ```bash

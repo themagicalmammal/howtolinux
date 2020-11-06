@@ -7,6 +7,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 ## [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
 - **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create)**
 - **[What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)**
+- **[What about ZRAM?](https://github.com/themagicalmammal/howtopopbuntu#what-about-zram)**
 - **[Should I Encrypt?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-encrypt)**
 - **[Should I use Btrfs or Ext4?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-use-btrfs-or-ext4)**
 - **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs-ubuntu-only)**
@@ -103,6 +104,11 @@ to the end of
 sudo nano /etc/fstab
 ```
 5. Reboot  <br />
+
+#### What about ZRAM?
+First you should know what ZRAM is. Basically, ZRAM creates a block device in RAM where pages that would otherwise be written to swap (disk/ssd) are instead first compressed, then stored. This allows for much faster I/O of swap and also the data compression provides a great amount of memory savings. A downside of ZRAM is that it does use some CPU for compression but this is usually negated by the gains achieved from avoiding disk swap and also by the overall memory savings of compression. <br />
+How to enable ZRAM? <br />
+Go [here](https://www.techrepublic.com/article/how-to-enable-the-zram-module-for-faster-swapping-on-linux/).
 
 #### Q. Should I Encrypt?
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.

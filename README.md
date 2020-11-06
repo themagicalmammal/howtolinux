@@ -24,8 +24,8 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
 - **[Video Player](https://github.com/themagicalmammal/howtopopbuntu#video-player)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
-- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord)**
-- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
+- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit)**
+- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-python), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
 - **[Debloating](https://github.com/themagicalmammal/howtopopbuntu#--debloating)**
@@ -367,32 +367,38 @@ Guide the deb file [here](https://www.openoffice.org/download/) <br />
 
 ### Social Apps
 #### 1. Telegram
-Personally I use Kotogram client
+Official Telegram client
 ```bash
-flatpak install io.github.kotatogram
+flatpak install org.telegram -y
 ```
 #### 2. Whatsapp
-Gtkwhatsapp has better features
+[Unofficial Whatsapp client](https://github.com/gigitux/gtkwhats) with more features
 ```bash
-flatpak install com.gigitux.gtkwhats
+flatpak install com.gigitux.gtkwhats -y
 ```
 #### 3. Discord
+Official Discord client
 ```bash
-flatpak install com.discordapp.Discord
+flatpak install com.discordapp.Discord -y
+```
+#### 4. Reddit
+[Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit
+```bash
+flatpak install org.gabmus.giara
 ```
 
 ### Programming Apps
 #### 1. Atom by GitHub
 ```bash
-flatpak install io.atom.Atom
+flatpak install io.atom.Atom -y
 ```
-#### 2. Pycharm
+#### 2. Pycharm (python)
 ```bash
-flatpak install pycharm-community
+flatpak install pycharm-community -y
 ```
 #### 3. GitHub-Desktop
 ```bash
-sudo apt install github-desktop
+sudo apt install github-desktop -y
 ```
 #### 4. Java
 Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.

@@ -72,6 +72,7 @@ There are two ways of getting swap (You can choose which is better)<br />
 - General Method - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swapiness property (given bellow).<br />
 
 **[BRTFS] -> [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with general method or create swap file in a different partition.**
+**Also if you are on a newer Ubuntu-based system which uses Ubiquity installer it will automatically create a swap file any time Ext4 is used for root.**
 - Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to.<br />
 
 **Post Installation Steps** <br /> 
@@ -127,7 +128,9 @@ If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20
 There are some basic things you need to do after installation.
 
 ### Update your System
-*Get the latest updates via terminal or pop shop.* <br />
+*Get the latest updates via terminal or some GUI based updater or Apps stores(like Pop shop).* <br />
+Find GUI based updater <br />
+![update](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/update.png) <br />
 For Terminal use
 ```bash
 sudo apt update && sudo apt upgrade -y && flatpak update
@@ -136,7 +139,6 @@ For Forced update
 ```bash
 sudo apt install -f && sudo apt dist-upgrade
 ```
-
 ### Why use apt not apt-get?
 **Ans.** Apt was made according to an end-user perspective. It mostly does everything apt-get does. So for normal users, apt-get is not useful. But, for a developer that writes scripts and does automation, like writing a Dockerfile to build images, they would prefer apt-get over apt.
 
@@ -249,6 +251,7 @@ Pop has apps that you need. But, if you do not like them, you can also get alter
 ### Snap Vs Flatpak (Package Managers except apt,dpkg)
 Snap can incorporate more apps than Flatpak. It runs how the developer intended. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
 
+**If you are a newbie I won't recommend you to removing snap.**
 [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) <br />
 [Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/)
 
@@ -289,7 +292,7 @@ sudo apt install torbrowser-launcher
 ```
 I have not listed **Chromium** since it needs snap to install.<br />
 
-**You should always keep a Non-Chrome based browser to be on the safe side because in case of driver/library error which bugs Chromium-based browsers, Non-Chromium-based browsers can help you out.** <br /> <br />
+**In case of driver/library error which bugs on Chromium-based browsers, Non-Chromium-based browsers can help you out.** <br /> <br />
 To remove Firefox (Not Recommended)
 ```bash
 sudo apt remove --purge firefox*
@@ -974,9 +977,10 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 
 ## Thanks for Suggestions
 1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
-2. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
-3. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
-4. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
-5. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery
-6. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
-7. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file
+2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring correct instructions(fix for potential  ) & ubuntu based ubiquity swap thing & GUI updater
+3. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
+4. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
+5. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
+6. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery
+7. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
+8. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file

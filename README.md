@@ -23,12 +23,14 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser)**
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
-- **[Video Player](https://github.com/themagicalmammal/howtopopbuntu#video-player)**
+- **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-player) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
+- **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
+- **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
-- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-python), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
+- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
-- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget-download-manager), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
+- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
 - **[Debloat](https://github.com/themagicalmammal/howtopopbuntu#--debloat)**
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
@@ -45,7 +47,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
 - **[Optimising the boot](https://github.com/themagicalmammal/howtopopbuntu#optimising-the-boot)**
 - **[Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#custom-kernel)**
- - **[Removing Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)**
+- **[Removing Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)**
 - **[Final Boot Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
 ## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
 - **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
@@ -69,11 +71,11 @@ Go through this, because this can be a very helpful step. I am currently using b
 - (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System <br />
 
 #### What about Swap?
-There are two ways of getting swap (You can choose which is better)<br />
+**If you are on a newer Ubuntu-based system which uses Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.** <br />
+There are two ways of getting swap (You can choose which is better) <br />
 - General Method - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swapiness property (given bellow).<br />
 
 **[BRTFS] -> [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with general method or create swap file in a different partition.**
-**Also if you are on a newer Ubuntu-based system which uses Ubiquity installer it will automatically create a swap file any time Ext4 is used for root.**
 - Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to.<br />
 
 **Post Installation Steps** <br />
@@ -118,7 +120,7 @@ Encryption adds a layer to the disk, so there's a performance penalty. In day to
 
 To fix installation bugs
 ```bash
-sudo apt install btrfs-progs
+sudo apt install btrfs-progs -y
 ```
 
 - [Reference on Rise of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
@@ -165,7 +167,7 @@ pop-upgrade recovery upgrade from-release
 
 ### Gnome Tweaks & the ones I use
 ```bash
-sudo apt install gnome-tweaks
+sudo apt install gnome-tweaks -y
 ```
 
 #### 1. Minimize Button
@@ -273,27 +275,27 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 **Chromium Based Browsers**
 1. **[Chrome](https://www.google.com/chrome/)**
 ```bash
-sudo apt install google-chrome-stable
+sudo apt install google-chrome-stable -y
 ```
 2. **[Vivaldi](https://vivaldi.com/)**
 ```bash
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
 sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-sudo apt update && sudo apt install vivaldi-stable
+sudo apt update && sudo apt install vivaldi-stable -y
 ```
 3. **[Brave](https://brave.com/)**
 ```bash
-sudo apt install apt-transport-https
+sudo apt install apt-transport-https -y
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update && sudo apt install brave-browser
+sudo apt update && sudo apt install brave-browser -y
 ```
 4. **[Opera](https://www.opera.com/)**
 ```bash
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
 sudo apt update
-sudo apt install opera-stable
+sudo apt install opera-stable -y
 ```
 **Non Chromium Based**
 1. **[Firefox](https://www.mozilla.org/en-US/firefox/new/)** <br />
@@ -301,14 +303,13 @@ Comes pre-installed with Pop & Ubuntu.<br />
 
 2. **[TOR](https://www.torproject.org/download/)**
 ```bash
-sudo apt install torbrowser-launcher
+sudo apt install torbrowser-launcher -y
 ```
-I have not listed **Chromium** since it needs snap to install.<br />
 
 **In case of driver/library error which bugs on Chromium-based browsers, Non-Chromium-based browsers can help you out.** <br /> <br />
 To remove Firefox (Not Recommended)
 ```bash
-sudo apt remove --purge firefox*
+sudo apt remove --purge firefox* -y && sudo apt autoremove -y
 ```
 **Extensions I use on my Chrome** <br />
 Generally, these extensions exists for almost all browsers. <br />
@@ -326,40 +327,63 @@ Chrome is good enough for me. Pop OS ships with Geary which is a great email cli
 
 **If you want to remove Geary**
 ```bash
-sudo apt remove --purge geary* && sudo apt autoremove
+sudo apt remove --purge geary* -y && sudo apt autoremove -y
 ```
 
 Alternatives,
 
 1. **Evolution**
 ```bash
-sudo apt install evolution
+sudo apt install evolution -y
 ```
 2. **Thunderbird**
 ```bash
-sudo apt install thunderbird
+sudo apt install thunderbird -y
 ```
 3. **MailSpring** <br />
 Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. <br />
 **If it throws gvfs dependency error. Follow these Steps ->**
 1. Install these libraries
 ```bash
-sudo apt install libsecret-1-dev gconf2 python2 python-is-python2
+sudo apt install libsecret-1-dev gconf2 python2 python-is-python2 -y
 ```
 2. Install the deb,
 ```bash
 sudo dpkg --ignore-depends=gvfs-bin -i mailspring*.deb
 ```
 
-### Video Player
+### Video Tools
+#### 1. VLC
 VLC is the best video player for any platform
 ```bash
-sudo apt install vlc
+sudo apt install vlc  -y
 ```
 
 Get rid of the stock video player
 ```bash
-sudo apt remove --purge totem* && sudo apt autoremove
+sudo apt remove --purge totem* -y && sudo apt autoremove -y
+```
+#### 2. OBS Studio
+OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.
+```bash
+sudo apt install obs-studio -y
+```
+
+### Audio Tools
+#### 1. PulseAudio
+PulseAudio is a sound server. The sounds in your applications passes through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. This is a good replacement for Dolby. It also optimises the quality of your sound.
+```bash
+sudo apt install pulseaudio pavucontrol -y
+```
+#### 2. Audacity
+Audacity is an open-source software, easy-to-use, multi-track audio editor and allows users to record sound, and edit sound clips.
+```bash
+flatpak install org.audacityteam.Audacity -y
+```
+#### 3. Ardour
+Ardour is a hard disk recorder and digital audio workstation application. Ardour is intended to be digital audio workstation software suitable for professional use.
+```bash
+sudo apt install ardour -y
 ```
 
 ### Office
@@ -367,16 +391,38 @@ I directly use Chrome extension for the office, which you can get [here](https:/
 
 To remove LibreOffice
 ```bash
-sudo apt remove --purge libreoffice* && sudo apt autoremove
+sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 ```
 Alternatives, <br />
 **Free Office** (Something like MS-Office) <br />
 Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
 
-**Open Office** (LibreOffice is a way better option) <br />
+**Open Office** (LibreOffice is a better option) <br />
 Guide the deb file [here](https://www.openoffice.org/download/) <br />
 
 **WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
+
+### Graphic tools
+#### 1. GIMP
+It is free & open source Image Editor. You can further enhance your productivity with many customization options and 3rd party plugins.
+```bash
+sudo apt install gimp -y
+```
+#### 2. Krita
+A open source painting program. It is made by artists that want to see affordable art tools for everyone.
+```bash
+sudo apt install krita -y
+```
+#### 3. Blender
+It is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
+```bash
+sudo apt install blender -y
+```
+#### 4. Inkscape
+Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Here you can be illustrator, designer, web designer or just someone who needs to create some vector imagery,
+```bash
+sudo apt install inkscape -y
+```
 
 ### Social Apps
 #### 1. Telegram
@@ -395,7 +441,7 @@ Official Discord client
 flatpak install com.discordapp.Discord -y
 ```
 #### 4. Reddit (Giara)
-[Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit
+[Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit. Currently, this is in its development stage and thus might have bugs.
 ```bash
 flatpak install org.gabmus.giara -y
 ```
@@ -405,14 +451,17 @@ Get the [deb here](https://github.com/sindresorhus/caprine/releases)
 
 ### Programming Apps
 #### 1. Atom by GitHub
+A hackable text editor for programmers.
 ```bash
 flatpak install io.atom.Atom -y
 ```
-#### 2. Pycharm (python)
+#### 2. Pycharm IDE
+A python IDE for developers.
 ```bash
 flatpak install pycharm-community -y
 ```
 #### 3. GitHub-Desktop
+GitHub Desktop is a seamless way to contribute to projects on GitHub .
 ```bash
 sudo apt install github-desktop -y
 ```
@@ -425,7 +474,7 @@ Go through [this](https://www.digitalocean.com/community/tutorials/how-to-instal
 ```bash
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt update && sudo apt install spotify-client
+sudo apt update && sudo apt install spotify-client -y
 ```
 If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br />
 **But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
@@ -433,7 +482,7 @@ If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/
 
 #### 2. Steam for Gaming
 ```bash
-sudo apt install steam
+sudo apt install steam -y
 ```
 If it doesn't work, turn on multiverse.
 ```bash
@@ -441,20 +490,22 @@ sudo add-apt-repository multiverse && sudo apt update
 ```
 
 #### 3. Multimedia Codecs
+Gives you the ability to play popular non-free media formats, including DVD, MP3, Quicktime, and Windows Media formats.
 ```bash
-sudo apt install ubuntu-restricted-extras
+sudo apt install ubuntu-restricted-extras -y
 ```
 
 ### Other Apps
-#### 1. uGet (Download Manager)
+#### 1. uGet
+uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor and the ability to process downloads in a batch format.
 ```bash
-sudo apt install aria2 uget
+sudo apt install aria2 uget -y
 ```
-#### 2. Wine
-###### To run Windows programs
+#### 2. Wine (Windows Apps)
+Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications.
 1. Install wine according to your architecture. <br />
 ```bash
-sudo apt install wine
+sudo apt install wine -y
 ```
 **For 64-bit system this command enables 32-bit support** <br />
 ```bash
@@ -468,22 +519,24 @@ wine --version
 **Saftey with Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
 
 #### 3. Synaptic Package manager
+Synaptic serves as a graphical front-end to APT and makes the process of software management much easier, especially if you are not familiar with the command-line.
 ```bash
-sudo apt install synaptic
+sudo apt install synaptic -y
 ```
 #### 4. Nautilus (admin mode)
 ###### Adds right click property *Open as Administrator*
 ```bash
-sudo apt install nautilus-admin && nautilus -q
+sudo apt install nautilus-admin -y && nautilus -q
 ```
 #### 5. Timeshift
 ###### Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 ```bash
-sudo apt install timeshift
+sudo apt install timeshift -y
 ```
 #### 6. Htop (Resource Usage Monitor)
+A utility to see which process is taking how much CPU or memory.
 ```bash
-sudo apt install Htop
+sudo apt install Htop -y
 ```
 #### 7. Opensnitch (Firewall)
 Helps you to review which services connect the internet. Also, by stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch go [here](https://github.com/gustavo-iniguez-goya/opensnitch).
@@ -492,54 +545,54 @@ Helps you to review which services connect the internet. Also, by stopping some 
 ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
 - **Calculator** - You know what a calculator is.
 ```bash
-sudo apt remove --purge gnome-calculator
+sudo apt remove --purge gnome-calculator -y
 ```
 - **Calendar** - I put this on a list because I never need the Calendar even on my phone
 ```bash
-sudo apt remove --purge gnome-calendar && sudo apt autoremove
+sudo apt remove --purge gnome-calendar -y && sudo apt autoremove -y
 ```
 - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert them into a text string. I have no known use for it.
 ```bash
-sudo apt remove --purge gucharmap* && sudo apt autoremove
+sudo apt remove --purge gucharmap* -y && sudo apt autoremove -y
 ```
 - **Contacts** - Gnome contacts tool important for a work pc.
 ```bash
-sudo apt remove --purge gnome-contacts* && sudo apt autoremove
+sudo apt remove --purge gnome-contacts* -y && sudo apt autoremove -y
 ```
 - **Document Scanner** - Important tool for a work pc.
 ```bash
-sudo apt remove --purge sane* simple-scan
+sudo apt remove --purge sane* simple-scan -y
 ```
 - **Gnome Fonts** - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
 ```bash
-sudo apt remove --purge gnome-font-viewer
+sudo apt remove --purge gnome-font-viewer -y
 ```
 - **Gnome Help** - Useful for newcomers
 ```bash
-sudo apt remove --purge yelp* && sudo apt autoremove
+sudo apt remove --purge yelp* -y && sudo apt autoremove -y
 ```
 - **Gnome Power Manager** - can show historical and current battery information and programs waking up that use power. I never use it.
 ```bash
-sudo apt remove --purge gnome-power-manager
+sudo apt remove --purge gnome-power-manager -y
 ```
 - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
 ```bash
-sudo apt remove --purge ibus-libpinyin* && sudo apt autoremove
+sudo apt remove --purge ibus-libpinyin* -y && sudo apt autoremove -y
 ```
 - **Vim** - Vim is a highly configurable text editor built to configure any kind of text very efficient fashion. I have removed this because I use Nano/Gedit/Atom.
 ```bash
-sudo apt remove --purge gvim* vim* && sudo apt autoremove
+sudo apt remove --purge gvim* vim* -y && sudo apt autoremove -y
 ```
 - **Popsicle USB creator** - If you create a live USB, you should keep this tool but, Etcher seems a better option.<br />
 **Get [Etcher](https://www.balena.io/etcher/)** <br />
 ```bash
-sudo apt remove --purge popsicle*
+sudo apt remove --purge popsicle* -y
 ```
 
 #### Reverting
 If you accidentally remove any, you can add them back by
 ```bash
-sudo apt install <appname>
+sudo apt install <appname> -y
 ```
 *App name doesn't require * symbol*
 
@@ -610,7 +663,7 @@ sudo nano /etc/sysctl.conf
 It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for the heavy usage. This is a very important feature for old hardware. It only consumes 0.5 to 2 MB in the background. <br /> <br />
 To install it
 ```bash
-sudo apt install earlyoom
+sudo apt install earlyoom -y
 ```
 To check it's status
 ```bash
@@ -677,7 +730,7 @@ free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /pr
 ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
 - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
 ```bash
-sudo apt remove --purge networkd-dispatcher
+sudo apt remove --purge networkd-dispatcher -y
 ```
 - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you do not have a mobile broadband interface, you do not need this.
 ```bash
@@ -707,7 +760,7 @@ sudo systemctl mask avahi-daemon.service
 ```
 - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
 ```bash
-sudo apt remove --purge apport* && sudo apt autoremove
+sudo apt remove --purge apport* -y && sudo apt autoremove -y
 ```
 - **Saned** is the SANE (Scanner Access Now Easy) daemon that allows remote
 clients to access image acquisition devices available on the localhost.
@@ -801,12 +854,12 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 
 For XanMod
 ```bash
-sudo apt remove --purge linux-xanmod && sudo apt --purge autoremove
+sudo apt remove --purge linux-xanmod -y && sudo apt --purge autoremove
 ```
 
 For Liquorix
 ```bash
-sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 && sudo apt --purge autoremove
+sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y && sudo apt --purge autoremove
 ```
 2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
 ```bash
@@ -832,7 +885,7 @@ uname -r
 ```
 6. Removing the Kernel
 ```bash
-sudo apt remove <kernel name>
+sudo apt remove <kernel name> -y
 ```
 7. Getting, remaining Kernel files
 ```bash
@@ -840,7 +893,7 @@ apt list --installed *xanmod* *liquorix*
 ```
 8. Removing the remaining Kernel files
 ```bash
-sudo apt remove <name of kernel files>
+sudo apt remove <name of kernel files> -y
 ```
 
 [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
@@ -875,7 +928,7 @@ sudo apt autoclean
 **Tool** <br />
 I use Bleachbit because it is good to remove unnecessary junk from your computer.
 ```bash
-sudo apt install bleachbit
+sudo apt install bleachbit -y
 ```
 **Steps ->** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
 ![bleachbit](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bleachbit.png)
@@ -962,7 +1015,9 @@ pwd
 Replace this with (outputofpwd) below <br />
 2. Create a file **amongus.desktop** and save it to Documents <br />
 Place this code inside it
-
+<details>
+<summary>amongus.desktop</summary>
+<p>
 ```bash
 [Desktop Entry]
 Type=Application
@@ -974,7 +1029,8 @@ Exec=wine (outputofpwd)/Among\ Us.exe
 Terminal=false
 Categories=Game;Graphics;Wine;
 ```
-
+</p>
+</details>
 
 3. Then move it to applications
 

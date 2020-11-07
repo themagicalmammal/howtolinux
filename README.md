@@ -21,9 +21,9 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
-- **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser)**
-- **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)**
-- **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-player) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
+- **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor)**
+- **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
+- **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
 - **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender)**
@@ -259,38 +259,38 @@ Pop has apps that you need. But, if you do not like them, you can also get alter
 ### Snap Vs Flatpak (Package Managers except apt,dpkg)
 Snap can incorporate more apps than Flatpak. It runs how the developer intended. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
 
-**If you are a newbie I won't recommend you to removing snap.**
+**If you are a newbie I won't recommend you to removing snap.** <br /> <br />
 [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) <br />
-[Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/)
+[Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/) <br />
 
 ### Browser
 Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. <br />
 
-**MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi is partly open-source, and also these browsers do not support [VAAPI](https://forum.vivaldi.net/topic/31874/enable-hardware-accelerated-video-vaapi/2) & same goes for Opera as well.** <br />
+**MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, and also these browsers do not support VAAPI** <br />
 
-**Firefox & TOR are the only open-source browsers on this list. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI. ** <br />
+**Firefox, Brave & TOR are open-source browsers. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI. ** <br />
 
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 
 **Chromium Based Browsers**
-1. **[Chrome](https://www.google.com/chrome/)**
+#### 1. [Chrome](https://www.google.com/chrome/)
 ```bash
 sudo apt install google-chrome-stable -y
 ```
-2. **[Vivaldi](https://vivaldi.com/)**
+#### 2. [Vivaldi](https://vivaldi.com/)
 ```bash
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
 sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 sudo apt update && sudo apt install vivaldi-stable -y
 ```
-3. **[Brave](https://brave.com/)**
+#### 3. [Brave](https://brave.com/)
 ```bash
 sudo apt install apt-transport-https -y
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update && sudo apt install brave-browser -y
 ```
-4. **[Opera](https://www.opera.com/)**
+#### 4. [Opera](https://www.opera.com/)
 ```bash
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
@@ -298,10 +298,10 @@ sudo apt update
 sudo apt install opera-stable -y
 ```
 **Non Chromium Based**
-1. **[Firefox](https://www.mozilla.org/en-US/firefox/new/)** <br />
+#### 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/) <br />
 Comes pre-installed with Pop & Ubuntu.<br />
 
-2. **[TOR](https://www.torproject.org/download/)**
+#### 2. [TOR](https://www.torproject.org/download/)
 ```bash
 sudo apt install torbrowser-launcher -y
 ```
@@ -330,17 +330,17 @@ Chrome is good enough for me. Pop OS ships with Geary which is a great email cli
 sudo apt remove --purge geary* -y && sudo apt autoremove -y
 ```
 
-Alternatives,
+**Alternatives,**
 
-1. **Evolution**
+#### 1. [Evolution](https://help.gnome.org/users/evolution/stable/)
 ```bash
 sudo apt install evolution -y
 ```
-2. **Thunderbird**
+#### 2. [Thunderbird](https://www.thunderbird.net/en-US/)
 ```bash
 sudo apt install thunderbird -y
 ```
-3. **MailSpring** <br />
+#### 3. [MailSpring](https://getmailspring.com/)
 Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. <br />
 **If it throws gvfs dependency error. Follow these Steps ->**
 1. Install these libraries

@@ -56,7 +56,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
-- **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#among-us-if-steam-glitches)**
+- **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#-among-us-if-steam-glitches)**
 ## [reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
 
 
@@ -1001,22 +1001,22 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 ## 7. Bonus
 ### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
-**Steps ->**
+#### Steps ->
 1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
 3. To run it type
-```bash
+```
 wine Among\ Us.exe
 ```
 
-**Create a Desktop Icon**
-1. Open terminal inside Among Us folder(where exe is placed)
+#### Create a Desktop Icon
+1. Open terminal inside Among Us folder
 ```bash
 pwd
 ```
-Replace this with (outputofpwd) below <br />
+Replace this with outputofpwd <br />
 2. Create a file **amongus.desktop** <br />
-Place this code inside it
+Place this inside it
 <details>
   <summary>amongus.desktop</summary>
   <p>
@@ -1028,20 +1028,20 @@ Place this code inside it
   Comment=Among US ExE
   GenericName=Game
   Icon=Among_Us
-  Exec=wine (outputofpwd)/Among\ Us.exe
+  Exec=wine outputofpwd/Among\ Us.exe
   Terminal=false
   Categories=Game;Graphics;Wine;
   ```
   </p>
 </details>
-Save it to Documents
-3. Then move it to applications
-```bash
+Save it to Documents <br />
+3. Move it to .local/share/applications
+```
 mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
 ```
 
 #### OR
-**Create a Shell Script** <br />
+#### Create a Script
 1. Create a file start.sh
 ```bash
 echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh

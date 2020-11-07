@@ -25,8 +25,8 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
 - **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
 - **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
-- **[Office](https://github.com/themagicalmammal/howtopopbuntu#office)**
-- **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender)**
+- **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [Open Office](https://github.com/themagicalmammal/howtopopbuntu#2-open-office)**
+- **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
@@ -298,7 +298,7 @@ sudo apt update
 sudo apt install opera-stable -y
 ```
 **Non Chromium Based**
-#### 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/) <br />
+#### 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 Comes pre-installed with Pop & Ubuntu.<br />
 
 #### 2. [TOR](https://www.torproject.org/download/)
@@ -353,7 +353,7 @@ sudo dpkg --ignore-depends=gvfs-bin -i mailspring*.deb
 ```
 
 ### Video Tools
-#### 1. VLC
+#### 1. [VLC](https://www.videolan.org/index.html)
 VLC is the best video player for any platform
 ```bash
 sudo apt install vlc  -y
@@ -363,24 +363,24 @@ Get rid of the stock video player
 ```bash
 sudo apt remove --purge totem* -y && sudo apt autoremove -y
 ```
-#### 2. OBS Studio
+#### 2. [OBS Studio](https://obsproject.com/)
 OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.
 ```bash
 sudo apt install obs-studio -y
 ```
 
 ### Audio Tools
-#### 1. PulseAudio
+#### 1. [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)
 PulseAudio is a sound server. The sounds in your applications passes through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. This is a good replacement for Dolby. It also optimises the quality of your sound.
 ```bash
 sudo apt install pulseaudio pavucontrol -y
 ```
-#### 2. Audacity
+#### 2. [Audacity](https://www.audacityteam.org/)
 Audacity is an open-source software, easy-to-use, multi-track audio editor and allows users to record sound, and edit sound clips.
 ```bash
 flatpak install org.audacityteam.Audacity -y
 ```
-#### 3. Ardour
+#### 3. [Ardour](https://ardour.org/)
 Ardour is a hard disk recorder and digital audio workstation application. Ardour is intended to be digital audio workstation software suitable for professional use.
 ```bash
 sudo apt install ardour -y
@@ -393,11 +393,13 @@ To remove LibreOffice
 ```bash
 sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 ```
-Alternatives, <br />
-**Free Office** (Something like MS-Office) <br />
+Alternatives,
+#### 1. Free Office
+Looks a lot like MS-Office
 Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
 
-**Open Office** (LibreOffice is a better option) <br />
+#### 2. Open Office
+LibreOffice is a better option
 Guide the deb file [here](https://www.openoffice.org/download/) <br />
 
 **WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
@@ -1013,27 +1015,27 @@ wine Among\ Us.exe
 pwd
 ```
 Replace this with (outputofpwd) below <br />
-2. Create a file **amongus.desktop** and save it to Documents <br />
+2. Create a file **amongus.desktop** <br />
 Place this code inside it
 <details>
-<summary>amongus.desktop</summary>
-<p>
-```bash
-[Desktop Entry]
-Type=Application
-Name=Among Us
-Comment=Among US ExE
-GenericName=Game
-Icon=Among_Us
-Exec=wine (outputofpwd)/Among\ Us.exe
-Terminal=false
-Categories=Game;Graphics;Wine;
-```
-</p>
+  <summary>amongus.desktop</summary>
+  <p>
+
+  ```
+  [Desktop Entry]
+  Type=Application
+  Name=Among Us
+  Comment=Among US ExE
+  GenericName=Game
+  Icon=Among_Us
+  Exec=wine (outputofpwd)/Among\ Us.exe
+  Terminal=false
+  Categories=Game;Graphics;Wine;
+  ```
+  </p>
 </details>
-
+Save it to Documents
 3. Then move it to applications
-
 ```bash
 mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
 ```

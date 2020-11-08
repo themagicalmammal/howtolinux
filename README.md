@@ -17,7 +17,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Why use apt not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
-- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
+- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
@@ -170,15 +170,14 @@ pop-upgrade recovery upgrade from-release
 sudo apt install gnome-tweaks -y
 ```
 
-#### 1. Minimize Button
-Minimize is an important button for gnome. I always wonder why they did not add it. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
-
+#### 1. Minimize Button and Button Placement
+Minimize is an important button for gnome. I always wonder why they did not add it. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. Also you can get the left placement if you like it better that way. <br />
 You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
 ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
 #### 2. Battery Percentage
 This option is also pretty useful but only for a lappy.<br>
 #### 3. Optimizing Font
-I use custom resolution on my pc so fonts seem small to me so it make it better I use 1.11x font with anti aliasing to Subpixel.<br /> <br />
+I use custom resolution on my pc's so font seem small to me, so it make it better I use 1.11x font. I have set the hinting to full because hinting makes the font appear more crisp so that they are more readable. Also I have set the anti-aliasing to full pixels instead of sub-pixels because it has more font smoothing.<br /> <br />
 ![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
 
 ### Custom Resolution with Xrandr

@@ -17,7 +17,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Why use apt not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
-- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
+- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
@@ -178,7 +178,7 @@ If you were a mac user, you might prefer left button placement over the default 
 ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
 #### 2. Battery Percentage
 Shows the amount of battery remaining in percent. Doesn't work for desktop pc's.<br> <br />
-![batterypercent](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/batterypercent)<br>
+![batterypercent](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/batterypercent.png)<br>
 #### 3. Optimizing Font
 I use custom resolution on my pc's so font seem small to me, so it make it better I use 1.11x font. I have set the hinting to full because hinting makes the font appear more crisp so that they are more readable. Also I have set the anti-aliasing to full pixels instead of sub-pixels because it has more font smoothing.<br /> <br />
 ![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-font-size.png) <br />

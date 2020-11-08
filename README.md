@@ -17,7 +17,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Why use apt not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
-- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font)**
+- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
@@ -173,13 +173,19 @@ sudo apt install gnome-tweaks -y
 #### 1. Minimize Button and Button Placement
 Minimize is an important button. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
 You can get the maximize button too, but it's not that useful because it can be done by double-clicking the title bar.<br />
-If you were a mac user, you might prefer left button placement over the default right placement. <br /> <br />
+If you were a mac user, you might prefer left button placement over the default right placement. <br />
+**Note:-** Left Placement glitches the gnome-tweak-tool for some reason don't worry about it just increase the size of the window. <br /> <br />
 ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
 #### 2. Battery Percentage
-This option is also pretty useful but only for a lappy.<br>
+Shows the amount of battery remaining in percent. Doesn't work for desktop pc's.<br> <br />
+![batterypercent](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/batterypercent)<br>
 #### 3. Optimizing Font
 I use custom resolution on my pc's so font seem small to me, so it make it better I use 1.11x font. I have set the hinting to full because hinting makes the font appear more crisp so that they are more readable. Also I have set the anti-aliasing to full pixels instead of sub-pixels because it has more font smoothing.<br /> <br />
-![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-font-size.png) <br /> <br />
+![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-font-size.png) <br />
+#### 4. Activity Hot Corner and Format time
+Activity hot corner enables hot corner where the button Activity is placed. So rather than clicking the button just touch the edge. <br />
+You can format time according to what you need. As I only use the time, so I got rid of the date there. <br /> <br />
+![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overlay.png) <br /> <br />
 
 ### Custom Resolution with Xrandr
 **Please read all the problems & bugs with this, so that you know what problems might come & how to fix them** <br />
@@ -976,19 +982,15 @@ To get the start button I [have](https://github.com/themagicalmammal/howtopopbun
 
 **Only works with Dash** <br />
 - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
-
-#### 3. Left Titlebar buttons
-**Steps ->** GNOME Tweaks > Windows Titlebar > **Left** <br />
-**Note:-** This glitches the gnome-tweak-tool for some reason don't worry about it and increase the size of the window.
-#### 4. Custom themes
+#### 3. Custom themes
 *Go to [Gnome-look](https://www.gnome-look.org/browse/cat/)* <br />  <br />
 **My setup** <br />
 Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/) <br />
 Cursor - [Layan](https://www.gnome-look.org/s/Gnome/p/1365214/) <br />
 Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 
-#### 5. Place the theme in .themes & the icons in .icons in Home.
-#### 6. In the Gnome tweak tool, Select your theme.
+#### 4. Place the theme in .themes & the icons in .icons in Home.
+#### 5. In the Gnome tweak tool, Select your theme.
 
 **Tip** - How to fix terminal theme
 1. Go to Preferences.
@@ -1003,9 +1005,8 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 2. Go to Font & Colors.
 3. Select Color Scheme - Classic. <br />
 
-![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bigsurlikelook.png)
-#### 7. Add Activity Hot Corner & Format time.
-![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overlay.png)
+### After you do all of this, your desktop should look this
+![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bigsurlikelook.png) <br /> <br />
 
 ### To fix qt5 applications like KolourPaint to respect system theming, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
 

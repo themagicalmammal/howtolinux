@@ -17,7 +17,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Why use apt not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
-- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage)**
+- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
@@ -55,6 +55,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
 - **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
+- **[Qt5 theme fix](https://github.com/themagicalmammal/howtopopbuntu#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theming-go-here)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
 - **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#-among-us-if-steam-glitches)**
 ## [reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
@@ -1047,7 +1048,7 @@ Place this inside it
   </p>
 </details>
 Save it to Documents <br />
-3. Move it to .local/share/applications
+3. Use this icon
 ```
 mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
 ```
@@ -1070,7 +1071,7 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 
 ## Thanks for Suggestions
 1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
-2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring correct instructions(fix for potential  ) & ubuntu based ubiquity swap thing & GUI updater
+2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring correct instructions(fix for dangerous gvfs-bin bug) & ubuntu based ubiquity swap thing & GUI updater & updated snap docs
 3. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 4. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 5. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.

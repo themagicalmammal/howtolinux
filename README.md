@@ -613,12 +613,12 @@ sudo apt install <appname> -y
 ## 4. Important Tweaks
 ### Settings
 #### -- Privacy Tweaks
-![1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/1.png)
-![2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/2.png)
-![3](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/3.png)
-![4](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/4.png)
+![privacytweaks1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/privacytweaks1.png)
+![privacytweaks2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/privacytweaks2.png)
+![privacytweaks3](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/privacytweaks3.png)
+![privacytweaks4](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/privacytweaks4.png)
 #### -- Over Amplification
-![sound](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/sound.png)
+![overamplification](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overamplification.png)
 #### -- Accessibility
 1. Disable Cursor blinking, this doesn't save any resources, this is just a choice.
 2. Optimise repeat keys speed <br /> <br />
@@ -630,8 +630,8 @@ If you have a autologin system, whenever you open a browser (except firefox) or 
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
-![key](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/chngpass.png)
-![unen](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring.png) <br />
+![disablekeyring1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring1.png)
+![disablekeyring2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring2.png) <br />
 
 
 ## 5. Optimize Boot time & Ram Usage

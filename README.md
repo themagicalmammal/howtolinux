@@ -711,7 +711,7 @@ echo $XDG_SESSION_TYPE
 ### Disabling Unnecessary Extensions
 Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
 The built-in extensions I use are - <br /> <br />
-![extensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/extensions.png)
+![gnomeextensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnomeextensions.png)
 
 #### I have disabled these
 1. **Alt-Tab** -  By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.

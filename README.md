@@ -189,6 +189,9 @@ If your display supports a higher refresh rate, go for it because higher refresh
 #### Steps ->
 **1. Check xrandr**  <br />
 You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
+```bash
+xrandr #Check your display name
+```
 ![xrandr](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/xrandr.png)
 <br /> <br />
 **2. Find resolution which will fit**  <br />

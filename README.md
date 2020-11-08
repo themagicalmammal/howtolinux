@@ -116,7 +116,7 @@ Go [here](https://www.techrepublic.com/article/how-to-enable-the-zram-module-for
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
 #### Q. Should I use Btrfs or Ext4?
-**Ans.** It depends, As Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Btrfs on my desktop & noticed that Btrfs is surprisingly fast. But, I do not know if this is the case with every distro. <br />
+**Ans.** It depends, As Btrfs is in it's infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Btrfs on my desktop & noticed that Btrfs is surprisingly fast. But, I do not know if this is the case with every distro. <br />
 
 To fix installation bugs
 ```bash
@@ -171,8 +171,9 @@ sudo apt install gnome-tweaks -y
 ```
 
 #### 1. Minimize Button and Button Placement
-Minimize is an important button for gnome. I always wonder why they did not add it. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. Also you can get the left placement if you like it better that way. <br />
-You can also get the maximize button but it's not that useful because double-clicking the title bar does the job.<br /> <br />
+Minimize is an important button. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
+You can get the maximize button too, but it's not that useful because it can be done by double-clicking the title bar.<br />
+If you were a mac user, you might prefer left button placement over the default right placement. <br /> <br />
 ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
 #### 2. Battery Percentage
 This option is also pretty useful but only for a lappy.<br>
@@ -223,13 +224,13 @@ nano ~/.profile
 ![profile](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/profile.png)
 
 #### [Problem] What about other refresh rates? <br />
-**Ans.** You have to experiment with cvt a bit to find which refresh rates should be. My refresh rate is from 60hz to 120hz. I did some experimentation and added some resolution. <br />
+**Ans.** You have to experiment with cvt a bit, to find which refresh rates should would need. My refresh rate is from 60hz to 120hz. I did some experimentation and added these refresh rates. <br />
 
 Like if your display supports 120 hertz
 ```bash
 cvt 1920 1080 120
 ```
-<custom-120>
+![custom120](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom120.png)
 
 Finally, I added these resolutions
 ```bash

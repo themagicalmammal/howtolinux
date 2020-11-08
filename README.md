@@ -627,8 +627,7 @@ sudo apt install <appname> -y
 #### -- Over Amplification
 ![overamplification](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overamplification.png)
 #### -- Accessibility
-1. Disable Cursor blinking, this doesn't save any resources, this is just a choice.
-2. Optimise repeat keys speed <br /> <br />
+Optimise the speed of repeat keys. You can also disable Cursor blinking. <br /> <br />
 ![repeatkeys](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/repeatkeys.png)
 ### Disable annoying Keyring
 #### This provides security for browsers on a autologin-based system.(Easy way to understand it)

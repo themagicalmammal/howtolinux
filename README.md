@@ -1048,8 +1048,8 @@ Place this inside it
   </p>
 </details>
 Save it to Documents <br />
-3. Use this icon
-```
+3. Use this icon <br />
+```bash
 mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
 ```
 
@@ -1070,13 +1070,13 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 
 
 ## Thanks for Suggestions
-1. [GGG_246](https://www.reddit.com/user/GGG_246/) - Actually a lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
-2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring correct instructions(fix for dangerous gvfs-bin bug) & ubuntu based ubiquity swap thing & GUI updater & updated snap docs
+1. [GGG_246](https://www.reddit.com/user/GGG_246/) - A lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
+2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring (fix for dangerous gvfs-bin bug) & Ubiquity auto Swap & GUI updater & Updated Snap instructions.
 3. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 4. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 5. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
-6. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery
-7. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel
-8. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file
-9. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix
-10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on swap
+6. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
+7. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel.
+8. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file.
+9. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix.
+10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on swap.

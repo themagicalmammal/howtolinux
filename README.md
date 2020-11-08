@@ -30,7 +30,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
-- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Htop](https://github.com/themagicalmammal/howtopopbuntu#6-htop-resource-usage-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
+- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Resource Monitor](https://github.com/themagicalmammal/howtopopbuntu#6-resource-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
 - **[Debloat](https://github.com/themagicalmammal/howtopopbuntu#--debloat)**
 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
@@ -535,11 +535,19 @@ sudo apt install nautilus-admin -y && nautilus -q
 ```bash
 sudo apt install timeshift -y
 ```
-#### 6. Htop (Resource Usage Monitor)
+#### 6. Resource Monitor
+#### - Htop
 A utility to see which process is taking how much CPU or memory.
 ```bash
-sudo apt install Htop -y
+sudo apt install htop -y
 ```
+![htop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/htop.png)
+#### - Bashtop
+A advanced utility that shows usage and stats for processor, memory, disks, network and processes.
+```bash
+sudo apt install bashtop -y
+```
+![bashtop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bashtop.png)
 #### 7. Opensnitch (Firewall)
 Helps you to review which services connect the internet. Also, by stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch go [here](https://github.com/gustavo-iniguez-goya/opensnitch).
 

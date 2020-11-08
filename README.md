@@ -1029,28 +1029,22 @@ pwd
 ```
 Replace this with outputofpwd <br />
 2. Create a file **amongus.desktop** <br />
-Place this inside it
-<details>
-  <summary>amongus.desktop</summary>
-  <p>
-
-  ```
-  [Desktop Entry]
-  Type=Application
-  Name=Among Us
-  Comment=Among US ExE
-  GenericName=Game
-  Icon=Among_Us
-  Exec=wine outputofpwd/Among\ Us.exe
-  Terminal=false
-  Categories=Game;Graphics;Wine;
-  ```
-  </p>
-</details>
+##### Place this inside it
+```python
+[Desktop Entry]
+Type=Application
+Name=Among Us
+Comment=Among US ExE
+GenericName=Game
+Icon=Among_Us
+Exec=wine outputofpwd/Among\ Us.exe
+Terminal=false
+Categories=Game;Graphics;Wine;
+```
 Save it to Documents <br />
 3. Use this icon <br />
 ```bash
-mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
+ mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
 ```
 
 #### OR

@@ -1082,5 +1082,6 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 6. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
 7. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
 8. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for the kernel.
-9. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making a swap file.
-10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on a swap.
+9. [RiderExMachina](https://www.reddit.com/user/RiderExMachina/) - Check out what he said [here](https://www.reddit.com/r/linux4noobs/comments/jqyi1c/want_to_switch_to_ubuntubased_distros_need_a/gbqvrbf?utm_source=share&utm_medium=web2x&context=3)
+10. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making a swap file.
+11. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on a swap.

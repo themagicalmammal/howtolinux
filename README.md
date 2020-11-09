@@ -27,7 +27,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
 - **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
 - **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
-- **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [Open Office](https://github.com/themagicalmammal/howtopopbuntu#2-open-office)**
+- **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [WPS Office](https://github.com/themagicalmammal/howtopopbuntu#2-wps-office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java), [Visual Studio](https://github.com/themagicalmammal/howtopopbuntu#5-visual-studio)**
@@ -403,21 +403,22 @@ I directly use Chrome extension for the office, which you can get [here](https:/
 **If you have not tried LibreOffice, I will recommend you to try it first.** <br />
 Alternatives,
 #### 1. [Free Office](https://www.freeoffice.com/en/)
-Looks a lot like MS-Office.
-Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
+Looks a lot like Microsoft Office. <br />
+Get the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
 
-#### 2. [Open Office](https://www.openoffice.org/)
-It is a close cousin of LibreOffice.
-Guide the deb file [here](https://www.openoffice.org/download/) <br />
+**If you have a problem with Chinese apps or are privacy concern skip over this.**
+#### 2. [WPS Office](https://www.wps.com/)
+A beautiful office suite with a lot of customizations. <br />
+Get the deb file [here](https://linux.wps.com/) <br />
 
 **You can also use web-based offices like Google Drive.** <br />
 
 To remove LibreOffice  <br />
+
 ```bash
 sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 ``` 
-<br /><br />
-**Currently, I have removed WPS because many users have reported it for being a privacy concern.** 
+<br /> <br />
 
 ### Graphic tools
 #### 1. GIMP

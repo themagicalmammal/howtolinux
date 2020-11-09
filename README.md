@@ -28,7 +28,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [Open Office](https://github.com/themagicalmammal/howtopopbuntu#2-open-office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
-- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java)**
+- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java), [Visual Studio](https://github.com/themagicalmammal/howtopopbuntu#5-visual-studio)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Resource Monitor](https://github.com/themagicalmammal/howtopopbuntu#6-resource-monitor), [Opensnitch](https://github.com/themagicalmammal/howtopopbuntu#7-opensnitch-firewall)**
 - **[Debloat](https://github.com/themagicalmammal/howtopopbuntu#--debloat)**
@@ -397,23 +397,25 @@ sudo apt install ardour -y
 ```
 
 ### Office
-I directly use Chrome extension for the office, which you can get [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml)
-
-To remove LibreOffice
-```bash
-sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
-```
-**If you have not tried LibreOffice, I will recommend you to try it first.**
+I directly use Chrome extension for the office, which you can get [here](https://chrome.google.com/webstore/detail/editor-for-docs-sheets-sl/eahibemoondbjaojgcdnmjlnbjmgbbml) <br /> <br />
+**If you have not tried LibreOffice, I will recommend you to try it first.** <br />
 Alternatives,
-#### 1. Free Office
-Looks a lot like MS-Office
+#### 1. [Free Office](https://www.freeoffice.com/en/)
+Looks a lot like MS-Office.
 Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
 
-#### 2. Open Office
-It is a close cousin of LibreOffice
+#### 2. [Open Office](https://www.openoffice.org/)
+It is a close cousin of LibreOffice.
 Guide the deb file [here](https://www.openoffice.org/download/) <br />
 
-**You can also use web-based offices like Google Drive. Currently, I have removed WPS because many users have reported it for being a privacy concern.**
+**You can also use web-based offices like Google Drive.** <br />
+
+To remove LibreOffice  <br />
+```bash
+sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
+``` 
+<br /><br />
+**Currently, I have removed WPS because many users have reported it for being a privacy concern.** 
 
 ### Graphic tools
 #### 1. GIMP
@@ -474,12 +476,15 @@ A python IDE for developers.
 flatpak install pycharm-community -y
 ```
 #### 3. GitHub-Desktop
-GitHub Desktop is a seamless way to contribute to projects on GitHub .
+GitHub Desktop is a seamless way to contribute to projects on GitHub.
 ```bash
 sudo apt install github-desktop -y
 ```
 #### 4. Java
-Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the version you need.
+Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the correct version.
+
+#### 5. Visual Studio
+Go through [this](https://code.visualstudio.com/docs/setup/linux).
 
 ### Entertainment Apps
 #### 1. Spotify for Music

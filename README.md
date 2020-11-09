@@ -523,19 +523,21 @@ sudo apt install aria2 uget -y
 ```
 #### 2. Wine (Windows Apps)
 Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications.
-1. Install wine according to your architecture. <br />
-```bash
-sudo apt install wine -y
-```
-**For 64-bit system this command enables 32-bit support** <br />
+**Remove Wine if you have it installed**
+1. If you have a 64-bit system this command will enable 32-bit support
 ```bash
 sudo dpkg --add-architecture i386
 ```
-2. To check the version installed.
+2. Then follow these steps
 ```bash
-wine --version
+wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' && sudo apt update
+sudo apt install --install-recommends winehq-stable -y
 ```
-
+3. Then open wine configuration, add download the additional wine files
+```bash
+winecfg
+```
 **Saftey with Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
 
 #### 3. Synaptic Package manager
@@ -1074,10 +1076,10 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 1. [GGG_246](https://www.reddit.com/user/GGG_246/) - A lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
 2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring (fix for dangerous gvfs-bin bug) & Ubiquity auto Swap & GUI updater & Updated Snap instructions.
 3. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
-4. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
-5. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
-6. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
-7. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel.
-8. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file.
-9. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix.
+4. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix & new wine installation steps.
+5. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
+6. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
+7. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
+8. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel.
+9. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file.
 10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on swap.

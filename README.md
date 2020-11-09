@@ -403,16 +403,17 @@ To remove LibreOffice
 ```bash
 sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 ```
+**If you have not tried LibreOffice, I will recommend you to try it first.**
 Alternatives,
 #### 1. Free Office
 Looks a lot like MS-Office
 Guide the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
 
 #### 2. Open Office
-LibreOffice is a better option
+It is a close cousin of LibreOffice
 Guide the deb file [here](https://www.openoffice.org/download/) <br />
 
-**WPS OFFICE is a Chinese application making it a privacy concern for users using it.**
+**You can also use web-based offices like Google Drive. Currently, I have removed WPS because many users have reported it for being a privacy concern.**
 
 ### Graphic tools
 #### 1. GIMP

@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 ###### This is done exclusively on Pop Os 20.10 but, this should work on almost every Ubuntu-based Distros.
-These is a extensive Guide on the set of things I use. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over six months using pop on them.
+This is an extensive Guide on the set of things I use. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over six months using pop on them.
 
 
 # Index
@@ -16,7 +16,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 
 ## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
 - **[Update your System](https://github.com/themagicalmammal/howtopopbuntu#update-your-system)**
-- **[Why use apt not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
+- **[Why use apt, not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
 - **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
@@ -38,7 +38,7 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
 - **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings) -> [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks), [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification), [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
 - **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
-## [Optimize Boot time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
+## [Optimize Boot-time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
 - **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
 - **[Adjusting the Swappiness Property](https://github.com/themagicalmammal/howtopopbuntu#adjusting-the-swappiness-property)**
 - **[Adjusting the Cache Pressure](https://github.com/themagicalmammal/howtopopbuntu#adjusting--the-cache-pressure-setting)**
@@ -47,39 +47,39 @@ These is a extensive Guide on the set of things I use. I have two computers one 
 - **[Disabling Extensions](https://github.com/themagicalmammal/howtopopbuntu#disabling-unnecessary-extensions)**
 - **[Disable Pop Shop on boot](https://github.com/themagicalmammal/howtopopbuntu#disabling-pop-shop-on-boot)**
 - **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
-- **[Optimising the boot](https://github.com/themagicalmammal/howtopopbuntu#optimising-the-boot)**
+- **[Optimizing the boot](https://github.com/themagicalmammal/howtopopbuntu#optimizing-the-boot)**
 - **[Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#custom-kernel)**
 - **[Removing Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)**
-- **[Final Boot Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
+- **[Final Boot-Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
 ## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
 - **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
 - **[Clean your System](https://github.com/themagicalmammal/howtopopbuntu#clean-your-system)**
 - **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
 - **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
-- **[Qt5 theme fix](https://github.com/themagicalmammal/howtopopbuntu#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theming-go-here)**
+- **[Qt5 theme fix](https://github.com/themagicalmammal/howtopopbuntu#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theme-go-here)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
-- **[Among Us if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#-among-us-if-steam-glitches)**
-## [reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
+- **[Among Us, if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#-among-us-if-steam-glitches)**
+## [Reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
 
 
 ## 1. Installation
 **Only for Advanced Users** <br />
-Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove Recovery partition to be on the safe side, it helps out a lot.
+Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove the Recovery partition to be on the safe side, it helps out a lot.
 
 #### Partitions to Create
 - 500 MB for Efi boot (Enough even for multi-boot)
 - Recovery (Very Useful, only Pop Os for Ubuntu you need to manually backup) <br />
-- Swap partiton (First, read [What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap))
+- Swap partition (First, read [What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap))
 - (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System <br />
 
 #### What about Swap?
-**If you are on a newer Ubuntu-based system which uses Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.** <br />
+**If you are on a newer Ubuntu-based system that uses Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.** <br />
 There are two ways of getting swap (You can choose which is better) <br />
-- General Method - Creating a swap partition (linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have higher ram you need lower swap. So, according to me numbers for ram:swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swapiness property (given bellow).<br />
+- General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).<br />
 
-**[BRTFS] -> [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with general method or create swap file in a different partition.**
-- Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it like it does on linux-swap, that's why it is also space efficient. And best part is you can resize this or remove this whenever you want to.<br />
+**[BRTFS] -> [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with the general method or create a swap file in a different partition.**
+- Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap, that's why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.<br />
 
 **Post Installation Steps** <br />
 
@@ -87,7 +87,7 @@ There are two ways of getting swap (You can choose which is better) <br />
 Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  <br />
 
 **Ext4** <br />
-1. Instruction set for Swap file
+1. Instruction set for the Swap file
 ```bash
 sudo dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 ```
@@ -111,27 +111,27 @@ sudo nano /etc/fstab
 5. Reboot  <br />
 
 #### What about ZRAM?
-First you should know what ZRAM is. Basically, ZRAM creates a block device in RAM where pages that would otherwise be written to swap (disk/ssd) are instead first compressed, then stored. This allows for much faster I/O of swap and also the data compression provides a great amount of memory savings. A downside of ZRAM is that it does use some CPU for compression but this is usually negated by the gains achieved from avoiding disk swap and also by the overall memory savings of compression. <br />
+First, you should know what ZRAM is. ZRAM creates a block device in RAM where pages that would otherwise be written to swap (disk/SSD) are instead first compressed, then stored. This allows for much faster I/O of swap and also the data compression provides a great amount of memory savings. A downside of ZRAM is that it does use some CPU for compression but this is usually negated by the gains achieved from avoiding disk swap and also by the overall memory savings of compression. <br />
 How to enable ZRAM? <br />
 Go [here](https://www.techrepublic.com/article/how-to-enable-the-zram-module-for-faster-swapping-on-linux/).
 
 #### Q. Should I Encrypt?
-Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
+Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations, you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
 #### Q. Should I use Btrfs or Ext4?
-**Ans.** It depends, As Btrfs is in it's infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Btrfs on my desktop & noticed that Btrfs is surprisingly fast. But, I do not know if this is the case with every distro. <br />
+**Ans.** It depends, As Btrfs is in its infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Btrfs on my desktop & noticed that Btrfs is surprisingly fast. But, I do not know if this is the case with every distro. <br />
 
 To fix installation bugs
 ```bash
 sudo apt install btrfs-progs -y
 ```
 
-- [Reference on Rise of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
+- [Reference on Rising of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
 
 
 #### Q. What about ZFS? (UBUNTU ONLY)
-**Ans.** ZFS has been added as a experimental new filesystem on 19.10. If you want to learn more about refer [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately it is becoming a trend. You can checkout [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs). <br />
+**Ans.** ZFS has been added as an experimental new filesystem on 19.10. If you want to learn more about referring to [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately, it is becoming a trend. You can check out [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs). <br />
 
 If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20-04-with-zfs).
 
@@ -150,16 +150,16 @@ For Forced update
 ```bash
 sudo apt install -f && sudo apt dist-upgrade
 ```
-### Why use apt not apt-get?
+### Why use apt, not apt-get?
 **Ans.** Apt was made according to an end-user perspective. It mostly does everything apt-get does. So for normal users, apt-get is not useful. But, for a developer that writes scripts and does automation, like writing a Dockerfile to build images, they would prefer apt-get over apt.
 
 ### Difference b/w upgrade and dist-upgrade
-When you run apt upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
+When you run the apt upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
 
-However, when you run apt dist-upgrade, it will intelligently install or remove packages as needed, in order to complete the upgrade. Dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files might eventually break the system.
+However, when you run apt dist-upgrade, it will intelligently install or remove packages as needed, to complete the upgrade. Dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files that might eventually break the system.
 
 ### Updating your recovery (Pop Os)
-If you upgrade to a newer release the recovery also needs to be upgraded, you can do a it via Terminal. <br />
+If you upgrade to a newer release the recovery also needs to be upgraded, you can do it via Terminal. <br />
 ```bash
 pop-upgrade recovery upgrade from-release
 ```
@@ -180,14 +180,14 @@ If you were a mac user, you might prefer left button placement over the default 
 **Note:-** Left Placement glitches the gnome-tweak-tool for some reason don't worry about it just increase the size of the window. <br /> <br />
 ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/gnome-minimise.png)<br>
 #### 2. Battery Percentage
-Shows the amount of battery remaining in percent. Doesn't work for desktop pc's.<br> <br />
+Shows the amount of battery remaining in percent. Doesn't work for desktop pc.<br> <br />
 ![batterypercent](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/batterypercent.png)<br>
 #### 3. Optimizing Font
-I use custom resolution on my pc's so font seem small to me, so it make it better I use 1.11x font. I have set the hinting to full because hinting makes the font appear more crisp so that they are more readable. Also I have set the anti-aliasing to full pixels instead of sub-pixels because it has more font smoothing.<br /> <br />
+I use custom resolution on my PC's so the font seems small to me, so it makes it better I use 1.11x font. I have set the hinting to full because hinting makes the font appear crisper so that they are more readable. Also, I have set the anti-aliasing to full pixels instead of sub-pixels because it has more font smoothing.<br /> <br />
 ![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/custom-font-size.png) <br />
 #### 4. Activity Hot Corner and Format time
-Activity hot corner enables hot corner where the button Activity is placed. So rather than clicking the button just touch the edge. <br />
-You can format time according to what you need. As I only use the time, so I got rid of the date there. <br /> <br />
+The activity hot corner enables the hot corner where the button Activity is placed. So rather than clicking the button just touch the edge. <br />
+You can format time according to what you need. I only use the time, so I got rid of the date there. <br /> <br />
 ![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overlay.png) <br /> <br />
 
 ### Custom Resolution with Xrandr
@@ -236,7 +236,7 @@ nano ~/.profile
 ![profile](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/profile.png)
 
 #### [Problem] What about other refresh rates? <br />
-**Ans.** You have to experiment with cvt a bit, to find which refresh rates should would need. My refresh rate is from 60hz to 120hz. I did some experimentation and added these refresh rates. <br />
+**Ans.** You have to experiment with cvt a bit, to find which refresh rates should need. My refresh rate is from 60hz to 120hz. I did some experimentation and added these refresh rates. <br />
 
 Like if your display supports 120 hertz
 ```bash
@@ -268,10 +268,10 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 ## 3. Preferred Apps
 Pop has apps that you need. But, if you do not like them, you can also get alternatives.
 
-### Snap Vs Flatpak (Package Managers except apt,dpkg)
+### Snap Vs Flatpak (Package Managers except apt, dpkg)
 Snap can incorporate more apps than Flatpak. It runs how the developer intended. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
 
-**If you are a newbie I won't recommend you to removing snap.** <br /> <br />
+**If you are a newbie I won't recommend you remove snap.** <br /> <br />
 [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) <br />
 [Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/) <br />
 
@@ -309,7 +309,7 @@ wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
 sudo apt update
 sudo apt install opera-stable -y
 ```
-**Non Chromium Based**
+**Non-Chromium Based**
 #### 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 Comes pre-installed with Pop & Ubuntu.<br />
 
@@ -324,15 +324,15 @@ To remove Firefox (Not Recommended)
 sudo apt remove --purge firefox* -y && sudo apt autoremove -y
 ```
 **Extensions I use on my Chrome** <br />
-Generally, these extensions exists for almost all browsers. <br />
+Generally, these extensions exist for almost all browsers. <br />
 ![Chromeextensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/Chromeextensions.png)
 1. **[Absolute Enable](https://chrome.google.com/webstore/detail/absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika?hl=en)** - Force Enable Right Click & Copy on disabled websites.
 2. **[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)** - uBlock Origin is not an "ad blocker", it's a wide-spectrum content blocker with CPU and memory efficiency as a primary feature.
 3. **[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)** - This extension provides integration with GNOME Shell and the corresponding extensions repository, make it easy to add extensions via your browser.
 4. **[Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)** - Helps when you write something for fixing mistakes, helps me complete writing stuff fast.
-5. **[Random User-Agent](https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=en)** - Automatically change the user agent after specified period of time to a randomly selected one, thus hiding your real user agent
+5. **[Random User-Agent](https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=en)** - Automatically change the user agent after a specified period to a randomly selected one, thus hiding your real user agent
 6. **[The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en)** - Make your computer run smoothly by suspending the tabs you aren't using
-7. **[Touch VPN](https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd/related?hl=en-US)** - Simple setup. Relatively nominal footprint, as far as my diags/utils have determined at this early stage and consuming a minor spot in memory.
+7. **[Touch VPN](https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd/related?hl=en-US)** - Simple setup. Relatively nominal footprint, as far as my utils have determined at this early stage and consuming a minor spot in memory.
 
 ### Email Client
 Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.
@@ -383,12 +383,12 @@ sudo apt install obs-studio -y
 
 ### Audio Tools
 #### 1. [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)
-PulseAudio is a sound server. The sounds in your applications passes through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. This is a good replacement for Dolby. It also optimises the quality of your sound.
+PulseAudio is a sound server. The sounds in your applications pass through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. This is a good replacement for Dolby. It also optimizes the quality of your sound.
 ```bash
 sudo apt install pulseaudio pavucontrol -y
 ```
 #### 2. [Audacity](https://www.audacityteam.org/)
-Audacity is an open-source software, easy-to-use, multi-track audio editor and allows users to record sound, and edit sound clips.
+Audacity is open-source software, easy-to-use, multi-track audio editor and allows users to record sound, and edit sound clips.
 ```bash
 flatpak install org.audacityteam.Audacity -y
 ```
@@ -406,7 +406,7 @@ Alternatives,
 Looks a lot like Microsoft Office. <br />
 Get the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
 
-**If you have a problem with Chinese apps or are privacy concern skip over this.**
+**If you have a problem with Chinese apps or are privacy concerns skip over this.**
 #### 2. [WPS Office](https://www.wps.com/)
 A beautiful office suite with a lot of customizations. <br />
 Get the deb file [here](https://linux.wps.com/) <br />
@@ -422,22 +422,22 @@ sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 
 ### Graphic tools
 #### 1. GIMP
-It is free & open source Image Editor. You can further enhance your productivity with many customization options and 3rd party plugins.
+It is a free and open-source Image Editor. You can further enhance your productivity with many customization options and 3rd party plugins.
 ```bash
 sudo apt install gimp -y
 ```
 #### 2. Krita
-A open source painting program. It is made by artists that want to see affordable art tools for everyone.
+An open-source painting program. It is made by artists that want to see affordable art tools for everyone.
 ```bash
 sudo apt install krita -y
 ```
 #### 3. Blender
-It is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
+It is the free and open-source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
 ```bash
 sudo apt install blender -y
 ```
 #### 4. Inkscape
-Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Here you can be illustrator, designer, web designer or just someone who needs to create some vector imagery,
+Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Here you can be an illustrator, designer, web designer, or just someone who needs to create some vector imagery.
 ```bash
 sudo apt install inkscape -y
 ```
@@ -498,7 +498,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update && sudo apt install spotify-client -y
 ```
 If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br />
-**But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy time to time.**  <br />  <br />
+**But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy from time to time.**  <br />  <br />
 ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
 
 #### 2. Steam for Gaming
@@ -518,7 +518,7 @@ sudo apt install ubuntu-restricted-extras -y
 
 ### Other Apps
 #### 1. uGet
-uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor and the ability to process downloads in a batch format.
+uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor, and the ability to process downloads in a batch format.
 ```bash
 sudo apt install aria2 uget -y
 ```
@@ -539,7 +539,7 @@ sudo apt install --install-recommends winehq-stable -y
 ```bash
 winecfg
 ```
-**Saftey with Wine** - NEVER use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you NEVER need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? YES it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
+**Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you Never need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
 
 #### 3. Synaptic Package manager
 Synaptic serves as a graphical front-end to APT and makes the process of software management much easier, especially if you are not familiar with the command-line.
@@ -547,7 +547,7 @@ Synaptic serves as a graphical front-end to APT and makes the process of softwar
 sudo apt install synaptic -y
 ```
 #### 4. Nautilus (admin mode)
-###### Adds right click property *Open as Administrator*
+###### Adds right-click property *Open as Administrator*
 ```bash
 sudo apt install nautilus-admin -y && nautilus -q
 ```
@@ -564,13 +564,13 @@ sudo apt install htop -y
 ```
 ![htop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/htop.png)
 #### - Bashtop
-A advanced utility that shows usage and stats for processor, memory, disks, network and processes.
+An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
 ```bash
 sudo apt install bashtop -y
 ```
 ![bashtop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bashtop.png)
 #### 7. Opensnitch (Firewall)
-Helps you to review which services connect the internet. Also, by stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch go [here](https://github.com/gustavo-iniguez-goya/opensnitch).
+Helps you to review which services connect to the internet. Also, stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/gustavo-iniguez-goya/opensnitch).
 
 ### - Debloat
 ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
@@ -638,11 +638,11 @@ sudo apt install <appname> -y
 #### -- Over Amplification
 ![overamplification](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/overamplification.png)
 #### -- Accessibility
-Optimise the speed of repeat keys. You can also disable Cursor blinking. <br /> <br />
+Optimize the speed of repeat keys. You can also disable Cursor blinking. <br /> <br />
 ![repeatkeys](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/repeatkeys.png)
 ### Disable annoying Keyring
-#### This provides security for browsers on a autologin-based system.(Easy way to understand it)
-If you have a autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
+#### This provides security for browsers on an autologin-based system. (Easy way to understand it)
+If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
 **Steps to Disable it ->**
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
@@ -651,8 +651,8 @@ App password & keys > Login > Change Password > Type your Current Pass > Continu
 ![disablekeyring2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring2.png) <br />
 
 
-## 5. Optimize Boot time & Ram Usage
-My original boot time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
+## 5. Optimize Boot-time & Ram Usage
+My original boot-time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
 ![originalboottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/originalboottime.png)
 
 ### Disabling Plymouth
@@ -663,24 +663,24 @@ sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
 **For Ubuntu** <br />
 Go through [this](https://www.kevin-custer.com/blog/disabling-the-plymouth-boot-screen-in-ubuntu-20-04/) guide. <br />
 
-**This reduces my boot time to 35sec** <br />
+**This reduces my boot-time to 35sec** <br />
 
 ### Adjusting the Swappiness Property
-This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier, since swaps are slower than RAMs and they can cause a reduction in performance. <br />
+This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier since swaps are slower than RAMs and they can cause a reduction in performance. <br />
 
-Values according to me for Ram:Ratio should be as follows, 32:0, 16:10, 8:20, 4:50, 2:70 <br />
-**20 is just a example value, don't mindlessly use it** <br />
+Values according to me for Ram: Ratio should be as follows, 32:0, 16:10, 8:20, 4:50, 2:70 <br />
+**20 is just an example value, don't mindlessly use it** <br />
 ```bash
 sudo sysctl vm.swappiness=20
 ```
-**This values do not stick. To add them permanently. Add the above line to sysctl.conf.** <br />
+**These values do not stick. To add them permanently. Add the above line to sysctl.conf.** <br />
 ```bash
 sudo nano /etc/sysctl.conf
 ```
 
 ### Adjusting  the Cache Pressure Setting
-Another issue, the system stores cache about stuff that you frequently open & this makes the system faster, as if it opens again, rather than reloading the data it will use the cache. But, on lower ram device this is a bad option since this will seriously slow your system down. <br />
-Adjust this like you adjusted swappiness property, values for RAM:Pressure should be as follows, 1:100, 2:90, 4:80, 8:60, 16:50.
+Another issue, the system stores cache about stuff that you frequently open & this makes the system faster, as if it opens again, rather than reloading the data it will use the cache. But, on a lower ram device, this is a bad option since this will seriously slow your system down. <br />
+Adjust this like you adjusted swappiness property, values for RAM: Pressure should be as follows, 1:100, 2:90, 4:80, 8:60, 16:50.
 ```bash
 sudo sysctl vm.vfs_cache_pressure=50
 ```
@@ -690,7 +690,7 @@ sudo nano /etc/sysctl.conf
 ```
 
 ### EarlyOOM
-It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for the heavy usage. This is a very important feature for old hardware. It only consumes 0.5 to 2 MB in the background. <br /> <br />
+It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman terms, It frees memory when the ram or the swap gets close to full (over 90%). Making this a beneficial feature for heavy usage. This is a very important feature for old hardware. It only consumes 0.5 to 2 MB in the background. <br /> <br />
 To install it
 ```bash
 sudo apt install earlyoom -y
@@ -717,9 +717,9 @@ WaylandEnable=false
 ```bash
 sudo systemctl restart gdm3
 ```
-4. Then select it in login <br />
+4. Then select it in the login <br />
 ![wayland](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/wayland.png)
-5. To confirm (Output: wayland)
+5. To confirm (Output: Wayland)
 ```bash
 echo $XDG_SESSION_TYPE
 ```
@@ -750,12 +750,12 @@ sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
 Exec=io.elemantry.appcenter -s
 ```
 ### Clearing buff/cache
-Computer accumulates high buff/cache over time and make the user force reboot. To clear buff cache you can use this. <br />
+The computer accumulates high buff/cache over time and makes the user force reboot. To clear buff cache, you can use this. <br />
 ```bash
 free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h
 ```
 
-### Optimising the boot
+### Optimizing the boot
 #### DISCLAIMER
 ##### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
 - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
@@ -768,7 +768,7 @@ sudo systemctl disable ModemManager.service
 sudo systemctl mask ModemManager.service
 ```
 **Note** - If you are not using this and don't want Wi-Fi to disable wpa_supplicant.service.
-- **Fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
+- **fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
 Disable thunderbolt_power <br />
 ```bash
 sudo nano /etc/fwupd/daemon.conf
@@ -858,17 +858,17 @@ sudo systemctl enable xyz.service
 
 ![application-pref](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/application-pref.png)
 
-#### Boot time after disabling those stuff
+#### Boot-time after disabling those stuff
 ![prekernelbootime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/prekernelbootime.png)
 
 ### Custom kernel
 Custom Kernels are known and used by fewer people, but these kernels add a significant boost to performance and battery.
 1. **Xanmod** is the more popular choice among intel based hardware. It provides a stable, responsive, and smooth desktop experience. <br />
-To get Xanmod go [here](https://xanmod.org/)  <br />
+To get Xanmod, go [here](https://xanmod.org/)  <br />
 While installing this don't forget to add, **Setting the FQ-PIE Queuing Discipline**. <br />
 
 2. **Liquorix** is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. Works better with AMD hardware. <br />
-To get Liquorix go [here](https://liquorix.net/) <br /> <br />
+To get Liquorix, go [here](https://liquorix.net/) <br /> <br />
 
 Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally goes better with Liquorix. Also, if you are having heating issues go for Liquorix for a better thermal response. I use Xanmod normal because long term release felt slow for me on both my PC & lappy. <br />
 
@@ -876,7 +876,7 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) <br />
 [Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (It is not in English but you will get the point.) <br />
 
-**Note** - At this point, this boots as fast as it can be.<br />
+**Note** - At this point, boot is the fastest.<br />
 
 ### Getting rid of Custom Kernel
 **IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.**<br />
@@ -928,7 +928,7 @@ sudo apt remove <name of kernel files> -y
 
 [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
 
-### Final Boot Time
+### Final Boot-Time
 ![final-boottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/final-boottime.png)
 
 
@@ -971,7 +971,7 @@ Night Light mode is simply made to remove some lights which hinder our sleep cyc
 ![nightlight](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/nightlight.png)
 
 ### Tile Windows
-The beautiful thing I like about Pop OS is its feature rich environment to increase work efficiency.<br /> <br />
+The beautiful thing I like about Pop OS is its feature-rich environment to increase work efficiency.<br /> <br />
 ![Tile-windows](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/Tile-windows.png)
 
 ### Customization
@@ -1019,11 +1019,11 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 ### After you do all of this, your desktop should look this
 ![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bigsurlikelook.png) <br /> <br />
 
-### To fix qt5 applications like KolourPaint to respect system theming, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
+### To fix qt5 applications like KolourPaint to respect system theme, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
 
 ## 7. Bonus
-### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us if Steam Glitches
-#### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is a pirated, and in no way, I want to encourage piracy.
+### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us, if Steam Glitches
+#### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is pirated, and in no way, I want to encourage piracy.
 #### Steps ->
 1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
@@ -1081,6 +1081,6 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 5. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
 6. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
 7. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
-8. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for kernel.
-9. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making swap file.
-10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on swap.
+8. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for the kernel.
+9. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making a swap file.
+10. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on a swap.

@@ -22,8 +22,8 @@ This is an extensive Guide on the set of things I use. I have two computers one 
 - **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
-- **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-aptdpkg)**
-- **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor)**
+- **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-apt-dpkg)**
+- **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor), [Extensions](https://github.com/themagicalmammal/howtopopbuntu#extensions-i-use)**
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
 - **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
 - **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
@@ -78,7 +78,7 @@ Go through this, because this can be a very helpful step. I am currently using b
 There are two ways of getting swap (You can choose which is better) <br />
 - General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).<br />
 
-**[BRTFS] -> [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with the general method or create a swap file in a different partition.**
+**[BRTFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with the general method or create a swap file in a different partition.**
 - Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap, that's why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.<br />
 
 **Post Installation Steps** <br />
@@ -195,7 +195,7 @@ You can format time according to what you need. I only use the time, so I got ri
 If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.<br /> <br />
 ![set-of-refreshrates](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/set-of-refreshrates.png)
 
-#### Steps ->
+#### Steps -
 **1. Check xrandr**  <br />
 You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
 ```bash
@@ -323,13 +323,13 @@ To remove Firefox (Not Recommended)
 ```bash
 sudo apt remove --purge firefox* -y && sudo apt autoremove -y
 ```
-**Extensions I use on my Chrome** <br />
+#### Extensions I use
 Generally, these extensions exist for almost all browsers. <br />
 ![Chromeextensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/Chromeextensions.png)
 1. **[Absolute Enable](https://chrome.google.com/webstore/detail/absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika?hl=en)** - Force Enable Right Click & Copy on disabled websites.
 2. **[uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)** - uBlock Origin is not an "ad blocker", it's a wide-spectrum content blocker with CPU and memory efficiency as a primary feature.
 3. **[GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)** - This extension provides integration with GNOME Shell and the corresponding extensions repository, make it easy to add extensions via your browser.
-4. **[Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)** - Helps when you write something for fixing mistakes, helps me complete writing stuff fast.
+4. **[LanguageTool](https://chrome.google.com/webstore/detail/grammar-and-spell-checker/oldceeleldhonbafppcapldpdifcinji)** - Check your texts for spelling and grammar problems everywhere on the web.
 5. **[Random User-Agent](https://chrome.google.com/webstore/detail/random-user-agent/einpaelgookohagofgnnkcfjbkkgepnp?hl=en)** - Automatically change the user agent after a specified period to a randomly selected one, thus hiding your real user agent
 6. **[The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en)** - Make your computer run smoothly by suspending the tabs you aren't using
 7. **[Touch VPN](https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd/related?hl=en-US)** - Simple setup. Relatively nominal footprint, as far as my utils have determined at this early stage and consuming a minor spot in memory.
@@ -354,7 +354,7 @@ sudo apt install thunderbird -y
 ```
 #### 3. [MailSpring](https://getmailspring.com/)
 Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. <br />
-**If it throws gvfs dependency error. Follow these Steps ->**
+**If it throws gvfs dependency error. Follow these Steps -**
 1. Install these libraries
 ```bash
 sudo apt install libsecret-1-dev gconf2 python2 python-is-python2 -y
@@ -421,22 +421,22 @@ sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 <br /> <br />
 
 ### Graphic tools
-#### 1. GIMP
+#### 1. [GIMP](https://www.gimp.org/)
 It is a free and open-source Image Editor. You can further enhance your productivity with many customization options and 3rd party plugins.
 ```bash
 sudo apt install gimp -y
 ```
-#### 2. Krita
+#### 2. [Krita](https://krita.org/en/)
 An open-source painting program. It is made by artists that want to see affordable art tools for everyone.
 ```bash
 sudo apt install krita -y
 ```
-#### 3. Blender
+#### 3. [Blender](https://www.blender.org/)
 It is the free and open-source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
 ```bash
 sudo apt install blender -y
 ```
-#### 4. Inkscape
+#### 4. [Inkscape](https://inkscape.org/)
 Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Here you can be an illustrator, designer, web designer, or just someone who needs to create some vector imagery.
 ```bash
 sudo apt install inkscape -y
@@ -643,7 +643,7 @@ Optimize the speed of repeat keys. You can also disable Cursor blinking. <br /> 
 ### Disable annoying Keyring
 #### This provides security for browsers on an autologin-based system. (Easy way to understand it)
 If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
-**Steps to Disable it ->**
+**Steps to Disable it -**
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
@@ -740,7 +740,7 @@ The built-in extensions I use are - <br /> <br />
 
 ### Disabling Pop Shop on Boot
 Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />
-**Steps ->**
+**Steps -**
 1. Edit App center daemon from opening it at start
 ```bash
 sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
@@ -939,7 +939,7 @@ I use **Steven Black** Ad-Hosts for ad-blocking the whole system without any oth
 I use **Unified hosts + fake news + gambling + porn** <br />
 
 #### Q. How to?
-**Ans. Steps ->**
+**Ans. Steps -**
 1. Get a [host](https://github.com/StevenBlack/hosts)
 2. Save it to Downloads
 3. Then
@@ -960,13 +960,13 @@ I use Bleachbit because it is good to remove unnecessary junk from your computer
 ```bash
 sudo apt install bleachbit -y
 ```
-**Steps ->** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
+**Steps -** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
 ![bleachbit](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bleachbit.png)
 **Note**:- After doing this the first boot might be slow don't worry it's perfectly normal.
 
 ### Night Light
 Night Light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it *unsleepy* that's why we use a night light.<br /> <br />
-**Steps ->** Settings > Display > Night light <br />
+**Steps -** Settings > Display > Night light <br />
 *You can also select the timing which fits your sleep cycle.*<br /> <br />
 ![nightlight](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/nightlight.png)
 
@@ -1024,7 +1024,7 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 ## 7. Bonus
 ### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us, if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is pirated, and in no way, I want to encourage piracy.
-#### Steps ->
+#### Steps -
 1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
 3. To run it type

@@ -112,8 +112,19 @@ sudo nano /etc/fstab
 
 #### What about ZRAM?
 First, you should know what ZRAM is. ZRAM creates a block device in RAM where pages that would otherwise be written to swap (disk/SSD) are instead first compressed, then stored. This allows for much faster I/O of swap and also the data compression provides a great amount of memory savings. A downside of ZRAM is that it does use some CPU for compression but this is usually negated by the gains achieved from avoiding disk swap and also by the overall memory savings of compression. <br />
-How to enable ZRAM? <br />
-Go [here](https://www.techrepublic.com/article/how-to-enable-the-zram-module-for-faster-swapping-on-linux/).
+I use this on my 3rd gen PC with 4GB ram and a 3.4GHz CPU.  <br />
+#### Q. How to enable ZRAM?
+1. Install zram-config
+```nano
+sudo apt install zram-config -y 
+```
+2. To check 
+```nano
+cat /proc/swaps
+```
+Should look like this <br /> <br />
+![zram](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/zram.png) <br />
+3. If it doesn't show up, try rebooting.
 
 #### Q. Should I Encrypt?
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations, you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
@@ -1074,7 +1085,7 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 
 
 ## Thanks for Suggestions
-1. [GGG_246](https://www.reddit.com/user/GGG_246/) - A lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a lot more stuff.
+1. [GGG_246](https://www.reddit.com/user/GGG_246/) - A lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a looooot more stuff.
 2. [Schykle](https://www.reddit.com/user/schykle) - Mailspring (fix for dangerous gvfs-bin bug) & Ubiquity auto Swap & GUI updater & Updated Snap instructions.
 3. [WsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 4. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix & new wine installation steps.

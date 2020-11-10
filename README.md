@@ -26,7 +26,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor), [Extensions](https://github.com/themagicalmammal/howtopopbuntu#extensions-i-use)**
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
 - **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
-- **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio Controls](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio-controls), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
+- **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio Controls](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio-controls), [PulseEffects](https://github.com/themagicalmammal/howtopopbuntu#2-PulseEffects), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#3-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#4-ardour)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [WPS Office](https://github.com/themagicalmammal/howtopopbuntu#2-wps-office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
@@ -400,12 +400,18 @@ PulseAudio is an audio server. The audio in your apps passes through Pulse. So i
 sudo apt install pavucontrol -y
 ```
 To learn how to control your audio, go [here](https://github.com/themagicalmammal/howtopopbuntu#controlling-audio-devices).
-#### 2. [Audacity](https://www.audacityteam.org/)
+#### 2. [PulseEffects](https://github.com/wwmm/pulseeffects)
+Audio effects for Pulseaudio applications. This helps add specialized effects for each application individually and thus creates multiple profiles for different applications.
+```bash
+flatpak install com.github.wwmm.pulseeffects -y
+```
+**This might add a lot of desktop icons.**<br />
+#### 3. [Audacity](https://www.audacityteam.org/)
 Audacity is open-source software, easy-to-use, multi-track audio editor, and allows users to record audio and edit music clips.
 ```bash
 flatpak install org.audacityteam.Audacity -y
 ```
-#### 3. [Ardour](https://ardour.org/)
+#### 4. [Ardour](https://ardour.org/)
 Ardour is a recorder and digital audio workstation app. It's made to be suitable for professional use.
 ```bash
 sudo apt install ardour -y
@@ -545,7 +551,7 @@ sudo dpkg --add-architecture i386
 2. Then follow these steps
 ```bash
 wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
-sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' && sudo apt update
+sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update
 sudo apt install --install-recommends winehq-stable -y
 ```
 3. Then open wine configuration, add download the additional wine files

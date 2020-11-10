@@ -26,7 +26,7 @@ This is an extensive Guide on the set of things I use. I have two computers one 
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor), [Extensions](https://github.com/themagicalmammal/howtopopbuntu#extensions-i-use)**
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
 - **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
-- **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
+- **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio Controls](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio-controls), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#2-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#3-ardour)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [WPS Office](https://github.com/themagicalmammal/howtopopbuntu#2-wps-office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
@@ -38,6 +38,7 @@ This is an extensive Guide on the set of things I use. I have two computers one 
 ## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
 - **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings) -> [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks), [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification), [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
 - **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
+- **[Controlling Audio Devices](https://github.com/themagicalmammal/howtopopbuntu#controlling-audio-devices)**
 ## [Optimize Boot-time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
 - **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
 - **[Adjusting the Swappiness Property](https://github.com/themagicalmammal/howtopopbuntu#adjusting-the-swappiness-property)**
@@ -112,7 +113,7 @@ sudo nano /etc/fstab
 
 #### What about ZRAM?
 First, you should know what ZRAM is. ZRAM creates a block device in RAM where pages that would otherwise be written to swap (disk/SSD) are instead first compressed, then stored. This allows for much faster I/O of swap and also the data compression provides a great amount of memory savings. A downside of ZRAM is that it does use some CPU for compression but this is usually negated by the gains achieved from avoiding disk swap and also by the overall memory savings of compression. <br />
-I use this on my 3rd gen PC with 4GB ram and a 3.4GHz CPU.  <br />
+This is very useful on my PC with 4GB ram and a 3.4GHz CPU.  <br />
 #### Q. How to enable ZRAM?
 1. Install zram-config
 ```nano
@@ -122,9 +123,9 @@ sudo apt install zram-config -y
 ```nano
 cat /proc/swaps
 ```
-Should look like this <br /> <br />
+**Should look like this** <br /> <br />
 ![zram](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/zram.png) <br />
-3. If it doesn't show up, try rebooting.
+3. If it doesn't show up, try **rebooting**.
 
 #### Q. Should I Encrypt?
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations, you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
@@ -393,11 +394,12 @@ sudo apt install obs-studio -y
 ```
 
 ### Audio Tools
-#### 1. [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)
-PulseAudio is a sound server. The sounds in your applications pass through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. This is a good replacement for Dolby. It also optimizes the quality of your sound.
+#### 1. [PulseAudio Controls](https://www.freedesktop.org/wiki/Software/PulseAudio/)
+PulseAudio is a sound server. The sounds in your applications pass through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. It also optimizes the quality of your sound.
 ```bash
-sudo apt install pulseaudio pavucontrol -y
+sudo apt install pavucontrol -y
 ```
+To learn how to control your audio, go [here](https://github.com/themagicalmammal/howtopopbuntu#controlling-audio-devices).
 #### 2. [Audacity](https://www.audacityteam.org/)
 Audacity is open-source software, easy-to-use, multi-track audio editor and allows users to record sound, and edit sound clips.
 ```bash
@@ -661,6 +663,26 @@ App password & keys > Login > Change Password > Type your Current Pass > Continu
 ![disablekeyring1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring1.png)
 ![disablekeyring2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/disablekeyring2.png) <br />
 
+### Controlling Audio Devices
+Pavucontrol is one of the most well-known audio managers for PulseAudio.
+
+#### Music playback
+In Playback tab, here is a list of all apps that are using your audio system.  To mute all System sounds, press the speaker icon in System Sounds. You can also drag the audio slider to adjust the audio. <br />
+
+But, this tab only shows applications currently using audio. Like in this example, I was listening to Spotify. <br /> <br />
+![musicplayback](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/musicplayback.png)
+
+#### Recording adjuster
+In Recording tab, there is a list of all the programs currently recording audio. It is also possible to mute the recording just by clicking on the speaker icon. <br /> <br />
+![recordingadjuster](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/recordingadjuster.png)
+
+#### Speaker & Mic level
+**To make a device default press the lock button.** <br />
+In Output Devices tab, there is a list of all the audio playback devices.  <br /> <br />
+![speakerlevel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/speakerlevel.png)  <br />
+
+In Input Devices tab, there is a list of all the recording devices. <br /> <br />
+![miclevel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/miclevel.png)
 
 ## 5. Optimize Boot-time & Ram Usage
 My original boot-time was 1min 4sec after removing apps it is now 58sec.<br /> <br />

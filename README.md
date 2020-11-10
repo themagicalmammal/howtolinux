@@ -511,7 +511,8 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update && sudo apt install spotify-client -y
 ```
 If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br />
-**But, if you like Spotify please buy the Premium, Ad-free Spotify isn't as efficient and gets buggy from time to time.**  <br />  <br />
+To get custom themes for spotify, go [here](https://github.com/khanhas/spicetify-cli). <br />
+**Ad-free Spotify may get buggy from time to time.**  <br />  <br />
 ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br />  <br />
 
 #### 2. Steam for Gaming

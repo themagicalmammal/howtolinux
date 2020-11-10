@@ -403,7 +403,7 @@ To learn how to control your audio, go [here](https://github.com/themagicalmamma
 #### 2. [PulseEffects](https://github.com/wwmm/pulseeffects)
 Audio effects for Pulseaudio applications. This helps add specialized effects for each application individually and thus creates multiple profiles for different applications.
 ```bash
-flatpak install com.github.wwmm.pulseeffects -y
+sudo apt install pulseeffects -y
 ```
 **This might add a lot of desktop icons.**<br />
 #### 3. [Audacity](https://www.audacityteam.org/)
@@ -588,7 +588,13 @@ An advanced utility that shows usage and stats for processor, memory, disks, net
 sudo apt install bashtop -y
 ```
 ![bashtop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bashtop.png)
-#### 7. Opensnitch (Firewall)
+#### 7. Firewall
+#### - Gufw
+GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use appication with bunch of settings which you can set according to your preference.
+```bash
+sudo apt install gufw
+```
+#### - Opensnitch
 Helps you to review which services connect to the internet. Also, stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/gustavo-iniguez-goya/opensnitch).
 
 ### - Debloat

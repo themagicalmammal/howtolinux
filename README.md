@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 ###### This is done exclusively on Pop Os 20.10 but, this should work on almost every Ubuntu-based Distros.
-This is an extensive Guide on the set of things I use. I have two computers one is a 7th Gen i5 lappy with SSD the other one is a 3rd Gen 6 years old desktop. These tweaks are added based on my experience over six months using pop on them.
+This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over six months using pop on them.
 
 
 # Index
@@ -44,7 +44,7 @@ This is an extensive Guide on the set of things I use. I have two computers one 
 - **[Adjusting the Swappiness Property](https://github.com/themagicalmammal/howtopopbuntu#adjusting-the-swappiness-property)**
 - **[Adjusting the Cache Pressure](https://github.com/themagicalmammal/howtopopbuntu#adjusting--the-cache-pressure-setting)**
 - **[EarlyOOM](https://github.com/themagicalmammal/howtopopbuntu#earlyoom)**
-- **[Wayland](https://github.com/themagicalmammal/howtopopbuntu#wayland-display-manager)**
+- **[Wayland](https://github.com/themagicalmammal/howtopopbuntu#wayland)**
 - **[Disabling Extensions](https://github.com/themagicalmammal/howtopopbuntu#disabling-unnecessary-extensions)**
 - **[Disable Pop Shop on boot](https://github.com/themagicalmammal/howtopopbuntu#disabling-pop-shop-on-boot)**
 - **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
@@ -80,7 +80,7 @@ There are two ways of getting swap (You can choose which is better) <br />
 - General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).<br />
 
 **[BRTFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with the general method or create a swap file in a different partition.**
-- Swap File - Well this is a relatively new concept but you can create a swap file post installation & use it. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap, that's why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.<br />
+- Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.<br />
 
 **Post Installation Steps** <br />
 
@@ -112,7 +112,7 @@ sudo nano /etc/fstab
 5. Reboot  <br />
 
 #### What about ZRAM?
-First, you should know what ZRAM is. ZRAM creates a block device in RAM where pages that would otherwise be written to swap (disk/SSD) are instead first compressed, then stored. This allows for much faster I/O of swap and also the data compression provides a great amount of memory savings. A downside of ZRAM is that it does use some CPU for compression but this is usually negated by the gains achieved from avoiding disk swap and also by the overall memory savings of compression. <br />
+First, you should know what ZRAM is. ZRAM creates a block device in RAM, where pages would otherwise be written to swap before it is compressed, then stored. Allowing for a much faster I/O and, the data compression provides a lot of memory savings. The downside of ZRAM is the usage of CPU for compression but this is usually balanced by the gains from avoiding swap and with overall memory savings of compression.  <br />
 This is very useful on my PC with 4GB ram and a 3.4GHz CPU.  <br />
 #### Q. How to enable ZRAM?
 1. Install zram-config
@@ -163,12 +163,12 @@ For Forced update
 sudo apt install -f && sudo apt dist-upgrade
 ```
 ### Why use apt, not apt-get?
-**Ans.** Apt was made according to an end-user perspective. It mostly does everything apt-get does. So for normal users, apt-get is not useful. But, for a developer that writes scripts and does automation, like writing a Dockerfile to build images, they would prefer apt-get over apt.
+**Ans.** Apt was made according to an end-user perspective. It mostly does everything apt-get does. So for normal users, apt-get is not useful. But, for a developer that writes scripts and does automation, like writing a Docker file to build images, they would prefer apt-get over apt.
 
 ### Difference b/w upgrade and dist-upgrade
-When you run the apt upgrade, it only upgrades that which has a new release available to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
+When you run the apt upgrade, it only updates that which has a new release accessible to the platform, as defined in /etc/apt/sources.list or in /etc/apt/sources.list.d/. <br /> <br />
 
-However, when you run apt dist-upgrade, it will intelligently install or remove packages as needed, to complete the upgrade. Dist-upgrade has a smart conflict resolution system, so it will attempt to upgrade the most important packages, at the expense of those deemed less important. But, this might be dangerous because it removes files that might eventually break the system.
+However, when you run apt dist-upgrade, it will intelligently install or remove packages as needed, to complete the upgrade. Dist-upgrade has an intelligent dispute determination method, so it will attempt to update the numerous necessary packages at the cost of those considered less valuable. But, this might be dangerous because it removes files that might eventually break the system.
 
 ### Updating your recovery (Pop Os)
 If you upgrade to a newer release the recovery also needs to be upgraded, you can do it via Terminal. <br />
@@ -281,7 +281,7 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 Pop has apps that you need. But, if you do not like them, you can also get alternatives.
 
 ### Snap Vs Flatpak (Package Managers except apt, dpkg)
-Snap can incorporate more apps than Flatpak. It runs how the developer intended. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
+Snap can incorporate more apps than Flatpak. It runs how the developer wants it to. Some even say go as far as to say, "Snap is the future". But, currently, Flatpak outperforms Snap, for the most part, that is why I don't prefer Snap but, still, it's your choice. <br />
 
 **If you are a newbie I won't recommend you remove snap.** <br /> <br />
 [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) <br />
@@ -395,18 +395,18 @@ sudo apt install obs-studio -y
 
 ### Audio Tools
 #### 1. [PulseAudio Controls](https://www.freedesktop.org/wiki/Software/PulseAudio/)
-PulseAudio is a sound server. The sounds in your applications pass through PulseAudio. That way, you can use various techniques to manipulate these sounds before you can hear them. It also optimizes the quality of your sound.
+PulseAudio is an audio server. The audio in your apps passes through Pulse. So in that way, you can use several methods to handle these sounds ere you can hear them. It also optimizes the quality of your audio.
 ```bash
 sudo apt install pavucontrol -y
 ```
 To learn how to control your audio, go [here](https://github.com/themagicalmammal/howtopopbuntu#controlling-audio-devices).
 #### 2. [Audacity](https://www.audacityteam.org/)
-Audacity is open-source software, easy-to-use, multi-track audio editor and allows users to record sound, and edit sound clips.
+Audacity is open-source software, easy-to-use, multi-track audio editor, and allows users to record audio and edit music clips.
 ```bash
 flatpak install org.audacityteam.Audacity -y
 ```
 #### 3. [Ardour](https://ardour.org/)
-Ardour is a hard disk recorder and digital audio workstation application. Ardour is intended to be digital audio workstation software suitable for professional use.
+Ardour is a recorder and digital audio workstation app. It's made to be suitable for professional use.
 ```bash
 sudo apt install ardour -y
 ```
@@ -421,7 +421,7 @@ Get the deb file [here](https://www.freeoffice.com/en/download/applications) <br
 
 **If you have a problem with Chinese apps or are privacy concerns skip over this.**
 #### 2. [WPS Office](https://www.wps.com/)
-A beautiful office suite with a lot of customizations. <br />
+This is a beautiful office suite with lots of customization. <br />
 Get the deb file [here](https://linux.wps.com/) <br />
 
 **You can also use web-based offices like Google Drive.** <br />
@@ -435,22 +435,22 @@ sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
 
 ### Graphic tools
 #### 1. [GIMP](https://www.gimp.org/)
-It is a free and open-source Image Editor. You can further enhance your productivity with many customization options and 3rd party plugins.
+It is a free and open-source Image Editor. Additionally, you can improve your richness with many customization choices and plugins.
 ```bash
 sudo apt install gimp -y
 ```
 #### 2. [Krita](https://krita.org/en/)
-An open-source painting program. It is made by artists that want to see affordable art tools for everyone.
+Open-source art software. It is made by professionals that want to see affordable design tools for everyone.
 ```bash
 sudo apt install krita -y
 ```
 #### 3. [Blender](https://www.blender.org/)
-It is the free and open-source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
+Free and open-source, 3D creation suite. It supports the aggregate of the 3D pipeline, including modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.
 ```bash
 sudo apt install blender -y
 ```
 #### 4. [Inkscape](https://inkscape.org/)
-Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Here you can be an illustrator, designer, web designer, or just someone who needs to create some vector imagery.
+Free and open-source, vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Here you can be an illustrator, designer, web designer, or just someone who wants to create vector imagery.
 ```bash
 sudo apt install inkscape -y
 ```
@@ -482,17 +482,17 @@ Get the [deb here](https://github.com/sindresorhus/caprine/releases)
 
 ### Programming Apps
 #### 1. Atom by GitHub
-A hackable text editor for programmers.
+A hackable text editor for devs.
 ```bash
 flatpak install io.atom.Atom -y
 ```
 #### 2. Pycharm IDE
-A python IDE for developers.
+A Python IDE for devs.
 ```bash
 flatpak install pycharm-community -y
 ```
 #### 3. GitHub-Desktop
-GitHub Desktop is a seamless way to contribute to projects on GitHub.
+A seamless way to contribute to projects on GitHub.
 ```bash
 sudo apt install github-desktop -y
 ```
@@ -524,7 +524,7 @@ sudo add-apt-repository multiverse && sudo apt update
 ```
 
 #### 3. Multimedia Codecs
-Gives you the ability to play popular non-free media formats, including DVD, MP3, Quicktime, and Windows Media formats.
+Gives you the ability to play popular non-free media formats, including DVD, MP3, Quicktime and Windows Media.
 ```bash
 sudo apt install ubuntu-restricted-extras -y
 ```
@@ -552,20 +552,20 @@ sudo apt install --install-recommends winehq-stable -y
 ```bash
 winecfg
 ```
-**Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed, sometimes you need to tell wine to start an app as a "normal user", but you Never need to tell it to run with admin rights, because it already does. So from this you could be thinking can't hurt to run wine with sudo, right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges, as when you would run them as admin on Windows. <br />
+**Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges. <br />
 
 #### 3. Synaptic Package manager
-Synaptic serves as a graphical front-end to APT and makes the process of software management much easier, especially if you are not familiar with the command-line.
+Synaptic serves as a graphical front-end to APT which makes the process of software management easier.
 ```bash
 sudo apt install synaptic -y
 ```
 #### 4. Nautilus (admin mode)
-###### Adds right-click property *Open as Administrator*
+Adds right-click property *Open as Administrator*
 ```bash
 sudo apt install nautilus-admin -y && nautilus -q
 ```
 #### 5. Timeshift
-###### Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
+Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 ```bash
 sudo apt install timeshift -y
 ```
@@ -734,9 +734,10 @@ systemctl status earlyoom
 ```
 <br />
 
-### Wayland (Display Manager)
-**Before you do this, Please read what Wayland is** <br />
-Wayland is a display manager. X.org is the default display manager. But, X.org is old and is very bloated, thus uses more resources. So in this way, Wayland can be a better option. But, Wayland is a newer display manager and has many bugs, and one of them being **NVIDIA**, it glitches a lot. So, if you have an NVIDIA GPU, Wayland is a bad option. Also, if you don't have NVIDIA GPU, still there may be bugs, so if you experience bugs/glitches please get rid of it(Remove #).
+### Wayland
+Wayland is a new protocol that enables 3D compositors to be used as primary display servers, instead of running the 3D compositor as an extension under the (2D) X.org display server. Or, in layman's terms, it assumes you're using a 3D desktop from the start, instead of bolting on 3D capabilities to an 2D framework. <br />
+
+X.org is the default display manager but, X.org is old and is very bloated, thus uses more resources. So in this way, Wayland can be a better option. But, Wayland is a newer display protocol and thus is incomplete in a way giving the birth yo many bugs, and one of them being **NVIDIA**. So, if you have an NVIDIA GPU, Wayland is a bad option. Also, if you don't have NVIDIA GPU, still there might be bugs, so if you have bugs/glitches, remove it.(Remove the #).
 
 1. Edit the /etc/gdm3/custom.conf to either disable or enable Wayland.
 ```bash
@@ -752,10 +753,11 @@ sudo systemctl restart gdm3
 ```
 4. Then select it in the login <br />
 ![wayland](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/wayland.png)
-5. To confirm (Output: Wayland)
+5. To confirm
 ```bash
 echo $XDG_SESSION_TYPE
-```
+``` 
+Output should be Wayland
 <br />
 
 ### Disabling Unnecessary Extensions

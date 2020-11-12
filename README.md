@@ -54,7 +54,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Final Boot-Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
 ## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
 - **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
-- **[Terminal Mods](https://github.com/themagicalmammal/howtopopbuntu#terminal-mods) -> [Neofetch](https://github.com/themagicalmammal/howtopopbuntu#1-neofetch-mod)**
+- **[Terminal Mods](https://github.com/themagicalmammal/howtopopbuntu#terminal-mods) -> [Neofetch](https://github.com/themagicalmammal/howtopopbuntu#1-neofetch-mod), [Shell Config](https://github.com/themagicalmammal/howtopopbuntu#2-shell-config)**
 - **[Clean your System](https://github.com/themagicalmammal/howtopopbuntu#clean-your-system)**
 - **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
 - **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
@@ -1002,7 +1002,11 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
  So, my custom config, makes the neofetch look like this. <br /> <br />
 ![neofetch](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/neofetch.png) <br />
  To make your neofetch look this, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
- .
+ 
+#### 2. Shell Config
+ I am currently using [Starship](https://starship.rs/) shell config with Liquid Carbon Transparent from [Gogh](https://github.com/Mayccoll/Gogh). <br />
+ **Note -** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
+
 ### Clean your System
 #### Clean via Terminal
 ```bash
@@ -1134,11 +1138,11 @@ echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
 2. [schykle](https://www.reddit.com/user/schykle) - Mailspring (fix for dangerous gvfs-bin bug) & Ubiquity auto Swap & GUI updater & Updated Snap instructions.
 3. [wsadES](https://www.reddit.com/user/wsades) - Suggestion about removing unnecessary extension & Pop Shop on boot.
 4. [tur1ngb0x](https://github.com/tur1ngb0x) - For qt5 theme fix & new wine installation steps.
-5. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
-6. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
-7. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
-8. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for the kernel.
-9. [RiderExMachina](https://www.reddit.com/user/RiderExMachina/) - Check out what he said [here](https://www.reddit.com/r/linux4noobs/comments/jqyi1c/want_to_switch_to_ubuntubased_distros_need_a/gbqvrbf?utm_source=share&utm_medium=web2x&context=3)
-10. [coolwyou](https://www.reddit.com/user/coolwyou) - For the awesome neofetch config file
+5. [coolwyou](https://www.reddit.com/user/coolwyou) - For the awesome neofetch config file & shell config.
+6. [spxak1](https://www.reddit.com/user/spxak1/) - Mention Firefox & Chromium-based Bug & Idea about Disclaimer & Reverting back to stock kernel.
+7. [JawadAlkassim](https://www.reddit.com/user/JawadAlkassim/) - Mention opensource & Vivaldi vaapi & Wayland.
+8. [arsfeld](https://www.reddit.com/user/arsfeld) - Information about Encryption and recovery.
+9. [lulzdoods](https://www.reddit.com/user/lulzdoods) - Completing the uninstall guide for the kernel.
+10. [RiderExMachina](https://www.reddit.com/user/RiderExMachina/) - Check out what he said [here](https://www.reddit.com/r/linux4noobs/comments/jqyi1c/want_to_switch_to_ubuntubased_distros_need_a/gbqvrbf?utm_source=share&utm_medium=web2x&context=3)
 11. [1ntr0v3rt3ch](https://www.reddit.com/user/1ntr0v3rt3ch) - For steps for making a swap file.
 12. [rbmorse](https://www.reddit.com/user/rbmorse/) - Practices on a swap.

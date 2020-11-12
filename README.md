@@ -1,7 +1,7 @@
 # How to Popbuntu?
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
-###### This is done exclusively on Pop Os 20.10 but, this should work on almost every Ubuntu-based Distros.
+###### This is done exclusively on Pop Os 20.10 but, this has been tested on Ubuntu & Voyager, this should work for every Ubuntu-based Distros.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over six months using pop on them.
 
 
@@ -58,6 +58,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Clean your System](https://github.com/themagicalmammal/howtopopbuntu#clean-your-system)**
 - **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
 - **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
+- **[Custom Fonts](https://github.com/themagicalmammal/howtopopbuntu#custom-fonts)**
 - **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
 - **[Qt5 theme fix](https://github.com/themagicalmammal/howtopopbuntu#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theme-go-here)**
 ## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
@@ -1039,7 +1040,7 @@ The beautiful thing I like about Pop OS is its feature-rich environment to incre
 ### Custom Fonts
 Custom Fonts increase the user experience. I use custom fonts on my laptop and also my Oneplus. <br />
 
-Currently I am using Linotte Font & MonoFur for my terminal. <br />
+Currently I am using Linotte Font for system & MonoFur for my terminal. <br />
 To change your font, go to gnome-tweaks then to Fonts. <br /> <br />
 ![customfont](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/customfont.png)
 To change Terminal font, Go to preferences, then to profiles, then in custom font select MonoFur. <br />

@@ -13,7 +13,7 @@ spicetify backup apply enable-devtool
 spicetify update
 echo "Everything is done, enjoy your themed spotify"
 }
-if [[ -f /usr/share/spotify ]]
+if [[ -f /usr/share/spotify/spotify ]]
 then 
 echo "The Script will now be applied for version installed with apt"
 installing_spicetify

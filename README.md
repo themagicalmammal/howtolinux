@@ -1006,6 +1006,8 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 #### 2. Shell Config
  I am currently using [Starship](https://starship.rs/) shell config with Liquid Carbon Transparent from [Gogh](https://github.com/Mayccoll/Gogh). <br />
  **Note -** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
+ To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md).
+![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/terminal.png)
 
 ### Clean your System
 #### Clean via Terminal
@@ -1045,6 +1047,7 @@ The beautiful thing I like about Pop OS is its feature-rich environment to incre
 - [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
 - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
 - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
+- [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) <br /> <br />
 ![dashtodock](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/dashtodock.png)
 - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />
@@ -1075,6 +1078,13 @@ Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
 1. Go to Preferences.
 2. Go to Font & Colors.
 3. Select Color Scheme - Classic. <br />
+
+**Tip** - Add icon instead of Activities text
+1. Go to Extensions.
+2. Open settings for Activities Configurator.
+3. Select a custom icon
+**The icon I use is [here](<img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/pop.svg)**
+4.  Hide Text & reduce icon padding
 
 ### After you do all of this, your desktop should look this
 ![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bigsurlikelook.png) <br /> <br />

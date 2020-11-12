@@ -1004,7 +1004,7 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
  To make your neofetch look this, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
  
 #### 2. Shell Config
- I am currently using [Starship](https://starship.rs/) shell config with Liquid Carbon Transparent from [Gogh](https://github.com/Mayccoll/Gogh). <br />
+ I am currently using [Starship](https://starship.rs/) shell config with Dark Patrol from [Gogh](https://github.com/Mayccoll/Gogh). <br />
  **Note -** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
  To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md).
 ![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/terminal.png)
@@ -1035,6 +1035,15 @@ Night Light mode is simply made to remove some lights which hinder our sleep cyc
 ### Tile Windows
 The beautiful thing I like about Pop OS is its feature-rich environment to increase work efficiency.<br /> <br />
 ![Tile-windows](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/Tile-windows.png)
+
+### Custom Fonts
+Custom Fonts increase the user experience. I use custom fonts on my laptop and also my Oneplus. <br />
+
+Currently I am using Linotte Font & MonoFur for my terminal. <br />
+To change your font, go to gnome-tweaks then to Fonts. <br /> <br />
+![customfont](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/customfont.png)
+To change Terminal font, Go to preferences, then to profiles, then in custom font select MonoFur. <br />
+To get my fonts, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.local/share/fonts.md).
 
 ### Customization
 #### 1. We need to add gnome-shell-integration for Chrome.

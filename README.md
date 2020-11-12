@@ -1048,6 +1048,7 @@ The beautiful thing I like about Pop OS is its feature-rich environment to incre
 - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
 - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
 - [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)
+- [Remove Accessibility](https://extensions.gnome.org/extension/112/remove-accesibility/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) <br /> <br />
 ![dashtodock](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/dashtodock.png)
 - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />

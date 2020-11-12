@@ -995,6 +995,13 @@ I use **Unified hosts + fake news + gambling + porn** <br />
 sudo mv $(xdg-user-dir DOWNLOADS)/hosts.txt /etc/hosts
 ```
 
+### Terminal Mods
+#### 1. Neofetch Mod
+ Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU,GPU blah blah blah. Me being a minimalist only use some information out of this. <br />
+ So, my custom config, makes the neofetch look like this. <br /> <br />
+![neofetch](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/neofetch.png)
+ To make your neofetch look this, go [here]().
+ .
 ### Clean your System
 **Terminal**
 ```bash

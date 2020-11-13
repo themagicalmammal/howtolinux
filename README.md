@@ -19,6 +19,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Update your System](https://github.com/themagicalmammal/howtopopbuntu#update-your-system)**
 - **[Why use apt, not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
 - **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
+- **[Software Properties Common](https://github.com/themagicalmammal/howtopopbuntu#software-properties-common)**
 - **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
 - **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
 - **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
@@ -177,6 +178,12 @@ However, when you run apt dist-upgrade, it will intelligently install or remove 
 If you upgrade to a newer release the recovery also needs to be upgraded, you can do it via Terminal. <br />
 ```bash
 pop-upgrade recovery upgrade from-release
+```
+
+#### Software Properties Common
+This is a required library for apps, that use PPA's for installation. It doesn't come pre-installed with many Ubuntu-based distros like Elementary OS.
+```bash
+sudo apt install software-properties-common -y
 ```
 
 ### Proprietary Drivers
@@ -396,7 +403,7 @@ OBS Studio is software designed for capturing, compositing, encoding, recording,
 sudo apt install obs-studio -y
 ```
 
-#### 3. [Peek}(https://github.com/phw/peek)
+#### 3. [Peek](https://github.com/phw/peek)
 Peek is an recorder with with video recording, GIF recording and screenshot capabilities.
 ```bash
 sudo add-apt-repository ppa:peek-developers/stable

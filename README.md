@@ -26,7 +26,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-apt-dpkg)**
 - **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor), [Extensions](https://github.com/themagicalmammal/howtopopbuntu#extensions-i-use)**
 - **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
-- **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio)**
+- **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio), [Peek](https://github.com/themagicalmammal/howtopopbuntu#3-peek)**
 - **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio Controls](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio-controls), [PulseEffects](https://github.com/themagicalmammal/howtopopbuntu#2-PulseEffects), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#3-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#4-ardour)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [WPS Office](https://github.com/themagicalmammal/howtopopbuntu#2-wps-office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
@@ -394,6 +394,14 @@ sudo apt remove --purge totem* -y && sudo apt autoremove -y
 OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.
 ```bash
 sudo apt install obs-studio -y
+```
+
+#### 3. [Peek}(https://github.com/phw/peek)
+Peek is an recorder with with video recording, GIF recording and screenshot capabilities.
+```bash
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek -y
 ```
 
 ### Audio Tools

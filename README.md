@@ -561,6 +561,10 @@ Gives you the ability to play popular non-free media formats, including DVD, MP3
 ```bash
 sudo apt install ubuntu-restricted-extras -y
 ```
+To enable restricted codecs to play DVDs
+```bash
+sudo dpkg-reconfigure libdvd-pkg
+```
 
 ### Other Apps
 #### 1. uGet

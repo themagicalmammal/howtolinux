@@ -1102,14 +1102,10 @@ To get the start button I [have](https://github.com/themagicalmammal/howtopopbun
 - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 #### 3. Custom themes
 *Go to [Gnome-look](https://www.gnome-look.org/browse/cat/)* <br />  <br />
-**Light Theme** (Home Computer) <br />
-Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/) <br />
-Cursor - [Layan](https://www.gnome-look.org/s/Gnome/p/1365214/) <br />
-Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
-**Dark Theme** (My PC) <br />
-Shell & Application - [Kimi Dark](https://www.gnome-look.org/p/1326889/)
-Cursor - [Bibata](https://www.gnome-look.org/s/Gnome/p/1197198/)
-Icons - [Zafiro](https://www.gnome-look.org/p/1209330/)
+**My Setup** <br />
+Shell & Application - [Kimi Dark](https://www.gnome-look.org/p/1326889/) <br />
+Cursor - [Bibata](https://www.gnome-look.org/s/Gnome/p/1197198/) <br />
+Icons - [Zafiro](https://www.gnome-look.org/p/1209330/) <br />
 
 #### 4. Place the theme in .themes & the icons in .icons in Home.
 #### 5. In the Gnome tweak tool, Select your theme.

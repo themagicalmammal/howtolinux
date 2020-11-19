@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 #### To see what my setup looks like, go [here](https://www.reddit.com/r/pop_os/comments/jswu9j/pop_os_punk_setup/).
-###### This is done exclusively on Pop Os 20.10 but, this has been tested on Ubuntu & Voyager, this should work for every Ubuntu-based Distros.
+###### This is done exclusively on Pop Os 20.04 but, this has been tested on Ubuntu & Voyager, this should work for every Ubuntu-based Distros.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over six months using pop on them.
 
 
@@ -1102,10 +1102,14 @@ To get the start button I [have](https://github.com/themagicalmammal/howtopopbun
 - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 #### 3. Custom themes
 *Go to [Gnome-look](https://www.gnome-look.org/browse/cat/)* <br />  <br />
-**My setup** <br />
+**Light Theme** (Home Computer) <br />
 Shell & Application - [WhiteSur](https://www.gnome-look.org/p/1403328/) <br />
 Cursor - [Layan](https://www.gnome-look.org/s/Gnome/p/1365214/) <br />
 Icons - [Tela circle icon](https://www.pling.com/p/1359276/) <br />
+**Dark Theme** (My PC) <br />
+Shell & Application - [Kimi Dark](https://www.gnome-look.org/p/1326889/)
+Cursor - [Bibata](https://www.gnome-look.org/s/Gnome/p/1197198/)
+Icons - [Zafiro](https://www.gnome-look.org/p/1209330/)
 
 #### 4. Place the theme in .themes & the icons in .icons in Home.
 #### 5. In the Gnome tweak tool, Select your theme.

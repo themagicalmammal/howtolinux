@@ -41,7 +41,7 @@ else
 		then
 		echo "snap isn't supported by spicetify, consider installing the flatpak or from the repositorys"
 		else
-		echo "Spotify doesn't seem to be installed, please install it first. If you have installed it and believe this is an error, please submit an issue here: https://github.com/themagicalmammal/howtopopbuntu/issues"
+		echo "Spotify doesn't seem to be installed, This may be a flatpak issue which causes path conflict. Please install via deb method/pop repo's. If you have installed it and believe this is an error, please submit an issue here: https://github.com/themagicalmammal/howtopopbuntu/issues"
 		fi
 	fi
 fi

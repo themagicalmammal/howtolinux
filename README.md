@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 #### To see what my setup looks like, go [here](https://www.reddit.com/r/pop_os/comments/jswu9j/pop_os_punk_setup/).
-###### This is done exclusively on Pop Os 20.04 but, this has been tested on Ubuntu & Voyager, this should work for every Ubuntu-based Distros.
+###### This is done exclusively on Pop OS 20.04 but, this has been tested on Ubuntu & Voyager, this should work for every Ubuntu-based Distros.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over six months using pop on them.
 
 
@@ -1035,8 +1035,15 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 #### 2. Shell Config
  I am currently using [Starship](https://starship.rs/) shell config with Dark Patrol from [Gogh](https://github.com/Mayccoll/Gogh). <br />
  **Note -** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
- To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md).
+ To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
 ![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/terminal.png)
+
+### Disable Frequents
+Disable Frequents Tab in Gnome app menu. This option is not required for Gnome > 3.38.
+```bash
+gsettings set org.gnome.desktop.privacy remember-app-usage false
+
+```
 
 ### Clean your System
 #### Clean via Terminal

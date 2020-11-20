@@ -2,9 +2,8 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 #### To see what my setup looks like, go [here](https://www.reddit.com/r/pop_os/comments/jswu9j/pop_os_punk_setup/).
-###### This is done exclusively on Pop OS 20.04 but, this has been tested on Ubuntu & Voyager, this should work for every Ubuntu-based Distros.
+###### This is done exclusively on Pop OS 20.04 but, has been tested on Ubuntu & Voyager, most of these tweaks should work for every Ubuntu-based Distros out there.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over six months using pop on them.
-
 
 # Index
 ## [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
@@ -814,7 +813,7 @@ The built-in extensions I use are - <br /> <br />
 3. **Desktop Icons** - Add icons to the desktop.
 4. **Pop Battery Icon Fix** - Fixes the battery icon to match the current battery level. (Useless for desktop pc)
 5. **Pop Shop Details** - Adds a Show Details item to applications if Pop Shop is installed.
-6. **System76 Power** - system76-power is a utility for managing graphics and power profiles. (Useful for hybrid and NVIDIA GPU)
+6. **System76 Power** - system76-power is a utility for managing graphics and power profiles. Options show up under battery menu. (Useful for hybrid and NVIDIA GPU)
 
 ### Disabling Pop Shop on Boot
 Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />
@@ -1040,6 +1039,18 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
  **Note -** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
  To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
 ![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/terminal.png)
+
+### TLP
+TLP is a utility for battery optimization on laptops. TLP comes with a default configuration which is perfectly tuned. The utility works by optimizing the power used by hardware devices while your laptop is running on its battery.
+```bash
+sudo apt install tlp
+sudo tlp start
+```
+If you need a graphical interface to optimise or control it.
+```bash
+sudo add-apt-repository ppa:linuxuprising/apps && sudo apt update
+sudo apt install tlpui
+```
 
 ### Disable Frequents
 Disable Frequents Tab in Gnome app menu. This option is not required for Gnome > 3.38.

@@ -668,7 +668,7 @@ sudo apt remove --purge gnome-power-manager -y
 ```
 - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
 ```bash
-sudo apt-get remove --purge ibus-libpinyin* -y && sudo apt autoremove -y
+sudo apt remove --purge ibus-libpinyin -y && sudo apt autoremove -y
 ```
 - **Vim** - Vim is a highly configurable text editor built to configure any kind of text very efficient fashion. I have removed this because I use Nano/Gedit/Atom.
 ```bash

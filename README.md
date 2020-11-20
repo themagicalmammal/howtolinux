@@ -329,8 +329,7 @@ sudo apt update && sudo apt install brave-browser -y
 ```bash
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
-sudo apt update
-sudo apt install opera-stable -y
+sudo apt update && sudo apt install opera-stable -y
 ```
 **Non-Chromium Based**
 #### 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -408,8 +407,7 @@ sudo apt install obs-studio -y
 Peek is an recorder with with video recording, GIF recording and screenshot capabilities. <br />
 **Pop users don't need to add this repo.**
 ```bash
-sudo add-apt-repository ppa:peek-developers/stable
-sudo apt update
+sudo add-apt-repository ppa:peek-developers/stable && sudo apt update
 sudo apt install peek -y
 ```
 

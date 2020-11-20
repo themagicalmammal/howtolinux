@@ -566,6 +566,7 @@ sudo apt install ubuntu-restricted-extras -y
 ```
 To enable restricted codecs to play DVDs
 ```bash
+sudo apt install libdvd-pkg -y
 sudo dpkg-reconfigure libdvd-pkg
 ```
 
@@ -618,7 +619,9 @@ sudo apt install htop -y
 ![htop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/htop.png)
 #### - Bashtop
 An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
+**Repo already exists in Pop 20.10**
 ```bash
+sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
 ![bashtop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/bashtop.png)

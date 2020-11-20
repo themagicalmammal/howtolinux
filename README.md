@@ -520,8 +520,9 @@ flatpak install pycharm-community -y
 #### 3. GitHub-Desktop
 A seamless way to contribute to projects on GitHub.
 ```bash
-sudo apt install github-desktop -y
+sudo apt install git github-desktop -y
 ```
+If this doesn't work, get the deb [here](https://github.com/shiftkey/desktop/releases).
 #### 4. Java
 Go through [this](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04) to get the correct version.
 

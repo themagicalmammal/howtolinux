@@ -56,6 +56,8 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 ## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
 - **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
 - **[Terminal Mods](https://github.com/themagicalmammal/howtopopbuntu#terminal-mods) -> [Neofetch](https://github.com/themagicalmammal/howtopopbuntu#1-neofetch-mod), [Shell Config](https://github.com/themagicalmammal/howtopopbuntu#2-shell-config)**
+- **[TLP](https://github.com/themagicalmammal/howtopopbuntu#tlp)**
+- **[Disable Frequents](https://github.com/themagicalmammal/howtopopbuntu#disable-frequents)**
 - **[Clean your System](https://github.com/themagicalmammal/howtopopbuntu#clean-your-system)**
 - **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
 - **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**

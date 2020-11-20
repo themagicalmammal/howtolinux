@@ -876,7 +876,7 @@ clients to access image acquisition devices available on the localhost.
 sudo systemctl disable saned.service
 sudo systemctl mask saned.service
 ```
-- **GPU-manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
+- **GPU-Manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
 ```bash
 sudo systemctl disable gpu-manager.service
 sudo systemctl mask gpu-manager.service
@@ -892,7 +892,7 @@ sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 ```
-- **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
+- [Restart Required] **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
 1. Disable & Mask the systemd-resolved service
 ```bash
 sudo systemctl stop systemd-resolved.service
@@ -907,7 +907,9 @@ sudo nano /etc/NetworkManager/NetworkManager.conf
 ```bash
 sudo rm /etc/resolv.conf
 ```
-4. Restart
+4. Restart <br /> <br />
+
+**Might be UnSafe** <br />
 - [Required on Dual-GPU based system] **Switcheroo-control** is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
 ```bash
 sudo systemctl disable switcheroo-control.service

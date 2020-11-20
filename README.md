@@ -344,7 +344,7 @@ sudo apt install torbrowser-launcher -y
 **In case of driver/library error which bugs on Chromium-based browsers, Non-Chromium-based browsers can help you out.** <br /> <br />
 To remove Firefox (Not Recommended)
 ```bash
-sudo apt remove --purge firefox* -y && sudo apt autoremove -y
+sudo apt-get remove --purge firefox* -y && sudo apt autoremove -y
 ```
 #### Extensions I use
 Generally, these extensions exist for almost all browsers. <br />
@@ -362,7 +362,7 @@ Chrome is good enough for me. Pop OS ships with Geary which is a great email cli
 
 **If you want to remove Geary**
 ```bash
-sudo apt remove --purge geary* -y && sudo apt autoremove -y
+sudo apt-get remove --purge geary* -y && sudo apt autoremove -y
 ```
 
 **Alternatives,**
@@ -396,7 +396,7 @@ sudo apt install vlc  -y
 
 Get rid of the stock video player
 ```bash
-sudo apt remove --purge totem* -y && sudo apt autoremove -y
+sudo apt-get remove --purge totem* -y && sudo apt autoremove -y
 ```
 #### 2. [OBS Studio](https://obsproject.com/)
 OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.
@@ -454,7 +454,7 @@ Get the deb file [here](https://linux.wps.com/) <br />
 To remove LibreOffice  <br />
 
 ```bash
-sudo apt remove --purge libreoffice* -y && sudo apt autoremove -y
+sudo apt-get remove --purge libreoffice* -y && sudo apt autoremove -y
 ``` 
 <br /> <br />
 
@@ -641,15 +641,15 @@ sudo apt remove --purge gnome-calendar -y && sudo apt autoremove -y
 ```
 - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert them into a text string. I have no known use for it.
 ```bash
-sudo apt remove --purge gucharmap* -y && sudo apt autoremove -y
+sudo apt-get remove --purge gucharmap* -y && sudo apt autoremove -y
 ```
 - **Contacts** - Gnome contacts tool important for a work pc.
 ```bash
-sudo apt remove --purge gnome-contacts* -y && sudo apt autoremove -y
+sudo apt-get remove --purge gnome-contacts* -y && sudo apt autoremove -y
 ```
 - **Document Scanner** - Important tool for a work pc.
 ```bash
-sudo apt remove --purge sane* simple-scan -y
+sudo apt-get remove --purge sane* simple-scan -y
 ```
 - **Gnome Fonts** - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
 ```bash
@@ -657,7 +657,7 @@ sudo apt remove --purge gnome-font-viewer -y
 ```
 - **Gnome Help** - Useful for newcomers
 ```bash
-sudo apt remove --purge yelp* -y && sudo apt autoremove -y
+sudo apt-get remove --purge yelp* -y && sudo apt autoremove -y
 ```
 - **Gnome Power Manager** - can show historical and current battery information and programs waking up that use power. I never use it.
 ```bash
@@ -665,16 +665,16 @@ sudo apt remove --purge gnome-power-manager -y
 ```
 - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
 ```bash
-sudo apt remove --purge ibus-libpinyin* -y && sudo apt autoremove -y
+sudo apt-get remove --purge ibus-libpinyin* -y && sudo apt autoremove -y
 ```
 - **Vim** - Vim is a highly configurable text editor built to configure any kind of text very efficient fashion. I have removed this because I use Nano/Gedit/Atom.
 ```bash
-sudo apt remove --purge gvim* vim* -y && sudo apt autoremove -y
+sudo apt-get remove --purge gvim* vim* -y && sudo apt autoremove -y
 ```
 - **Popsicle USB creator** - If you create a live USB, you should keep this tool but, Etcher seems a better option.<br />
 **Get [Etcher](https://www.balena.io/etcher/)** <br />
 ```bash
-sudo apt remove --purge popsicle* -y
+sudo apt-get remove --purge popsicle* -y
 ```
 
 #### Reverting

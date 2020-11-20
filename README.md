@@ -405,7 +405,8 @@ sudo apt install obs-studio -y
 ```
 
 #### 3. [Peek](https://github.com/phw/peek)
-Peek is an recorder with with video recording, GIF recording and screenshot capabilities.
+Peek is an recorder with with video recording, GIF recording and screenshot capabilities. <br />
+**Pop users don't need to add this repo.**
 ```bash
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update

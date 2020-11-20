@@ -1153,7 +1153,7 @@ Icons - [Zafiro](https://www.gnome-look.org/p/1209330/) <br />
 1. Go to Extensions.
 2. Open settings for Activities Configurator.
 3. Select a custom icon
-**The icon I use is [here](<img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/pop.svg)**
+**The icon I use is [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/pop.png)**
 4.  Hide Text & reduce icon padding
 
 ### After you do all of this, your desktop should look this

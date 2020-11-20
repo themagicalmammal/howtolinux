@@ -868,7 +868,8 @@ sudo systemctl mask avahi-daemon.service
 ```
 - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
 ```bash
-sudo apt remove --purge apport* -y && sudo apt autoremove -y
+sudo systemctl disable apport.service
+sudo systemctl mask apport.service
 ```
 - **Saned** is the SANE (Scanner Access Now Easy) daemon that allows remote
 clients to access image acquisition devices available on the localhost.
@@ -892,7 +893,7 @@ sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 ```
-- [Restart Required] **Systemd-resolved**  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
+- **Systemd-resolved** [Restart Required]  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
 1. Disable & Mask the systemd-resolved service
 ```bash
 sudo systemctl stop systemd-resolved.service
@@ -910,17 +911,17 @@ sudo rm /etc/resolv.conf
 4. Restart <br /> <br />
 
 **Might be UnSafe** <br />
-- [Required on Dual-GPU based system] **Switcheroo-control** is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
+- **Switcheroo-control** [Required on Dual-GPU systems] is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
 ```bash
 sudo systemctl disable switcheroo-control.service
 sudo systemctl mask switcheroo-control.service
 ```
-- [Required on laptops] **System76-power** Power Controls for lappy not required on a desktop PC.
+- **System76-power** [Required on laptops] Power Controls for lappy not required on a desktop PC.
 ```bash
 sudo systemctl disable system76-power.service
 sudo systemctl mask system76-power.service
 ```
-- [Unsafe to remove] **Thermald** daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
+- **Thermald** [Might heatup system] daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.<br />
 **If your system heats after removing this even a bit, add it back**
 ```bash
 sudo systemctl disable thermald.service

@@ -541,8 +541,7 @@ If you get troubles installing spicetify-cli use, do this -
 1. Get the latest [spicetify script](https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spicetify/spicetify.sh)
 2. Then follow these commands,
 ```bash
-chmod 775 $(xdg-user-dir DOWNLOAD)/spicetify.sh
-$(xdg-user-dir DOWNLOAD)/spicetify.sh
+curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spicetify/spicetify.sh | bash
 ```
 <br /> <br />
 ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br /> 

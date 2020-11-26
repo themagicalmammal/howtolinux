@@ -536,13 +536,19 @@ sudo apt update && sudo apt install spotify-client -y
 ```
 If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br />
 To install themes for spotify, go [here](https://github.com/khanhas/spicetify-cli) to get the themes, go [here](https://github.com/morpheusthewhite/spicetify-themes). <br />
-If you get troubles installing spicetify-cli use, do this -
-1. Get the latest [spicetify script](https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spicetify/spicetify.sh)
-2. Then follow these commands,
+If you get troubles installing,
+1. Spicetify-cli <br />
+You can use this,
 ```bash
 curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spicetify/spicetify.sh | bash
 ```
+2. Spotify-Adblock <br />
+You can use this,
+```bash
+curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spotify-adblock/spotify_adblock.sh | bash
+```
 <br /> <br />
+
 ![spotify-adfree](https://github.com/themagicalmammal/howtopopbuntu/blob/master/Screenshots/spotify-adfree.png) <br /> 
 **Ad-free Spotify may get buggy from time to time.**  <br />  <br />
 

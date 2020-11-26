@@ -1,7 +1,6 @@
 # How to Popbuntu?
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
-#### To see what my setup looks like, go [here](https://www.reddit.com/r/pop_os/comments/jswu9j/pop_os_punk_setup/).
 ###### This is done exclusively on Pop OS 20.04 but, has been tested on Ubuntu & Voyager, most of these tweaks should work for every Ubuntu-based Distros out there.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over six months using pop on them.
 
@@ -30,7 +29,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio Controls](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio-controls), [PulseEffects](https://github.com/themagicalmammal/howtopopbuntu#2-PulseEffects), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#3-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#4-ardour)**
 - **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [WPS Office](https://github.com/themagicalmammal/howtopopbuntu#2-wps-office)**
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
-- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-gtkwhatsapp), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
+- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram-kotatogram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-whatsappqt), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java), [Visual Studio](https://github.com/themagicalmammal/howtopopbuntu#5-visual-studio)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Resource Monitor](https://github.com/themagicalmammal/howtopopbuntu#6-resource-monitor), [Firewall](https://github.com/themagicalmammal/howtopopbuntu#7-firewall)**
@@ -480,15 +479,15 @@ sudo apt install inkscape -y
 ```
 
 ### Social Apps
-#### 1. Telegram
-Official Telegram client
+#### 1. Telegram (Kotatogram)
+[Unofficial Telegram client](https://kotatogram.github.io/)
 ```bash
-flatpak install org.telegram -y
+flatpak install io.github.kotatogram -y
 ```
-#### 2. Whatsapp (GtkWhatsapp)
-[Unofficial Whatsapp client](https://github.com/gigitux/gtkwhats) with more features
+#### 2. Whatsapp (WhatsappQT)
+[Unofficial Whatsapp client](https://gitlab.com/bit3/whatsappqt)
 ```bash
-flatpak install com.gigitux.gtkwhats -y
+flatpak install io.bit3.WhatsAppQT -y
 ```
 #### 3. Discord
 Official Discord client

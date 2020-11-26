@@ -528,21 +528,22 @@ Go through [this](https://code.visualstudio.com/docs/setup/linux).
 
 ### Entertainment Apps
 #### 1. Spotify for Music
-**With Ad-block support**
+**Supports Ad-block and Spicetify-cli**
 ```bash
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update && sudo apt install spotify-client -y
 ```
-If you do not like ads, you can get [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). <br />
-To install themes for spotify, go [here](https://github.com/khanhas/spicetify-cli) to get the themes, go [here](https://github.com/morpheusthewhite/spicetify-themes). <br />
-If you have troubles installing this. There is a easier way you can use -
-**1. Spicetify-Cli** <br />
+Features that can be added, <br />
+##### 1. Spicetify-Cli & Themes
+To install themes for spotify, you can check [this](https://github.com/khanhas/spicetify-cli), to install different themes, go [here](https://github.com/morpheusthewhite/spicetify-themes) out. If you have troubles going through the steps of spicetify-cli. Here is a script you can use.
 ```bash
 curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spicetify/spicetify.sh | bash
 ```
 You need to log-in & out after this. <br />
-**2. Spotify-Adblock** <br />
+##### 2. Spotify-Adblock
+If you do not like ads, you can install [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). To simplify the steps go through this. <br />
+**Note -** This might be buggy.
 ```bash
 curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spotify-adblock/spotify_adblock.sh | sudo bash
 ```
@@ -550,6 +551,7 @@ To remove original Spotify icon. Do this,
 ```bash
 sudo rm /usr/share/applications/spotify.desktop
 ```
+**My Spotify** <br />
 ![spotify](https://raw.githubusercontent.com/morpheusthewhite/spicetify-themes/master/DribbblishDynamic/color-match-bg.gif) <br /> 
 
 #### 2. Steam for Gaming

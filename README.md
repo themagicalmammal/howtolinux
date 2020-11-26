@@ -550,10 +550,7 @@ To remove original Spotify icon. Do this,
 ```bash
 sudo rm /usr/share/applications/spotify.desktop
 ```
-<br /> <br />
-
 ![spotify](https://raw.githubusercontent.com/morpheusthewhite/spicetify-themes/master/DribbblishDynamic/color-match-bg.gif) <br /> 
-**Ad-free Spotify may get buggy from time to time.**  <br />  <br />
 
 #### 2. Steam for Gaming
 ```bash

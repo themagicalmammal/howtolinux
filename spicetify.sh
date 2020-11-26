@@ -3,8 +3,8 @@ installing_spicetify () {
 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
 export SPICETIFY_INSTALL="$HOME/spicetify-cli"
 export PATH="$SPICETIFY_INSTALL:$PATH"
-echo 'export SPICETIFY_INSTALL="$HOME/spicetify-cli' >>~/.profile
-echo 'export PATH="$SPICETIFY_INSTALL:$PATH' >>~/.profile
+echo 'export SPICETIFY_INSTALL="$HOME/spicetify-cli"' >>~/.profile
+echo 'export PATH="$SPICETIFY_INSTALL:$PATH"' >>~/.profile
 echo "Programm installed, now configuring"
 }
 apply_theme () {

@@ -1,7 +1,9 @@
 # How to Popbuntu?
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
-##### [My Current Setup](https://www.reddit.com/r/pop_os/comments/k1f4nj/making_a_10yearlong_macbook_owner_switch_to_pop_os/).
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/themagicalmammal/howtopopbuntu/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/themagicalmammal/howtopopbuntu/pulls)
+##### [My Current Setup](https://www.reddit.com/r/linux/comments/k1fuus/making_a_10yearlong_macbook_owner_switch_to_pop_os/).
 ###### This is done exclusively on Pop OS 20.04 but, has been tested on Ubuntu & Voyager, most of these tweaks should work for every Ubuntu-based Distros out there.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over seven months using pop on them.
 

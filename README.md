@@ -88,7 +88,7 @@ There are two ways of getting swap (You can choose which is better) <br />
 **[BRTFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with the general method or create a swap file in a different partition.**
 - Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.<br />
 
-**Post Installation Steps** <br />
+**Post Installation Steps:** <br />
 
 **Brtfs [Snapshots won't work]** <br />
 Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  <br />
@@ -201,7 +201,7 @@ sudo apt install gnome-tweaks -y
 Minimize is an important button. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. <br />
 You can get the maximize button too, but it's not that useful because it can be done by double-clicking the title bar.<br />
 If you were a mac user, you might prefer left button placement over the default right placement. <br />
-**Note:-** Left Placement glitches the gnome-tweak-tool for some reason don't worry about it just increase the size of the window. <br /> <br />
+**Note:** Left Placement glitches the gnome-tweak-tool for some reason don't worry about it just increase the size of the window. <br /> <br />
 ![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/gnome-minimise.png)<br>
 #### 2. Battery Percentage
 Shows the amount of battery remaining in percent. Doesn't work for desktop pc.<br> <br />
@@ -219,7 +219,7 @@ You can format time according to what you need. I only use the time, so I got ri
 If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.<br /> <br />
 ![set-of-refreshrates](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/set-of-refreshrates.png)
 
-#### Steps -
+#### Steps:
 **1. Check xrandr**  <br />
 You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1<br /> <br />
 ```bash
@@ -377,7 +377,7 @@ sudo apt install thunderbird -y
 ```
 #### 3. [MailSpring](https://getmailspring.com/)
 Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. <br />
-**If it throws gvfs dependency error. Follow these Steps -**
+If it throws gvfs dependency error. Follow these **Steps:**
 1. Install these libraries
 ```bash
 sudo apt install libsecret-1-dev gconf2 python2 python-is-python2 -y
@@ -514,8 +514,13 @@ flatpak install io.atom.Atom -y
 #### 2. Pycharm IDE
 A Python IDE for devs.
 ```bash
-flatpak install pycharm-community -y
+flatpak install pycharm-community -y #use professional if you have a license
 ```
+Important python modules,
+```bash
+sudo apt install python3-pip python3-dev python3-distutils
+```
+**Note:** If you use python 2.x use python instead of python3.
 #### 3. GitHub-Desktop
 A seamless way to contribute to projects on GitHub.
 ```bash
@@ -545,7 +550,7 @@ curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/S
 You need to log-in & out after this. <br />
 ##### 2. Spotify-Adblock
 If you do not like ads, you can install [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). To simplify the steps go through this. <br />
-**Note -** This might be buggy.
+**Note:** This might be buggy.
 ```bash
 curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spotify-adblock/spotify_adblock.sh | sudo bash
 ```
@@ -589,7 +594,7 @@ Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility la
 ```bash
 sudo dpkg --add-architecture i386
 ```
-2. Then follow these steps
+2. Then follow these **Steps:**
 ```bash
 wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
 sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update
@@ -711,7 +716,7 @@ Optimize the speed of repeat keys. You can also disable Cursor blinking. <br /> 
 ### Disable annoying Keyring
 #### This provides security for browsers on an autologin-based system. (Easy way to understand it)
 If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
-**Steps to Disable it -**
+**Steps to Disable it:**
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
@@ -830,7 +835,7 @@ The built-in extensions I use are - <br /> <br />
 
 ### Disabling Pop Shop on Boot
 Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram. <br /> <br />
-**Steps -**
+**Steps:**
 1. Edit App center daemon from opening it at start
 ```bash
 sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
@@ -857,7 +862,7 @@ sudo apt remove --purge networkd-dispatcher -y
 sudo systemctl disable ModemManager.service
 sudo systemctl mask ModemManager.service
 ```
-**Note** - If you are not using this and don't want Wi-Fi to disable wpa_supplicant.service.
+**Note:** - If you are not using this and don't want Wi-Fi to disable wpa_supplicant.service.
 - **fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
 Disable thunderbolt_power <br />
 ```bash
@@ -965,7 +970,7 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) <br />
 [Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (It is not in English but you will get the point.) <br />
 
-**Note** - At this point, boot is the fastest.<br />
+**Note:** At this point, boot is the fastest.<br />
 
 ### Getting rid of Custom Kernel
 **IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.**<br />
@@ -1028,7 +1033,7 @@ I use **Steven Black** Ad-Hosts for ad-blocking the whole system without any oth
 I use **Unified hosts + fake news + gambling + porn** <br />
 
 #### Q. How to?
-**Ans. Steps -**
+**Ans. Steps:**
 1. Get a [host](https://github.com/StevenBlack/hosts)
 2. Save it to Downloads
 3. Then
@@ -1045,7 +1050,7 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
  
 #### 2. Shell Config
  I am currently using [Starship](https://starship.rs/) shell config with Dark Patrol from [Gogh](https://github.com/Mayccoll/Gogh). <br />
- **Note -** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
+ **Note:** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
  To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
 ![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/terminal.png)
 
@@ -1081,13 +1086,13 @@ I use Bleachbit because it is good to remove unnecessary junk from your computer
 ```bash
 sudo apt install bleachbit -y
 ```
-**Steps -** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
+**Steps:** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
 ![bleachbit](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bleachbit.png)
-**Note**:- After doing this the first boot might be slow don't worry it's perfectly normal.
+**Note:** After doing this the first boot might be slow don't worry it's perfectly normal.
 
 ### Night Light
 Night Light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it *unsleepy* that's why we use a night light.<br /> <br />
-**Steps -** Settings > Display > Night light <br />
+**Steps:** Settings > Display > Night light <br />
 *You can also select the timing which fits your sleep cycle.*<br /> <br />
 ![nightlight](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/nightlight.png)
 
@@ -1169,7 +1174,7 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5) <br />
 ## 7. Bonus
 ### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us, if Steam Glitches
 #### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is pirated, and in no way, I want to encourage piracy.
-#### Steps -
+#### Steps:
 1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
 2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
 3. To run it type

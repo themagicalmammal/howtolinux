@@ -1,74 +1,72 @@
 # How to Popbuntu?
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/themagicalmammal/howtopopbuntu/pulls)
 ##### [My Current Setup](https://www.reddit.com/r/linux/comments/k1fuus/making_a_10yearlong_macbook_owner_switch_to_pop_os/).
 ###### This is done exclusively on Pop OS 20.04 but, has been tested on Ubuntu & Voyager, most of these tweaks should work for every Ubuntu-based Distros out there.
 This is an extensive Guide on the set of things I use. This has been tested on my two computers, one of them is 7th Gen i5 with Samsung EVO SSD and the other one is a 3rd Gen i3. These tweaks are added based on my experience over seven months using pop on them.
 
 # Index
-## [Installation](https://github.com/themagicalmammal/howtopopbuntu#1-installation)
-- **[Partitions to create](https://github.com/themagicalmammal/howtopopbuntu#partitions-to-create)**
-- **[What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap)**
-- **[What about ZRAM?](https://github.com/themagicalmammal/howtopopbuntu#what-about-zram)**
-- **[Should I Encrypt?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-encrypt)**
-- **[Should I use Btrfs or Ext4?](https://github.com/themagicalmammal/howtopopbuntu#q-should-i-use-btrfs-or-ext4)**
-- **[What about ZFS?](https://github.com/themagicalmammal/howtopopbuntu#q-what-about-zfs-ubuntu-only)**
+## [Installation](#1-installation)
+- **[Partitions to create](#partitions-to-create)**
+- **[What about Swap?](#what-about-swap)**
+- **[What about ZRAM?](#what-about-zram)**
+- **[Should I Encrypt?](#q-should-i-encrypt)**
+- **[Should I use Btrfs or Ext4?](#q-should-i-use-btrfs-or-ext4)**
+- **[What about ZFS?](#q-what-about-zfs-ubuntu-only)**
 
-## [Post Installation](https://github.com/themagicalmammal/howtopopbuntu#2-post-installation)
-- **[Update your System](https://github.com/themagicalmammal/howtopopbuntu#update-your-system)**
-- **[Why use apt, not apt-get?](https://github.com/themagicalmammal/howtopopbuntu#why-use-apt-not-apt-get)**
-- **[Difference b/w upgrade & dist-upgrade](https://github.com/themagicalmammal/howtopopbuntu#difference-bw-upgrade-and-dist-upgrade)**
-- **[Software Properties Common](https://github.com/themagicalmammal/howtopopbuntu#software-properties-common)**
-- **[Proprietary Drivers](https://github.com/themagicalmammal/howtopopbuntu#proprietary-drivers)**
-- **[Gnome Tweaks & the ones I use](https://github.com/themagicalmammal/howtopopbuntu#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](https://github.com/themagicalmammal/howtopopbuntu#1-minimize-button-and-button-placement), [Battery Percentage](https://github.com/themagicalmammal/howtopopbuntu#2-battery-percentage), [Optimizing Font](https://github.com/themagicalmammal/howtopopbuntu#3-optimizing-font), [Activity Hot Corner](https://github.com/themagicalmammal/howtopopbuntu#4-activity-hot-corner-and-format-time)**
-- **[Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#custom-resolution-with-xrandr) -> [Resolution goes away](https://github.com/themagicalmammal/howtopopbuntu#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](https://github.com/themagicalmammal/howtopopbuntu#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](https://github.com/themagicalmammal/howtopopbuntu#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](https://github.com/themagicalmammal/howtopopbuntu#bug-problems-regarding-hybrid-graphics-switching)**
-## [Preferred Apps](https://github.com/themagicalmammal/howtopopbuntu#3-preferred-apps)
-- **[Snap Vs Flatpak](https://github.com/themagicalmammal/howtopopbuntu#snap-vs-flatpak-package-managers-except-apt-dpkg)**
-- **[Browser](https://github.com/themagicalmammal/howtopopbuntu#browser) -> [Chrome](https://github.com/themagicalmammal/howtopopbuntu#1-chrome), [Vivaldi](https://github.com/themagicalmammal/howtopopbuntu#2-vivaldi), [Brave](https://github.com/themagicalmammal/howtopopbuntu#3-brave), [Opera](https://github.com/themagicalmammal/howtopopbuntu#4-opera), [Firefox](https://github.com/themagicalmammal/howtopopbuntu#1-firefox), [TOR](https://github.com/themagicalmammal/howtopopbuntu#2-tor), [Extensions](https://github.com/themagicalmammal/howtopopbuntu#extensions-i-use)**
-- **[Email Client](https://github.com/themagicalmammal/howtopopbuntu#email-client)-> [Evolution](https://github.com/themagicalmammal/howtopopbuntu#1-evolution), [Thunderbird](https://github.com/themagicalmammal/howtopopbuntu#2-thunderbird), [MailSpring](https://github.com/themagicalmammal/howtopopbuntu#3-mailspring)**
-- **[Video Tools](https://github.com/themagicalmammal/howtopopbuntu#video-tools) -> [VLC](https://github.com/themagicalmammal/howtopopbuntu#1-vlc), [OBS Studio](https://github.com/themagicalmammal/howtopopbuntu#2-obs-studio), [Peek](https://github.com/themagicalmammal/howtopopbuntu#3-peek)**
-- **[Audio Tools](https://github.com/themagicalmammal/howtopopbuntu#audio-tools) -> [PulseAudio Controls](https://github.com/themagicalmammal/howtopopbuntu#1-pulseaudio-controls), [PulseEffects](https://github.com/themagicalmammal/howtopopbuntu#2-PulseEffects), [Audacity](https://github.com/themagicalmammal/howtopopbuntu#3-audacity), [Ardour](https://github.com/themagicalmammal/howtopopbuntu#4-ardour)**
-- **[Office](https://github.com/themagicalmammal/howtopopbuntu#office) -> [Free Office](https://github.com/themagicalmammal/howtopopbuntu#1-free-office), [WPS Office](https://github.com/themagicalmammal/howtopopbuntu#2-wps-office)**
-- **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
-- **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram-kotatogram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-whatsappqt), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
-- **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java), [Visual Studio](https://github.com/themagicalmammal/howtopopbuntu#5-visual-studio)**
+## [Post Installation](#2-post-installation)
+- **[Update your System](#update-your-system)**
+- **[Why use apt, not apt-get?](#why-use-apt-not-apt-get)**
+- **[Difference b/w upgrade & dist-upgrade](#difference-bw-upgrade-and-dist-upgrade)**
+- **[Software Properties Common](#software-properties-common)**
+- **[Proprietary Drivers](#proprietary-drivers)**
+- **[Gnome Tweaks & the ones I use](#gnome-tweaks--the-ones-i-use) -> [Minimize Button and Button Placement](#1-minimize-button-and-button-placement), [Battery Percentage](#2-battery-percentage), [Optimizing Font](#3-optimizing-font), [Activity Hot Corner](#4-activity-hot-corner-and-format-time)**
+- **[Custom Resolution](#custom-resolution-with-xrandr) -> [Resolution goes away](#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](#bug-problems-regarding-hybrid-graphics-switching)**
+## [Preferred Apps](#3-preferred-apps)
+- **[Snap Vs Flatpak](#snap-vs-flatpak-package-managers-except-apt-dpkg)**
+- **[Browser](#browser) -> [Chrome](#1-chrome), [Vivaldi](#2-vivaldi), [Brave](#3-brave), [Opera](#4-opera), [Firefox](#1-firefox), [TOR](#2-tor), [Extensions](#extensions-i-use)**
+- **[Email Client](#email-client)-> [Evolution](#1-evolution), [Thunderbird](#2-thunderbird), [MailSpring](#3-mailspring)**
+- **[Video Tools](#video-tools) -> [VLC](#1-vlc), [OBS Studio](#2-obs-studio), [Peek](#3-peek)**
+- **[Audio Tools](#audio-tools) -> [PulseAudio Controls](#1-pulseaudio-controls), [PulseEffects](#2-PulseEffects), [Audacity](#3-audacity), [Ardour](#4-ardour)**
+- **[Office](#office) -> [Free Office](#1-free-office), [WPS Office](#2-wps-office)**
+- **[Graphic tools](#graphic-tools) -> [GIMP](#1-gimp), [Krita](#2-krita), [Blender](#3-blender), [Inkscape](#4-inkscape)**
+- **[Social Apps](#social-apps) -> [Telegram](#1-telegram-kotatogram), [Whatsapp](#2-whatsapp-whatsappqt), [Discord](#3-discord), [Reddit](#4-reddit-giara), [Facebook Messenger](#5-facebook-messenger-caprine)**
+- **[Programming Apps](#programming-apps) -> [Atom](#1-atom-by-github), [Pycharm](#2-pycharm-ide), [GitHub-Desktop](#3-github-desktop), [Java](#4-java), [Visual Studio](#5-visual-studio)**
 - **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto)**
-- **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
-- **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Resource Monitor](https://github.com/themagicalmammal/howtopopbuntu#6-resource-monitor), [Firewall](https://github.com/themagicalmammal/howtopopbuntu#7-firewall)**
-- **[Debloat](https://github.com/themagicalmammal/howtopopbuntu#--debloat)**
+- **[Entertainment Apps](#entertainment-apps) -> [Spotify](#1-spotify-for-music), [Steam](#2-steam-for-gaming), [Multimedia Codecs](#3-multimedia-codecs)**
+- **[Other Apps](#other-apps) -> [uGet](#1-uget), [Wine](#2-wine-windows-apps), [Synaptic](#3-synaptic-package-manager), [Nautilus](#4-nautilus-admin-mode), [Timeshift](#5-timeshift), [Resource Monitor](#6-resource-monitor), [Firewall](#7-firewall)**
+- **[Debloat](#--debloat)**
 
-## [Important Tweaks](https://github.com/themagicalmammal/howtopopbuntu#4-important-tweaks)
-- **[Settings](https://github.com/themagicalmammal/howtopopbuntu#settings) -> [Privacy Tweaks](https://github.com/themagicalmammal/howtopopbuntu#---privacy-tweaks), [Over Amplification](https://github.com/themagicalmammal/howtopopbuntu#---over-amplification), [Accessibility](https://github.com/themagicalmammal/howtopopbuntu#---accessibility)**
-- **[Disable annoying Keyring](https://github.com/themagicalmammal/howtopopbuntu#disable-annoying-keyring)**
-- **[Controlling Audio Devices](https://github.com/themagicalmammal/howtopopbuntu#controlling-audio-devices)**
-## [Optimize Boot-time & Ram Usage](https://github.com/themagicalmammal/howtopopbuntu#5-optimize-boot-time--ram-usage)
-- **[Disabling Plymouth](https://github.com/themagicalmammal/howtopopbuntu#disabling-plymouth)**
-- **[Adjusting the Swappiness Property](https://github.com/themagicalmammal/howtopopbuntu#adjusting-the-swappiness-property)**
-- **[Adjusting the Cache Pressure](https://github.com/themagicalmammal/howtopopbuntu#adjusting--the-cache-pressure-setting)**
-- **[EarlyOOM](https://github.com/themagicalmammal/howtopopbuntu#earlyoom)**
-- **[Wayland](https://github.com/themagicalmammal/howtopopbuntu#wayland)**
-- **[Disabling Extensions](https://github.com/themagicalmammal/howtopopbuntu#disabling-unnecessary-extensions)**
-- **[Disable Pop Shop on boot](https://github.com/themagicalmammal/howtopopbuntu#disabling-pop-shop-on-boot)**
-- **[Clearing buff/cache](https://github.com/themagicalmammal/howtopopbuntu#clearing-buffcache)**
-- **[Optimizing the boot](https://github.com/themagicalmammal/howtopopbuntu#optimizing-the-boot)**
-- **[Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#custom-kernel)**
-- **[Removing Custom Kernel](https://github.com/themagicalmammal/howtopopbuntu#getting-rid-of-custom-kernel)**
-- **[Final Boot-Time](https://github.com/themagicalmammal/howtopopbuntu#final-boot-time)**
-## [Miscellaneous](https://github.com/themagicalmammal/howtopopbuntu#6-miscellaneous)
-- **[Ad-Hosts](https://github.com/themagicalmammal/howtopopbuntu#ad-hosts)**
-- **[Terminal Mods](https://github.com/themagicalmammal/howtopopbuntu#terminal-mods) -> [Neofetch](https://github.com/themagicalmammal/howtopopbuntu#1-neofetch-mod), [Shell Config](https://github.com/themagicalmammal/howtopopbuntu#2-shell-config)**
-- **[TLP](https://github.com/themagicalmammal/howtopopbuntu#tlp)**
-- **[Disable Frequents](https://github.com/themagicalmammal/howtopopbuntu#disable-frequents)**
-- **[Clean your System](https://github.com/themagicalmammal/howtopopbuntu#clean-your-system)**
-- **[Night Light](https://github.com/themagicalmammal/howtopopbuntu#night-light)**
-- **[Tile Windows](https://github.com/themagicalmammal/howtopopbuntu#tile-windows)**
-- **[Custom Fonts](https://github.com/themagicalmammal/howtopopbuntu#custom-fonts)**
-- **[Customization](https://github.com/themagicalmammal/howtopopbuntu#customization)**
-- **[Qt5 theme fix](https://github.com/themagicalmammal/howtopopbuntu#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theme-go-here)**
-## [Bonus](https://github.com/themagicalmammal/howtopopbuntu#7-bonus)
-- **[Among Us, if Steam Glitches](https://github.com/themagicalmammal/howtopopbuntu#-among-us-if-steam-glitches)**
-## [Reddit](https://github.com/themagicalmammal/howtopopbuntu#-)
+## [Important Tweaks](#4-important-tweaks)
+- **[Settings](#settings) -> [Privacy Tweaks](#---privacy-tweaks), [Over Amplification](#---over-amplification), [Accessibility](#---accessibility)**
+- **[Disable annoying Keyring](#disable-annoying-keyring)**
+- **[Controlling Audio Devices](#controlling-audio-devices)**
+## [Optimize Boot-time & Ram Usage](#5-optimize-boot-time--ram-usage)
+- **[Disabling Plymouth](#disabling-plymouth)**
+- **[Adjusting the Swappiness Property](#adjusting-the-swappiness-property)**
+- **[Adjusting the Cache Pressure](#adjusting--the-cache-pressure-setting)**
+- **[EarlyOOM](#earlyoom)**
+- **[Wayland](#wayland)**
+- **[Disabling Extensions](#disabling-unnecessary-extensions)**
+- **[Disable Pop Shop on boot](#disabling-pop-shop-on-boot)**
+- **[Clearing buff/cache](#clearing-buffcache)**
+- **[Optimizing the boot](#optimizing-the-boot)**
+- **[Custom Kernel](#custom-kernel)**
+- **[Removing Custom Kernel](#getting-rid-of-custom-kernel)**
+- **[Final Boot-Time](#final-boot-time)**
+## [Miscellaneous](#6-miscellaneous)
+- **[Ad-Hosts](#ad-hosts)**
+- **[Terminal Mods](#terminal-mods) -> [Neofetch](#1-neofetch-mod), [Shell Config](#2-shell-config)**
+- **[TLP](#tlp)**
+- **[Disable Frequents](#disable-frequents)**
+- **[Clean your System](#clean-your-system)**
+- **[Night Light](#night-light)**
+- **[Tile Windows](#tile-windows)**
+- **[Custom Fonts](#custom-fonts)**
+- **[Customization](#customization)**
+- **[Qt5 theme fix](#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theme-go-here)**
+## [Reddit](#-)
 
 
 ## 1. Installation
@@ -78,7 +76,7 @@ Go through this, because this can be a very helpful step. I am currently using b
 #### Partitions to Create
 - 500 MB for Efi boot (Enough even for multi-boot)
 - Recovery (Very Useful, only Pop Os for Ubuntu you need to manually backup) <br />
-- Swap partition (First, read [What about Swap?](https://github.com/themagicalmammal/howtopopbuntu#what-about-swap))
+- Swap partition (First, read [What about Swap?](#what-about-swap))
 - (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System <br />
 
 #### What about Swap?
@@ -419,7 +417,7 @@ PulseAudio is an audio server. The audio in your apps passes through Pulse. So i
 ```bash
 sudo apt install pavucontrol -y
 ```
-To learn how to control your audio, go [here](https://github.com/themagicalmammal/howtopopbuntu#controlling-audio-devices).
+To learn how to control your audio, go [here](controlling-audio-devices).
 #### 2. [PulseEffects](https://github.com/wwmm/pulseeffects)
 Audio effects for Pulseaudio applications. This helps add specialized effects for each application individually and thus creates multiple profiles for different applications.
 ```bash
@@ -1175,54 +1173,6 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5) <br />
 ![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bigsurlikelook.png) <br /> <br />
 
 ### To fix qt5 applications like KolourPaint to respect system theme, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
-
-## 7. Bonus
-### <img src="https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/Among_Us.svg" width="20" height="20" /> Among Us, if Steam Glitches
-#### For everyone following this method, Among Us is available for everyone in Steam for Linux. I prefer to get it from Steam since it is stable & gets updates. But, on old hardware, Steam seems to glitch a lot, so this is an alternative. Please try not to use this if you do not need to because this is pirated, and in no way, I want to encourage piracy.
-#### Steps:
-1. Install [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine)
-2. Download [Among Us](http://www.mediafire.com/file/czz4ctxxcauy2t8/Among.Us.v2020.9.9s.zip/file)
-3. To run it type
-```
-wine Among\ Us.exe
-```
-
-#### Create a Desktop Icon
-1. Open terminal inside Among Us folder
-```bash
-pwd
-```
-Replace this with outputofpwd <br />
-2. Create a file **amongus.desktop** <br />
-##### Place this inside it
-```python
-[Desktop Entry]
-Type=Application
-Name=Among Us
-Comment=Among US ExE
-GenericName=Game
-Icon=Among_Us
-Exec=wine outputofpwd/Among\ Us.exe
-Terminal=false
-Categories=Game;Graphics;Wine;
-```
-Save it to Documents <br />
-3. Use this icon <br />
-```bash
- mv $(xdg-user-dir DOCUMENTS)/amongus.desktop $HOME/.local/share/applications
-```
-
-#### OR
-#### Create a Script
-1. Create a file start.sh
-```bash
-echo "wine Among\ Us.exe" > start.sh | chmod 755 start.sh
-```
-2. Open terminal inside the folder
-```bash
-./start.sh
-```
-
 
 ## [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/user/themagicalmammal) <br />
 [Pop OS](https://www.reddit.com/r/pop_os/comments/jm1j5i/a_guide_to_setting_up_popubuntu/)/[Ubuntu](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/) to post your queries and suggestions.

@@ -536,7 +536,7 @@ Go through [this](https://code.visualstudio.com/docs/setup/linux).
 
 ### Productivity Apps
 #### 1. [Kinto](https://github.com/rbreaves/kinto)
-Key remapper that makes Mac user's transition to Linux easier.
+Key remapper that makes mac user's transition to Linux easier. It provides macOS keyboard shortcuts. So, if you miss your mac shortcut style you can use this.
 
 ### Entertainment Apps
 #### 1. Spotify for Music

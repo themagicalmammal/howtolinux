@@ -33,6 +33,7 @@ This is an extensive Guide on the set of things I use. This has been tested on m
 - **[Graphic tools](https://github.com/themagicalmammal/howtopopbuntu#graphic-tools) -> [GIMP](https://github.com/themagicalmammal/howtopopbuntu#1-gimp), [Krita](https://github.com/themagicalmammal/howtopopbuntu#2-krita), [Blender](https://github.com/themagicalmammal/howtopopbuntu#3-blender), [Inkscape](https://github.com/themagicalmammal/howtopopbuntu#4-inkscape)**
 - **[Social Apps](https://github.com/themagicalmammal/howtopopbuntu#social-apps) -> [Telegram](https://github.com/themagicalmammal/howtopopbuntu#1-telegram-kotatogram), [Whatsapp](https://github.com/themagicalmammal/howtopopbuntu#2-whatsapp-whatsappqt), [Discord](https://github.com/themagicalmammal/howtopopbuntu#3-discord), [Reddit](https://github.com/themagicalmammal/howtopopbuntu#4-reddit-giara), [Facebook Messenger](https://github.com/themagicalmammal/howtopopbuntu#5-facebook-messenger-caprine)**
 - **[Programming Apps](https://github.com/themagicalmammal/howtopopbuntu#programming-apps) -> [Atom](https://github.com/themagicalmammal/howtopopbuntu#1-atom-by-github), [Pycharm](https://github.com/themagicalmammal/howtopopbuntu#2-pycharm-ide), [GitHub-Desktop](https://github.com/themagicalmammal/howtopopbuntu#3-github-desktop), [Java](https://github.com/themagicalmammal/howtopopbuntu#4-java), [Visual Studio](https://github.com/themagicalmammal/howtopopbuntu#5-visual-studio)**
+- **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto---key-remapper)**
 - **[Entertainment Apps](https://github.com/themagicalmammal/howtopopbuntu#entertainment-apps) -> [Spotify](https://github.com/themagicalmammal/howtopopbuntu#1-spotify-for-music), [Steam](https://github.com/themagicalmammal/howtopopbuntu#2-steam-for-gaming), [Multimedia Codecs](https://github.com/themagicalmammal/howtopopbuntu#3-multimedia-codecs)**
 - **[Other Apps](https://github.com/themagicalmammal/howtopopbuntu#other-apps) -> [uGet](https://github.com/themagicalmammal/howtopopbuntu#1-uget), [Wine](https://github.com/themagicalmammal/howtopopbuntu#2-wine-windows-apps), [Synaptic](https://github.com/themagicalmammal/howtopopbuntu#3-synaptic-package-manager), [Nautilus](https://github.com/themagicalmammal/howtopopbuntu#4-nautilus-admin-mode), [Timeshift](https://github.com/themagicalmammal/howtopopbuntu#5-timeshift), [Resource Monitor](https://github.com/themagicalmammal/howtopopbuntu#6-resource-monitor), [Firewall](https://github.com/themagicalmammal/howtopopbuntu#7-firewall)**
 - **[Debloat](https://github.com/themagicalmammal/howtopopbuntu#--debloat)**
@@ -532,6 +533,12 @@ Go through [this](https://www.digitalocean.com/community/tutorials/how-to-instal
 
 #### 5. Visual Studio
 Go through [this](https://code.visualstudio.com/docs/setup/linux).
+
+### Productivity Apps
+#### 1. Kinto - key remapper
+Key remapper that makes mac user's transition to Linux easier.
+
+https://github.com/rbreaves/kinto
 
 ### Entertainment Apps
 #### 1. Spotify for Music

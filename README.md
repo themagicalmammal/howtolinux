@@ -517,9 +517,10 @@ flatpak install pycharm-community -y #use professional if you have a license
 ```
 Important python modules,
 ```bash
-sudo apt install python3-pip python3-dev python3-distutils
+sudo apt install python3-pip python3-dev python3-distutils python3-virenv
+pip3 install virtualenv #solves the global package bug
 ```
-**Note:** If you use python 2.x use python instead of python3.
+**Note:** If you use python 2.x use python instead of python3 and pip instead of pip3.
 #### 3. GitHub-Desktop
 A seamless way to contribute to projects on GitHub.
 ```bash

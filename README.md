@@ -558,10 +558,6 @@ If you do not like ads, you can install [Ad-free Spotify](https://github.com/abb
 ```bash
 curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spotify-adblock/spotify_adblock.sh | sudo bash
 ```
-To remove original Spotify icon. Do this,
-```bash
-sudo rm /usr/share/applications/spotify.desktop
-```
 **My Spotify** <br />
 ![spotify](https://raw.githubusercontent.com/morpheusthewhite/spicetify-themes/master/DribbblishDynamic/color-match-bg.gif) <br /> 
 

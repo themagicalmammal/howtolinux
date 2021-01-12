@@ -343,7 +343,7 @@ sudo apt install torbrowser-launcher -y
 **In case of driver/library error which bugs on Chromium-based browsers, Non-Chromium-based browsers can help you out.** <br /> <br />
 To remove Firefox (Not Recommended)
 ```bash
-sudo apt-get remove --purge firefox* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge firefox* -y
 ```
 #### Extensions I use
 Generally, these extensions exist for almost all browsers. <br />
@@ -361,7 +361,7 @@ Chrome is good enough for me. Pop OS ships with Geary which is a great email cli
 
 **If you want to remove Geary**
 ```bash
-sudo apt-get remove --purge geary* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge geary* -y
 ```
 
 **Alternatives,**
@@ -395,7 +395,7 @@ sudo apt install vlc  -y
 
 Get rid of the stock video player
 ```bash
-sudo apt-get remove --purge totem* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge totem* -y
 ```
 #### 2. [OBS Studio](https://obsproject.com/)
 OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.
@@ -453,7 +453,7 @@ Get the deb file [here](https://linux.wps.com/) <br />
 To remove LibreOffice  <br />
 
 ```bash
-sudo apt-get remove --purge libreoffice* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge libreoffice* -y
 ``` 
 <br /> <br />
 
@@ -657,15 +657,15 @@ sudo apt remove --purge gnome-calculator -y
 ```
 - **Calendar** - I put this on a list because I never need the Calendar even on my phone
 ```bash
-sudo apt remove --purge gnome-calendar -y && sudo apt autoremove -y
+sudo apt autoremove --purge gnome-calendar -y
 ```
 - **Character Map** - is a Unicode character map that allows you to select characters from a table and insert them into a text string. I have no known use for it.
 ```bash
-sudo apt-get remove --purge gucharmap* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge gucharmap* -y
 ```
 - **Contacts** - Gnome contacts tool important for a work pc.
 ```bash
-sudo apt-get remove --purge gnome-contacts* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge gnome-contacts* -y
 ```
 - **Document Scanner** - Important tool for a work pc.
 ```bash
@@ -677,7 +677,7 @@ sudo apt remove --purge gnome-font-viewer -y
 ```
 - **Gnome Help** - Useful for newcomers
 ```bash
-sudo apt-get remove --purge yelp* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge yelp* -y
 ```
 - **Gnome Power Manager** - can show historical and current battery information and programs waking up that use power. I never use it.
 ```bash
@@ -685,11 +685,11 @@ sudo apt remove --purge gnome-power-manager -y
 ```
 - **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
 ```bash
-sudo apt remove --purge ibus-libpinyin -y && sudo apt autoremove -y
+sudo apt autoremove --purge ibus-libpinyin -y
 ```
 - **Vim** - Vim is a highly configurable text editor built to configure any kind of text very efficient fashion. I have removed this because I use Nano/Gedit/Atom.
 ```bash
-sudo apt-get remove --purge gvim* vim* -y && sudo apt autoremove -y
+sudo apt-get autoremove --purge gvim* vim* -y
 ```
 - **Popsicle USB creator** - If you create a live USB, you should keep this tool but, Etcher seems a better option.<br />
 **Get [Etcher](https://www.balena.io/etcher/)** <br />
@@ -903,14 +903,14 @@ sudo systemctl mask saned.service
 sudo systemctl disable gpu-manager.service
 sudo systemctl mask gpu-manager.service
 ```
-- **Apt-daily-upgrade** bug -
+- **Apt-daily-upgrade** solves long boot up time with apt-daily-upgrade.
 ```bash
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 ```
-- **lvm2-monitor** Only useful if you are using lvm
+- **lvm2-monitor** Only useful if you are using lvm.
 ```bash
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
@@ -987,12 +987,12 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 
 For XanMod
 ```bash
-sudo apt remove --purge linux-xanmod -y && sudo apt --purge autoremove
+sudo apt autoremove --purge linux-xanmod -y
 ```
 
 For Liquorix
 ```bash
-sudo apt remove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y && sudo apt --purge autoremove
+sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y
 ```
 2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
 ```bash

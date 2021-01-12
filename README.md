@@ -910,6 +910,11 @@ sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 ```
+- **lvm2-monitor** Only useful if you are using lvm
+```bash
+sudo systemctl disable lvm2-monitor.service
+sudo systemctl mask lvm2-monitor.service
+```
 - **Systemd-resolved** [Restart Required]  is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
 1. Disable & Mask the systemd-resolved service
 ```bash

@@ -1113,7 +1113,12 @@ Currently I am using Linotte Font for system & MonoFur for my terminal. <br />
 To change your font, go to gnome-tweaks then to Fonts. <br /> <br />
 ![customfont](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/customfont.png)
 To change Terminal font, Go to preferences, then to profiles, then in custom font select MonoFur. <br />
-To get my fonts, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.local/share/fonts.md). <br />
+To get my fonts, 
+```bash
+wget https://github.com/themagicalmammal/howtopopbuntu/raw/master/.local/share/fonts.tar.xz
+tar -xf $(xdg-user-dir DOWNLOAD)/fonts.tar.xz -C ${XDG_CONFIG_HOME:-~/.local}/share
+rm $(xdg-user-dir DOWNLOAD)/fonts.tar.xz
+```
 If the font doesn't show, you can try clearing the font cache <br />
 ```bash
 fc-cache -f -v

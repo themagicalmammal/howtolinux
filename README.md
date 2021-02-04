@@ -12,8 +12,8 @@ This is an extensive Guide on the set of things I use.
 - **[What about Swap?](#what-about-swap)**
 - **[What about ZRAM?](#what-about-zram)**
 - **[Should I Encrypt?](#q-should-i-encrypt)**
-- **[Should I use Btrfs or Ext4?](#q-should-i-use-btrfs-or-ext4)**
-- **[What about ZFS?](#q-what-about-zfs-ubuntu-only)**
+- **[Should I use Btrfs or Ext4 or XFS?](#q-should-i-use-btrfs-or-ext4-or-xfs)**
+- **[What about ZFS?](#q-what-about-zfs)**
 
 ## [Post Installation](#2-post-installation)
 - **[Update your System](#update-your-system)**
@@ -135,8 +135,8 @@ cat /proc/swaps
 #### Q. Should I Encrypt?
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations, you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
-#### Q. Should I use Btrfs or Ext4?
-**Ans.** It depends, As Btrfs is in its infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. I installed Btrfs on my desktop & noticed that Btrfs is surprisingly fast. But, I do not know if this is the case with every distro. <br />
+#### Q. Should I use Btrfs or Ext4 or XFS?
+**Ans.** It depends, As Btrfs is in its infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. If you are on HDD then go for Btrfs because it is surprisingly fast on it but, if you are on a SSD you can go for XFS. <br />
 
 To fix installation bugs
 ```bash
@@ -144,11 +144,11 @@ sudo apt install btrfs-progs -y
 ```
 
 - [Reference on Rising of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
-- [Reference to Fedora Trend](https://www.phoronix.com/scan.php?page=news_item&px=Fedora-33-Released)
+- [Reference on Btrfs  on HDD](https://www.phoronix.com/scan.php?page=article&item=linux54-hdd-raid&num=1)
+- [Reference on XFS on SSD](https://www.phoronix.com/scan.php?page=article&item=linux-58-filesystems&num=4)
 
-
-#### Q. What about ZFS? (UBUNTU ONLY)
-**Ans.** ZFS has been added as an experimental new filesystem on 19.10. If you want to learn more about referring to [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately, it is becoming a trend. You can check out [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs). <br />
+#### Q. What about ZFS?
+**Ans.** ZFS has been added as an experimental new filesystem on 19.10. If you want to learn more about referring to [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately, it is becoming a trend. As, it is very stable and used by leading companies such as Oracle. You can check out [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs). <br />
 
 If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20-04-with-zfs).
 

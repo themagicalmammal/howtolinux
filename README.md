@@ -496,7 +496,7 @@ Official Discord client
 flatpak install com.discordapp.Discord -y
 ```
 #### 4. Reddit (Giara)
-##### Better use on your browser.
+##### Better use Reddit on your browser.
 [Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit. Currently, this is in its development stage and thus might have bugs.
 ```bash
 flatpak install org.gabmus.giara -y
@@ -1127,19 +1127,17 @@ fc-cache -f -v
 - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Impatience](https://extensions.gnome.org/extension/277/impatience/) <br /> <br />
 #### Some More Cool Extensions
-- [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
-- [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
-- [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
-- [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)
-- [Remove Accessibility](https://extensions.gnome.org/extension/112/remove-accesibility/)
 - [Showtime - Desktop Widget](https://extensions.gnome.org/extension/1429/showtime/)
+- [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) <br /> <br />
 ![dashtodock](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/dashtodock.png)
+  - [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
+  - [Remove Accessibility](https://extensions.gnome.org/extension/112/remove-accesibility/)
+  - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
 - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />
 ![dashtopanel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/dashtopanel.png)
 To get the start button I [have](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/start.png). <br />
-
-**Only works with Dash** <br />
+- [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
 - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 #### 3. Custom themes
 *Go to [Gnome-look](https://www.gnome-look.org/browse/cat/)* <br />  <br />

@@ -1,8 +1,8 @@
 ## Configuring Neofetch
 ```bash
-wget https://github.com/themagicalmammal/howtopopbuntu/releases/download/neofetch/neofetch.tar.xz
-tar -xf $(xdg-user-dir DOWNLOAD)/neofetch.tar.xz -C ${XDG_CONFIG_HOME:-~/.config}
-rm $(xdg-user-dir DOWNLOAD)/neofetch.tar.xz
+wget https://raw.githubusercontent.com/themagicalmammal/howtopopbuntu/master/.config/neofetch/config.conf
+mkdir ${XDG_CONFIG_HOME:-~/.config}/neofetch
+mv config.conf ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
 ```
 **Note for Non-Pop users** -  You have to change your logo according to this, <br />
 1. Open the config file
@@ -14,6 +14,6 @@ gedit ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
 
 ## Configuring Starship
 ```bash
-wget https://github.com/themagicalmammal/howtopopbuntu/releases/download/Starship/starship.toml
-mv $(xdg-user-dir DOWNLOAD)/starship.toml ${XDG_CONFIG_HOME:-~/.config}/starship.toml
+wget https://raw.githubusercontent.com/themagicalmammal/howtopopbuntu/master/.config/starship.toml
+mv starship.toml ${XDG_CONFIG_HOME:-~/.config}/starship.toml
 ```

@@ -550,14 +550,14 @@ Features that can be added, <br />
 ##### 1. Spicetify-Cli & Themes
 To install themes for spotify, you can check [this](https://github.com/khanhas/spicetify-cli), to install different themes, go [here](https://github.com/morpheusthewhite/spicetify-themes) out. If you have troubles going through the steps of spicetify-cli. Here is a script you can use.
 ```bash
-curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spicetify/spicetify.sh | bash
+curl -fsSL https://raw.githubusercontent.com/themagicalmammal/howtopopbuntu/master/spicetify.sh | bash
 ```
 You need to log-in & out after this. <br />
 ##### 2. Spotify-Adblock
 If you do not like ads, you can install [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). To simplify the steps go through this. <br />
 **Note:** This might be buggy.
 ```bash
-curl -fsSL https://github.com/themagicalmammal/howtopopbuntu/releases/download/Spotify-adblock/spotify_adblock.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/themagicalmammal/howtopopbuntu/master/spotify_adblock.sh | sudo bash
 ```
 **My Spotify** <br />
 ![spotify](https://raw.githubusercontent.com/morpheusthewhite/spicetify-themes/master/DribbblishDynamic/color-match-bg.gif) <br /> 

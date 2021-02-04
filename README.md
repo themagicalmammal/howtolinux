@@ -480,10 +480,10 @@ sudo apt install inkscape -y
 ```
 
 ### Social Apps
-#### 1. Telegram (Kotatogram)
-[Unofficial Telegram client](https://kotatogram.github.io/)
+#### 1. Telegram
+Official Telegram client
 ```bash
-flatpak install io.github.kotatogram -y
+flatpak install org.telegram.desktop -y
 ```
 #### 2. Whatsapp (WhatsappQT)
 [Unofficial Whatsapp client](https://gitlab.com/bit3/whatsappqt)
@@ -496,6 +496,7 @@ Official Discord client
 flatpak install com.discordapp.Discord -y
 ```
 #### 4. Reddit (Giara)
+##### Better use on your browser.
 [Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit. Currently, this is in its development stage and thus might have bugs.
 ```bash
 flatpak install org.gabmus.giara -y

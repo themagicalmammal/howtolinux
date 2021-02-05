@@ -31,7 +31,7 @@ This is an extensive Guide on the set of things I use.
 - **[Audio Tools](#audio-tools) -> [PulseAudio Controls](#1-pulseaudio-controls), [PulseEffects](#2-PulseEffects), [Audacity](#3-audacity), [Ardour](#4-ardour)**
 - **[Office](#office) -> [Free Office](#1-free-office), [WPS Office](#2-wps-office)**
 - **[Graphic tools](#graphic-tools) -> [GIMP](#1-gimp), [Krita](#2-krita), [Blender](#3-blender), [Inkscape](#4-inkscape)**
-- **[Social Apps](#social-apps) -> [Telegram](#1-telegram-kotatogram), [Whatsapp](#2-whatsapp-whatsappqt), [Discord](#3-discord), [Reddit](#4-reddit-giara), [Facebook Messenger](#5-facebook-messenger-caprine)**
+- **[Social Apps](#social-apps) -> [Telegram](#1-telegram-kotatogram), [Discord](#2-discord), [Facebook Messenger](#3-facebook-messenger-caprine), [Signal](#4-signal), [Whatsapp](#5-whatsapp-whatsappqt), [Reddit](#6-reddit-giara)**
 - **[Programming Apps](#programming-apps) -> [Atom](#1-atom-by-github), [Pycharm](#2-pycharm-ide), [GitHub-Desktop](#3-github-desktop), [Java](#4-java), [Visual Studio](#5-visual-studio)**
 - **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto)**
 - **[Entertainment Apps](#entertainment-apps) -> [Spotify](#1-spotify-for-music), [Steam](#2-steam-for-gaming), [Multimedia Codecs](#3-multimedia-codecs)**
@@ -485,25 +485,35 @@ Official Telegram client
 ```bash
 flatpak install org.telegram.desktop -y
 ```
-#### 2. Whatsapp (WhatsappQT)
-[Unofficial Whatsapp client](https://gitlab.com/bit3/whatsappqt)
-```bash
-flatpak install io.bit3.WhatsAppQT -y
-```
-#### 3. Discord
+#### 2. Discord
 Official Discord client
 ```bash
 flatpak install com.discordapp.Discord -y
 ```
-#### 4. Reddit (Giara)
-##### Better use Reddit on your browser.
-[Unofficial GTK app](https://giara.gabmus.org/#install) for Reddit. Currently, this is in its development stage and thus might have bugs.
+##### BetterDiscord
+To install themes and customize it's interface according your liking you can install [BetterDiscord](https://betterdiscord.net/home/). To install BetterDiscord, go [here](https://gist.github.com/ObserverOfTime/d7e60eb9aa7fe837545c8cb77cf31172).
+#### 3. Facebook Messenger ([Caprine](https://github.com/sindresorhus/caprine))
+Unofficial Facebook messenger <br />
+Get the installer [here](https://github.com/sindresorhus/caprine/releases)
+#### 4. Signal
+Official Signal client
+```bash
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+sudo apt update && sudo apt install signal-desktop -y
+```
+#### 5. Whatsapp ([WhatsappQT](https://gitlab.com/bit3/whatsappqt))
+Unofficial Whatsapp client
+```bash
+flatpak install io.bit3.WhatsAppQT -y
+```
+#### 6. Reddit ([Giara](https://giara.gabmus.org/#install))
+##### Better to use Reddit on your browser.
+Unofficial Reddit client. Currently, this its on its Beta stage.
 ```bash
 flatpak install org.gabmus.giara -y
 ```
-#### 5. Facebook Messenger (Caprine)
-[Unofficial Facebook messenger](https://github.com/sindresorhus/caprine) <br />
-Get the [deb here](https://github.com/sindresorhus/caprine/releases)
+
 
 ### Programming Apps
 #### 1. Atom by GitHub

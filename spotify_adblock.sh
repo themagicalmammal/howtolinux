@@ -8,6 +8,8 @@ tar -xf cef.tar.bz2 --wildcards '*/include' --strip-components=1
 make
 echo "Installing libraries..."
 sudo make install
+cd ..
+sudo rm -rf spotify-adblock-linux
 wget https://raw.githubusercontent.com/themagicalmammal/howtopopbuntu/master/icons/spotify.desktop
 sudo mv spotify.desktop /usr/share/applications/spotify.desktop
 echo "Enjoy your Spotify Pro..."

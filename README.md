@@ -39,7 +39,7 @@ This is an extensive Guide on the set of things I use.
 - **[Debloat](#--debloat)**
 
 ## [Important Tweaks](#4-important-tweaks)
-- **[Settings](#settings) -> [Privacy Tweaks](#---privacy-tweaks), [Over Amplification](#---over-amplification), [Accessibility](#---accessibility)**
+- **[Settings](#settings) -> [Privacy Tweaks](#---privacy-tweaks), [Over Amplification](#---over-amplification)**
 - **[Disable annoying Keyring](#disable-annoying-keyring)**
 - **[Controlling Audio Devices](#controlling-audio-devices)**
 ## [Optimize Boot-time & Ram Usage](#5-optimize-boot-time--ram-usage)
@@ -66,7 +66,7 @@ This is an extensive Guide on the set of things I use.
 - **[Custom Fonts](#custom-fonts)**
 - **[Customization](#customization)**
 - **[Qt5 theme fix](#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theme-go-here)**
-## [Reddit](#-)
+## [Discussion](#discussion)
 
 
 ## 1. Installation
@@ -979,7 +979,7 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 
 [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1) <br />
 [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) <br />
-[Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (It is not in English but you will get the point.) <br />
+[Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (Not English but you can see the benchmark scores.) <br />
 
 **Note:** At this point, boot is the fastest.<br />
 
@@ -1185,9 +1185,8 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5) <br />
 
 #### To fix qt5 applications like KolourPaint to respect system theme, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
 
-## [<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-13.png" width="150" height="54" />](https://www.reddit.com/user/themagicalmammal) <br />
-[Pop OS](https://www.reddit.com/r/pop_os/comments/jm1j5i/a_guide_to_setting_up_popubuntu/)/[Ubuntu](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/) to post your queries and suggestions.
-
+## Discussion
+To post suggestions or ask questions. Go to [Discussions](https://github.com/themagicalmammal/howtopopbuntu/discussions).
 
 ## Thanks for Suggestions
 1. [GGG_246](https://www.reddit.com/user/GGG_246/) - A lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a looooot more stuff.

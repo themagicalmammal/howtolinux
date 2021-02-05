@@ -28,13 +28,13 @@ This is an extensive Guide on the set of things I use.
 - **[Browser](#browser) -> [Chrome](#1-chrome), [Vivaldi](#2-vivaldi), [Brave](#3-brave), [Opera](#4-opera), [Firefox](#1-firefox), [TOR](#2-tor), [Extensions](#extensions-i-use)**
 - **[Email Client](#email-client)-> [Evolution](#1-evolution), [Thunderbird](#2-thunderbird), [MailSpring](#3-mailspring)**
 - **[Video Tools](#video-tools) -> [VLC](#1-vlc), [OBS Studio](#2-obs-studio), [Peek](#3-peek)**
-- **[Audio Tools](#audio-tools) -> [PulseAudio Controls](#1-pulseaudio-controls), [PulseEffects](#2-PulseEffects), [Audacity](#3-audacity), [Ardour](#4-ardour)**
-- **[Office](#office) -> [Free Office](#1-free-office), [WPS Office](#2-wps-office)**
+- **[Audio Tools](#audio-tools) -> [PulseAudio Controls](#1-pulseaudio-controls), [PulseEffects](#2-pulseeffects), [Audacity](#3-audacity), [Ardour](#4-ardour)**
+- **[Office](#office) -> [Free Office](#1-free-office), [OnlyOffice](#2-onlyoffice), [WPS Office](#3-wps-office)**
 - **[Graphic tools](#graphic-tools) -> [GIMP](#1-gimp), [Krita](#2-krita), [Blender](#3-blender), [Inkscape](#4-inkscape)**
-- **[Social Apps](#social-apps) -> [Telegram](#1-telegram-kotatogram), [Discord](#2-discord), [Facebook Messenger](#3-facebook-messenger-caprine), [Signal](#4-signal), [Whatsapp](#5-whatsapp-whatsappqt), [Reddit](#6-reddit-giara)**
+- **[Social Apps](#social-apps) -> [Telegram](#1-telegram), [Discord](#2-discord), [Facebook Messenger](#3-facebook-messenger-caprine), [Signal](#4-signal), [Whatsapp](#5-whatsapp-whatsappqt), [Reddit](#6-reddit-giara)**
 - **[Programming Apps](#programming-apps) -> [Atom](#1-atom-by-github), [Pycharm](#2-pycharm-ide), [GitHub-Desktop](#3-github-desktop), [Java](#4-java), [Visual Studio](#5-visual-studio)**
-- **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto)**
 - **[Entertainment Apps](#entertainment-apps) -> [Spotify](#1-spotify-for-music), [Steam](#2-steam-for-gaming), [Multimedia Codecs](#3-multimedia-codecs)**
+- **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto)**
 - **[Other Apps](#other-apps) -> [uGet](#1-uget), [Wine](#2-wine-windows-apps), [Synaptic](#3-synaptic-package-manager), [Nautilus](#4-nautilus-admin-mode), [Timeshift](#5-timeshift), [Resource Monitor](#6-resource-monitor), [Firewall](#7-firewall)**
 - **[Debloat](#--debloat)**
 
@@ -440,18 +440,18 @@ I directly use Chrome extension for the office, which you can get [here](https:/
 **If you have not tried LibreOffice, I will recommend you to try it first.** <br />
 Alternatives,
 #### 1. [Free Office](https://www.freeoffice.com/en/)
-Looks a lot like Microsoft Office. <br />
-Get the deb file [here](https://www.freeoffice.com/en/download/applications) <br />
-
-**If you have a problem with Chinese apps or are privacy concerns skip over this.**
-#### 2. [WPS Office](https://www.wps.com/)
+Looks like Microsoft Office 2016. <br />
+Get the deb file [here](https://www.freeoffice.com/en/download/applications)
+#### 2. [OnlyOffice](https://www.onlyoffice.com/)
+Looks like Microsoft Office 2013. <br />
+Get the deb file [here](https://www.onlyoffice.com/en/download-desktop.aspx)
+#### 3. [WPS Office](https://www.wps.com/)
+##### If you have a problem with Chinese apps or are privacy concerns skip over this.
 This is a beautiful office suite with lots of customization. <br />
 Get the deb file [here](https://linux.wps.com/) <br />
 
-**You can also use web-based offices like Google Drive.** <br />
-
-To remove LibreOffice  <br />
-
+#### You can also use web-based offices like Google Drive.
+##### To remove LibreOffice
 ```bash
 sudo apt-get autoremove --purge libreoffice* -y
 ``` 
@@ -544,10 +544,6 @@ Go through [this](https://www.digitalocean.com/community/tutorials/how-to-instal
 #### 5. Visual Studio
 Go through [this](https://code.visualstudio.com/docs/setup/linux).
 
-### Productivity Apps
-#### 1. [Kinto](https://github.com/rbreaves/kinto)
-Key remapper that makes mac user's transition to Linux easier. It provides macOS keyboard shortcuts. So, if you miss your mac shortcut style you can use this.
-
 ### Entertainment Apps
 #### 1. Spotify for Music
 **Supports Ad-block and Spicetify-cli**
@@ -591,6 +587,10 @@ To enable restricted codecs to play DVDs
 sudo apt install libdvd-pkg -y
 sudo dpkg-reconfigure libdvd-pkg
 ```
+
+### Productivity Apps
+#### 1. [Kinto](https://github.com/rbreaves/kinto)
+Key remapper that makes mac user's transition to Linux easier. It provides macOS keyboard shortcuts. So, if you miss your mac shortcut style you can use this.
 
 ### Other Apps
 #### 1. uGet
@@ -717,13 +717,8 @@ sudo apt install <appname> -y
 #### -- Privacy Tweaks
 ![privacytweaks1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/privacytweaks1.png)
 ![privacytweaks2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/privacytweaks2.png)
-![privacytweaks3](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/privacytweaks3.png)
-![privacytweaks4](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/privacytweaks4.png)
 #### -- Over Amplification
 ![overamplification](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/overamplification.png)
-#### -- Accessibility
-Optimize the speed of repeat keys. You can also disable Cursor blinking. <br /> <br />
-![repeatkeys](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/repeatkeys.png)
 ### Disable annoying Keyring
 #### This provides security for browsers on an autologin-based system. (Easy way to understand it)
 If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />

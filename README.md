@@ -25,7 +25,7 @@ This is an extensive Guide on the set of things I use.
 - **[Custom Resolution](#custom-resolution-with-xrandr) -> [Resolution goes away](#problem-the-resolution-goes-away-after-a-reboot), [Refresh Rates](#problem-what-about-other-refresh-rates-), [Removing Custom Resolution](#problem-how-to-get-rid-of-custom-resolution), [Hybrid Graphics Bug](#bug-problems-regarding-hybrid-graphics-switching)**
 ## [Preferred Apps](#3-preferred-apps)
 - **[Snap Vs Flatpak](#snap-vs-flatpak-package-managers-except-apt-dpkg)**
-- **[Browser](#browser) -> [Chrome](#1-chrome), [Vivaldi](#2-vivaldi), [Brave](#3-brave), [Opera](#4-opera), [Firefox](#1-firefox), [TOR](#2-tor), [Extensions](#extensions-i-use)**
+- **[Browser](#browser) -> [Chrome](#1-chrome), [Vivaldi](#2-vivaldi), [Brave](#3-brave), [Opera](#4-opera), [Firefox](#1-firefox), [TOR](#2-tor), [Extensions](#useful-extensions)**
 - **[Email Client](#email-client)-> [Evolution](#1-evolution), [Thunderbird](#2-thunderbird), [MailSpring](#3-mailspring)**
 - **[Video Tools](#video-tools) -> [VLC](#1-vlc), [OBS Studio](#2-obs-studio), [Peek](#3-peek)**
 - **[Audio Tools](#audio-tools) -> [PulseAudio Controls](#1-pulseaudio-controls), [PulseEffects](#2-pulseeffects), [Audacity](#3-audacity), [Ardour](#4-ardour)**
@@ -35,7 +35,7 @@ This is an extensive Guide on the set of things I use.
 - **[Programming Apps](#programming-apps) -> [Atom](#1-atom-by-github), [Pycharm](#2-pycharm-ide), [GitHub-Desktop](#3-github-desktop), [Java](#4-java), [Visual Studio](#5-visual-studio)**
 - **[Entertainment Apps](#entertainment-apps) -> [Spotify](#1-spotify-for-music), [Steam](#2-steam-for-gaming), [Multimedia Codecs](#3-multimedia-codecs)**
 - **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto)**
-- **[Other Apps](#other-apps) -> [uGet](#1-uget), [Wine](#2-wine-windows-apps), [Synaptic](#3-synaptic-package-manager), [Nautilus](#4-nautilus-admin-mode), [Timeshift](#5-timeshift), [Resource Monitor](#6-resource-monitor), [Firewall](#7-firewall)**
+- **[Other Apps](#other-apps) -> [uGet](#1-uget), [Wine](#2-wine-windows-apps), [Lutris](#3-lutris), [Synaptic](#4-synaptic-package-manager), [Nautilus](#5-nautilus-admin-mode), [Timeshift](#6-timeshift), [Resource Monitor](#7-resource-monitor), [Firewall](#8-firewall)**
 - **[Debloat](#--debloat)**
 
 ## [Important Tweaks](#4-important-tweaks)
@@ -136,7 +136,7 @@ cat /proc/swaps
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations, you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.
 
 #### Q. Should I use Btrfs or Ext4 or XFS?
-**Ans.** It depends, As Btrfs is in its infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. If you are on HDD then go for Btrfs because it is surprisingly fast on it but, if you are on a SSD you can go for XFS. <br />
+**Ans.** It depends, As Btrfs is in its infancy state also Ext4 is a more popular option. But, Btrfs is starting to become a trend since Fedora adopted it & it ships with Fedora 33. Also, I am using this on both of my systems. If you are on HDD then go for Btrfs because it is surprisingly fast on it but, if you are on a SSD you can go for XFS. But, remember if you go for XFS it is not resizable unless you are on a lvm.<br />
 
 To fix installation bugs
 ```bash
@@ -617,22 +617,30 @@ winecfg
 ```
 **Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges. <br />
 
-#### 3. Synaptic Package manager
+#### 3. Lutris
+Lutris is an Open Source gaming platform for Linux. It installs and launches games so you can start playing without the hassle of setting up your games. 
+```bash
+sudo add-apt-repository ppa:lutris-team/lutris
+sudo apt update
+sudo apt install lutris
+```
+
+#### 4. Synaptic Package manager
 Synaptic serves as a graphical front-end to APT which makes the process of software management easier.
 ```bash
 sudo apt install synaptic -y
 ```
-#### 4. Nautilus (admin mode)
+#### 5. Nautilus (admin mode)
 Adds right-click property *Open as Administrator*
 ```bash
 sudo apt install nautilus-admin -y && nautilus -q
 ```
-#### 5. Timeshift
+#### 6. Timeshift
 Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 ```bash
 sudo apt install timeshift -y
 ```
-#### 6. Resource Monitor
+#### 7. Resource Monitor
 #### - Htop
 A utility to see which process is taking how much CPU or memory.
 ```bash
@@ -647,7 +655,7 @@ sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
 ![bashtop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bashtop.png)
-#### 7. Firewall
+#### 8. Firewall
 #### - Gufw
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use appication with bunch of settings which you can set according to your preference.
 ```bash

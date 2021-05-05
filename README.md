@@ -498,9 +498,7 @@ Get the installer [here](https://github.com/sindresorhus/caprine/releases)
 #### 4. Signal
 Official Signal client
 ```bash
-wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-sudo apt update && sudo apt install signal-desktop -y
+flatpak install org.signal.Signal -y
 ```
 #### 5. Whatsapp ([WhatsappQT](https://gitlab.com/bit3/whatsappqt))
 Unofficial Whatsapp client

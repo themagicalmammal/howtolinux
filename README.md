@@ -1072,26 +1072,12 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 ![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/terminal.png)
 
 #### 3. Bash Alias
-A Bash alias is a method of supplementing or overriding Bash commands with new ones. <br />
+A Bash Alias is a method of supplementing or overriding Bash commands with new ones. <br />
 
-The alias that I am currently using...
+Get my .bash_alias file from [here](https://gist.github.com/themagicalmammal/94c5210122e75b63db230d364ffe73c0). Add this to your .bash.rc
 ```bash
-alias _="sudo"
-alias u="sudo apt update && sudo apt upgrade" #updates system
-alias i="sudo apt install --no-install-recommends" #minimal install
-alias i_f="sudo apt install" #normal install
-alias i_c="sudo apt install --install-recommends" #complete install
-alias r="sudo apt autoremove --purge" #complete removal
-alias rr="sudo rm -rf" #removing files
-alias n="nano" #terminal editing
-alias p="sudo apt policy" #check policy of a app
-alias e="sudo nano" #elevated editing
-alias f="sudo apt list | grep" #searching for apps
-alias s="sudo apt list --installed | grep" #searching for a installed app
-alias d="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia" #using nvidia dgpu on a app (only for optimus based systems)
-alias g="gamemoderun" #use gamemode on a app
+if [ -f ~/.bash_alias ]; then . ~/.bash_alias fi
 ```
-**Note:** Place this inside .bashrc.
 
 ### TLP
 TLP is a utility for battery optimization on laptops. TLP comes with a default configuration which is perfectly tuned. The utility works by optimizing the power used by hardware devices while your laptop is running on its battery.

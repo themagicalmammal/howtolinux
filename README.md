@@ -668,7 +668,7 @@ GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is p
 sudo apt install gufw
 ```
 #### - Opensnitch
-Helps you to review which services connect to the internet. Also, stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/gustavo-iniguez-goya/opensnitch).
+Helps you to review which services connect to the internet. Also, stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).
 
 ### - Debloat
 ###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.

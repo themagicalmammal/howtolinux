@@ -3,7 +3,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat)](https://github.com/themagicalmammal/howtopopbuntu/pulls)
 ##### [My Current Setup](https://www.reddit.com/r/linux/comments/k1fuus/making_a_10yearlong_macbook_owner_switch_to_pop_os/).
-###### This is done exclusively on Pop OS 20.04 but, has been tested on Ubuntu, most of these tweaks should work for every Ubuntu-based Distros out there.
 This is an extensive Guide on the set of things I use.
 
 # Index
@@ -36,7 +35,6 @@ This is an extensive Guide on the set of things I use.
 - **[Entertainment Apps](#entertainment-apps) -> [Spotify](#1-spotify-for-music), [Steam](#2-steam-for-gaming), [Multimedia Codecs](#3-multimedia-codecs)**
 - **[Productivity Apps](#productivity-apps) -> [Kinto](#1-kinto)**
 - **[Other Apps](#other-apps) -> [uGet](#1-uget), [Wine](#2-wine-windows-apps), [Lutris](#3-lutris), [Synaptic](#4-synaptic-package-manager), [Nautilus](#5-nautilus-admin-mode), [Timeshift](#6-timeshift), [Resource Monitor](#7-resource-monitor), [Firewall](#8-firewall)**
-- **[Debloat](#--debloat)**
 
 ## [Important Tweaks](#4-important-tweaks)
 - **[Settings](#settings) -> [Privacy Tweaks](#---privacy-tweaks), [Over Amplification](#---over-amplification)**
@@ -66,7 +64,6 @@ This is an extensive Guide on the set of things I use.
 - **[Custom Fonts](#custom-fonts)**
 - **[Customization](#customization)**
 - **[Qt5 theme fix](#to-fix-qt5-applications-like-kolourpaint-to-respect-system-theme-go-here)**
-## [Discussion](#discussion)
 
 
 ## 1. Installation
@@ -670,62 +667,6 @@ sudo apt install gufw
 #### - Opensnitch
 Helps you to review which services connect to the internet. Also, stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).
 
-### - Debloat
-###### Remove useless stuff that you do not need.  Please, read what it does before you remove them.
-- **Calculator** - You know what a calculator is.
-```bash
-sudo apt remove --purge gnome-calculator -y
-```
-- **Calendar** - I put this on a list because I never need the Calendar even on my phone
-```bash
-sudo apt autoremove --purge gnome-calendar -y
-```
-- **Character Map** - is a Unicode character map that allows you to select characters from a table and insert them into a text string. I have no known use for it.
-```bash
-sudo apt-get autoremove --purge gucharmap* -y
-```
-- **Contacts** - Gnome contacts tool important for a work pc.
-```bash
-sudo apt-get autoremove --purge gnome-contacts* -y
-```
-- **Document Scanner** - Important tool for a work pc.
-```bash
-sudo apt-get remove --purge sane* simple-scan -y
-```
-- **Gnome Fonts** - shows you the fonts installed on your computer for your use as thumbnails. Selecting any thumbnails shows the full view of how the font would look under various sizes.
-```bash
-sudo apt remove --purge gnome-font-viewer -y
-```
-- **Gnome Help** - Useful for newcomers
-```bash
-sudo apt-get autoremove --purge yelp* -y
-```
-- **Gnome Power Manager** - can show historical and current battery information and programs waking up that use power. I never use it.
-```bash
-sudo apt remove --purge gnome-power-manager -y
-```
-- **Pinyin (Only for Chinese users)** - Pinyin is the Romanization of Chinese characters based on their pronunciation.
-```bash
-sudo apt autoremove --purge ibus-libpinyin -y
-```
-- **Vim** - Vim is a highly configurable text editor built to configure any kind of text very efficient fashion. I have removed this because I use Nano/Gedit/Atom.
-```bash
-sudo apt-get autoremove --purge gvim* vim* -y
-```
-- **Popsicle USB creator** - If you create a live USB, you should keep this tool but, Etcher seems a better option.<br />
-**Get [Etcher](https://www.balena.io/etcher/)** <br />
-```bash
-sudo apt-get remove --purge popsicle* -y
-```
-
-#### Reverting
-If you accidentally remove any, you can add them back by
-```bash
-sudo apt install <appname> -y
-```
-*App name doesn't require * symbol*
-
-
 ## 4. Important Tweaks
 ### Settings
 #### -- Privacy Tweaks
@@ -1206,9 +1147,6 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5) <br />
 ![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bigsurlikelook.png) <br /> <br />
 
 #### To fix qt5 applications like KolourPaint to respect system theme, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
-
-## Discussion
-To post suggestions or ask questions. Go to [Discussions](https://github.com/themagicalmammal/howtopopbuntu/discussions).
 
 ## Thanks for Suggestions
 1. [GGG_246](https://www.reddit.com/user/GGG_246/) - A lot of stuff I didn't know. To check what he did go [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gasmuhg?utm_source=share&utm_medium=web2x&context=3) & [here](https://www.reddit.com/r/Ubuntu/comments/jm1gvw/a_guide_to_setting_up_popubuntu/gata2s4?utm_source=share&utm_medium=web2x&context=3) & a looooot more stuff.

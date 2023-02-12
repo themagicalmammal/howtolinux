@@ -1,14 +1,12 @@
 
-## Browser
+# Browser
 Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. 
 
-**MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, and also these browsers do not support VAAPI** 
-
-**Firefox, Brave & TOR are open-source browsers. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI. ** 
+**Note -** Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, and also these browsers do not support VAAPI Firefox, Brave & TOR are open-source browsers. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI.
 
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 
-**Chromium Based Browsers**
+### Chromium Based Browsers
 ## 1. [Chrome](https://www.google.com/chrome/)
 ```bash
 sudo apt install google-chrome-stable -y
@@ -32,7 +30,7 @@ sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
 sudo apt update && sudo apt install opera-stable -y
 ```
-**Non-Chromium Based**
+### Non-Chromium Based
 ## 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 Comes pre-installed with Pop & Ubuntu.
 

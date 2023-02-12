@@ -59,10 +59,20 @@ function sidebarGuide() {
       ]
     },
     { 
-      text: 'Daily Usage',
+      text: 'Prefferred Apps',
       collapsed: false,
       items: [
-        { text: 'Prefferred Apps', link: '/guide/prefferredapps' },
+        { text: 'Browser', link: '/guide/browsers' },
+        { text: 'Email', link: '/guide/email' },
+        { text: 'Audio', link: '/guide/audio' },
+        { text: 'Video', link: '/guide/video' },
+        { text: 'Graphic', link: '/guide/graphic' },
+        { text: 'Social', link: '/guide/social' },
+        { text: 'Office', link: '/guide/office' },
+        { text: 'Programming', link: '/guide/programming' },
+        { text: 'Entertainment', link: '/guide/entertainment' },
+        { text: 'Productivity', link: '/guide/productivity' },
+        { text: 'Others', link: '/guide/others' },
       ]
     },
     { 

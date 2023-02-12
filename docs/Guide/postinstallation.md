@@ -45,7 +45,7 @@ sudo apt install gnome-tweaks -y
 ## 1. Minimize Button and Button Placement
 Minimize is an important button. While I think you can live without it if you use the Super key a lot. But, for me, the minimize button seems to be very useful. 
 You can get the maximize button too, but it's not that useful because it can be done by double-clicking the title bar.
-If you were a mac user, you might prefer left button placement over the default right placement. 
+If you were a Mac user, you might prefer left button placement over the default right placement. 
 **Note:** Left Placement glitches the gnome-tweak-tool for some reason don't worry about it just increase the size of the window.  
 ![gnome-minimise](https://i.imgur.com/9o78EMM.png)
 ## 2. Battery Percentage
@@ -73,7 +73,7 @@ xrandr #Check your display name
 ![xrandr](https://i.imgur.com/QOM3hBH.png)
  
 **2. Find resolution which will fit**  
-My original maximum resolution is 1600 900, which is a 16:9 aspect ratio. So if I choose a different aspect ratio, then some parts of my display will blackout. 
+My original maximum resolution is 1600 900, which is a 16:9 aspect ratio. So if I choose a different aspect ratio, then some parts of my display will black out. 
 
 So, I can go for 1920x1080 or 1792x1008 
 *To find out which fits you best you can do tests by adding different resolutions*

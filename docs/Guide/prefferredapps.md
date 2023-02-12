@@ -8,72 +8,6 @@ Snap can incorporate more apps than Flatpak. It runs how the developer wants it 
 [Reference to Removing Snap](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/) 
 [Reference to Detailed Guide on Flatpak](https://itsfoss.com/flatpak-guide/) 
 
-## Browser
-Today Chrome is the most popular browser in the world. Also, I have been using Chrome since probably 2012. 
-
-**MENTION OPENSOURCE - Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, and also these browsers do not support VAAPI** 
-
-**Firefox, Brave & TOR are open-source browsers. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI. ** 
-
-To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
-
-**Chromium Based Browsers**
-## 1. [Chrome](https://www.google.com/chrome/)
-```bash
-sudo apt install google-chrome-stable -y
-```
-## 2. [Vivaldi](https://vivaldi.com/)
-```bash
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-sudo apt update && sudo apt install vivaldi-stable -y
-```
-## 3. [Brave](https://brave.com/)
-```bash
-sudo apt install apt-transport-https -y
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update && sudo apt install brave-browser -y
-```
-## 4. [Opera](https://www.opera.com/)
-```bash
-sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
-wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
-sudo apt update && sudo apt install opera-stable -y
-```
-**Non-Chromium Based**
-## 1. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-Comes pre-installed with Pop & Ubuntu.
-
-## 2. [TOR](https://www.torproject.org/download/)
-```bash
-sudo apt install torbrowser-launcher -y
-```
-
-**In case of driver/library error which bugs on Chromium-based browsers, Non-Chromium-based browsers can help you out.**  
-To remove Firefox (Not Recommended)
-```bash
-sudo apt-get autoremove --purge firefox* -y
-```
-## Extensions
-Generally, these extensions exist for almost all browsers. 
-## 1. Privacy Add-ons
-- **uBlock Origin** [Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) - uBlock Origin is not an "ad blocker", it's a wide-spectrum content blocker with CPU and memory efficiency as a primary feature.
-- **HTTPS Everywhere** [Chrome](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) - HTTPS Everywhere is an extension created by EFF and the Tor Project which automatically switches thousands of sites from insecure "http" to secure "https".
-- **ClearURLs** [Chrome](https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) - Removes tracking elements from URLs.
-- **Decentraleyes** [Chrome](https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) - Protects you against tracking through "free", centralized, content delivery. It prevents a lot of requests from reaching networks like Google Hosted Libraries, and serves local files to keep sites from breaking. Complements regular content blockers.
-- **Privacy Badger** [Chrome](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/) - Privacy Badger automatically learns to block invisible trackers.
-- **User-Agent Switcher & Manager** [Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-and-m/bhchdcejhohfmigjafbampogmaanbfkg?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) - Spoof websites trying to gather information about your web navigation to deliver distinct content you may not want
-- **CanvasBlocker** [Firefox](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/) - Alters some JS APIs to prevent fingerprinting. (Chrome Unsupported)
-### Might break some sites! (Ex. GitHub)
-- **NoScript** [Chrome](https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/noscript/) - Allow potentially malicious web content to run only from sites you trust. Protect yourself against XSS other web security exploits.
-## 2. Useful Tools
-- **Absolute Enable** [Chrome](https://chrome.google.com/webstore/detail/absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/absolute-enable-right-click/) - Force Enable Right Click & Copy on disabled websites.
-## 3. Productivity Tools
-- **LanguageTool** [Chrome](https://chrome.google.com/webstore/detail/grammar-and-spell-checker/oldceeleldhonbafppcapldpdifcinji?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/languagetool/) - Check your texts for spelling and grammar problems everywhere on the web.
-## 4. Desktop specific
-- **GNOME Shell integration** [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions repository, make it easy to add extensions via your browser.
-
 ## Email Client
 Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.
 
@@ -99,7 +33,7 @@ If it throws gvfs dependency error. Follow these **Steps:**
 ```bash
 sudo apt install libsecret-1-dev gconf2 python2 python-is-python2 -y
 ```
-2. Install the deb,
+1. Install the deb,
 ```bash
 sudo dpkg --ignore-depends=gvfs-bin -i mailspring*.deb
 ```
@@ -122,7 +56,7 @@ sudo apt install obs-studio -y
 ```
 
 ## 3. [Peek](https://github.com/phw/peek)
-Peek is an recorder with with video recording, GIF recording and screenshot capabilities. 
+Peek is a recorder with video recording, GIF recording and screenshot capabilities. 
 **Pop users don't need to add this repo.**
 ```bash
 sudo add-apt-repository ppa:peek-developers/stable && sudo apt update
@@ -209,7 +143,7 @@ Official Discord client
 flatpak install com.discordapp.Discord -y
 ```
 ### BetterDiscord
-To install themes and customize it's interface according your liking you can install [BetterDiscord](https://betterdiscord.net/home/). To install BetterDiscord, go [here](https://gist.github.com/ObserverOfTime/d7e60eb9aa7fe837545c8cb77cf31172).
+To install themes and customize its interface according your liking you can install [BetterDiscord](https://betterdiscord.net/home/). To install BetterDiscord, go [here](https://gist.github.com/ObserverOfTime/d7e60eb9aa7fe837545c8cb77cf31172).
 ## 3. Facebook Messenger ([Caprine](https://github.com/sindresorhus/caprine))
 Unofficial Facebook messenger 
 Get the installer [here](https://github.com/sindresorhus/caprine/releases)
@@ -274,7 +208,7 @@ To install themes for spotify, you can check [this](https://github.com/khanhas/s
 ```bash
 curl -fsSL https://gist.githubusercontent.com/themagicalmammal/f6f086f9c701924371e1d334c60c8562/raw/6bf8f24e6211c8ea3ba3d028634e58f1af8b971f/spicetify.sh | bash
 ```
-You need to log-in & out after this. 
+You need to log in & out after this. 
 ### 2. Spotify-Adblock
 If you do not like ads, you can install [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). To simplify the steps go through this. 
 **Note:** This might be buggy.
@@ -304,7 +238,7 @@ sudo dpkg-reconfigure libdvd-pkg
 
 ## Productivity Apps
 ## 1. [Kinto](https://github.com/rbreaves/kinto)
-Key remapper that makes mac user's transition to Linux easier. It provides macOS keyboard shortcuts. So, if you miss your mac shortcut style you can use this.
+Key remapper that makes Mac user's transition to Linux easier. It provides macOS keyboard shortcuts. So, if you miss your Mac shortcut style you can use this.
 
 ## Other Apps
 ## 1. uGet
@@ -319,20 +253,20 @@ Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility la
 ```bash
 sudo dpkg --add-architecture i386
 ```
-2. Then follow these **Steps:**
+1. Then follow these **Steps:**
 ```bash
 wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
 sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update
 sudo apt install --install-recommends winehq-stable -y
 ```
-3. Then open wine configuration, add download the additional wine files
+1. Then open wine configuration, add download the additional wine files
 ```bash
 winecfg
 ```
 **Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges. 
 
 ## 3. Lutris
-Lutris is an Open Source gaming platform for Linux. It installs and launches games so you can start playing without the hassle of setting up your games. 
+Lutris is an Open Source gaming platform for Linux. It installs and launches games, so you can start playing without the hassle of setting up your games. 
 ```bash
 sudo add-apt-repository ppa:lutris-team/lutris
 sudo apt update
@@ -371,9 +305,9 @@ sudo apt install bashtop -y
 ![bashtop](https://i.imgur.com/Ao28LjH.png)
 ## 8. Firewall
 ## - Gufw
-GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use appication with bunch of settings which you can set according to your preference.
+GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use application with a bunch of settings which you can set according to your preference.
 ```bash
 sudo apt install gufw
 ```
 ## - Opensnitch
-Helps you to review which services connect to the internet. Also, stopping some of the services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).
+Helps you to review which services connect to the internet. Also, stopping some services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).

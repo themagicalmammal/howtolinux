@@ -1,24 +1,24 @@
 # Installation
 **Only for Advanced Users** 
-Go through this, because this can be a very helpful step. I am currently using brtfs & find it better. Also, don't remove the Recovery partition to be on the safe side, it helps out a lot.
+Go through this, because this can be a very helpful step. I am currently using btrfs & find it better. Also, don't remove the Recovery partition to be on the safe side, it helps out a lot.
 
 ## Partitions to Create
 - 500 MB for Efi boot (Enough even for multi-boot)
 - Recovery (Very Useful, only Pop Os for Ubuntu you need to manually backup) 
 - Swap partition (First, read [What about Swap?](#what-about-swap))
-- (Before selecting read about Brtfs & Zfs) Remaining for Ext4/Brtfs/Zfs System 
+- (Before selecting read about Btrfs & Zfs) Remaining for Ext4/Btrfs/Zfs System 
 
 ## What about Swap?
 **If you are on a newer Ubuntu-based system that uses Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.** 
 There are two ways of getting swap (You can choose which is better) 
 - General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).
 
-**[BRTFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Brtfs if we create a swap file in that partition. So Brtfs users should either stick with the general method or create a swap file in a different partition.**
+**[BTRFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Btrfs if we create a swap file in that partition. So Btrfs users should either stick with the general method or create a swap file in a different partition.**
 - Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.
 
 **Post Installation Steps:** 
 
-**Brtfs [Snapshots won't work]** 
+**Btrfs [Snapshots won't work]** 
 Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)  
 
 **Ext4** 
@@ -27,15 +27,15 @@ Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs
 sudo dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 ```
 Count 4 means 4 sets of 1 GB, i.e. 4GB.
-2. Change permissions and Make swap
+1. Change permissions and Make swap
 ```bash
 sudo chmod 600 /swapfile && sudo mkswap /swapfile
 ```
-3. Turn the Swap on
+1. Turn the Swap on
 ```bash
 sudo swapon /swapfile
 ```
-4. Add this line
+1. Add this line
 ```bash
 /swapfile none swap defaults 0 0
 ```
@@ -43,7 +43,7 @@ to the end of
 ```bash
 sudo nano /etc/fstab
 ```
-5. Reboot  
+1. Reboot  
 
 ## What about ZRAM?
 First, you should know what ZRAM is. ZRAM creates a block device in RAM, where pages would otherwise be written to swap before it is compressed, then stored. Allowing for a much faster I/O and, the data compression provides a lot of memory savings. The downside of ZRAM is the usage of CPU for compression but this is usually balanced by the gains from avoiding swap and with overall memory savings of compression.  
@@ -54,14 +54,14 @@ This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
 sudo apt install zram-config -y 
 ```
 
-2. To check 
+1. To check 
 ```bash
 cat /proc/swaps
 ```
 **Should look like this**  
 ![zram](https://i.imgur.com/gYJfMz3.png) 
 
-3. If it doesn't show up, try **rebooting**.
+1. If it doesn't show up, try **rebooting**.
 
 ## Q. Should I Encrypt?
 Encryption adds a layer to the disk, so there's a performance penalty. In day to day operations, you wouldn't notice it though, but there's an argument that older hardware might suffer if they're already in the limit. But it's usually a very useful feature to have, you never know what will happen to your hardware, if it's lost or stolen, you don't want to think about people having access to your stuff as well.

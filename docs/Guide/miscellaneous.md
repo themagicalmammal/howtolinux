@@ -83,7 +83,7 @@ The beautiful thing I like about Pop OS is its feature-rich environment to incre
 ## Custom Fonts
 Custom Fonts increase the user experience. I use custom fonts on my laptop and also my Oneplus. 
 
-Currently I am using Linotte Font for system & MonoFur for my terminal. 
+Currently, I am using Linotte Font for system & MonoFur for my terminal. 
 To change your font, go to gnome-tweaks then to Fonts.  
 ![customfont](https://i.imgur.com/yjks4Of.png)
 To change Terminal font, Go to preferences, then to profiles, then in custom font select MonoFur. 
@@ -133,9 +133,9 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5)
 1. Go to Preferences.
 2. Add Profiles.
 3. Name it Big_Sur.
-3. Go to colors, then select *choose use colors from system theme*.
-4. Set Big_Sur default.
-5. Close and reopen the terminal.
+4. Go to colors, then select *choose use colors from system theme*.
+5. Set Big_Sur default.
+6. Close and reopen the terminal.
 
 **Tip** - How to fix gedit/text-editor theme
 1. Go to Preferences.

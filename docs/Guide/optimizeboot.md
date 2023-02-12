@@ -13,7 +13,7 @@ Go through [this](https://www.kevin-custer.com/blog/disabling-the-plymouth-boot-
 **This reduces my boot-time to 35sec** 
 
 ## Adjusting the Swappiness Property
-This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier since swaps are slower than RAMs and they can cause a reduction in performance. 
+This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier since swaps are slower than RAMs, and they can cause a reduction in performance. 
 
 Values according to me for Ram: Ratio should be as follows, 32:0, 16:10, 8:20, 4:50, 2:70 
 **20 is just an example value, don't mindlessly use it** 
@@ -44,7 +44,7 @@ To install it
 ```bash
 sudo apt install earlyoom -y
 ```
-To check it's status
+To check its status
 ```bash
 systemctl status earlyoom
 ```
@@ -60,27 +60,26 @@ X.org is the default display manager but, X.org is old and is very bloated, thus
 sudo nano /etc/gdm3/custom.conf
 ```
 
-2. Add # before this line
+1. Add # before this line
 ```bash
 WaylandEnable=false
 ```
 
-3. Then
+1. Then
 ```bash
 sudo systemctl restart gdm3
 ```
-
-4. Then select it in the login 
+1. Then select it in the login 
 ![wayland](https://i.imgur.com/R26e6rN.png)
 
-5. To confirm
+1To confirm
 ```bash
 echo $XDG_SESSION_TYPE
 ``` 
 Output should be Wayland
 
 ## Disabling Unnecessary Extensions
-Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. 
+Pop OS comes with a lot of Extensions which generally is not used by everyone, so you can prefer to disable them you can. 
 The built-in extensions I use are -  
 ![gnomeextensions](https://i.imgur.com/F7y1nMQ.png)
 
@@ -158,7 +157,7 @@ sudo systemctl mask saned.service
 sudo systemctl disable gpu-manager.service
 sudo systemctl mask gpu-manager.service
 ```
-- **Apt-daily-upgrade** solves long boot up time with apt-daily-upgrade.
+- **Apt-daily-upgrade** solves long boot uptime with apt-daily-upgrade.
 ```bash
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
@@ -177,15 +176,15 @@ sudo systemctl stop systemd-resolved.service
 sudo systemctl disable systemd-resolved.service
 sudo systemctl mask systemd-resolved.service
 ```
-2. Then put dns=default in the [main] section of
+1. Then put dns=default in the [main] section of
 ```bash
 sudo nano /etc/NetworkManager/NetworkManager.conf
 ```
-3. Delete the symlink /etc/resolv.conf
+1. Delete the symlink /etc/resolv.conf
 ```bash
 sudo rm /etc/resolv.conf
 ```
-4. Restart  
+1. Restart  
 
 **Might be UnSafe** 
 - **Switcheroo-control** [Required on Dual-GPU systems] is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
@@ -232,7 +231,7 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 
 [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1) 
 [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1) 
-[Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (Not English but you can see the benchmark scores.) 
+[Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (Not English, but you can see the benchmark scores.) 
 
 **Note:** At this point, boot is the fastest.
 
@@ -249,11 +248,11 @@ For Liquorix
 ```bash
 sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y
 ```
-2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
+1. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
 ```bash
 sudo rm /etc/sysctl.d/90-override.conf
 ```
-4. Removing  the Kernel Repos 
+1. Removing  the Kernel Repos 
 
 For XanMod 
 Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and uninstall it. 
@@ -267,19 +266,19 @@ sudo add-apt-repository -r ppa:damentz/liquorix
 sudo add-apt-repository ppa:damentz/liquorix -r
 ```
 
-5. Getting, name of the Kernel
+1. Getting, name of the Kernel
 ```bash
 uname -r
 ```
-6. Removing the Kernel
+1. Removing the Kernel
 ```bash
 sudo apt remove <kernel name> -y
 ```
-7. Getting, remaining Kernel files
+1. Getting, remaining Kernel files
 ```bash
 apt list --installed *xanmod* *liquorix*
 ```
-8. Removing the remaining Kernel files
+1. Removing the remaining Kernel files
 ```bash
 sudo apt remove <name of kernel files> -y
 ```

@@ -25,12 +25,15 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/themagicalmammal/howtolinux',
+      pattern: 'https://github.com/themagicalmammal/howtolinux/blob/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/themagicalmammal/howtolinux' }
+      { 
+        icon: 'github', 
+        link: 'https://github.com/themagicalmammal/howtolinux' 
+      }
     ],
 
     footer: {
@@ -43,8 +46,14 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: 'Guide', link: '/guide/installation', activeMatch: '/guide/' },
-    { text: 'Credits', link: '/credits/credits', activeMatch: '/credits/' }
+    { 
+      text: 'Guide', 
+      link: '/guide/installation', 
+      activeMatch: '/guide/' },
+    { 
+      text: 'Credits', 
+      link: '/credits/credits', 
+      activeMatch: '/credits/' }
   ]
 }
 

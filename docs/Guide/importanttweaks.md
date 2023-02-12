@@ -9,7 +9,7 @@
 ### This provides security for browsers on an autologin-based system. (Easy way to understand it)
 If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key.  
 **Steps to Disable it:**
-```settings
+```
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
 ![disablekeyring1](https://i.imgur.com/vvbqR7b.png)

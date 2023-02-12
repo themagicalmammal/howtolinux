@@ -61,7 +61,7 @@ sudo nano /etc/gdm3/custom.conf
 ```
 
 2. Add # before this line
-```nano
+```bash
 WaylandEnable=false
 ```
 

@@ -36,11 +36,11 @@ sudo chmod 600 /swapfile && sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
 4. Add this line
-```nano
+```bash
 /swapfile none swap defaults 0 0
 ```
 to the end of
-```nano
+```bash
 sudo nano /etc/fstab
 ```
 5. Reboot  
@@ -50,15 +50,17 @@ First, you should know what ZRAM is. ZRAM creates a block device in RAM, where p
 This is very useful on my PC with 4GB ram and a 3.4GHz CPU.  
 ## Q. How to enable ZRAM?
 1. Install zram-config
-```nano
+```bash
 sudo apt install zram-config -y 
 ```
+
 2. To check 
-```nano
+```bash
 cat /proc/swaps
 ```
 **Should look like this**  
 ![zram](https://i.imgur.com/gYJfMz3.png) 
+
 3. If it doesn't show up, try **rebooting**.
 
 ## Q. Should I Encrypt?

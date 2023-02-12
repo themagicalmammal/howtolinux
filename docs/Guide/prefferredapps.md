@@ -135,7 +135,7 @@ PulseAudio is an audio server. The audio in your apps passes through Pulse. So i
 ```bash
 sudo apt install pavucontrol -y
 ```
-To learn how to control your audio, go [here](controlling-audio-devices).
+To learn how to control your audio, go [here](importanttweaks#controlling-audio-devices).
 ## 2. [PulseEffects](https://github.com/wwmm/pulseeffects)
 Audio effects for Pulseaudio applications. This helps add specialized effects for each application individually and thus creates multiple profiles for different applications.
 ```bash

@@ -126,7 +126,7 @@ sudo apt install zram-config -y
 cat /proc/swaps
 ```
 **Should look like this** <br /> <br />
-![zram](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/zram.png) <br />
+![zram](https://i.imgur.com/gYJfMz3.png) <br />
 3. If it doesn't show up, try **rebooting**.
 
 #### Q. Should I Encrypt?
@@ -155,7 +155,7 @@ There are some basic things you need to do after installation.
 ### Update your System
 *Get the latest updates via terminal or some GUI based updater or Apps stores(like Pop shop).* <br />
 Find GUI based updater <br />
-![update](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/update.png) <br />
+![update](https://i.imgur.com/NvDMCzl.png) <br />
 For Terminal use
 ```bash
 sudo apt update && sudo apt upgrade -y && flatpak update
@@ -198,22 +198,22 @@ Minimize is an important button. While I think you can live without it if you us
 You can get the maximize button too, but it's not that useful because it can be done by double-clicking the title bar.<br />
 If you were a mac user, you might prefer left button placement over the default right placement. <br />
 **Note:** Left Placement glitches the gnome-tweak-tool for some reason don't worry about it just increase the size of the window. <br /> <br />
-![gnome-minimise](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/gnome-minimise.png)<br>
+![gnome-minimise](https://i.imgur.com/9o78EMM.png)<br>
 #### 2. Battery Percentage
 Shows the amount of battery remaining in percent. Doesn't work for desktop pc.<br> <br />
-![batterypercent](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/batterypercent.png)<br>
+![batterypercent](https://i.imgur.com/6svaFEQ.png)<br>
 #### 3. Optimizing Font
 I use custom resolution on my PC's so the font seems small to me, so it makes it better I use 1.11x font. I have set the hinting to full because hinting makes the font appear crisper so that they are more readable. Also, I have set the anti-aliasing to full pixels instead of sub-pixels because it has more font smoothing.<br /> <br />
-![custom-font-size](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/custom-font-size.png) <br />
+![custom-font-size](https://i.imgur.com/yjks4Of.png) <br />
 #### 4. Activity Hot Corner and Format time
 The activity hot corner enables the hot corner where the button Activity is placed. So rather than clicking the button just touch the edge. <br />
 You can format time according to what you need. I only use the time, so I got rid of the date there. <br /> <br />
-![overlay](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/overlay.png) <br /> <br />
+![overlay](https://i.imgur.com/xfprNhY.png) <br /> <br />
 
 ### Custom Resolution with Xrandr
 **Please read all the problems & bugs with this, so that you know what problems might come & how to fix them** <br />
 If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.<br /> <br />
-![set-of-refreshrates](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/set-of-refreshrates.png)
+![set-of-refreshrates](https://i.imgur.com/NQrnAYo.png)
 
 #### Steps:
 **1. Check xrandr**  <br />
@@ -221,7 +221,7 @@ You can know the name of your display here generally it is eDP-1 if is hybrid it
 ```bash
 xrandr #Check your display name
 ```
-![xrandr](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/xrandr.png)
+![xrandr](https://i.imgur.com/QOM3hBH.png)
 <br /> <br />
 **2. Find resolution which will fit**  <br />
 My original maximum resolution is 1600 900, which is a 16:9 aspect ratio. So if I choose a different aspect ratio, then some parts of my display will blackout. <br />
@@ -234,26 +234,26 @@ So, I can go for 1920x1080 or 1792x1008 <br />
 ```bash
 cvt 1920 1080 #Your custom resolution
 ```
-![cvt](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/cvt.png)
+![cvt](https://i.imgur.com/7c6eZNt.png)
 ##### - xrandr --newmode
 Copy line after modline
 ```bash
 xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 ```
-![newmode](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/newmode.png)
+![newmode](https://i.imgur.com/6vKmqCP.png)
 ##### - xrandr --addmode
 Add the resolution with display name
 ```bash
 xrandr --addmode eDP-1 "1920x1080_60.00"
 ```
-![addmode](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/addmode.png) <br />
+![addmode](https://i.imgur.com/OjG2SuT.png) <br />
 
 #### [Problem] The resolution goes away after a reboot.
 **Ans.** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
 ```bash
 nano ~/.profile
 ```
-![profile](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/profile.png)
+![profile](https://i.imgur.com/0IZ7glD.png)
 
 #### [Problem] What about other refresh rates? <br />
 **Ans.** You have to experiment with cvt a bit, to find which refresh rates should need. My refresh rate is from 60hz to 120hz. I did some experimentation and added these refresh rates. <br />
@@ -262,7 +262,7 @@ Like if your display supports 120 hertz
 ```bash
 cvt 1920 1080 120
 ```
-![custom120](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/custom120.png)
+![custom120](https://i.imgur.com/XzPRUoZ.png)
 
 Finally, I added these resolutions
 ```bash
@@ -277,7 +277,7 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 ```
 
 **Now it should look like this** <br /> <br />
-![custom-resolution-final](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/custom-resolution-final.png)
+![custom-resolution-final](https://i.imgur.com/8xftL67.png)
 
 #### [Problem] How to get rid of custom resolution?
 **Ans.** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
@@ -649,7 +649,7 @@ A utility to see which process is taking how much CPU or memory.
 ```bash
 sudo apt install htop -y
 ```
-![htop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/htop.png)
+![htop](https://i.imgur.com/wXpdDWc.png)
 #### - Bashtop
 An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
 **Repo already exists in Pop 20.10**
@@ -657,7 +657,7 @@ An advanced utility that shows usage and stats for processor, memory, disks, net
 sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
-![bashtop](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bashtop.png)
+![bashtop](https://i.imgur.com/Ao28LjH.png)
 #### 8. Firewall
 #### - Gufw
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use appication with bunch of settings which you can set according to your preference.
@@ -670,10 +670,10 @@ Helps you to review which services connect to the internet. Also, stopping some 
 ## 4. Important Tweaks
 ### Settings
 #### -- Privacy Tweaks
-![privacytweaks1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/privacytweaks1.png)
-![privacytweaks2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/privacytweaks2.png)
+![privacytweaks1](https://i.imgur.com/RNgA0vI.png)
+![privacytweaks2](https://i.imgur.com/Aj3OupA.png)
 #### -- Over Amplification
-![overamplification](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/overamplification.png)
+![overamplification](https://i.imgur.com/AIvJc4i.png)
 ### Disable annoying Keyring
 #### This provides security for browsers on an autologin-based system. (Easy way to understand it)
 If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key. <br /> <br />
@@ -681,8 +681,8 @@ If you have an autologin system, whenever you open a browser (except firefox) or
 ```settings
 App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
 ```
-![disablekeyring1](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/disablekeyring1.png)
-![disablekeyring2](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/disablekeyring2.png) <br />
+![disablekeyring1](https://i.imgur.com/vvbqR7b.png)
+![disablekeyring2](https://i.imgur.com/lzxb68t.png) <br />
 
 ### Controlling Audio Devices
 Pavucontrol is one of the most well-known audio managers for PulseAudio.
@@ -691,23 +691,23 @@ Pavucontrol is one of the most well-known audio managers for PulseAudio.
 In Playback tab, here is a list of all apps that are using your audio system.  To mute all System sounds, press the speaker icon in System Sounds. You can also drag the audio slider to adjust the audio. <br />
 
 But, this tab only shows applications currently using audio. Like in this example, I was listening to Spotify. <br /> <br />
-![musicplayback](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/musicplayback.png)
+![musicplayback](https://i.imgur.com/nI1snJV.png)
 
 #### Recording adjuster
 In Recording tab, there is a list of all the programs currently recording audio. It is also possible to mute the recording just by clicking on the speaker icon. <br /> <br />
-![recordingadjuster](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/recordingadjuster.png)
+![recordingadjuster](https://i.imgur.com/zR8otA3.png)
 
 #### Speaker & Mic level
 **To make a device default press the lock button.** <br />
 In Output Devices tab, there is a list of all the audio playback devices.  <br /> <br />
-![speakerlevel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/speakerlevel.png)  <br />
+![speakerlevel](https://i.imgur.com/n3cAra1.png)  <br />
 
 In Input Devices tab, there is a list of all the recording devices. <br /> <br />
-![miclevel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/miclevel.png)
+![miclevel](https://i.imgur.com/0zPqxSU.png)
 
 ## 5. Optimize Boot-time & Ram Usage
 My original boot-time was 1min 4sec after removing apps it is now 58sec.<br /> <br />
-![originalboottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/originalboottime.png)
+![originalboottime](https://i.imgur.com/xkD7ety.png)
 
 ### Disabling Plymouth
 **For Pop OS** <br />
@@ -773,7 +773,7 @@ WaylandEnable=false
 sudo systemctl restart gdm3
 ```
 4. Then select it in the login <br />
-![wayland](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/wayland.png)
+![wayland](https://i.imgur.com/R26e6rN.png)
 5. To confirm
 ```bash
 echo $XDG_SESSION_TYPE
@@ -784,7 +784,7 @@ Output should be Wayland
 ### Disabling Unnecessary Extensions
 Pop OS comes with a lot of Extensions which generally is not used by everyone so you can prefer to disable them you can. </br>
 The built-in extensions I use are - <br /> <br />
-![gnomeextensions](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/gnomeextensions.png)
+![gnomeextensions](https://i.imgur.com/F7y1nMQ.png)
 
 #### I have disabled these
 1. **Alt-Tab** -  By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.
@@ -833,7 +833,7 @@ Make it
 ```bash
 BlacklistPlugins=test;invalid;thunderbolt_power
 ```
-![blacklist_thunderbold](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/blacklist_thunderbold.png)
+![blacklist_thunderbold](https://i.imgur.com/pf0WSGt.png)
 Remove fwupd from boot
 ```bash
 sudo systemctl disable fwupd.service
@@ -916,10 +916,10 @@ sudo systemctl enable xyz.service
 
 - Disabling **Startup Application Preferences** <br />
 
-![application-pref](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/application-pref.png)
+![application-pref](https://i.imgur.com/Raz4w8j.png)
 
 #### Boot-time after disabling those stuff
-![prekernelbootime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/prekernelbootime.png)
+![prekernelbootime](https://i.imgur.com/yFgVXs3.png)
 
 ### Custom kernel
 Custom Kernels are known and used by fewer people, but these kernels add a significant boost to performance and battery.
@@ -989,7 +989,7 @@ sudo apt remove <name of kernel files> -y
 [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/) <br />
 
 ### Final Boot-Time
-![final-boottime](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/final-boottime.png)
+![final-boottime](https://i.imgur.com/sXc3RDt.png)
 
 
 ## 6. Miscellaneous
@@ -1011,14 +1011,14 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 #### 1. Neofetch Mod
  Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU,GPU blah blah blah. Me being a minimalist only use some information out of this. <br />
  So, my custom config, makes the neofetch look like this. <br /> <br />
-![neofetch](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/neofetch.png) <br />
+![neofetch](https://i.imgur.com/5TFEWLs.png) <br />
  To make your neofetch look this, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
  
 #### 2. Shell Config
  I am currently using [Starship](https://starship.rs/) shell config with Dark Patrol from [Gogh](https://github.com/Mayccoll/Gogh). <br />
  **Note:** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/). <br />
  To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md). <br />
-![terminal](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/terminal.png)
+![terminal](https://i.imgur.com/p2pDFEi.png)
 
 #### 3. Bash Alias
 A Bash Alias is a method of supplementing or overriding Bash commands with new ones. <br />
@@ -1061,25 +1061,25 @@ I use Bleachbit because it is good to remove unnecessary junk from your computer
 sudo apt install bleachbit -y
 ```
 **Steps:** BleachBit (root) > Select every option (except free disk) > **Clean** <br /> <br />
-![bleachbit](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bleachbit.png)
+![bleachbit](https://i.imgur.com/MTAGpB0.png)
 **Note:** After doing this the first boot might be slow don't worry it's perfectly normal.
 
 ### Night Light
 Night Light mode is simply made to remove some lights which hinder our sleep cycle. As researchers have found that at night if a certain set of colors interact with our eyes it doesn't let the eye rest making it *unsleepy* that's why we use a night light.<br /> <br />
 **Steps:** Settings > Display > Night light <br />
 *You can also select the timing which fits your sleep cycle.*<br /> <br />
-![nightlight](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/nightlight.png)
+![nightlight](https://i.imgur.com/10HhO7b.png)
 
 ### Tile Windows
 The beautiful thing I like about Pop OS is its feature-rich environment to increase work efficiency.<br /> <br />
-![Tile-windows](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/Tile-windows.png)
+![Tile-windows](https://i.imgur.com/23cp7mL.png)
 
 ### Custom Fonts
 Custom Fonts increase the user experience. I use custom fonts on my laptop and also my Oneplus. <br />
 
 Currently I am using Linotte Font for system & MonoFur for my terminal. <br />
 To change your font, go to gnome-tweaks then to Fonts. <br /> <br />
-![customfont](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/customfont.png)
+![customfont](https://i.imgur.com/yjks4Of.png)
 To change Terminal font, Go to preferences, then to profiles, then in custom font select MonoFur. <br />
 To get my fonts, 
 ```bash
@@ -1094,7 +1094,7 @@ fc-cache -f -v
 
 ### Customization
 #### 1. We need to add gnome-shell-integration for Chrome.
-![gsi](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/gsi.png)
+![gsi](https://i.imgur.com/d8M3YpY.png)
 #### 2. Then go to [Gnome.org](https://extensions.gnome.org/) and get your extensions. <br />
 #### Important Extensions
 - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
@@ -1103,13 +1103,13 @@ fc-cache -f -v
 - [Showtime - Desktop Widget](https://extensions.gnome.org/extension/1429/showtime/)
 - [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) <br /> <br />
-![dashtodock](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/dashtodock.png)
+![dashtodock](https://i.imgur.com/75pDvsf.png)
   - [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
   - [Remove Accessibility](https://extensions.gnome.org/extension/112/remove-accesibility/)
   - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
 - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) <br /> <br />
-![dashtopanel](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/dashtopanel.png)
-To get the start button I [have](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/start.png). <br />
+![dashtopanel](https://i.imgur.com/aim0WOW.png)
+To get the start button I [have](https://i.imgur.com/JQOGhRx.png). <br />
 - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
 - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 #### 3. Custom themes
@@ -1140,11 +1140,11 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5) <br />
 1. Go to Extensions.
 2. Open settings for Activities Configurator.
 3. Select a custom icon
-**The icon I use is [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/icons/pop.png)**
+**The icon I use is [here](https://i.imgur.com/mv2d9Yi.png)**
 4.  Hide Text & reduce icon padding
 
 #### After you do all of this, your desktop should look this
-![bigsurlikelook](https://github.com/themagicalmammal/howtopopbuntu/blob/master/References/bigsurlikelook.png) <br /> <br />
+![bigsurlikelook](https://i.imgur.com/2zDuo9S.png) <br /> <br />
 
 #### To fix qt5 applications like KolourPaint to respect system theme, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
 

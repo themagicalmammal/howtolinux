@@ -77,17 +77,11 @@ function sidebarGuide() {
       ]
     },
     { 
-      text: 'Tweaks',
+      text: 'Advanced',
       collapsed: false,
       items: [
-        { text: 'Important Tweaks', link: '/guide/importanttweaks' },
+        { text: 'Tweaks', link: '/guide/importanttweaks' },
         { text: 'Optimize Boot', link: '/guide/optimizeboot' },
-      ]
-    },
-    { 
-      text: 'Others',
-      collapsed: false,
-      items: [
         { text: 'Miscellaneous', link: '/guide/miscellaneous' },
       ]
     }

@@ -47,13 +47,13 @@ Timeshift is a system restore tool for Linux. Creates a file system snapshot usi
 sudo apt install timeshift -y
 ```
 ## Resource Monitor
-## i. Htop
+### i. Htop
 A utility to see which process is taking how much CPU or memory.
 ```bash
 sudo apt install htop -y
 ```
 ![htop](https://i.imgur.com/wXpdDWc.png)
-## ii. Bashtop
+### ii. Bashtop
 An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
 **Repo already exists in Pop 20.10**
 ```bash
@@ -62,10 +62,10 @@ sudo apt install bashtop -y
 ```
 ![bashtop](https://i.imgur.com/Ao28LjH.png)
 ## Firewall
-## i. Gufw
+### i. Gufw
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use application with a bunch of settings which you can set according to your preference.
 ```bash
 sudo apt install gufw
 ```
-## ii. Opensnitch
+### ii. Opensnitch
 Helps you to review which services connect to the internet. Also, stopping some services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).

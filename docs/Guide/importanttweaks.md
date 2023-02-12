@@ -1,12 +1,11 @@
-# Important Tweaks
-## Settings
-### -- Privacy Tweaks
+# Tweaks
+## Privacy Tweaks
 ![privacy-tweaks1](https://i.imgur.com/RNgA0vI.png)
 ![privacy-tweaks2](https://i.imgur.com/Aj3OupA.png)
-### -- Over Amplification
+## Over Amplification
 ![over-amplification](https://i.imgur.com/AIvJc4i.png)
 ## Disable annoying Keyring
-### This provides security for browsers on an autologin-based system. (Easy way to understand it)
+#### This provides security for browsers on an autologin-based system. (Easy way to understand it)
 If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key.  
 **Steps to Disable it:**
 ```

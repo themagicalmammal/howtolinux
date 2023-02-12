@@ -133,4 +133,4 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 **Ans.** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
 
 ## [BUG] Problems regarding Hybrid Graphics Switching.
-**Ans.** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the xrandr --addmode <displayname> if you switch Graphics.
+**Ans.** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the xrandr --addmode [displayname] if you switch Graphics.

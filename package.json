@@ -20,15 +20,12 @@
   "bugs": {
     "url": "https://github.com/themagicalmammal/howtolinux/issues"
   },
+  "homepage": "https://github.com/themagicalmammal/howtolinux#readme",
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.8",
-    "vue": "^3.2.40"
+    "vitepress": "^1.0.0-alpha.45",
+    "vue": "^3.2.47"
   },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
+  "dependencies": {
+    "@algolia/client-search": "^4.14.3"
   }
 }

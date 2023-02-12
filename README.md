@@ -1,7 +1,4 @@
-# How to Debuntu?
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/blob/master/LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://github.com/themagicalmammal/howtopopbuntu/graphs/commit-activity)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat)](https://github.com/themagicalmammal/howtopopbuntu/pulls)
+# howtolinux
 ##### [My Current Setup](https://www.reddit.com/r/linux/comments/k1fuus/making_a_10yearlong_macbook_owner_switch_to_pop_os/).
 This is an extensive Guide on the set of things I use.
 

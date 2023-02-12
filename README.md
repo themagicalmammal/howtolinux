@@ -1,6 +1,5 @@
 # howtolinux
-##### [My Current Setup](https://www.reddit.com/r/linux/comments/k1fuus/making_a_10yearlong_macbook_owner_switch_to_pop_os/).
-This is an extensive Guide on the set of things I use.
+This is an extensive guide on the set of things I use.
 
 # Index
 ## [Installation](#1-installation)

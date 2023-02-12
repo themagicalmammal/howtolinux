@@ -62,6 +62,7 @@ function sidebarGuide() {
       text: 'Prefferred Apps',
       collapsed: false,
       items: [
+        { text: 'Info', link: '/guide/prefferredapps' },
         { text: 'Browser', link: '/guide/browsers' },
         { text: 'Email', link: '/guide/email' },
         { text: 'Audio', link: '/guide/audio' },

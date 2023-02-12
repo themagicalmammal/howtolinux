@@ -98,7 +98,7 @@ xrandr --addmode eDP-1 "1920x1080_60.00"
 ```
 ![addmode](https://i.imgur.com/OjG2SuT.png)
 
-## [Problem] The resolution goes away after a reboot.
+## Problem. The resolution goes away after a reboot.
 **Ans.** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
 ```bash
 nano ~/.profile
@@ -129,8 +129,8 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 **Now it should look like this**  
 ![custom-resolution-final](https://i.imgur.com/8xftL67.png)
 
-## [Problem] How to get rid of custom resolution?
+## Problem. How to get rid of custom resolution?
 **Ans.** Simple if you have added custom resolution to your .profile, open it again, remove those lines, and reboot.
 
-## [BUG] Problems regarding Hybrid Graphics Switching.
+## Bug. Problems regarding Hybrid Graphics Switching.
 **Ans.** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the xrandr --addmode [displayname] if you switch Graphics.

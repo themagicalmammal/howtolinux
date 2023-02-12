@@ -1,10 +1,10 @@
 # Other Apps
-## 1. uGet
+## uGet
 uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor, and the ability to process downloads in a batch format.
 ```bash
 sudo apt install aria2 uget -y
 ```
-## 2. Wine (Windows Apps)
+## Wine (Windows Apps)
 Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications.
 **Remove Wine if you have it installed**
 1. If you have a 64-bit system this command will enable 32-bit support
@@ -23,7 +23,7 @@ winecfg
 ```
 **Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges. 
 
-## 3. Lutris
+## Lutris
 Lutris is an Open Source gaming platform for Linux. It installs and launches games, so you can start playing without the hassle of setting up your games. 
 ```bash
 sudo add-apt-repository ppa:lutris-team/lutris
@@ -31,22 +31,22 @@ sudo apt update
 sudo apt install lutris
 ```
 
-## 4. Synaptic Package manager
+## Synaptic Package manager
 Synaptic serves as a graphical front-end to APT which makes the process of software management easier.
 ```bash
 sudo apt install synaptic -y
 ```
-## 5. Nautilus (admin mode)
+## Nautilus (admin mode)
 Adds right-click property *Open as Administrator*
 ```bash
 sudo apt install nautilus-admin -y && nautilus -q
 ```
-## 6. Timeshift
+## Timeshift
 Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 ```bash
 sudo apt install timeshift -y
 ```
-## 7. Resource Monitor
+## Resource Monitor
 ## i. Htop
 A utility to see which process is taking how much CPU or memory.
 ```bash
@@ -61,7 +61,7 @@ sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
 ![bashtop](https://i.imgur.com/Ao28LjH.png)
-## 8. Firewall
+## Firewall
 ## i. Gufw
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use application with a bunch of settings which you can set according to your preference.
 ```bash

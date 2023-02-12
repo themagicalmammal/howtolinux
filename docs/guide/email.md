@@ -6,15 +6,15 @@ Chrome is good enough for me. Pop OS ships with Geary which is a great email cli
 sudo apt-get autoremove --purge geary* -y
 ```
 
-## 1. [Evolution](https://help.gnome.org/users/evolution/stable/)
+## [Evolution](https://help.gnome.org/users/evolution/stable/)
 ```bash
 sudo apt install evolution -y
 ```
-## 2. [Thunderbird](https://www.thunderbird.net/en-US/)
+## [Thunderbird](https://www.thunderbird.net/en-US/)
 ```bash
 sudo apt install thunderbird -y
 ```
-## 3. [MailSpring](https://getmailspring.com/)
+## [MailSpring](https://getmailspring.com/)
 Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. 
 If it throws gvfs dependency error. Follow these **Steps:**
 1. Install these libraries

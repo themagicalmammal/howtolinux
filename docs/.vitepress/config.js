@@ -38,6 +38,11 @@ export default defineConfig({
       message: 'Released under the <a href="https://github.com/themagicalmammal/howtolinux/blob/master/LICENSE">MIT License</a>.',
       copyright: 'Copyright © 2023 <a href="https://github.com/themagicalmammal">Dipan Nanda</a>'
     },
+    algolia: {
+      appId: 'VOBGBTBQEC',
+      apiKey: 'dedf00e140269ea8f5b7c88e670873f2',
+      indexName: 'howtolinux',
+    },
   }
 })
 

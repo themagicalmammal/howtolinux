@@ -3,7 +3,7 @@ My original boot-time was 1min 4sec after removing apps it is now 58sec.
 ![originalboottime](https://i.imgur.com/xkD7ety.png)
 
 ## Disabling Plymouth
-**For Pop OS** 
+**For EFI systems** 
 ```bash
 sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
 ```
@@ -79,7 +79,6 @@ echo $XDG_SESSION_TYPE
 Output should be Wayland
 
 ## Disabling Unnecessary Extensions
-Pop OS comes with a lot of Extensions which generally is not used by everyone, so you can prefer to disable them you can. 
 The built-in extensions I use are -  
 ![gnomeextensions](https://i.imgur.com/F7y1nMQ.png)
 

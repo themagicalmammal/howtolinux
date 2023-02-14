@@ -1,18 +1,13 @@
 # Email Client
-Chrome is good enough for me. Pop OS ships with Geary which is a great email client for any user.
+Email clients are crucial components of any distribution. Thunderbird or Evolution are typically shipped by distributions.
 
-**If you want to remove Geary**
-```bash
-sudo apt-get autoremove --purge geary* -y
-```
-
-## [Evolution](https://help.gnome.org/users/evolution/stable/)
-```bash
-sudo apt install evolution -y
-```
 ## [Thunderbird](https://www.thunderbird.net/en-US/)
 ```bash
 sudo apt install thunderbird -y
+```
+## [Evolution](https://help.gnome.org/users/evolution/stable/)
+```bash
+sudo apt install evolution -y
 ```
 ## [MailSpring](https://getmailspring.com/)
 Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it. 
@@ -24,4 +19,10 @@ sudo apt install libsecret-1-dev gconf2 python2 python-is-python2 -y
 1. Install the deb,
 ```bash
 sudo dpkg --ignore-depends=gvfs-bin -i mailspring*.deb
+```
+## [Geary](https://wiki.gnome.org/Apps/Geary)
+```bash
+sudo add-apt-repository ppa:geary-team/releases
+sudo apt update
+sudo apt install geary
 ```

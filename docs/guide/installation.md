@@ -4,7 +4,7 @@ Go through this, because this can be a very helpful step. I am currently using b
 
 ## Partitions to Create
 - 500 MB for Efi boot (Enough even for multi-boot)
-- Recovery (Very Useful, only Pop Os for Ubuntu you need to manually backup) 
+- Recovery (Very Useful, for specific distributions only) 
 - Swap partition (First, read [What about Swap?](#what-about-swap))
 - (Before selecting read about Btrfs & Zfs) Remaining for Ext4/Btrfs/Zfs System 
 

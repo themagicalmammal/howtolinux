@@ -21,7 +21,7 @@ When you run the apt upgrade, it only updates that which has a new release acces
 
 However, when you run apt dist-upgrade, it will intelligently install or remove packages as needed, to complete the upgrade. Dist-upgrade has an intelligent dispute determination method, so it will attempt to update the numerous necessary packages at the cost of those considered less valuable. But, this might be dangerous because it removes files that might eventually break the system.
 
-## Updating your recovery (Pop Os)
+## Updating your recovery
 If you upgrade to a newer release the recovery also needs to be upgraded, you can do it via Terminal. 
 ```bash
 pop-upgrade recovery upgrade from-release

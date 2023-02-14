@@ -3,6 +3,7 @@ title: Teams
 sidebar: auto
 layout: page
 ---
+
 <script setup>
 import {
   VPTeamPage,

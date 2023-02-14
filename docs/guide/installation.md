@@ -36,19 +36,19 @@ sudo dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 
 Count 4 means 4 sets of 1 GB, i.e. 4GB.
 
-1. Change permissions and Make swap
+2. Change permissions and Make swap
 
 ```bash
 sudo chmod 600 /swapfile && sudo mkswap /swapfile
 ```
 
-1. Turn the Swap on
+3. Turn the Swap on
 
 ```bash
 sudo swapon /swapfile
 ```
 
-1. Add this line
+4. Add this line
 
 ```bash
 /swapfile none swap defaults 0 0
@@ -75,16 +75,17 @@ This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
 sudo apt install zram-config -y
 ```
 
-1. To check
+2. To check
 
 ```bash
 cat /proc/swaps
 ```
 
 **Should look like this**  
+
 ![zram](https://i.imgur.com/gYJfMz3.png)
 
-1. If it doesn't show up, try **rebooting**.
+3. If it doesn't show up, try **rebooting**.
 
 ## Q. Should I Encrypt?
 

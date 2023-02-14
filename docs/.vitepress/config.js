@@ -69,6 +69,7 @@ function sidebarGuide() {
       items: [
         { text: "Installation", link: "/guide/installation" },
         { text: "Post Installation", link: "/guide/postinstallation" },
+        { text: "Xrandr", link: "/guide/xrandr" },
       ],
     },
     {

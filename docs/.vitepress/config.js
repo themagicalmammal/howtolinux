@@ -20,7 +20,7 @@ export default defineConfig({
       '/guide/': sidebarGuide(),
       '/credits/': sidebarConfig()
     },
-    logo: "/logo.svg",
+    logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/docs/logo.svg",
     editLink: {
       pattern: 'https://github.com/themagicalmammal/howtolinux/edit/main/docs/:path',
       text: 'Edit this page on GitHub'

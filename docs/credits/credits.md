@@ -14,7 +14,7 @@ const reddit = '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/200
 
 const coreMembers = [
   {
-    avatar: 'https://avatars.githubusercontent.com/u/53917226?v=4',
+    avatar: 'https://i.redd.it/snoovatar/avatars/760d1fb5-dd5a-4de2-ab2c-e84e08e3ff0d.png',
     name: 'GSchuemann',
     title: 'Major Contributor',
     links: [

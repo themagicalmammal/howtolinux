@@ -1,0 +1,12 @@
+/* .vitepress/theme/custom.css */
+
+:root {
+    --vp-c-brand: rgb(255, 115, 64);
+    --vp-c-brand-light: rgb(255, 87, 25);
+    --vp-c-brand-lighter: rgb(255, 115, 64);
+    --vp-c-brand-dark: #ff622d;
+    --vp-c-brand-darker: rgb(226, 60, 0);
+  
+    --vp-c-sponsor: #fd1d7c;
+  }
+  

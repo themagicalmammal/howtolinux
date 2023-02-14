@@ -1,0 +1,13 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = ["vue"]
+
+[[transformers]]
+name = "standardjs"
+
+[[transformers]]
+name = "prettier"

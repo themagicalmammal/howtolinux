@@ -4,9 +4,9 @@ Today Chrome is the most popular browser in the world. Also, I have been using C
 
 ::: tip
 Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, and also these browsers do not support VAAPI Firefox, Brave & TOR are open-source browsers. Meaning these are better alternatives if you are looking for privacy. But, TOR doesn't support VAAPI.
-:::
 
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
+:::
 
 # Chromium Based Browsers
 
@@ -41,11 +41,12 @@ wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
 sudo apt update && sudo apt install opera-stable -y
 ```
 
+##
 # Non-Chromium Based
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
-Comes pre-installed with Pop & Ubuntu.
+Comes pre-installed with most of linux distros.
 
 ## [TOR](https://www.torproject.org/download/)
 
@@ -73,9 +74,10 @@ Generally, these extensions exist for almost all browsers.
 - **Privacy Badger** [Chrome](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/) - Privacy Badger automatically learns to block invisible trackers.
 - **User-Agent Switcher & Manager** [Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-and-m/bhchdcejhohfmigjafbampogmaanbfkg?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) - Spoof websites trying to gather information about your web navigation to deliver distinct content you may not want
 - **CanvasBlocker** [Firefox](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/) - Alters some JS APIs to prevent fingerprinting. (Chrome Unsupported)
-  ::: danger
+
+::: danger
 - **NoScript** [Chrome](https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/noscript/) - This might break some websites. Allow potentially malicious web content to run only from sites you trust. Protect yourself against XSS other web security exploits.
-  :::
+:::
 
 ## Useful Tools
 

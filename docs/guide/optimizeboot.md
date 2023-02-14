@@ -1,6 +1,7 @@
 # Optimize Boot-time & Ram Usage
 
 My original boot-time was 1min 4sec after removing apps it is now 58sec.
+
 ![originalboottime](https://i.imgur.com/xkD7ety.png)
 
 ## Disabling Plymouth
@@ -76,19 +77,19 @@ X.org is the default display manager but, X.org is old and is very bloated, thus
 sudo nano /etc/gdm3/custom.conf
 ```
 
-1. Add # before this line
+2. Add # before this line
 
 ```bash
 WaylandEnable=false
 ```
 
-1. Then
+3. Then
 
 ```bash
 sudo systemctl restart gdm3
 ```
 
-1. Then select it in the login
+4. Then select it in the login
    ![wayland](https://i.imgur.com/R26e6rN.png)
 
 1To confirm
@@ -235,19 +236,19 @@ sudo systemctl disable systemd-resolved.service
 sudo systemctl mask systemd-resolved.service
 ```
 
-1. Then put dns=default in the [main] section of
+2. Then put dns=default in the [main] section of
 
 ```bash
 sudo nano /etc/NetworkManager/NetworkManager.conf
 ```
 
-1. Delete the symlink /etc/resolv.conf
+3. Delete the symlink /etc/resolv.conf
 
 ```bash
 sudo rm /etc/resolv.conf
 ```
 
-1. Restart
+4. Restart
 
 **Might be UnSafe**
 
@@ -326,13 +327,13 @@ For Liquorix
 sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y
 ```
 
-1. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
+2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
 
 ```bash
 sudo rm /etc/sysctl.d/90-override.conf
 ```
 
-1. Removing the Kernel Repos
+3. Removing the Kernel Repos
 
 For XanMod
 Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and uninstall it.
@@ -355,19 +356,19 @@ sudo add-apt-repository ppa:damentz/liquorix -r
 uname -r
 ```
 
-1. Removing the Kernel
+2. Removing the Kernel
 
 ```bash
 sudo apt remove <kernel name> -y
 ```
 
-1. Getting, remaining Kernel files
+3. Getting, remaining Kernel files
 
 ```bash
 apt list --installed *xanmod* *liquorix*
 ```
 
-1. Removing the remaining Kernel files
+4. Removing the remaining Kernel files
 
 ```bash
 sudo apt remove <name of kernel files> -y

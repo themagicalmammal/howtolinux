@@ -19,7 +19,7 @@ Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility la
 sudo dpkg --add-architecture i386
 ```
 
-1. Then follow these **Steps:**
+2. Then follow these **Steps:**
 
 ```bash
 wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
@@ -27,7 +27,7 @@ sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_re
 sudo apt install --install-recommends winehq-stable -y
 ```
 
-1. Then open wine configuration, add download the additional wine files
+3. Then open wine configuration, add download the additional wine files
 
 ```bash
 winecfg

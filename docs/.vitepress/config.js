@@ -18,7 +18,6 @@ export default defineConfig({
     nav: nav(),
     sidebar: {
       "/guide/": sidebarGuide(),
-      "/credits/": sidebarConfig(),
     },
     logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/docs/logo.svg",
     editLink: {
@@ -98,14 +97,6 @@ function sidebarGuide() {
         { text: "Optimize Boot", link: "/guide/optimizeboot" },
         { text: "Miscellaneous", link: "/guide/miscellaneous" },
       ],
-    },
-  ];
-}
-
-function sidebarConfig() {
-  return [
-    {
-      items: [{ text: "Credits", link: "/credits/credits" }],
     },
   ];
 }

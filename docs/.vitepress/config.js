@@ -16,24 +16,21 @@ export default defineConfig({
 
   themeConfig: {
     nav: nav(),
-
     sidebar: {
       '/guide/': sidebarGuide(),
       '/credits/': sidebarConfig()
     },
-
+    logo: "/logo.svg",
     editLink: {
       pattern: 'https://github.com/themagicalmammal/howtolinux/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-
     socialLinks: [
       { 
         icon: 'github', 
         link: 'https://github.com/themagicalmammal/howtolinux' 
       }
     ],
-
     footer: {
       message: 'Released under the <a href="https://github.com/themagicalmammal/howtolinux/blob/master/LICENSE">MIT License</a>.',
       copyright: 'Copyright © 2023 <a href="https://github.com/themagicalmammal">Dipan Nanda</a>'
@@ -74,7 +71,7 @@ function sidebarGuide() {
       text: 'Prefferred Apps',
       collapsed: false,
       items: [
-        { text: 'Info', link: '/guide/prefferredapps' },
+        { text: 'Details', link: '/guide/prefferredapps' },
         { text: 'Browser', link: '/guide/browsers' },
         { text: 'Email', link: '/guide/email' },
         { text: 'Audio', link: '/guide/audio' },

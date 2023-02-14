@@ -85,7 +85,6 @@ function sidebarGuide() {
         { text: "Office", link: "/guide/office" },
         { text: "Programming", link: "/guide/programming" },
         { text: "Entertainment", link: "/guide/entertainment" },
-        { text: "Productivity", link: "/guide/productivity" },
         { text: "Others", link: "/guide/others" },
       ],
     },

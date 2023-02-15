@@ -1,7 +1,8 @@
 # Installation
 
-**Only for Advanced Users**
+::: tip
 Go through this, because this can be a very helpful step. I am currently using btrfs & find it better. Also, don't remove the Recovery partition to be on the safe side, it helps out a lot.
+:::
 
 ## Partitions to Create
 
@@ -10,16 +11,20 @@ Go through this, because this can be a very helpful step. I am currently using b
 - Swap partition (First, read [What about Swap?](#what-about-swap))
 - (Before selecting read about Btrfs & Zfs) Remaining for Ext4/Btrfs/Zfs System
 
-## What about Swap?
+## Q. What about Swap?
 
-**If you are on a newer Ubuntu-based system that uses Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.**
+**If you are installing with a Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.**
 There are two ways of getting swap (You can choose which is better)
 
 - General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).
 
 **[BTRFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Btrfs if we create a swap file in that partition. So Btrfs users should either stick with the general method or create a swap file in a different partition.**
 
-- Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.
+- Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to. 
+
+::: warning
+The "status" parameter in the dd command may not work on all versions of dd. If you encounter an error related to "status", you can simply omit that parameter.
+:::
 
 **Post Installation Steps:**
 
@@ -48,21 +53,21 @@ sudo chmod 600 /swapfile && sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
 
-4. Add this line
-
-```sh
-/swapfile none swap defaults 0 0
-```
-
-to the end of
+4. Open the fstab file
 
 ```sh
 sudo nano /etc/fstab
 ```
 
-5. Reboot
+5. Add this line
 
-## What about ZRAM?
+```sh
+/swapfile none swap defaults 0 0
+```
+
+6. Reboot
+
+## Q. What about ZRAM?
 
 First, you should know what ZRAM is. ZRAM creates a block device in RAM, where pages would otherwise be written to swap before it is compressed, then stored. Allowing for a much faster I/O and, the data compression provides a lot of memory savings. The downside of ZRAM is the usage of CPU for compression but this is usually balanced by the gains from avoiding swap and with overall memory savings of compression.  
 This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
@@ -71,9 +76,23 @@ This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
 
 1. Install zram-config
 
-```sh
+::: code-group
+```sh [Arch]
+sudo pacman -S zram-config
+```
+```sh [Debian]
 sudo apt install zram-config -y
 ```
+```sh [Fedora]
+sudo dnf install zram-config -y
+```
+```sh [Ubuntu]
+sudo apt install zram-config -y
+```
+```sh [Void]
+sudo xbps-install -S zram-config
+```
+:::
 
 2. To check
 
@@ -97,10 +116,23 @@ Encryption adds a layer to the disk, so there's a performance penalty. In day to
 
 To fix installation bugs
 
-```sh
+::: code-group
+```sh [Arch]
+sudo pacman -S btrfs-progs
+```
+```sh [Debian]
 sudo apt install btrfs-progs -y
 ```
-
+```sh [Fedora]
+sudo dnf install btrfs-progs -y
+```
+```sh [Ubuntu]
+sudo apt install btrfs-progs -y
+```
+```sh [Void]
+sudo xbps-install -S btrfs-progs
+```
+:::
 - [Reference on Rising of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference on Btrfs on HDD](https://www.phoronix.com/scan.php?page=article&item=linux54-hdd-raid&num=1)
 - [Reference on XFS on SSD](https://www.phoronix.com/scan.php?page=article&item=linux-58-filesystems&num=4)

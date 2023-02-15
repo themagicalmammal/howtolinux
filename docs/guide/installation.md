@@ -16,9 +16,11 @@ Go through this, because this can be a very helpful step. I am currently using b
 **If you are installing with a Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.**
 There are two ways of getting swap (You can choose which is better)
 
-- General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, 2 & lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).
+- General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).
 
-**[BTRFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Btrfs if we create a swap file in that partition. So Btrfs users should either stick with the general method or create a swap file in a different partition.**
+::: info
+[BTRFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Btrfs if we create a swap file in that partition. So Btrfs users should either stick with the general method or create a swap file in a different partition.
+:::
 
 - Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to. 
 
@@ -26,12 +28,10 @@ There are two ways of getting swap (You can choose which is better)
 The "status" parameter in the dd command may not work on all versions of dd. If you encounter an error related to "status", you can simply omit that parameter.
 :::
 
-**Post Installation Steps:**
+#### Btrfs
+Snapshots won't work if you use swap on it but if you still you can go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume).
 
-**Btrfs [Snapshots won't work]**
-Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume.)
-
-**Ext4**
+#### Ext4
 
 1. Instruction set for the Swap file
 
@@ -100,7 +100,7 @@ sudo xbps-install -S zram-config
 cat /proc/swaps
 ```
 
-**Should look like this**
+#### Should look like this
 
 ![zram](https://i.imgur.com/gYJfMz3.png)
 
@@ -139,6 +139,4 @@ sudo xbps-install -S btrfs-progs
 
 ## Q. What about ZFS?
 
-**Ans.** ZFS has been added as an experimental new filesystem on 19.10. If you want to learn more about referring to [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately, it is becoming a trend. As, it is very stable and used by leading companies such as Oracle. You can check out [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs).
-
-If you want to learn how to, go [here](https://linuxconfig.org/install-ubuntu-20-04-with-zfs).
+**Ans.** ZFS has been added as an experimental new filesystem. If you want to learn more about referring to [this](https://itsfoss.com/zfs-ubuntu/) article. If it meets your requirements you can try it. Lately, it is becoming a trend. As, it is very stable and used by leading companies such as Oracle. You can check out [why people are switching to ZFS](https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs).

@@ -1,4 +1,5 @@
 # Custom Resolution with Xrandr
+
 ::: tip
 Please read all the problems & bugs with this, so that you know what problems might come & how to fix them
 :::
@@ -88,7 +89,7 @@ xrandr --newmode "1920x1080_59.89"  172.75  1920 2048 2248 2576  1080 1083 1088 
 xrandr --addmode eDP-1 "1920x1080_59.89"
 ```
 
-**Now it should look like this**  
+**Now it should look like this**
 
 ![custom-resolution-final](https://i.imgur.com/8xftL67.png)
 

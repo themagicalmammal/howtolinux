@@ -42,6 +42,7 @@ sudo apt update && sudo apt install opera-stable -y
 ```
 
 ##
+
 # Non-Chromium Based
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -76,8 +77,9 @@ Generally, these extensions exist for almost all browsers.
 - **CanvasBlocker** [Firefox](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/) - Alters some JS APIs to prevent fingerprinting. (Chrome Unsupported)
 
 ::: danger
+
 - **NoScript** [Chrome](https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/noscript/) - This might break some websites. Allow potentially malicious web content to run only from sites you trust. Protect yourself against XSS other web security exploits.
-:::
+  :::
 
 ## Useful Tools
 

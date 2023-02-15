@@ -81,7 +81,7 @@ sudo apt install zram-config -y
 cat /proc/swaps
 ```
 
-**Should look like this**  
+**Should look like this**
 
 ![zram](https://i.imgur.com/gYJfMz3.png)
 

@@ -14,7 +14,7 @@ I use **Unified hosts + fake news + gambling + porn**
 2. Save it to Downloads
 3. Then
 
-```bash
+```sh
 sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 ```
 
@@ -40,7 +40,7 @@ A Bash Alias is a method of supplementing or overriding Bash commands with new o
 
 Get my .bash_alias file from [here](https://gist.github.com/themagicalmammal/94c5210122e75b63db230d364ffe73c0). Add this to your .bash.rc
 
-```bash
+```sh
 if [ -f ~/.bash_alias ]; then . ~/.bash_alias fi
 ```
 
@@ -48,14 +48,14 @@ if [ -f ~/.bash_alias ]; then . ~/.bash_alias fi
 
 TLP is a utility for battery optimization on laptops. TLP comes with a default configuration which is perfectly tuned. The utility works by optimizing the power used by hardware devices while your laptop is running on its battery.
 
-```bash
+```sh
 sudo apt install tlp
 sudo tlp start
 ```
 
 If you need a graphical interface to optimise or control it.
 
-```bash
+```sh
 sudo add-apt-repository ppa:linuxuprising/apps && sudo apt update
 sudo apt install tlpui
 ```
@@ -64,7 +64,7 @@ sudo apt install tlpui
 
 Disable Frequents Tab in Gnome app menu. This option is not required for Gnome > 3.38.
 
-```bash
+```sh
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 
 ```
@@ -73,7 +73,7 @@ gsettings set org.gnome.desktop.privacy remember-app-usage false
 
 ### Clean via Terminal
 
-```bash
+```sh
 sudo apt --purge autoremove
 sudo rm -rf ~/.cache/thumbnails/*
 sudo apt clean
@@ -84,7 +84,7 @@ sudo apt autoclean
 
 I use Bleachbit because it is good to remove unnecessary junk from your computer.
 
-```bash
+```sh
 sudo apt install bleachbit -y
 ```
 
@@ -114,7 +114,7 @@ To change your font, go to gnome-tweaks then to Fonts.
 To change Terminal font, Go to preferences, then to profiles, then in custom font select MonoFur.
 To get my fonts,
 
-```bash
+```sh
 wget https://github.com/themagicalmammal/howtopopbuntu/raw/master/.local/share/fonts.tar.xz
 tar -xf $(xdg-user-dir DOWNLOAD)/fonts.tar.xz -C ${XDG_CONFIG_HOME:-~/.local}/share
 rm $(xdg-user-dir DOWNLOAD)/fonts.tar.xz
@@ -122,7 +122,7 @@ rm $(xdg-user-dir DOWNLOAD)/fonts.tar.xz
 
 If the font doesn't show, you can try clearing the font cache
 
-```bash
+```sh
 fc-cache -f -v
 ```
 

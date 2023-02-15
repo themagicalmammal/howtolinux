@@ -11,13 +11,13 @@ Find GUI based updater
 
 For Terminal use
 
-```bash
+```sh
 sudo apt update && sudo apt upgrade -y && flatpak update
 ```
 
 For Forced update
 
-```bash
+```sh
 sudo apt install -f && sudo apt dist-upgrade
 ```
 
@@ -35,7 +35,7 @@ However, when you run apt dist-upgrade, it will intelligently install or remove 
 
 If you upgrade to a newer release the recovery also needs to be upgraded, you can do it via Terminal.
 
-```bash
+```sh
 pop-upgrade recovery upgrade from-release
 ```
 
@@ -43,7 +43,7 @@ pop-upgrade recovery upgrade from-release
 
 This is a required library for apps, that use PPA's for installation. It doesn't come pre-installed with many Ubuntu-based distros like Elementary OS.
 
-```bash
+```sh
 sudo apt install software-properties-common -y
 ```
 
@@ -54,7 +54,7 @@ _If you get issues with NVIDIA get the NVIDIA iso._
 
 ## Gnome Tweaks & the ones I use
 
-```bash
+```sh
 sudo apt install gnome-tweaks -y
 ```
 

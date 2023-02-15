@@ -30,7 +30,7 @@ Go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs
 
 1. Instruction set for the Swap file
 
-```bash
+```sh
 sudo dd if=/dev/zero of=/swapfile bs=1G count=4 status=progress
 ```
 
@@ -38,29 +38,29 @@ Count 4 means 4 sets of 1 GB, i.e. 4GB.
 
 2. Change permissions and Make swap
 
-```bash
+```sh
 sudo chmod 600 /swapfile && sudo mkswap /swapfile
 ```
 
 3. Turn the Swap on
 
-```bash
+```sh
 sudo swapon /swapfile
 ```
 
 4. Add this line
 
-```bash
+```sh
 /swapfile none swap defaults 0 0
 ```
 
 to the end of
 
-```bash
+```sh
 sudo nano /etc/fstab
 ```
 
-1. Reboot
+5. Reboot
 
 ## What about ZRAM?
 
@@ -71,13 +71,13 @@ This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
 
 1. Install zram-config
 
-```bash
+```sh
 sudo apt install zram-config -y
 ```
 
 2. To check
 
-```bash
+```sh
 cat /proc/swaps
 ```
 
@@ -97,7 +97,7 @@ Encryption adds a layer to the disk, so there's a performance penalty. In day to
 
 To fix installation bugs
 
-```bash
+```sh
 sudo apt install btrfs-progs -y
 ```
 

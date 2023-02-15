@@ -11,7 +11,7 @@ If your display supports a higher refresh rate, go for it because higher refresh
 **1. Check xrandr**  
 You can know the name of your display here generally it is eDP-1 if is hybrid it can be eDP-1-1
 
-```bash
+```sh
 xrandr #Check your display name
 ```
 
@@ -27,7 +27,7 @@ _To find out which fits you best you can do tests by adding different resolution
 
 ### - cvt
 
-```bash
+```sh
 cvt 1920 1080 #Your custom resolution
 ```
 
@@ -37,7 +37,7 @@ cvt 1920 1080 #Your custom resolution
 
 Copy line after modline
 
-```bash
+```sh
 xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 ```
 
@@ -47,7 +47,7 @@ xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 
 
 Add the resolution with display name
 
-```bash
+```sh
 xrandr --addmode eDP-1 "1920x1080_60.00"
 ```
 
@@ -57,7 +57,7 @@ xrandr --addmode eDP-1 "1920x1080_60.00"
 
 **Ans.** Add all the final lines to .profile so every time a session starts, the code runs, the custom resolution gets added.
 
-```bash
+```sh
 nano ~/.profile
 ```
 
@@ -69,7 +69,7 @@ nano ~/.profile
 
 Like if your display supports 120 hertz
 
-```bash
+```sh
 cvt 1920 1080 120
 ```
 
@@ -77,7 +77,7 @@ cvt 1920 1080 120
 
 Finally, I added these resolutions
 
-```bash
+```sh
 xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
 xrandr --addmode eDP-1 "1920x1080_120.00"
 xrandr --newmode "1920x1080_119.91"  369.25  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync

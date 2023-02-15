@@ -4,7 +4,7 @@
 
 Official Telegram client
 
-```bash
+```sh
 flatpak install org.telegram.desktop -y
 ```
 
@@ -12,7 +12,7 @@ flatpak install org.telegram.desktop -y
 
 Official Discord client
 
-```bash
+```sh
 flatpak install com.discordapp.Discord -y
 ```
 
@@ -29,7 +29,7 @@ Get the installer [here](https://github.com/sindresorhus/caprine/releases)
 
 Official Signal client
 
-```bash
+```sh
 flatpak install org.signal.Signal -y
 ```
 
@@ -37,7 +37,7 @@ flatpak install org.signal.Signal -y
 
 Unofficial Whatsapp client
 
-```bash
+```sh
 flatpak install io.bit3.WhatsAppQT -y
 ```
 
@@ -47,6 +47,6 @@ flatpak install io.bit3.WhatsAppQT -y
 
 Unofficial Reddit client. Currently, this its on its Beta stage.
 
-```bash
+```sh
 flatpak install org.gabmus.giara -y
 ```

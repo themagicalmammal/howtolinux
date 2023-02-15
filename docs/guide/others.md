@@ -4,7 +4,7 @@
 
 uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor, and the ability to process downloads in a batch format.
 
-```bash
+```sh
 sudo apt install aria2 uget -y
 ```
 
@@ -15,13 +15,13 @@ Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility la
 
 1. If you have a 64-bit system this command will enable 32-bit support
 
-```bash
+```sh
 sudo dpkg --add-architecture i386
 ```
 
 2. Then follow these **Steps:**
 
-```bash
+```sh
 wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
 sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update
 sudo apt install --install-recommends winehq-stable -y
@@ -29,7 +29,7 @@ sudo apt install --install-recommends winehq-stable -y
 
 3. Then open wine configuration, add download the additional wine files
 
-```bash
+```sh
 winecfg
 ```
 
@@ -39,7 +39,7 @@ winecfg
 
 Lutris is an Open Source gaming platform for Linux. It installs and launches games, so you can start playing without the hassle of setting up your games.
 
-```bash
+```sh
 sudo add-apt-repository ppa:lutris-team/lutris
 sudo apt update
 sudo apt install lutris
@@ -49,7 +49,7 @@ sudo apt install lutris
 
 Synaptic serves as a graphical front-end to APT which makes the process of software management easier.
 
-```bash
+```sh
 sudo apt install synaptic -y
 ```
 
@@ -57,7 +57,7 @@ sudo apt install synaptic -y
 
 Adds right-click property _Open as Administrator_
 
-```bash
+```sh
 sudo apt install nautilus-admin -y && nautilus -q
 ```
 
@@ -65,7 +65,7 @@ sudo apt install nautilus-admin -y && nautilus -q
 
 Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 
-```bash
+```sh
 sudo apt install timeshift -y
 ```
 
@@ -75,7 +75,7 @@ sudo apt install timeshift -y
 
 A utility to see which process is taking how much CPU or memory.
 
-```bash
+```sh
 sudo apt install htop -y
 ```
 
@@ -86,7 +86,7 @@ sudo apt install htop -y
 An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
 **Repo already exists in Pop 20.10**
 
-```bash
+```sh
 sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
@@ -99,7 +99,7 @@ sudo apt install bashtop -y
 
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use application with a bunch of settings which you can set according to your preference.
 
-```bash
+```sh
 sudo apt install gufw
 ```
 

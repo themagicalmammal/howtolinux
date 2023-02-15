@@ -25,6 +25,6 @@ Get the deb file [here](https://linux.wps.com/)
 
 ### To remove LibreOffice
 
-```bash
+```sh
 sudo apt-get autoremove --purge libreoffice* -y
 ```

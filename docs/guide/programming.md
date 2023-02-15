@@ -4,7 +4,7 @@
 
 A hackable text editor for devs.
 
-```bash
+```sh
 flatpak install io.atom.Atom -y
 ```
 
@@ -12,13 +12,13 @@ flatpak install io.atom.Atom -y
 
 A Python IDE for devs.
 
-```bash
+```sh
 flatpak install pycharm-community -y #use professional if you have a license
 ```
 
 Important python modules,
 
-```bash
+```sh
 sudo apt install python3-pip python3-dev python3-distutils python3-virenv
 pip3 install virtualenv #solves the global package bug
 ```
@@ -29,7 +29,7 @@ pip3 install virtualenv #solves the global package bug
 
 A seamless way to contribute to projects on GitHub.
 
-```bash
+```sh
 sudo apt install git github-desktop -y
 ```
 

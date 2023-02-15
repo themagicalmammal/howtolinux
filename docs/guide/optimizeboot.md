@@ -8,7 +8,7 @@ My original boot-time was 1min 4sec after removing apps it is now 58sec.
 
 **For EFI systems**
 
-```bash
+```sh
 sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
 ```
 
@@ -24,13 +24,13 @@ This is required to adjust swap usage. If you have huge rams like 16GB ram then 
 Values according to me for Ram: Ratio should be as follows, 32:0, 16:10, 8:20, 4:50, 2:70
 **20 is just an example value, don't mindlessly use it**
 
-```bash
+```sh
 sudo sysctl vm.swappiness=20
 ```
 
 **These values do not stick. To add them permanently. Add the above line to sysctl.conf.**
 
-```bash
+```sh
 sudo nano /etc/sysctl.conf
 ```
 
@@ -39,13 +39,13 @@ sudo nano /etc/sysctl.conf
 Another issue, the system stores cache about stuff that you frequently open & this makes the system faster, as if it opens again, rather than reloading the data it will use the cache. But, on a lower ram device, this is a bad option since this will seriously slow your system down.
 Adjust this like you adjusted swappiness property, values for RAM: Pressure should be as follows, 1:100, 2:90, 4:80, 8:60, 16:50.
 
-```bash
+```sh
 sudo sysctl vm.vfs_cache_pressure=50
 ```
 
 **Add the above line to sysctl.conf.**
 
-```bash
+```sh
 sudo nano /etc/sysctl.conf
 ```
 
@@ -55,13 +55,13 @@ It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman te
 
 To install it
 
-```bash
+```sh
 sudo apt install earlyoom -y
 ```
 
 To check its status
 
-```bash
+```sh
 systemctl status earlyoom
 ```
 
@@ -73,19 +73,19 @@ X.org is the default display manager but, X.org is old and is very bloated, thus
 
 1. Edit the /etc/gdm3/custom.conf to either disable or enable Wayland.
 
-```bash
+```sh
 sudo nano /etc/gdm3/custom.conf
 ```
 
 2. Add # before this line
 
-```bash
+```sh
 WaylandEnable=false
 ```
 
 3. Then
 
-```bash
+```sh
 sudo systemctl restart gdm3
 ```
 
@@ -94,7 +94,7 @@ sudo systemctl restart gdm3
 
 1To confirm
 
-```bash
+```sh
 echo $XDG_SESSION_TYPE
 ```
 
@@ -121,13 +121,13 @@ Pop Shop always opens on the startup of the system there is a way to stop that. 
 
 1. Edit App center daemon from opening it at start
 
-```bash
+```sh
 sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
 ```
 
 2. Put # here before this line
 
-```bash
+```sh
 Exec=io.elemantry.appcenter -s
 ```
 
@@ -135,7 +135,7 @@ Exec=io.elemantry.appcenter -s
 
 The computer accumulates high buff/cache over time and makes the user force reboot. To clear buff cache, you can use this.
 
-```bash
+```sh
 free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h
 ```
 
@@ -147,13 +147,13 @@ free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /pr
 
 - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
 
-```bash
+```sh
 sudo apt remove --purge networkd-dispatcher -y
 ```
 
 - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you do not have a mobile broadband interface, you do not need this.
 
-```bash
+```sh
 sudo systemctl disable ModemManager.service
 sudo systemctl mask ModemManager.service
 ```
@@ -163,34 +163,34 @@ sudo systemctl mask ModemManager.service
 - **fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
   Disable thunderbolt_power
 
-```bash
+```sh
 sudo nano /etc/fwupd/daemon.conf
 ```
 
 Make it
 
-```bash
+```sh
 BlacklistPlugins=test;invalid;thunderbolt_power
 ```
 
 ![blacklist_thunderbold](https://i.imgur.com/pf0WSGt.png)
 Remove fwupd from boot
 
-```bash
+```sh
 sudo systemctl disable fwupd.service
 sudo systemctl mask fwupd.service
 ```
 
 - **Avahi-daemon** is supposed to provide zero-configuration network discovery and make it super-easy to find printers and other hosts on your network. I always disable it and do not miss it.
 
-```bash
+```sh
 sudo systemctl disable avahi-daemon.service
 sudo systemctl mask avahi-daemon.service
 ```
 
 - **Apport** collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
 
-```bash
+```sh
 sudo systemctl disable apport.service
 sudo systemctl mask apport.service
 ```
@@ -198,21 +198,21 @@ sudo systemctl mask apport.service
 - **Saned** is the SANE (Scanner Access Now Easy) daemon that allows remote
   clients to access image acquisition devices available on the localhost.
 
-```bash
+```sh
 sudo systemctl disable saned.service
 sudo systemctl mask saned.service
 ```
 
 - **GPU-Manager** is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
 
-```bash
+```sh
 sudo systemctl disable gpu-manager.service
 sudo systemctl mask gpu-manager.service
 ```
 
 - **Apt-daily-upgrade** solves long boot uptime with apt-daily-upgrade.
 
-```bash
+```sh
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
@@ -221,7 +221,7 @@ sudo systemctl disable apt-daily-upgrade.service
 
 - **lvm2-monitor** Only useful if you are using lvm.
 
-```bash
+```sh
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ```
@@ -230,7 +230,7 @@ sudo systemctl mask lvm2-monitor.service
 
 1. Disable & Mask the systemd-resolved service
 
-```bash
+```sh
 sudo systemctl stop systemd-resolved.service
 sudo systemctl disable systemd-resolved.service
 sudo systemctl mask systemd-resolved.service
@@ -238,13 +238,13 @@ sudo systemctl mask systemd-resolved.service
 
 2. Then put dns=default in the [main] section of
 
-```bash
+```sh
 sudo nano /etc/NetworkManager/NetworkManager.conf
 ```
 
 3. Delete the symlink /etc/resolv.conf
 
-```bash
+```sh
 sudo rm /etc/resolv.conf
 ```
 
@@ -254,14 +254,14 @@ sudo rm /etc/resolv.conf
 
 - **Switcheroo-control** [Required on Dual-GPU systems] is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
 
-```bash
+```sh
 sudo systemctl disable switcheroo-control.service
 sudo systemctl mask switcheroo-control.service
 ```
 
 - **System76-power** [Required on laptops] Power Controls for lappy not required on a desktop PC.
 
-```bash
+```sh
 sudo systemctl disable system76-power.service
 sudo systemctl mask system76-power.service
 ```
@@ -269,7 +269,7 @@ sudo systemctl mask system76-power.service
 - **Thermald** [Might heatup system] daemon prevents machines from overheating and was introduced in the 14.04 Ubuntu Trusty LTS release. It monitors thermal sensors and will modify cooling controls to keep the hardware cool.
   **If your system heats after removing this even a bit, add it back**
 
-```bash
+```sh
 sudo systemctl disable thermald.service
 sudo systemctl mask thermald.service
 ```
@@ -277,7 +277,7 @@ sudo systemctl mask thermald.service
 **Enable them back**
 Let the service name be xyz.service
 
-```bash
+```sh
 sudo systemctl unmask xyz.service
 sudo systemctl enable xyz.service
 ```
@@ -317,19 +317,19 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 
 For XanMod
 
-```bash
+```sh
 sudo apt autoremove --purge linux-xanmod -y
 ```
 
 For Liquorix
 
-```bash
+```sh
 sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y
 ```
 
 2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
 
-```bash
+```sh
 sudo rm /etc/sysctl.d/90-override.conf
 ```
 
@@ -340,37 +340,37 @@ Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and uninstall i
 
 For Liquorix
 
-```bash
+```sh
 sudo add-apt-repository -r ppa:damentz/liquorix
 ```
 
 **Tip: -r can be after or before the repo, so you can also write,**
 
-```bash
+```sh
 sudo add-apt-repository ppa:damentz/liquorix -r
 ```
 
 1. Getting, name of the Kernel
 
-```bash
+```sh
 uname -r
 ```
 
 2. Removing the Kernel
 
-```bash
+```sh
 sudo apt remove <kernel name> -y
 ```
 
 3. Getting, remaining Kernel files
 
-```bash
+```sh
 apt list --installed *xanmod* *liquorix*
 ```
 
 4. Removing the remaining Kernel files
 
-```bash
+```sh
 sudo apt remove <name of kernel files> -y
 ```
 

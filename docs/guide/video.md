@@ -4,13 +4,13 @@
 
 VLC is the best video player for any platform
 
-```bash
+```sh
 sudo apt install vlc  -y
 ```
 
 Get rid of the stock video player
 
-```bash
+```sh
 sudo apt-get autoremove --purge totem* -y
 ```
 
@@ -18,7 +18,7 @@ sudo apt-get autoremove --purge totem* -y
 
 OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.
 
-```bash
+```sh
 sudo apt install obs-studio -y
 ```
 
@@ -27,7 +27,7 @@ sudo apt install obs-studio -y
 Peek is a recorder with video recording, GIF recording and screenshot capabilities.
 **Pop users don't need to add this repo.**
 
-```bash
+```sh
 sudo add-apt-repository ppa:peek-developers/stable && sudo apt update
 sudo apt install peek -y
 ```

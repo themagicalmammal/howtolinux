@@ -12,13 +12,13 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 
 ## [Chrome](https://www.google.com/chrome/)
 
-```bash
+```sh
 sudo apt install google-chrome-stable -y
 ```
 
 ## [Vivaldi](https://vivaldi.com/)
 
-```bash
+```sh
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
 sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 sudo apt update && sudo apt install vivaldi-stable -y
@@ -26,7 +26,7 @@ sudo apt update && sudo apt install vivaldi-stable -y
 
 ## [Brave](https://brave.com/)
 
-```bash
+```sh
 sudo apt install apt-transport-https -y
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
@@ -35,7 +35,7 @@ sudo apt update && sudo apt install brave-browser -y
 
 ## [Opera](https://www.opera.com/)
 
-```bash
+```sh
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
 sudo apt update && sudo apt install opera-stable -y
@@ -50,14 +50,14 @@ Comes pre-installed with most of linux distros.
 
 ## [TOR](https://www.torproject.org/download/)
 
-```bash
+```sh
 sudo apt install torbrowser-launcher -y
 ```
 
 **In case of driver/library error which bugs on Chromium-based browsers, Non-Chromium-based browsers can help you out.**  
 To remove Firefox (Not Recommended)
 
-```bash
+```sh
 sudo apt-get autoremove --purge firefox* -y
 ```
 

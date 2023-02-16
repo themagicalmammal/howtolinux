@@ -1,4 +1,3 @@
-
 # Ubuntu Based Systems
 
 ## Forced Software Update

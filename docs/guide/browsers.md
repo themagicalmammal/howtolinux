@@ -9,6 +9,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 :::
 
 ##
+
 # Chromium Based Browsers
 
 ## [Chromium](https://www.chromium.org/chromium-projects/)
@@ -43,7 +44,6 @@ sudo xbps-install -S chromium
 
 Google Chrome is another popular browser available on Linux. It is known for its speed and compatibility with a wide range of web technologies. Chrome includes a range of features, such as built-in support for Google services, a customizable interface, and support for multiple tabs and windows.
 
-
 ::: code-group
 
 ```sh [Arch]
@@ -76,7 +76,6 @@ sudo xbps-install -S google-chrome
 
 Vivaldi is a browser that is known for its speed, customization options, and privacy features. It includes a range of features, such as a customizable interface, built-in support for tab stacking and tab tiling, and support for multiple tabs and windows.
 
-
 ::: code-group
 
 ```sh [Arch]
@@ -106,7 +105,6 @@ sudo xbps-install -S vivaldi
 ## [Brave](https://brave.com/)
 
 Brave is a browser that is known for its focus on privacy and security. It includes a range of features, such as built-in ad and tracker blockers, a customizable interface, and support for multiple tabs and windows.
-
 
 ::: code-group
 
@@ -147,7 +145,6 @@ sudo xbps-install -S brave
 
 Opera is a browser that is known for its speed, security, and customization options. It includes a range of features, such as built-in support for VPN services, a customizable interface, and support for multiple tabs and windows.
 
-
 ::: code-group
 
 ```sh [Arch]
@@ -175,12 +172,12 @@ sudo xbps-install -S opera
 :::
 
 ##
+
 # Non-Chromium Based
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/)
 
 Firefox is one of the most popular browsers available on Linux. It is known for its speed, security, and privacy features. Firefox includes a range of features, such as a customizable interface, built-in spell check, and support for multiple tabs and windows.
-
 
 ::: code-group
 
@@ -210,7 +207,6 @@ sudo xbps-install -S firefox
 
 Tor Browser is a version of Firefox that is configured to protect your privacy and anonymity on the internet. It uses the Tor network to route your internet traffic through a series of nodes, making it difficult for anyone to track your online activity. Tor Browser also includes built-in privacy features, such as NoScript and HTTPS Everywhere, to further enhance your online security.
 
-
 ::: code-group
 
 ```sh [Arch]
@@ -238,7 +234,6 @@ sudo xbps-install -S tor
 ## [Librewolf](https://librewolf.net)
 
 LibreWolf is a fork of Firefox that is focused on privacy and security. It includes several built-in privacy features, such as ad and tracker blocking, fingerprinting protection, and first-party isolation. LibreWolf also removes some of the proprietary features found in Firefox, such as Pocket and telemetry.
-
 
 ::: code-group
 
@@ -275,6 +270,7 @@ sudo make install
 :::
 
 ##
+
 # Extensions
 
 Generally, these extensions exist for almost all browsers.

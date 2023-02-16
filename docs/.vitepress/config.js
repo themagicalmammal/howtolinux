@@ -85,7 +85,7 @@ function sidebarGuide() {
       ],
     },
     {
-      text: "Flavours",
+      text: "Desktop",
       collapsed: false,
       items: [
         { text: "Details", link: "/guide/flavours" },

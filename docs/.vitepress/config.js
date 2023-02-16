@@ -53,9 +53,14 @@ function nav() {
       activeMatch: "/guide/",
     },
     {
+      text: "Team",
+      link: "/team",
+      activeMatch: "/team",
+    },
+    {
       text: "Credits",
-      link: "/credits/credits",
-      activeMatch: "/credits/",
+      link: "/credits",
+      activeMatch: "/credits",
     },
   ];
 }

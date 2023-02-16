@@ -15,15 +15,6 @@ const reddit = '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/200
 
 const coreMembers = [
   {
-    avatar: 'https://i.redd.it/snoovatar/avatars/760d1fb5-dd5a-4de2-ab2c-e84e08e3ff0d.png',
-    name: 'GSchuemann',
-    title: 'Major Contributor',
-    links: [
-      { icon: 'github', link: 'https://github.com/GSchuemann' },
-      { icon: { svg: reddit, }, link: 'https://www.reddit.com/user/GGG_246/'},
-    ]
-  },
-  {
     avatar: 'https://winaero.com/blog/wp-content/uploads/2019/09/Chrome-Incognito-Mode-Icon-256.png',
     name: 'schykle',
     title: 'Contributor',
@@ -109,6 +100,14 @@ const coreMembers = [
     title: 'Contributor',
     links: [
       { icon: { svg: reddit, }, link: 'https://www.reddit.com/user/rbmorse/'},
+    ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/47557035?v=4',
+    name: 'abrgg',
+    title: 'Contributor',
+    links: [
+      { icon: 'github', link: 'https://github.com/abrgg'},
     ]
   },
 ]

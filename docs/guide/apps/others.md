@@ -91,7 +91,7 @@ sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
 
-![bashtop](https://imgur.com/jY5AITs.gif)
+![bashtop](https://imgur.com/mvpMdQ1.gif)
 
 ## Firewall
 

@@ -32,3 +32,7 @@ This is a required library for apps, that use PPA's for installation. It doesn't
 ```sh
 sudo apt install software-properties-common -y
 ```
+
+## Browser Extensions
+
+- **GNOME Shell integration** [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions' repository, make it easy to add extensions via your browser.

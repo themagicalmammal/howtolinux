@@ -8,78 +8,274 @@ Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, an
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 :::
 
+##
 # Chromium Based Browsers
 
 ## [Chromium](https://www.chromium.org/chromium-projects/)
 
 Chromium is an open-source browser that serves as the basis for Google Chrome. It is known for its speed and compatibility with a wide range of web technologies. Chromium includes a range of features, such as built-in support for Google services, a customizable interface, and support for multiple tabs and windows.
 
-```sh
-sudo apt install -y chromium-browser
+::: code-group
+
+```sh [Arch]
+sudo pacman -S chromium
 ```
+
+```sh [Debian]
+sudo apt-get install chromium
+```
+
+```sh [Fedora]
+sudo apt-get install chromium
+```
+
+```sh [Ubuntu]
+sudo apt-get install chromium-browser
+```
+
+```sh [Void]
+sudo xbps-install -S chromium
+```
+
+:::
 
 ## [Chrome](https://www.google.com/chrome/)
 
 Google Chrome is another popular browser available on Linux. It is known for its speed and compatibility with a wide range of web technologies. Chrome includes a range of features, such as built-in support for Google services, a customizable interface, and support for multiple tabs and windows.
 
-```sh
-sudo apt install google-chrome-stable
+
+::: code-group
+
+```sh [Arch]
+yay -S google-chrome
 ```
+
+```sh [Debian]
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+```sh [Fedora]
+sudo dnf install fedora-workstation-repositories
+sudo dnf config-manager --set-enabled google-chrome
+sudo dnf install google-chrome-stable
+```
+
+```sh [Ubuntu]
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+```sh [Void]
+sudo xbps-install -S google-chrome
+```
+
+:::
 
 ## [Vivaldi](https://vivaldi.com/)
 
 Vivaldi is a browser that is known for its speed, customization options, and privacy features. It includes a range of features, such as a customizable interface, built-in support for tab stacking and tab tiling, and support for multiple tabs and windows.
 
-```sh
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-sudo apt update && sudo apt install vivaldi-stable -y
+
+::: code-group
+
+```sh [Arch]
+yay -S vivaldi
 ```
+
+```sh [Debian]
+wget https://downloads.vivaldi.com/stable/vivaldi-stable_4.1.2369.21-1_amd64.deb
+sudo dpkg -i vivaldi-stable_4.1.2369.21-1_amd64.deb
+```
+
+```sh [Fedora]
+sudo dnf install vivaldi-stable
+```
+
+```sh [Ubuntu]
+wget https://downloads.vivaldi.com/stable/vivaldi-stable_4.1.2369.21-1_amd64.deb
+sudo dpkg -i vivaldi-stable_4.1.2369.21-1_amd64.deb
+```
+
+```sh [Void]
+sudo xbps-install -S vivaldi
+```
+
+:::
 
 ## [Brave](https://brave.com/)
 
 Brave is a browser that is known for its focus on privacy and security. It includes a range of features, such as built-in ad and tracker blockers, a customizable interface, and support for multiple tabs and windows.
 
-```sh
-sudo apt install apt-transport-https -y
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update && sudo apt install brave-browser
+
+::: code-group
+
+```sh [Arch]
+yay -S brave-bin
 ```
+
+```sh [Debian]
+sudo apt install apt-transport-https curl
+sudo curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser
+```
+
+```sh [Fedora]
+sudo dnf install dnf-plugins-core
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install brave-browser
+```
+
+```sh [Ubuntu]
+sudo apt install apt-transport-https curl
+sudo curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser
+```
+
+```sh [Void]
+sudo xbps-install -S brave
+```
+
+:::
 
 ## [Opera](https://www.opera.com)
 
 Opera is a browser that is known for its speed, security, and customization options. It includes a range of features, such as built-in support for VPN services, a customizable interface, and support for multiple tabs and windows.
 
-```sh
-sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
-wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
-sudo apt update && sudo apt install opera-stable -y
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S opera
 ```
 
+```sh [Debian]
+wget https://download3.operacdn.com/pub/opera/desktop/80.0.4170.54/linux/opera-stable_80.0.4170.54_amd64.deb
+sudo dpkg -i opera-stable_80.0.4170.54_amd64.deb
+```
+
+```sh [Fedora]
+sudo dnf install opera-stable
+```
+
+```sh [Ubuntu]
+wget https://download3.operacdn.com/pub/opera/desktop/80.0.4170.54/linux/opera-stable_80.0.4170.54_amd64.deb
+sudo dpkg -i opera-stable_80.0.4170.54_amd64.deb
+```
+
+```sh [Void]
+sudo xbps-install -S opera
+```
+
+:::
+
+##
 # Non-Chromium Based
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/)
 
 Firefox is one of the most popular browsers available on Linux. It is known for its speed, security, and privacy features. Firefox includes a range of features, such as a customizable interface, built-in spell check, and support for multiple tabs and windows.
 
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S firefox
+```
+
+```sh [Debian]
+sudo apt-get install firefox
+```
+
+```sh [Fedora]
+sudo dnf install firefox
+```
+
+```sh [Ubuntu]
+sudo apt-get install firefox
+```
+
+```sh [Void]
+sudo xbps-install -S firefox
+```
+
+:::
+
 ## [TOR](https://www.torproject.org/)
 
 Tor Browser is a version of Firefox that is configured to protect your privacy and anonymity on the internet. It uses the Tor network to route your internet traffic through a series of nodes, making it difficult for anyone to track your online activity. Tor Browser also includes built-in privacy features, such as NoScript and HTTPS Everywhere, to further enhance your online security.
 
-```sh
-sudo apt install torbrowser-launcher -y
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S tor
 ```
+
+```sh [Debian]
+sudo apt-get install tor
+```
+
+```sh [Fedora]
+sudo dnf install tor
+```
+
+```sh [Ubuntu]
+sudo apt-get install torbrowser-launcher
+```
+
+```sh [Void]
+sudo xbps-install -S tor
+```
+
+:::
 
 ## [Librewolf](https://librewolf.net)
 
 LibreWolf is a fork of Firefox that is focused on privacy and security. It includes several built-in privacy features, such as ad and tracker blocking, fingerprinting protection, and first-party isolation. LibreWolf also removes some of the proprietary features found in Firefox, such as Pocket and telemetry.
 
-```sh
-sudo apt install torbrowser-launcher -y
+
+::: code-group
+
+```sh [Arch]
+yay -S librewolf
 ```
 
-### Extensions
+```sh [Debian]
+wget https://gitlab.com/librewolf-community/browser/linux/uploads/5aa5a5206ec208c6c34ebf1e2706d9b6/librewolf_94.0-1_amd64.deb
+sudo dpkg -i librewolf_94.0-1_amd64.deb
+```
+
+```sh [Fedora]
+sudo dnf copr enable atim/librewolf
+sudo dnf install librewolf
+```
+
+```sh [Ubuntu]
+wget https://gitlab.com/librewolf-community/browser/linux/uploads/5aa5a5206ec208c6c34ebf1e2706d9b6/librewolf_94.0-1_amd64.deb
+sudo dpkg -i librewolf_94.0-1_amd64.deb
+sudo apt install -f
+```
+
+```sh [Void]
+mkdir -p ~/srcpkgs/librewolf && cd ~/srcpkgs/librewolf
+wget https://gitlab.com/librewolf-community/browser/-/archive/94.0-1/librewolf-94.0-1.tar.bz2
+tar xf librewolf-94.0-1.tar.bz2
+cd librewolf-94.0-1
+./configure --disable-debug
+make -j$(nproc)
+sudo make install
+```
+
+:::
+
+##
+# Extensions
 
 Generally, these extensions exist for almost all browsers.
 
@@ -105,7 +301,3 @@ Generally, these extensions exist for almost all browsers.
 ## Productivity Tools
 
 - **LanguageTool** [Chrome](https://chrome.google.com/webstore/detail/grammar-and-spell-checker/oldceeleldhonbafppcapldpdifcinji?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/languagetool/) - Check your texts for spelling and grammar problems everywhere on the web.
-
-## Desktop specific
-
-- **GNOME Shell integration** [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions' repository, make it easy to add extensions via your browser.

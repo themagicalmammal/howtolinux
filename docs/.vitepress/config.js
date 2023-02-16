@@ -113,7 +113,7 @@ function sidebarGuide() {
       text: "Advanced",
       collapsed: false,
       items: [
-        { text: "Tweaks", link: "/guide/importanttweaks" },
+        { text: "Tweaks", link: "/guide/tweaks" },
         { text: "Optimize Boot", link: "/guide/optimizeboot" },
         { text: "Miscellaneous", link: "/guide/miscellaneous" },
       ],

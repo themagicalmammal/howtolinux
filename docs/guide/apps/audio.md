@@ -8,7 +8,7 @@ PulseAudio is an audio server. The audio in your apps passes through Pulse. So i
 sudo apt install pavucontrol -y
 ```
 
-To learn how to control your audio, go [here](importanttweaks#controlling-audio-devices).
+To learn how to control your audio, go [here](https://howtolinux.vercel.app/guide/tweaks#controlling-audio-devices).
 
 ## [PulseEffects](https://github.com/wwmm/pulseeffects)
 

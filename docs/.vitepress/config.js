@@ -80,17 +80,13 @@ function sidebarGuide() {
       text: "Distros",
       link: "/guide/distro",
       collapsed: false,
-      items: [
-        { text: "Ubuntu", link: "/guide/dubuntu" },
-      ],
+      items: [{ text: "Ubuntu", link: "/guide/dubuntu" }],
     },
     {
       text: "Desktop",
       link: "/guide/desktop",
       collapsed: false,
-      items: [
-        { text: "Gnome", link: "/guide/gnome" },
-      ],
+      items: [{ text: "Gnome", link: "/guide/gnome" }],
     },
     {
       text: "Apps",

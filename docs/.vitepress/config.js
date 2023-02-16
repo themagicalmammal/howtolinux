@@ -78,25 +78,25 @@ function sidebarGuide() {
     },
     {
       text: "Distros",
+      link: "/guide/distro",
       collapsed: false,
       items: [
-        { text: "Details", link: "/guide/distro" },
         { text: "Ubuntu", link: "/guide/dubuntu" },
       ],
     },
     {
       text: "Desktop",
+      link: "/guide/desktop",
       collapsed: false,
       items: [
-        { text: "Details", link: "/guide/desktop" },
         { text: "Gnome", link: "/guide/gnome" },
       ],
     },
     {
       text: "Apps",
+      link: "/guide/apps/apps",
       collapsed: false,
       items: [
-        { text: "Details", link: "/guide/apps/apps" },
         { text: "Browser", link: "/guide/apps/browsers" },
         { text: "Email", link: "/guide/apps/email" },
         { text: "Audio", link: "/guide/apps/audio" },

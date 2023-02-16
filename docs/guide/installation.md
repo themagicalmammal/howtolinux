@@ -22,13 +22,14 @@ There are two ways of getting swap (You can choose which is better)
 [BTRFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Btrfs if we create a swap file in that partition. So Btrfs users should either stick with the general method or create a swap file in a different partition.
 :::
 
-- **Swap File** - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to. 
+- **Swap File** - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to.
 
 ::: warning
 The "status" parameter in the dd command may not work on all versions of dd. If you encounter an error related to "status", you can simply omit that parameter.
 :::
 
 #### Btrfs
+
 Snapshots won't work if you use swap on it but if you still you can go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume).
 
 #### Ext4
@@ -77,21 +78,27 @@ This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
 1. Install zram-config
 
 ::: code-group
+
 ```sh [Arch]
 sudo pacman -S zram-config
 ```
+
 ```sh [Debian]
 sudo apt install zram-config
 ```
+
 ```sh [Fedora]
 sudo dnf install zram-config
 ```
+
 ```sh [Ubuntu]
 sudo apt install zram-config
 ```
+
 ```sh [Void]
 sudo xbps-install -S zram-config
 ```
+
 :::
 
 2. To check
@@ -124,22 +131,29 @@ Encryption adds a layer to the disk, so there's a performance penalty. In day to
 To fix installation bugs
 
 ::: code-group
+
 ```sh [Arch]
 sudo pacman -S btrfs-progs
 ```
+
 ```sh [Debian]
 sudo apt install btrfs-progs
 ```
+
 ```sh [Fedora]
 sudo dnf install btrfs-progs
 ```
+
 ```sh [Ubuntu]
 sudo apt install btrfs-progs
 ```
+
 ```sh [Void]
 sudo xbps-install -S btrfs-progs
 ```
+
 :::
+
 - [Reference on Rising of Btrfs](https://www.linuxjournal.com/content/btrfs-centos-living-loopback)
 - [Reference on Btrfs on HDD](https://www.phoronix.com/scan.php?page=article&item=linux54-hdd-raid&num=1)
 - [Reference on XFS on SSD](https://www.phoronix.com/scan.php?page=article&item=linux-58-filesystems&num=4)

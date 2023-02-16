@@ -1,6 +1,7 @@
 # Xrandr
 
 ## Refresh Rates
+
 If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.
 
 <p align="center">
@@ -18,8 +19,11 @@ Please read all the problems & bugs with this, so that you know what problems mi
 :::
 
 ### Steps:
+
 ###
+
 ### 1. Check xrandr
+
 You can know the name of your display here generally it is eDP-1 if it is hybrid it can be eDP-1-1.
 
 ```sh
@@ -34,13 +38,17 @@ eDP-1 connected primary 1600X900+0+0 (normal left inverted right × axis y axis)
 ```
 
 ### 2. Find resolution which will fit
+
 My original maximum resolution was 1600x900, which is a 16:9 aspect ratio. So if I choose a different aspect ratio, then some parts of my display will black out.
 
 So, I can go for 1920x1080 or 1792x1008. To find out which fits you best you can do tests by adding different resolutions.
 
 ### 3. How to add?
+
 ###
+
 ##### i. cvt
+
 Using cvt you cant generate the custom resolution with parameters.
 
 ```sh
@@ -51,7 +59,7 @@ cvt 1920 1080 #Your custom resolution
 
 ```sh
 # 1920X1080 59.96 Hz ( CVT 2.07M9) hsync: 67.16 kHz; pclk: 173.00 MHz
-Modeline "1920x1080 _60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 - hsync +vsync 
+Modeline "1920x1080 _60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 - hsync +vsync
 ```
 
 ##### ii. xrandr --newmode
@@ -129,6 +137,7 @@ xrandr --addmode eDP-1 "1920x1080_59.89"
 ```
 
 **Now it should look like this**
+
 <p align="center">
     <img src="https://i.imgur.com/8xftL67.png)">
 </p>

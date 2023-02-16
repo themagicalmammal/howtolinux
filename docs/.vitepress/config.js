@@ -77,6 +77,14 @@ function sidebarGuide() {
       ],
     },
     {
+      text: "Flavours",
+      collapsed: false,
+      items: [
+        { text: "Details", link: "/guide/flavours" },
+        { text: "Gnome", link: "/guide/gnome" },
+      ],
+    },
+    {
       text: "Prefferred Apps",
       collapsed: false,
       items: [

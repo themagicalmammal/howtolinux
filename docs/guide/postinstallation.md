@@ -4,24 +4,18 @@ There are some basic things you need to do after installation.
 
 ## Update your System
 
-_Get the latest updates via terminal or some GUI based updater or Apps stores(like Pop shop)._
-Find GUI based updater
+Get the latest updates via terminal or some GUI based updater or a App store.
 
 <p align="center">
     <img src='https://i.imgur.com/NvDMCzl.png'>
 </p>
 
-For Terminal use
+Via Terminal:
 
 ```sh
 sudo apt update && sudo apt upgrade -y && flatpak update
 ```
 
-For Forced update
-
-```sh
-sudo apt install -f && sudo apt dist-upgrade
-```
 
 ## Why use apt, not apt-get?
 

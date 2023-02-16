@@ -81,7 +81,7 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         { text: "Details", link: "/guide/distro" },
-        { text: "Ubuntu/Debian", link: "/guide/dubuntu" },
+        { text: "Ubuntu", link: "/guide/dubuntu" },
       ],
     },
     {

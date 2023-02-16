@@ -16,13 +16,13 @@ Go through this, because this can be a very helpful step. I am currently using b
 **If you are installing with a Ubiquity installer it will automatically create a Swap File any time Ext4 is used for root.**
 There are two ways of getting swap (You can choose which is better)
 
-- General Method - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).
+- **General Method** - Creating a swap partition (Linux-swap), Now to do this you need to understand the importance of swap, if you have a low RAM device you need a huger swap like if you have 2GB ram you should get 4 to 6 GB of swap & optimise your swap ratio to a higher value. So, if you have a higher ram you need a lower swap. So, according to my numbers for a ram: swap should be as follows, lower:6, 4:6, 8:4, 16 & above:2. Also, you have to adjust the swappiness property (given below).
 
 ::: info
 [BTRFS] - [Snapshots](https://fedoramagazine.org/btrfs-snapshots-backup-incremental/) don't work on Btrfs if we create a swap file in that partition. So Btrfs users should either stick with the general method or create a swap file in a different partition.
 :::
 
-- Swap File - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to. 
+- **Swap File** - It is a relatively new concept. In this, you create a swap file post-installation. You don't need to dedicate some fixed amount of memory to it as it does on Linux-swap that is why it is also space-efficient. And the best part is you can resize this or remove this whenever you want to. 
 
 ::: warning
 The "status" parameter in the dd command may not work on all versions of dd. If you encounter an error related to "status", you can simply omit that parameter.
@@ -81,13 +81,13 @@ This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
 sudo pacman -S zram-config
 ```
 ```sh [Debian]
-sudo apt install zram-config -y
+sudo apt install zram-config
 ```
 ```sh [Fedora]
-sudo dnf install zram-config -y
+sudo dnf install zram-config
 ```
 ```sh [Ubuntu]
-sudo apt install zram-config -y
+sudo apt install zram-config
 ```
 ```sh [Void]
 sudo xbps-install -S zram-config
@@ -100,9 +100,16 @@ sudo xbps-install -S zram-config
 cat /proc/swaps
 ```
 
-#### Should look like this
+##### Output:
 
-![zram](https://i.imgur.com/gYJfMz3.png)
+```sh
+Filename                Type         Size        Used        Priority
+/dev/dm-0               partition    16776696    0           -2
+/dev/zramo              partition    1003404     0           5
+/dev/zram1              partition    1003404     0           5
+/dev/zram2              partition    1003404     0           5
+/dev/zram3              partition    1003404     0           5
+```
 
 3. If it doesn't show up, try **rebooting**.
 
@@ -121,13 +128,13 @@ To fix installation bugs
 sudo pacman -S btrfs-progs
 ```
 ```sh [Debian]
-sudo apt install btrfs-progs -y
+sudo apt install btrfs-progs
 ```
 ```sh [Fedora]
-sudo dnf install btrfs-progs -y
+sudo dnf install btrfs-progs
 ```
 ```sh [Ubuntu]
-sudo apt install btrfs-progs -y
+sudo apt install btrfs-progs
 ```
 ```sh [Void]
 sudo xbps-install -S btrfs-progs

@@ -79,7 +79,7 @@ A utility to see which process is taking how much CPU or memory.
 sudo apt install htop -y
 ```
 
-![htop](https://i.imgur.com/wXpdDWc.png)
+![htop](https://imgur.com/q6j85Hk.gif)
 
 ### ii. Bashtop
 
@@ -91,7 +91,7 @@ sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
 sudo apt install bashtop -y
 ```
 
-![bashtop](https://i.imgur.com/Ao28LjH.png)
+![bashtop](https://imgur.com/jY5AITs.gif)
 
 ## Firewall
 

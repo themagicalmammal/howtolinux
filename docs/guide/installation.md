@@ -59,13 +59,13 @@ sudo swapon /swapfile
 sudo nano /etc/fstab
 ```
 
-5. Add this line
+##### Add this line
 
 ```sh
 /swapfile none swap defaults 0 0
 ```
 
-6. Reboot
+5. Reboot
 
 ## Q. What about ZRAM?
 

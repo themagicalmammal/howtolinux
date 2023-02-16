@@ -28,12 +28,103 @@ There are two ways of getting swap (You can choose which is better)
 The "status" parameter in the dd command may not work on all versions of dd. If you encounter an error related to "status", you can simply omit that parameter.
 :::
 
+## Instructions to add Swap File
 #### Btrfs
+If a functional swap file is present on the subvolume, the btrfs filesystem does not permit the creation of snapshots. This indicates that putting a swap file on a different subvolume is highly recommended. Swap file can't be located on a btrfs raid of any sort.
 
-Snapshots won't work if you use swap on it but if you still you can go [here](https://askubuntu.com/questions/1206157/can-i-have-a-swapfile-on-btrfs#:~:text=It%20is%20possible%20to%20use,file%20on%20a%20separate%20subvolume).
+
+::: details
+Let's assume that the current swap is already off, the `/` is on `/dev/sda1` and Ubuntu is installed with `/` on `@` subvolume and `/home` is on `@home` subvolume.
+
+1. Mount `/dev/sda1` to `/mnt`.
+
+```sh
+sudo mount /dev/sda1 /mnt
+```
+
+If you run ls `/mnt`, you'll see `@`, `@home` and other subvolumes that may be there.
+
+2. Create a new `@swap` subvolume.
+
+```sh
+sudo btrfs sub create /mnt/@swap
+```
+
+3. Unmount `/dev/sda1` from `/mnt`.
+
+```sh
+sudo umount /mnt
+```
+
+4. Create `/swap` directory where we plan to mount the `@swap` subvolume.
+
+```sh
+sudo mkdir /swap
+```
+
+5. Mount the `@swap` subvolume to `/swap`.
+
+```sh
+sudo mount -o subvol=@swap /dev/sda1 /swap
+```
+
+6. Create the swap file.
+
+```sh
+sudo touch /swap/swapfile
+```
+
+7. Set 600 permissions to the file.
+
+```sh
+sudo chmod 600 /swap/swapfile
+```
+
+8. Disable COW for this file.
+
+```sh
+sudo chattr +C /swap/swapfile
+```
+
+9. Set size of the swap file to 4G as an example.
+
+```sh
+sudo dd if=/dev/zero of=/swap/swapfile bs=1M count=4096
+```
+
+10. Format the swapfile.
+
+```sh
+sudo mkswap /swap/swapfile
+```
+
+11. Turn the swap file on
+
+```sh
+sudo swapon /swap/swapfile
+```
+
+12. Now the new swap should be working.
+
+
+13. Open the `/etc/fstab` file
+
+```sh
+sudo nano /etc/fstab
+```
+
+##### Add this line
+
+```sh
+// Rest of your fstab 
+UUID=XXXXXXXXXXXXXXX /swap btrfs subvol=@swap 0 0 // [!code focus]
+/swap/swapfile none swap sw 0 0 // [!code focus]
+```
+:::
 
 #### Ext4
-
+Ext4 is fits perfectly with swap file you can create a swap file using this instructions.
+::: details
 1. Instruction set for the Swap file
 
 ```sh
@@ -54,7 +145,7 @@ sudo chmod 600 /swapfile && sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
 
-4. Open the fstab file
+4. Open the '/etc/fstab' file
 
 ```sh
 sudo nano /etc/fstab
@@ -63,10 +154,12 @@ sudo nano /etc/fstab
 ##### Add this line
 
 ```sh
-/swapfile none swap defaults 0 0
+// Rest of your fstab 
+/swapfile none swap defaults 0 0  // [!code focus]
 ```
 
 5. Reboot
+:::
 
 ## Q. What about ZRAM?
 
@@ -101,15 +194,10 @@ sudo xbps-install -S zram-config
 
 :::
 
-2. To check
+2. To check use
 
 ```sh
-cat /proc/swaps
-```
-
-##### Output:
-
-```sh
+$ cat /proc/swaps // [!code focus]
 Filename                Type         Size        Used        Priority
 /dev/dm-0               partition    16776696    0           -2
 /dev/zramo              partition    1003404     0           5
@@ -117,6 +205,8 @@ Filename                Type         Size        Used        Priority
 /dev/zram2              partition    1003404     0           5
 /dev/zram3              partition    1003404     0           5
 ```
+
+The `/dev/zram` are the zrams.
 
 3. If it doesn't show up, try **rebooting**.
 

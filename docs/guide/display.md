@@ -1,4 +1,4 @@
-# Xrandr
+# Display
 
 ## Refresh Rates
 
@@ -27,12 +27,7 @@ Please read all the problems & bugs with this, so that you know what problems mi
 You can know the name of your display here generally it is eDP-1 if it is hybrid it can be eDP-1-1.
 
 ```sh
-xrandr #Check your display name
-```
-
-##### Output:
-
-```sh
+$ xrandr  // [!code focus]
 Screen 0: minimum 320 x 200, current 1600 × 900, maximum 16384 x 16384
 eDP-1 connected primary 1600X900+0+0 (normal left inverted right × axis y axis) 473mm x 296mm
 ```
@@ -51,27 +46,15 @@ So, I can go for 1920x1080 or 1792x1008. To find out which fits you best you can
 
 Using cvt you cant generate the custom resolution with parameters.
 
-```sh
-cvt 1920 1080 #Your custom resolution
-```
-
-#### Output:
-
-```sh
+```sh{3}
+$ cvt 1920 1080  // [!code focus] 
 # 1920X1080 59.96 Hz ( CVT 2.07M9) hsync: 67.16 kHz; pclk: 173.00 MHz
 Modeline "1920x1080 _60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 - hsync +vsync
 ```
 
 ##### ii. xrandr --newmode
 
-Copy the line after modline
-
-```sh
-# 1920X1080 59.96 Hz ( CVT 2.07M9) hsync: 67.16 kHz; pclk: 173.00 MHz
-Modeline "1920x1080 _60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 - hsync +vsync  // [!code focus]
-```
-
-##### And add new resolution using
+Copy the text after modeline and use this command to add new resolution.
 
 ```sh
 xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
@@ -101,12 +84,6 @@ Add your custom resolution config, it should look something like this.
 // All of the .profile code
 xrandr --newmode "1920×1080 120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync  // [!code focus]
 xrandr --addmode eDP-1 "1920×1080 120.00"  // [!code focus]
-xrandr --newmode "1920×1080 119.91" 369.25 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync  // [!code focus]
-xrandr --addmode eDP-1 "1920×1080 119.91"  // [!code focus]
-xrandr --newmode "1920×1080 60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync  // [!code focus]
-xrandr --addmode eDP-1 "1920×1080 60.00"  // [!code focus]
-xrandr --newmode "1920×1080 59.89" 172.75 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync  // [!code focus]
-xrandr --addmode eDP-1 "1920x1080 59.89"  // [!code focus]
 ```
 
 ## Q. What about other refresh rates?
@@ -126,14 +103,15 @@ $ xrandr --addmode eDP-1 "1920×1080 120.00" // [!code focus]
 Finally, I added these resolutions
 
 ```sh
-xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
-xrandr --addmode eDP-1 "1920x1080_120.00"
-xrandr --newmode "1920x1080_119.91"  369.25  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
-xrandr --addmode eDP-1 "1920x1080_119.91"
-xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
-xrandr --addmode eDP-1 "1920x1080_60.00"
-xrandr --newmode "1920x1080_59.89"  172.75  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
-xrandr --addmode eDP-1 "1920x1080_59.89"
+// All of the .profile code
+xrandr --newmode "1920×1080 120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync  // [!code focus]
+xrandr --addmode eDP-1 "1920×1080 120.00"  // [!code focus]
+xrandr --newmode "1920×1080 119.91" 369.25 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync  // [!code focus]
+xrandr --addmode eDP-1 "1920×1080 119.91"  // [!code focus]
+xrandr --newmode "1920×1080 60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync  // [!code focus]
+xrandr --addmode eDP-1 "1920×1080 60.00"  // [!code focus]
+xrandr --newmode "1920×1080 59.89" 172.75 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync  // [!code focus]
+xrandr --addmode eDP-1 "1920x1080 59.89"  // [!code focus]
 ```
 
 **Now it should look like this**

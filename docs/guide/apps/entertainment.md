@@ -40,8 +40,7 @@ sudo apt install steam -y
 If it doesn't work, turn on multiverse.
 
 ```sh
-sudo add-apt-repository multiverse && sudo apt update
-```
+sudo add-apt-repository multiverse && sudo apt update && ```
 
 ## Multimedia Codecs
 

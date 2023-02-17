@@ -23,8 +23,7 @@ sudo dpkg --add-architecture i386
 
 ```sh
 wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
-sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update
-sudo apt install --install-recommends winehq-stable -y
+sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update && sudo apt install --install-recommends winehq-stable -y
 ```
 
 3. Then open wine configuration, add download the additional wine files
@@ -41,8 +40,7 @@ Lutris is an Open Source gaming platform for Linux. It installs and launches gam
 
 ```sh
 sudo add-apt-repository ppa:lutris-team/lutris
-sudo apt update
-sudo apt install lutris
+sudo apt update && sudo apt install lutris
 ```
 
 ## Synaptic Package manager
@@ -87,8 +85,7 @@ An advanced utility that shows usage and stats for processor, memory, disks, net
 **Repo already exists in Pop 20.10**
 
 ```sh
-sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update
-sudo apt install bashtop -y
+sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo apt install bashtop -y
 ```
 
 ![bashtop](https://imgur.com/mvpMdQ1.gif)

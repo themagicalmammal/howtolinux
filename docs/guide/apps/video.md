@@ -28,6 +28,5 @@ Peek is a recorder with video recording, GIF recording and screenshot capabiliti
 **Pop users don't need to add this repo.**
 
 ```sh
-sudo add-apt-repository ppa:peek-developers/stable && sudo apt update
-sudo apt install peek -y
+sudo add-apt-repository ppa:peek-developers/stable && sudo apt update && sudo apt install peek -y
 ```

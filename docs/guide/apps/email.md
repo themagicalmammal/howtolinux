@@ -12,7 +12,7 @@ sudo pacman -S thunderbird
 ```
 
 ```sh [Debian]
-sudo apt-get update && sudo apt-get install thunderbird
+sudo apt update && sudo apt install thunderbird
 ```
 
 ```sh [Fedora]
@@ -20,7 +20,7 @@ sudo dnf install thunderbird
 ```
 
 ```sh [Ubuntu]
-sudo apt-get update && sudo apt-get install thunderbird
+sudo apt update && sudo apt install thunderbird
 ```
 
 ```sh [Void]
@@ -40,7 +40,7 @@ sudo pacman -S evolution
 ```
 
 ```sh [Debian]
-sudo apt-get update && sudo apt-get install evolution
+sudo apt update && sudo apt install evolution
 ```
 
 ```sh [Fedora]
@@ -48,7 +48,7 @@ sudo dnf install evolution
 ```
 
 ```sh [Ubuntu]
-sudo apt-get update && sudo apt-get install evolution
+sudo apt update && sudo apt install evolution
 ```
 
 ```sh [Void]
@@ -69,7 +69,7 @@ yay -S mailspring
 ```sh [Debian]
 wget -O mailspring.deb https://updates.getmailspring.com/download?platform=linuxDeb
 sudo dpkg -i mailspring.deb
-sudo apt-get install -f
+sudo apt install -f
 ```
 
 ```sh [Fedora]
@@ -79,7 +79,7 @@ sudo dnf install mailspring
 ```sh [Ubuntu]
 wget -O mailspring.deb https://updates.getmailspring.com/download?platform=linuxDeb
 sudo dpkg -i mailspring.deb
-sudo apt-get install -f
+sudo apt install -f
 ```
 
 ```sh [Void]
@@ -98,7 +98,7 @@ sudo pacman -S geary
 ```
 
 ```sh [Debian]
-sudo apt-get update && sudo apt-get install geary
+sudo apt update && sudo apt install geary
 ```
 
 ```sh [Fedora]
@@ -106,7 +106,7 @@ sudo dnf install geary
 ```
 
 ```sh [Ubuntu]
-sudo apt-get update && sudo apt-get install geary
+sudo apt update && sudo apt install geary
 ```
 
 ```sh [Void]

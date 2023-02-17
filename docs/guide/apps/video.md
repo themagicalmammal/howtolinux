@@ -11,7 +11,7 @@ sudo apt install vlc  -y
 Get rid of the stock video player
 
 ```sh
-sudo apt-get autoremove --purge totem* -y
+sudo apt autoremove --purge totem* -y
 ```
 
 ## [OBS Studio](https://obsproject.com/)

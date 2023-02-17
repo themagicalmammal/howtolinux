@@ -2,7 +2,6 @@
 
 Desktop environments are an integral part of the Linux operating system. They provide a graphical interface for users to interact with their computer, and they often come with a suite of pre-installed applications and utilities. There are many different desktop environments available in Linux, each with its own unique design, features, and capabilities. In this article, we'll take a look at some of the most popular Linux desktop environments.
 
-
 ## GNOME
 
 GNOME is one of the most popular desktop environments in Linux. It features a modern, intuitive interface that is designed to be easy to use. GNOME includes a range of productivity tools, such as a file manager, a text editor, and a terminal emulator. It also includes a software center for installing and managing applications.

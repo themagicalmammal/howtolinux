@@ -8,9 +8,7 @@ Chrome is not an open-source browser, Vivaldi & Opera are partly open-source, an
 To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Hardware_video_acceleration).
 :::
 
-##
-
-# Chromium Based Browsers
+## Chromium Browsers
 
 ## [Chromium](https://www.chromium.org/chromium-projects/)
 
@@ -171,9 +169,7 @@ sudo xbps-install -S opera
 
 :::
 
-##
-
-# Non-Chromium Based
+## Non-Chromium Browsers
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/)
 

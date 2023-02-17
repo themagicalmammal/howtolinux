@@ -4,7 +4,6 @@ Email clients are crucial components of any distribution. Thunderbird or Evoluti
 
 ## [Thunderbird](https://www.thunderbird.net/en-US/)
 
-
 ::: code-group
 
 ```sh [Arch]
@@ -33,8 +32,6 @@ sudo xbps-install thunderbird
 
 ## [Evolution](https://help.gnome.org/users/evolution/stable/)
 
-
-
 ::: code-group
 
 ```sh [Arch]
@@ -62,7 +59,6 @@ sudo xbps-install evolution
 :::
 
 ## [MailSpring](https://getmailspring.com/)
-
 
 ::: code-group
 
@@ -93,7 +89,6 @@ sudo xbps-install mailspring
 :::
 
 ## [Geary](https://wiki.gnome.org/Apps/Geary)
-
 
 ::: code-group
 

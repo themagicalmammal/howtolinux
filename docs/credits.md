@@ -81,11 +81,19 @@ const coreMembers = [
     ]
   },
   {
-    avatar: 'https://styles.redditmedia.com/t5_boto3/styles/profileIcon_3c1ehha8nr8a1.png?width=256&height=256&crop=256:256,smart&v=enabled&s=808b04de2908b010bdf7a88dc334b3aae5d12806',
+    avatar: 'https://avatars.githubusercontent.com/u/24971970?v=4',
     name: 'lulzdoods',
     title: 'Contributor',
     links: [
-      { icon: { svg: reddit, }, link: 'https://www.reddit.com/user/lulzdoods'},
+      { icon: 'github', link: 'https://www.reddit.com/user/lulzdoods'},
+    ]
+  },
+  {
+    avatar: 'https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png',
+    name: 'ObserverOfTime',
+    title: 'Contributor',
+    links: [
+      { icon: 'github', link: 'https://github.com/ObserverOfTime'},
     ]
   },
   {

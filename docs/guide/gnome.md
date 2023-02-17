@@ -51,3 +51,15 @@ The activity hot corner enables the hot corner where the button Activity is plac
 You can format time according to what you need. I only use the time, so I got rid of the date there.
 
 ![overlay](https://i.imgur.com/xfprNhY.png)
+
+##
+# Settings Tweaks
+
+## Privacy Tweaks
+
+![privacy-tweaks1](https://i.imgur.com/RNgA0vI.png)
+![privacy-tweaks2](https://i.imgur.com/Aj3OupA.png)
+
+## Over Amplification
+
+![over-amplification](https://i.imgur.com/AIvJc4i.png)

@@ -33,6 +33,20 @@ This is a required library for apps, that use PPA's for installation. It doesn't
 sudo apt install software-properties-common -y
 ```
 
+## Disable annoying Keyring
+
+#### This provides security for browsers on an autologin-based system. (Easy way to understand it)
+
+If you have an autologin system, whenever you open a browser (except firefox) or Github-desktop, the system asks for a key.  
+**Steps to Disable it:**
+
+```
+App password & keys > Login > Change Password > Type your Current Pass > Continue > Continue with Empty Pass > Make unencrypted
+```
+
+![disable-keyring1](https://i.imgur.com/vvbqR7b.png)
+![disable-keyring2](https://i.imgur.com/lzxb68t.png)
+
 ## Browser Extensions
 
 - **GNOME Shell integration** [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions' repository, make it easy to add extensions via your browser.

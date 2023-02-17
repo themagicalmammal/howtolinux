@@ -56,7 +56,7 @@ sudo xbps-install discord
 
 :::
 
-###  [BetterDiscord](https://betterdiscord.net/home/). 
+### [BetterDiscord](https://betterdiscord.net/home/).
 
 To install themes and customize discord's interface according your liking.
 
@@ -82,6 +82,7 @@ $ sudo mv betterdiscordctl /usr/local/bin
 ```
 
 > You can then keep `betterdiscordctl` up to date with this command:
+>
 > ```
 > $ sudo betterdiscordctl self-upgrade
 > ```
@@ -123,7 +124,6 @@ $ betterdiscordctl --d-install flatpak [COMMAND]
 ```
 
 :::
-
 
 ## Facebook Messenger ([Caprine](https://github.com/sindresorhus/caprine))
 

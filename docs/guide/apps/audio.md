@@ -30,7 +30,7 @@ sudo xbps-install pavucontrol
 
 :::
 
-To learn how to control your audio, go [here](https://howtolinux.vercel.app/guide/tweaks#controlling-audio-devices).
+To learn how to control your audio, go [here](/guide/tweaks#controlling-audio-devices).
 
 ## [PulseEffects](https://github.com/wwmm/pulseeffects)
 

@@ -9,6 +9,7 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 :::
 
 ##
+
 # Chromium Based Browsers
 
 ## [Chromium](https://www.chromium.org/chromium-projects/)
@@ -171,6 +172,7 @@ sudo xbps-install -S opera
 :::
 
 ##
+
 # Non-Chromium Based
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/)

@@ -4,37 +4,119 @@ Email clients are crucial components of any distribution. Thunderbird or Evoluti
 
 ## [Thunderbird](https://www.thunderbird.net/en-US/)
 
-```sh
-sudo apt install thunderbird -y
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S thunderbird
 ```
+
+```sh [Debian]
+sudo apt-get update
+sudo apt-get install thunderbird
+```
+
+```sh [Fedora]
+sudo dnf install thunderbird
+```
+
+```sh [Ubuntu]
+sudo apt-get update
+sudo apt-get install thunderbird
+```
+
+```sh [Void]
+sudo xbps-install thunderbird
+```
+
+:::
 
 ## [Evolution](https://help.gnome.org/users/evolution/stable/)
 
-```sh
-sudo apt install evolution -y
+
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S evolution
 ```
+
+```sh [Debian]
+sudo apt-get update
+sudo apt-get install evolution
+```
+
+```sh [Fedora]
+sudo dnf install evolution
+```
+
+```sh [Ubuntu]
+sudo apt-get update
+sudo apt-get install evolution
+```
+
+```sh [Void]
+sudo xbps-install evolution
+```
+
+:::
 
 ## [MailSpring](https://getmailspring.com/)
 
-Get the [deb file](https://github.com/Foundry376/Mailspring/releases) and try installing it.
-If it throws gvfs dependency error. Follow these **Steps:**
 
-1. Install these libraries
+::: code-group
 
-```sh
-sudo apt install libsecret-1-dev gconf2 python2 python-is-python2 -y
+```sh [Arch]
+yay -S mailspring
 ```
 
-1. Install the deb,
-
-```sh
-sudo dpkg --ignore-depends=gvfs-bin -i mailspring*.deb
+```sh [Debian]
+wget -O mailspring.deb https://updates.getmailspring.com/download?platform=linuxDeb
+sudo dpkg -i mailspring.deb
+sudo apt-get install -f
 ```
+
+```sh [Fedora]
+sudo dnf install mailspring
+```
+
+```sh [Ubuntu]
+wget -O mailspring.deb https://updates.getmailspring.com/download?platform=linuxDeb
+sudo dpkg -i mailspring.deb
+sudo apt-get install -f
+```
+
+```sh [Void]
+sudo xbps-install mailspring
+```
+
+:::
 
 ## [Geary](https://wiki.gnome.org/Apps/Geary)
 
-```sh
-sudo add-apt-repository ppa:geary-team/releases
-sudo apt update
-sudo apt install geary
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S geary
 ```
+
+```sh [Debian]
+sudo apt-get update
+sudo apt-get install geary
+```
+
+```sh [Fedora]
+sudo dnf install geary
+```
+
+```sh [Ubuntu]
+sudo apt-get update
+sudo apt-get install geary
+```
+
+```sh [Void]
+sudo xbps-install geary
+```
+
+:::

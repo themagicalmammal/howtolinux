@@ -39,7 +39,7 @@ sudo apt install steam -y
 
 If it doesn't work, turn on multiverse.
 
-```sh
+````sh
 sudo add-apt-repository multiverse && sudo apt update && ```
 
 ## Multimedia Codecs
@@ -48,7 +48,7 @@ Gives you the ability to play popular non-free media formats, including DVD, MP3
 
 ```sh
 sudo apt install ubuntu-restricted-extras -y
-```
+````
 
 To enable restricted codecs to play DVDs
 

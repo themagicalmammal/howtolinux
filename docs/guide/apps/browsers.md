@@ -25,7 +25,7 @@ sudo apt-get install chromium
 ```
 
 ```sh [Fedora]
-sudo apt-get install chromium
+sudo dnf install  install chromium
 ```
 
 ```sh [Ubuntu]

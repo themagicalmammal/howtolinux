@@ -1,8 +1,30 @@
 # Gnome Tweaks
 
-```sh
-sudo apt install gnome-tweaks -y
+::: code-group
+
+```sh [Arch]
+sudo pacman -S gnome-tweaks
 ```
+
+```sh [Debian]
+sudo apt update
+sudo apt install gnome-tweaks
+```
+
+```sh [Fedora]
+sudo dnf install gnome-tweaks
+```
+
+```sh [Ubuntu]
+sudo apt update
+sudo apt install gnome-tweaks
+```
+
+```sh [Void]
+sudo xbps-install -S gnome-tweaks
+```
+
+:::
 
 ## Minimize Button and Button Placement
 

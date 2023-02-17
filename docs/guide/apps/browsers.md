@@ -9,7 +9,6 @@ To learn more about **VAAPI** go [here](https://wiki.archlinux.org/index.php/Har
 :::
 
 ##
-
 # Chromium Based Browsers
 
 ## [Chromium](https://www.chromium.org/chromium-projects/)
@@ -172,7 +171,6 @@ sudo xbps-install -S opera
 :::
 
 ##
-
 # Non-Chromium Based
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/)
@@ -257,21 +255,61 @@ sudo dpkg -i librewolf_94.0-1_amd64.deb
 sudo apt install -f
 ```
 
-```sh [Void]
+:::
+
+It's a bit complicated on Void you have to follow this:
+
+::: details
+You can install Librewolf on Void Linux using xbps-src, which is Void's package building tool.
+
+1. First, install xbps-src if you haven't already done so:
+
+```sh
+sudo xbps-install -S xbps-src
+```
+
+2. Next, create a working directory for building the package:
+
+```sh
 mkdir -p ~/srcpkgs/librewolf && cd ~/srcpkgs/librewolf
+```
+
+3. Download the source package from the official Librewolf website:
+
+```sh
 wget https://gitlab.com/librewolf-community/browser/-/archive/94.0-1/librewolf-94.0-1.tar.bz2
+```
+
+3. Extract the source package:
+
+```sh
 tar xf librewolf-94.0-1.tar.bz2
 cd librewolf-94.0-1
+```
+
+4. Build the package:
+
+```sh
 ./configure --disable-debug
 make -j$(nproc)
 sudo make install
 ```
 
+5. The package should now be installed on your system, and you can launch it from the command line by running librewolf. If you want to create a desktop shortcut, you can create a .desktop file in the ~/.local/share/applications/ directory with the following contents:
+
+```sh
+[Desktop Entry]
+Name=Librewolf
+Exec=librewolf
+Icon=librewolf
+Type=Application
+Categories=Network;
+```
+
+Note that the version number and download link may change over time, so be sure to check the official Librewolf website for the latest release.
 :::
 
-##
-
-# Extensions
+## Extensions
 
 Generally, these extensions exist for almost all browsers.
 

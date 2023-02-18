@@ -3,28 +3,42 @@
 ## Wine
 
 Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications.
-**Remove Wine if you have it installed**
 
-1. If you have a 64-bit system this command will enable 32-bit support
+::: code-group
 
-```sh
+```sh [Arch]
+sudo pacman -S wine
+```
+
+```sh [Debian]
 sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main'
+sudo apt update && sudo apt install --install-recommends winehq-stable
 ```
 
-2. Then follow these **Steps:**
-
-```sh
-wget https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
-sudo apt-add-repository deb\ https://dl.winehq.org/wine-builds/ubuntu/\ $(lsb_release -c | sed 's/Codename:\t/''/g')\ main && sudo apt update && sudo apt install --install-recommends winehq-stable -y
+```sh [Fedora]
+sudo dnf install wine
 ```
 
-3. Then open wine configuration, add download the additional wine files
-
-```sh
-winecfg
+```sh [Ubuntu]
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main'
+sudo apt update && sudo apt install --install-recommends winehq-stable
 ```
 
-**Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges.
+```sh [Void]
+sudo xbps-install -S wine
+```
+
+:::
+
+::: danger
+Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges.
+:::
 
 ## uGet
 

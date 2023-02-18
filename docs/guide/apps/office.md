@@ -13,7 +13,7 @@ sudo pacman -S libreoffice
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install libreoffice
+sudo apt install libreoffice
 ```
 
 ```sh [Fedora]
@@ -21,7 +21,7 @@ sudo dnf install libreoffice
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install libreoffice
+sudo apt install libreoffice
 ```
 
 ```sh [Void]
@@ -78,7 +78,7 @@ sudo pacman -S onlyoffice-desktopeditors
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install onlyoffice-desktopeditors
+sudo apt install onlyoffice-desktopeditors
 ```
 
 ```sh [Fedora]
@@ -87,7 +87,7 @@ sudo dnf install onlyoffice-desktopeditors
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install onlyoffice-desktopeditors
+sudo apt install onlyoffice-desktopeditors
 ```
 
 ```sh [Void]
@@ -109,7 +109,7 @@ yay -S wps-office
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install wps-office
+sudo apt install wps-office
 ```
 
 ```sh [Fedora]
@@ -117,7 +117,7 @@ sudo dnf install https://linux.m2osw.com/fedora/rpmfusion/free/fedora/rpmfusion-
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install wps-office
+sudo apt install wps-office
 ```
 
 ```sh [Void]

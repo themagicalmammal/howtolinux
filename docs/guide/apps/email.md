@@ -11,7 +11,7 @@ sudo pacman -S thunderbird
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install thunderbird
+sudo apt install thunderbird
 ```
 
 ```sh [Fedora]
@@ -19,7 +19,7 @@ sudo dnf install thunderbird
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install thunderbird
+sudo apt install thunderbird
 ```
 
 ```sh [Void]
@@ -37,7 +37,7 @@ sudo pacman -S evolution
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install evolution
+sudo apt install evolution
 ```
 
 ```sh [Fedora]
@@ -45,7 +45,7 @@ sudo dnf install evolution
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install evolution
+sudo apt install evolution
 ```
 
 ```sh [Void]
@@ -93,7 +93,7 @@ sudo pacman -S geary
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install geary
+sudo apt install geary
 ```
 
 ```sh [Fedora]
@@ -101,7 +101,7 @@ sudo dnf install geary
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install geary
+sudo apt install geary
 ```
 
 ```sh [Void]

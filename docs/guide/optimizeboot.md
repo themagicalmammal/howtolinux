@@ -2,7 +2,12 @@
 
 My original boot-time was 1min 4sec after removing apps it is now 58sec.
 
-![originalboottime](https://i.imgur.com/xkD7ety.png)
+```sh
+$ systemd-analyze // [!code focus]
+Startup finished in 8.540s (firmware) + 775ms (loader) + 4.861s (kernel) + 43.83
+7s (userspace) = 58.015s
+graphical.target reached after 42.165s in userspace
+```
 
 ## Disabling Plymouth
 
@@ -378,4 +383,9 @@ sudo apt remove <name of kernel files> -y
 
 ## Final Boot-Time
 
-![final-boottime](https://i.imgur.com/sXc3RDt.png)
+```sh
+$ systemd-analyze // [!code focus]
+Startup finished in 3.910s (firmware) + 863ms (loader) + 4.456s (kernel) + 11.81
+6§ (userspace) = 21.046s
+graphical.target reached after 11.805s in userspace
+```

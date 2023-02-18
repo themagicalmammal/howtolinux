@@ -43,7 +43,7 @@ sudo pacman -S pycharm-community-edition
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install wget openjdk-11-jdk
+sudo apt install wget openjdk-11-jdk
 wget https://download.jetbrains.com/python/pycharm-community-2021.3.1.tar.gz
 sudo tar xvfz pycharm-community-2021.3.1.tar.gz -C /opt/
 sudo /opt/pycharm-community-2021.3.1/bin/pycharm.sh
@@ -54,7 +54,7 @@ sudo dnf install pycharm-community
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install wget openjdk-11-jdk
+sudo apt install wget openjdk-11-jdk
 wget https://download.jetbrains.com/python/pycharm-community-2021.3.1.tar.gz
 sudo tar xvfz pycharm-community-2021.3.1.tar.gz -C /opt/
 sudo /opt/pycharm-community-2021.3.1/bin/pycharm.sh
@@ -76,7 +76,7 @@ pip3 install virtualenv #solves the global package bug
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install python3-pip python3-dev python3-distutils python3-venv
+sudo apt install python3-pip python3-dev python3-distutils python3-venv
 pip3 install virtualenv #solves the global package bug
 ```
 
@@ -86,7 +86,7 @@ pip3 install virtualenv #solves the global package bug
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install python3-pip python3-dev python3-distutils python3-venv
+sudo apt install python3-pip python3-dev python3-distutils python3-venv
 pip3 install virtualenv #solves the global package bug
 ```
 
@@ -150,7 +150,7 @@ sudo pacman -S jdk-openjdk
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install default-jdk
+sudo apt install default-jdk
 ```
 
 ```sh [Fedora]
@@ -158,7 +158,7 @@ sudo dnf install java-latest-openjdk
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install default-jdk
+sudo apt install default-jdk
 ```
 
 ```sh [Void]

@@ -21,7 +21,7 @@ sudo pacman -S chromium
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install chromium
+sudo apt install chromium
 ```
 
 ```sh [Fedora]
@@ -29,7 +29,7 @@ sudo dnf install  install chromium
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install chromium-browser
+sudo apt install chromium-browser
 ```
 
 ```sh [Void]
@@ -180,7 +180,7 @@ sudo pacman -S firefox
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install firefox
+sudo apt install firefox
 ```
 
 ```sh [Fedora]
@@ -188,7 +188,7 @@ sudo dnf install firefox
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install firefox
+sudo apt install firefox
 ```
 
 ```sh [Void]
@@ -208,7 +208,7 @@ sudo pacman -S tor
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install tor
+sudo apt install tor
 ```
 
 ```sh [Fedora]
@@ -216,7 +216,7 @@ sudo dnf install tor
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install torbrowser-launcher
+sudo apt install torbrowser-launcher
 ```
 
 ```sh [Void]

@@ -11,7 +11,7 @@ sudo pacman -S gimp
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install gimp
+sudo apt install gimp
 ```
 
 ```sh [Fedora]
@@ -19,7 +19,7 @@ sudo dnf install gimp
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install gimp
+sudo apt install gimp
 ```
 
 ```sh [Void]
@@ -39,7 +39,7 @@ sudo pacman -S krita
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install krita
+sudo apt install krita
 ```
 
 ```sh [Fedora]
@@ -47,7 +47,7 @@ sudo dnf install krita
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install krita
+sudo apt install krita
 ```
 
 ```sh [Void]
@@ -67,7 +67,7 @@ sudo pacman -S blender
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install blender
+sudo apt install blender
 ```
 
 ```sh [Fedora]
@@ -75,7 +75,7 @@ sudo dnf install blender
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install blender
+sudo apt install blender
 ```
 
 ```sh [Void]
@@ -95,7 +95,7 @@ sudo pacman -S inkscape
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install inkscape
+sudo apt install inkscape
 ```
 
 ```sh [Fedora]
@@ -103,7 +103,7 @@ sudo dnf install inkscape
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install inkscape
+sudo apt install inkscape
 ```
 
 ```sh [Void]

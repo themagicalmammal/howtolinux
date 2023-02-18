@@ -11,7 +11,7 @@ sudo pacman -S pavucontrol
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install pavucontrol
+sudo apt install pavucontrol
 ```
 
 ```sh [Fedora]
@@ -19,7 +19,7 @@ sudo dnf install pavucontrol
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install pavucontrol
+sudo apt install pavucontrol
 ```
 
 ```sh [Void]
@@ -41,7 +41,7 @@ yay -S pulseeffects
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install pulseeffects
+sudo apt install pulseeffects
 ```
 
 ```sh [Fedora]
@@ -49,7 +49,7 @@ sudo dnf install pulseeffects
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install pulseeffects
+sudo apt install pulseeffects
 ```
 
 ```sh [Void]
@@ -71,7 +71,7 @@ sudo pacman -S audacity
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install audacity
+sudo apt install audacity
 ```
 
 ```sh [Fedora]
@@ -79,7 +79,7 @@ sudo dnf install audacity
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install audacity
+sudo apt install audacity
 ```
 
 ```sh [Void]
@@ -99,7 +99,7 @@ sudo pacman -S ardour
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install ardour
+sudo apt install ardour
 ```
 
 ```sh [Fedora]
@@ -107,7 +107,7 @@ sudo dnf install ardour
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install ardour
+sudo apt install ardour
 ```
 
 ```sh [Void]

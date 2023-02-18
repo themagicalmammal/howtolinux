@@ -10,16 +10,14 @@ Official Telegram client
 sudo pacman -S telegram-desktop
 ```
 
-```sh [Debian]
-sudo apt update && sudo apt install telegram-desktop
+```sh [Debian]sudo apt install telegram-desktop
 ```
 
 ```sh [Fedora]
 sudo dnf install telegram-desktop
 ```
 
-```sh [Ubuntu]
-sudo apt update && sudo apt install telegram-desktop
+```sh [Ubuntu]sudo apt install telegram-desktop
 ```
 
 ```sh [Void]
@@ -38,16 +36,14 @@ Official Discord client
 sudo pacman -S discord
 ```
 
-```sh [Debian]
-sudo apt update && sudo apt install discord
+```sh [Debian]sudo apt install discord
 ```
 
 ```sh [Fedora]
 sudo dnf install discord
 ```
 
-```sh [Ubuntu]
-sudo apt update && sudo apt install discord
+```sh [Ubuntu]sudo apt install discord
 ```
 
 ```sh [Void]
@@ -199,7 +195,7 @@ yay -S whatsapp-nativefier
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install nodejs npm
+sudo apt install nodejs npm
 sudo npm install nativefier -g
 nativefier "https://web.whatsapp.com/" --name "WhatsAppQT"
 ```
@@ -210,8 +206,7 @@ sudo npm install nativefier -g
 nativefier "https://web.whatsapp.com/" --name "WhatsAppQT"
 ```
 
-```sh [Ubuntu]
-sudo apt update && sudo apt install nodejs npm
+```sh [Ubuntu]sudo apt install nodejs npm
 sudo npm install nativefier -g
 nativefier "https://web.whatsapp.com/" --name "WhatsAppQT"
 ```

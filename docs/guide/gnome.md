@@ -7,7 +7,7 @@ sudo pacman -S gnome-tweaks
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install gnome-tweaks
+sudo apt install gnome-tweaks
 ```
 
 ```sh [Fedora]
@@ -15,7 +15,7 @@ sudo dnf install gnome-tweaks
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install gnome-tweaks
+sudo apt install gnome-tweaks
 ```
 
 ```sh [Void]

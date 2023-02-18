@@ -40,7 +40,7 @@ sudo pacman -S obs-studio
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install obs-studio
+sudo apt install obs-studio
 ```
 
 ```sh [Fedora]
@@ -48,7 +48,7 @@ sudo dnf install obs-studio
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install obs-studio
+sudo apt install obs-studio
 ```
 
 ```sh [Void]
@@ -68,7 +68,7 @@ sudo pacman -S peek
 ```
 
 ```sh [Debian]
-sudo apt update && sudo apt install peek
+sudo apt install peek
 ```
 
 ```sh [Fedora]
@@ -76,7 +76,7 @@ sudo dnf install peek
 ```
 
 ```sh [Ubuntu]
-sudo apt update && sudo apt install peek
+sudo apt install peek
 ```
 
 ```sh [Void]

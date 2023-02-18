@@ -81,7 +81,6 @@ function sidebarGuide() {
       items: [
         { text: "Installation", link: "/guide/installation" },
         { text: "Post Installation", link: "/guide/postinstallation" },
-        { text: "Display", link: "/guide/display" },
         { text: "Tweaks", link: "/guide/tweaks" },
       ],
     },
@@ -118,6 +117,7 @@ function sidebarGuide() {
       text: "Advanced",
       collapsed: false,
       items: [
+        { text: "Display", link: "/guide/display" },
         { text: "Optimize Boot", link: "/guide/optimizeboot" },
         { text: "Miscellaneous", link: "/guide/miscellaneous" },
       ],

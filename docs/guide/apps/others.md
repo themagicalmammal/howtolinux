@@ -61,7 +61,7 @@ sudo apt install timeshift -y
 
 ## Resource Monitor
 
-### i. Htop
+## Htop
 
 A utility to see which process is taking how much CPU or memory.
 
@@ -71,7 +71,7 @@ sudo apt install htop -y
 
 ![htop](https://imgur.com/q6j85Hk.gif)
 
-### ii. Bashtop
+## Bashtop
 
 An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
 **Repo already exists in Pop 20.10**
@@ -84,7 +84,7 @@ sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo a
 
 ## Firewall
 
-### i. Gufw
+## Gufw
 
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use application with a bunch of settings which you can set according to your preference.
 
@@ -92,6 +92,6 @@ GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is p
 sudo apt install gufw
 ```
 
-### ii. Opensnitch
+## Opensnitch
 
 Helps you to review which services connect to the internet. Also, stopping some services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).

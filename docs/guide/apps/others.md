@@ -30,26 +30,86 @@ winecfg
 
 uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor, and the ability to process downloads in a batch format.
 
-```sh
-sudo apt install aria2 uget -y
+::: code-group
+
+```sh [Arch]
+sudo pacman -S uget
 ```
+
+```sh [Debian]
+sudo apt install uget
+```
+
+```sh [Fedora]
+sudo dnf install uget
+```
+
+```sh [Ubuntu]
+sudo apt install uget
+```
+
+```sh [Void]
+sudo xbps-install -S uget
+```
+
+:::
 
 
 ## Synaptic Package manager
 
 Synaptic serves as a graphical front-end to APT which makes the process of software management easier.
 
-```sh
-sudo apt install synaptic -y
+::: code-group
+
+```sh [Arch]
+sudo pacman -S synaptic
 ```
+
+```sh [Debian]
+sudo apt install synaptic
+```
+
+```sh [Fedora]
+sudo dnf install synaptic
+```
+
+```sh [Ubuntu]
+sudo apt install synaptic
+```
+
+```sh [Void]
+sudo xbps-install -S synaptic
+```
+
+:::
 
 ## Timeshift
 
 Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.
 
-```sh
-sudo apt install timeshift -y
+::: code-group
+
+```sh [Arch]
+sudo pacman -S timeshift
 ```
+
+```sh [Debian]
+sudo apt install timeshift
+```
+
+```sh [Fedora]
+sudo dnf install timeshift
+```
+
+```sh [Ubuntu]
+sudo apt install timeshift
+```
+
+```sh [Void]
+sudo xbps-install -S timeshift
+```
+
+:::
 
 ## Resource Monitor
 
@@ -57,9 +117,29 @@ sudo apt install timeshift -y
 
 A utility to see which process is taking how much CPU or memory.
 
-```sh
-sudo apt install htop -y
+::: code-group
+
+```sh [Arch]
+sudo pacman -S htop
 ```
+
+```sh [Debian]
+sudo apt install htop
+```
+
+```sh [Fedora]
+sudo dnf install htop
+```
+
+```sh [Ubuntu]
+sudo apt install htop
+```
+
+```sh [Void]
+sudo xbps-install -S htop
+```
+
+:::
 
 ![htop](https://imgur.com/q6j85Hk.gif)
 
@@ -68,9 +148,29 @@ sudo apt install htop -y
 An advanced utility that shows usage and stats for processor, memory, disks, network, and processes.
 **Repo already exists in Pop 20.10**
 
-```sh
+::: code-group
+
+```sh [Arch]
+sudo pacman -S bashtop
+```
+
+```sh [Debian]
+sudo apt install bashtop
+```
+
+```sh [Fedora]
+sudo dnf install bashtop
+```
+
+```sh [Ubuntu]
 sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo apt install bashtop -y
 ```
+
+```sh [Void]
+sudo xbps-install -S bashtop
+```
+
+:::
 
 ![bashtop](https://imgur.com/mvpMdQ1.gif)
 
@@ -80,10 +180,53 @@ sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo a
 
 GUFW is a graphical utility for managing Uncomplicated Firewall (UFW). This is pretty easy to use application with a bunch of settings which you can set according to your preference.
 
-```sh
+::: code-group
+
+```sh [Arch]
+sudo pacman -S gufw
+```
+
+```sh [Debian]
 sudo apt install gufw
 ```
 
+```sh [Fedora]
+sudo dnf install gufw
+```
+
+```sh [Ubuntu]
+sudo apt install gufw
+```
+
+```sh [Void]
+sudo xbps-install -S gufw
+```
+
+:::
 ## Opensnitch
 
-Helps you to review which services connect to the internet. Also, stopping some services might help save some internet, and give you more control over it. To get a compiled version of Opensnitch goes [here](https://github.com/evilsocket/opensnitch).
+Helps you to review which services connect to the internet. Also, stopping some services might help save some internet, and give you more control over it.
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S opensnitch
+```
+
+```sh [Debian]
+sudo apt install opensnitch
+```
+
+```sh [Fedora]
+sudo dnf install opensnitch
+```
+
+```sh [Ubuntu]
+sudo apt install opensnitch
+```
+
+```sh [Void]
+sudo xbps-install -S opensnitch
+```
+
+:::

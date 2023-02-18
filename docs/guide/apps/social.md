@@ -56,7 +56,7 @@ sudo xbps-install discord
 
 :::
 
-### [BetterDiscord](https://betterdiscord.net/home/).
+### [BetterDiscord](https://betterdiscord.net/home/)
 
 To install themes and customize discord's interface according your liking.
 

@@ -54,7 +54,6 @@ sudo xbps-install -S uget
 
 :::
 
-
 ## Synaptic Package manager
 
 Synaptic serves as a graphical front-end to APT which makes the process of software management easier.
@@ -203,6 +202,7 @@ sudo xbps-install -S gufw
 ```
 
 :::
+
 ## Opensnitch
 
 Helps you to review which services connect to the internet. Also, stopping some services might help save some internet, and give you more control over it.

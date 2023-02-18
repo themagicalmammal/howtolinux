@@ -258,19 +258,13 @@ It's a bit complicated on Void you have to follow this:
 ::: details
 You can install Librewolf on Void Linux using xbps-src, which is Void's package building tool.
 
-1. First, install xbps-src if you haven't already done so:
-
-```sh
-sudo xbps-install -S xbps-src
-```
-
-2. Next, create a working directory for building the package:
+1. Next, create a working directory for building the package:
 
 ```sh
 mkdir -p ~/srcpkgs/librewolf && cd ~/srcpkgs/librewolf
 ```
 
-3. Download the source package from the official Librewolf website:
+2. Download the source package from the official Librewolf website:
 
 ```sh
 wget https://gitlab.com/librewolf-community/browser/-/archive/94.0-1/librewolf-94.0-1.tar.bz2

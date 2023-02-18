@@ -11,8 +11,7 @@ sudo pacman -S spotify
 ```sh [Debian]
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update
-sudo apt-get install spotify-client
+sudo apt update && sudo apt install spotify-client
 ```
 
 ```sh [Fedora]
@@ -23,11 +22,14 @@ sudo dnf install spotify-client
 ```sh [Ubuntu]
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update
-sudo apt-get install spotify-client
+sudo apt update && sudo apt install spotify-client
 ```
 
 ```sh [Void]
+git clone https://github.com/void-linux/void-packages.git
+cd void-packages/srcpkgs/
+./xbps-src pkg -j$(nproc) spotify
+sudo xbps-install -Rv binpkgs/*/spotify-[0-9]*.x86_64.xbps
 ```
 
 :::
@@ -58,7 +60,7 @@ sudo pacman -S steam
 ```
 
 ```sh [Debian]
-sudo apt-get install steam
+sudo add-apt-repository multiverse && sudo apt update && sudo apt install steam
 ```
 
 ```sh [Fedora]
@@ -66,7 +68,7 @@ sudo dnf install steam
 ```
 
 ```sh [Ubuntu]
-sudo apt-get install steam
+sudo add-apt-repository multiverse && sudo apt update && sudo apt install steam
 ```
 
 ```sh [Void]
@@ -75,23 +77,30 @@ sudo xbps-install -S steam
 
 :::
 
-If it doesn't work, turn on multiverse.
-
-```sh
-sudo add-apt-repository multiverse && sudo apt update
-```
-
 ## Multimedia Codecs
 
 Gives you the ability to play popular non-free media formats, including DVD, MP3, Quicktime and Windows Media.
 
-```sh
-sudo apt install ubuntu-restricted-extras -y
-````
+::: code-group
 
-To enable restricted codecs to play DVDs
-
-```sh
-sudo apt install libdvd-pkg -y
-sudo dpkg-reconfigure libdvd-pkg
+```sh [Arch]
+sudo pacman -S gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg
 ```
+
+```sh [Debian]
+sudo apt update && sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly ffmpeg
+```
+
+```sh [Fedora]
+sudo dnf install gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-extras gstreamer1-plugins-ugly ffmpeg
+```
+
+```sh [Ubuntu]
+sudo apt update && sudo apt install ubuntu-restricted-extras
+```
+
+```sh [Void]
+sudo xbps-install -S gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg
+```
+
+:::

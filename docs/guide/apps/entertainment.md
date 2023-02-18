@@ -28,10 +28,10 @@ sudo apt-get install spotify-client
 ```
 
 ```sh [Void]
+
 ```
 
 :::
-
 
 ### Spicetify
 
@@ -87,7 +87,7 @@ Gives you the ability to play popular non-free media formats, including DVD, MP3
 
 ```sh
 sudo apt install ubuntu-restricted-extras -y
-````
+```
 
 To enable restricted codecs to play DVDs
 

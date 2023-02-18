@@ -46,7 +46,7 @@ export default defineConfig({
 });
 
 /**
- * Top Nav bar function that returns an array of objects, each of which has a 
+ * Top Nav bar function that returns an array of objects, each of which has a
  * text, link, and activeMatch property @returns An array of objects.
  */
 function nav() {
@@ -70,7 +70,7 @@ function nav() {
 }
 
 /**
- * Side bar function that returns an array of objects, each of which has a text, 
+ * Side bar function that returns an array of objects, each of which has a text,
  * link.
  */
 function sidebarGuide() {

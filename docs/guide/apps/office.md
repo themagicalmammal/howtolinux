@@ -69,7 +69,6 @@ chmod +x OnlyOffice-x.x.x-x86_64.AppImage
 
 Looks like Microsoft Office 2013.
 
-
 This is a beautiful office suite with lots of customization.
 
 ::: code-group

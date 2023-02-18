@@ -22,15 +22,6 @@ curl -fsSL https://gist.githubusercontent.com/themagicalmammal/f6f086f9c70192437
 
 You need to log in & out after this.
 
-### Spotify-Adblock
-
-If you do not like ads, you can install [Ad-free Spotify](https://github.com/abba23/spotify-adblock-linux). To simplify the steps go through this.
-**Note:** This might be buggy.
-
-```sh
-curl -fsSL https://gist.githubusercontent.com/themagicalmammal/81e719ac496790049ecfb745a26dfc9b/raw/f22b8b886307cb58618ccf85f89df3ee8d4dc59d/spotify_adblock.sh | sudo bash
-```
-
 ## Steam for Gaming
 
 ```sh

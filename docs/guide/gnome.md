@@ -53,6 +53,7 @@ You can format time according to what you need. I only use the time, so I got ri
 ![overlay](https://i.imgur.com/xfprNhY.png)
 
 ##
+
 # Settings Tweaks
 
 ## Privacy Tweaks

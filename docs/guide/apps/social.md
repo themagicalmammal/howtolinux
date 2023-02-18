@@ -11,6 +11,7 @@ sudo pacman -S telegram-desktop
 ```
 
 ```sh [Debian]sudo apt install telegram-desktop
+
 ```
 
 ```sh [Fedora]
@@ -18,6 +19,7 @@ sudo dnf install telegram-desktop
 ```
 
 ```sh [Ubuntu]sudo apt install telegram-desktop
+
 ```
 
 ```sh [Void]
@@ -37,6 +39,7 @@ sudo pacman -S discord
 ```
 
 ```sh [Debian]sudo apt install discord
+
 ```
 
 ```sh [Fedora]
@@ -44,6 +47,7 @@ sudo dnf install discord
 ```
 
 ```sh [Ubuntu]sudo apt install discord
+
 ```
 
 ```sh [Void]

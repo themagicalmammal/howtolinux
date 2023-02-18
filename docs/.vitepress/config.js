@@ -87,13 +87,13 @@ function sidebarGuide() {
     {
       text: "Distros",
       link: "/guide/distro",
-      collapsed: false,
+      collapsed: true,
       items: [{ text: "Ubuntu", link: "/guide/dubuntu" }],
     },
     {
       text: "Desktop",
       link: "/guide/desktop",
-      collapsed: false,
+      collapsed: true,
       items: [{ text: "Gnome", link: "/guide/gnome" }],
     },
     {

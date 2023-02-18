@@ -1,13 +1,5 @@
 # Other Apps
 
-## uGet
-
-uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor, and the ability to process downloads in a batch format.
-
-```sh
-sudo apt install aria2 uget -y
-```
-
 ## Wine
 
 Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications.
@@ -33,6 +25,15 @@ winecfg
 ```
 
 **Saftey with Wine** - Never use wine with sudo. Windows apps always run with admin rights in wine. No sudo needed sometimes, You need to tell wine to start an app as a "normal user" but, you never need to run it with admin rights because it already does. So from this, you could be thinking can't hurt to run wine with sudo, Right? Yes, it can hurt, or do you believe that a potential Virus wouldn't be happy to be run with root rights? Viruses work through wine like they would on Windows. sudo gives them even more privileges.
+
+## uGet
+
+uGet is a lightweight yet powerful open Source download manager for Linux. Basic features include a download queue, a clipboard monitor, and the ability to process downloads in a batch format.
+
+```sh
+sudo apt install aria2 uget -y
+```
+
 
 ## Synaptic Package manager
 

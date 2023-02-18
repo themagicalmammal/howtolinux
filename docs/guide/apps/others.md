@@ -34,7 +34,6 @@ uGet is a lightweight yet powerful open Source download manager for Linux. Basic
 sudo apt install aria2 uget -y
 ```
 
-
 ## Synaptic Package manager
 
 Synaptic serves as a graphical front-end to APT which makes the process of software management easier.

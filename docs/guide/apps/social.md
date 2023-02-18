@@ -220,7 +220,6 @@ nativefier "https://web.whatsapp.com/" --name "WhatsAppQT"
 sudo xbps-install nodejs npm
 sudo npm install nativefier -g
 nativefier "https://web.whatsapp.com/" --name "WhatsAppQT"
-
 ```
 
 :::

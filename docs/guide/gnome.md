@@ -52,6 +52,34 @@ You can format time according to what you need. I only use the time, so I got ri
 
 ![overlay](https://i.imgur.com/xfprNhY.png)
 
+## Nautilus (admin mode)
+
+Adds right-click property Open as Administrator.
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S nautilus-admin && nautilus -q
+```
+
+```sh [Debian]
+sudo apt install nautilus-admin && nautilus -q
+```
+
+```sh [Fedora]
+sudo dnf install nautilus-admin && nautilus -q
+```
+
+```sh [Ubuntu]
+sudo apt install nautilus-admin && nautilus -q
+```
+
+```sh [Void]
+sudo xbps-install -S nautilus-admin && nautilus -q
+```
+
+:::
+
 ##
 
 # Settings Tweaks

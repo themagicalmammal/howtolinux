@@ -51,14 +51,6 @@ Synaptic serves as a graphical front-end to APT which makes the process of softw
 sudo apt install synaptic -y
 ```
 
-## Nautilus (admin mode)
-
-Adds right-click property _Open as Administrator_
-
-```sh
-sudo apt install nautilus-admin -y && nautilus -q
-```
-
 ## Timeshift
 
 Timeshift is a system restore tool for Linux. Creates a file system snapshot using rsync+hard links or BTRFS snapshots.

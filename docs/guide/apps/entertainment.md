@@ -34,7 +34,6 @@ sudo xbps-install -Rv binpkgs/*/spotify-[0-9]*.x86_64.xbps
 
 :::
 
-
 ### Spicetify
 
 To install themes for spotify, you can check [this](https://github.com/khanhas/spicetify-cli), to install different themes, go [here](https://github.com/morpheusthewhite/spicetify-themes) out. If you have troubles going through the steps of spicetify-cli. Here is a script you can use. You need to log in & out after using this.

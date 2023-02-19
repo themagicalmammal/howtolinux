@@ -1,5 +1,7 @@
 # Display
+
 These are some display tweaks depending on the windowing system you are using.
+
 ## Refresh Rates
 
 If your display supports a higher refresh rate, go for it because higher refresh rate displays make the moving content look and feel smoother and snappier.
@@ -100,7 +102,6 @@ The process for other desktop environments may be different. Refer to the docume
 
 Once you've logged in using Wayland, you can verify that it's in use by running the following command:
 
-
 If the output is "x11", X11 is currently in use. If the output is "wayland", Wayland is already in use. If the output is empty, neither X11 nor Wayland is in use.
 
 ### Step 2: Switch to Wayland
@@ -157,9 +158,7 @@ If you encounter issues when trying to switch to Wayland, here are some things t
 
 Switching from X11 to Wayland can provide a more modern and secure display server experience on Linux. While the process to switch can vary depending on your distribution and desktop environment, the general steps are to log out of your current session and start a new one using Wayland. If you encounter any issues, be sure to check that Wayland is installed on your system, your graphics drivers are up to date, and your desktop environment supports Wayland.
 
-
 :::
-
 
 ## Custom Resolution <Badge type="danger" text="caution" />
 
@@ -176,11 +175,13 @@ Please read all the problems & bugs with this, so that you know what problems mi
 You can know the name of your display here generally it is eDP-1 if it is hybrid it can be eDP-1-1.
 
 ::: code-group
+
 ```sh [X11]
 $ xrandr  // [!code focus]
 Screen 0: minimum 320 x 200, current 1600 × 900, maximum 16384 x 16384
 eDP-1 connected primary 1600X900+0+0 (normal left inverted right × axis y axis) 473mm x 296mm
 ```
+
 ```sh [Wayland]
 $ wlr-randr  // [!code focus]
 Screen 0: 1920x1080 @ 0x0mm (scaled to 100.00%)
@@ -188,6 +189,7 @@ Screen 0: 1920x1080 @ 0x0mm (scaled to 100.00%)
     Current mode: 1920x1080@60Hz
   Output HDMI-1-1 [external] (disconnected)
 ```
+
 :::
 
 ### 2. Find resolution which will fit
@@ -205,7 +207,7 @@ So, I can go for 1920x1080 or 1792x1008. To find out which fits you best you can
 Using cvt you cant generate the custom resolution with parameters.
 
 ```sh{3}
-$ cvt 1920 1080  // [!code focus] 
+$ cvt 1920 1080  // [!code focus]
 # 1920X1080 59.96 Hz ( CVT 2.07M9) hsync: 67.16 kHz; pclk: 173.00 MHz
 Modeline "1920x1080 _60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 - hsync +vsync
 ```
@@ -215,17 +217,19 @@ Modeline "1920x1080 _60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 - hsy
 Copy the text after modeline and use this command to create a new resolution.
 
 ::: code-group
+
 ```sh [X11]
 xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 xrandr --addmode eDP-1 "1920x1080_60.00"
 ```
+
 ```sh [Wayland]
 wlr-randr --output eDP-1 --mode "1920x1080_60.00"
 ```
+
 :::
 
 Congrats! You have added a new resolution now you can go to display and set it as your resolution.
-
 
 ## Q. The resolution goes away after a reboot.
 
@@ -238,15 +242,18 @@ nano ~/.profile
 Add your custom resolution config, it should look something like this.
 
 ::: code-group
+
 ```sh [X11]
 // All of the .profile code
 xrandr --newmode "1920×1080 120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync  // [!code focus]
 xrandr --addmode eDP-1 "1920×1080 120.00"  // [!code focus]
 ```
+
 ```sh [Wayland]
 // All of the .profile code
 wlr-randr --output eDP-1 --mode "1920x1080_60.00"  // [!code focus]
 ```
+
 :::
 
 ## Q. What about other refresh rates?
@@ -256,6 +263,7 @@ wlr-randr --output eDP-1 --mode "1920x1080_60.00"  // [!code focus]
 Like if your display supports 120 hertz
 
 ::: code-group
+
 ```sh [X11]
 $ cvt 1920 1080 120   // [!code focus]
 # 1920×1080 119.93 Hz (CVT) hsync: 139.12 kHz; pclk: 369.50 MHz
@@ -263,17 +271,20 @@ Modeline "1920×1080_120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsy
 $ xrandr - -newmode "1920×1080_120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsvnc +vsvnc  // [!code focus]
 $ xrandr --addmode eDP-1 "1920×1080 120.00" // [!code focus]
 ```
+
 ```sh [Wayland]
 $ cvt 1920 1080 120   // [!code focus]
 # 1920×1080 119.93 Hz (CVT) hsync: 139.12 kHz; pclk: 369.50 MHz
 Modeline "1920×1080_120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync
 $ wlr-randr --output eDP-1 --mode "1920×1080 120.00" // [!code focus]
 ```
+
 :::
 
 Finally, I added these resolutions
 
 ::: code-group
+
 ```sh [X11]
 // All of the .profile code
 xrandr --newmode "1920×1080 120.00" 369.50 1920 2080 2288 2656 1080 1083 1088 1160 -hsync +vsync  // [!code focus]
@@ -285,6 +296,7 @@ xrandr --addmode eDP-1 "1920×1080 60.00"  // [!code focus]
 xrandr --newmode "1920×1080 59.89" 172.75 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync  // [!code focus]
 xrandr --addmode eDP-1 "1920x1080 59.89"  // [!code focus]
 ```
+
 ```sh [Wayland]
 // All of the .profile code
 wlr-randr --output eDP-1 --mode "1920×1080 120.00"  // [!code focus]
@@ -292,6 +304,7 @@ wlr-randr --output eDP-1 --mode "1920×1080 119.91"  // [!code focus]
 wlr-randr --output eDP-1 --mode "1920×1080 60.00"  // [!code focus]
 wlr-randr --output eDP-1 --mode "1920x1080 59.89"  // [!code focus]
 ```
+
 :::
 
 **Now it should look like this**
@@ -306,4 +319,4 @@ wlr-randr --output eDP-1 --mode "1920x1080 59.89"  // [!code focus]
 
 ## Q. Problems regarding Hybrid Graphics Switching.
 
-**Ans.** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the `xrandr --addmode [displayname]` or  `wlr-randr --output [displayname]` if you switch Graphics. It's better to add commands for both of your displays so switching would be fluent.
+**Ans.** If you have a Hybrid or Multiple Graphics Card, your display name will change if you switch graphics. So, you have to change the `xrandr --addmode [displayname]` or `wlr-randr --output [displayname]` if you switch Graphics. It's better to add commands for both of your displays so switching would be fluent.

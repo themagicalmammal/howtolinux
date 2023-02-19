@@ -270,7 +270,8 @@ sudo systemctl disable thermald.service
 sudo systemctl mask thermald.service
 ```
 
-## Q. How to enable this services? 
+## Q. How to enable this services?
+
 Let's say the service name be xyz.service then to enable it -
 
 ```sh
@@ -313,6 +314,7 @@ graphical.target reached after 11.805s in userspace
 ```
 
 ## Q. How to remove a kernel?
+
 **Ans.** These are the general steps to follow:
 
 1. Getting, name of the Kernel
@@ -339,7 +341,6 @@ apt list --installed *kernel-name*
 sudo apt remove <name of kernel files>
 ```
 
-
 ## Q. How to I uninstall custom Kernel?
 
 ::: danger IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.
@@ -356,14 +357,17 @@ sudo apt autoremove --purge linux-xanmod
 ```sh [Liquorix]
 sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 ```
+
 :::
 
 2. Remove FQ-PIE Queue Discipline for systemd
 
 ::: code-group
+
 ```sh [Xanmod]
 sudo rm /etc/sysctl.d/90-override.conf
 ```
+
 :::
 
 **Note-** Not required for Liquorix.

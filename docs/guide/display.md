@@ -18,7 +18,34 @@ Wayland is a new protocol that enables 3D compositors to be used as primary disp
 
 X.org is the default display manager but, X.org is old and is very bloated, thus uses more resources. So in this way, Wayland can be a better option. But, Wayland is a newer display protocol and thus is incomplete in a way giving the birth yo many bugs, and one of them being **NVIDIA**. So, if you have an NVIDIA GPU, Wayland is a bad option. Also, if you don't have NVIDIA GPU, still there might be bugs, so if you have bugs/glitches, remove it.(Remove the #).
 
+You can install wayland using:
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -S wayland
+```
+
+```sh [Debian]
+sudo apt-get install wayland
+```
+
+```sh [Fedora]
+sudo dnf install wayland
+```
+
+```sh [Ubuntu]
+sudo apt-get install wayland
+```
+
+```sh [Void]
+sudo xbps-install wayland
+```
+
+:::
+
 ::: details
+
 # Switch from X11 to Wayland
 
 X11 is the most widely used display server on Linux, but it has some limitations when it comes to modern graphics and security. Wayland is a newer display server that aims to overcome these limitations and provide a better experience. In this tutorial, we'll show you how to switch from X11 to Wayland on Linux, regardless of the distribution or desktop environment you are using.

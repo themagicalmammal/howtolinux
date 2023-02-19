@@ -177,7 +177,7 @@ sudo dnf install bashtop
 ```
 
 ```sh [Ubuntu]
-sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo apt install bashtop -y
+sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo apt install bashtop
 ```
 
 ```sh [Void]

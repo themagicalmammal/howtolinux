@@ -16,13 +16,13 @@ Via Terminal:
 sudo pacman -Syu && flatpak update
 ```
 ```sh [Debian]
-sudo apt upgrade -y && flatpak update
+sudo apt upgrade && flatpak update
 ```
 ```sh [Fedora]
 sudo dnf upgrade --refresh && flatpak update
 ```
 ```sh [Ubuntu]
-sudo apt upgrade -y && flatpak update
+sudo apt upgrade && flatpak update
 ```
 ```sh [Void]
 sudo xbps-install -Su && flatpak update

@@ -29,7 +29,7 @@ pop-upgrade recovery upgrade from-release
 This is a required library for apps, that use PPA's for installation. It doesn't come pre-installed with many Ubuntu-based distros like Elementary OS.
 
 ```sh
-sudo apt install software-properties-common -y
+sudo apt install software-properties-common
 ```
 
 ## Disable annoying Keyring

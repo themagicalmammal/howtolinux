@@ -120,7 +120,7 @@ It is a cool new feature enabled in Fedora 33. What is it, you ask? In Layman te
 To install it
 
 ```sh
-sudo apt install earlyoom -y
+sudo apt install earlyoom
 ```
 
 To check its status
@@ -132,7 +132,10 @@ systemctl status earlyoom
 ## Disabling Unnecessary Extensions
 
 The built-in extensions I use are -  
-![gnomeextensions](https://i.imgur.com/F7y1nMQ.png)
+
+<p align="center">
+    <img src='https://i.imgur.com/F7y1nMQ.png'>
+</p>
 
 ## I have disabled these
 
@@ -170,14 +173,16 @@ free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /pr
 
 ## Optimizing the boot
 
-### DISCLAIMER
+::: danger
 
-#### PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
+PLEASE DO THIS AT YOUR OWN RISK. WHILE THIS IS SAFE TO DO YOU CAN STILL MESS UP YOUR SYSTEM SO, PLEASE READ THIS CAREFULLY AND UNDERSTAND EVERYTHING BEFORE YOU PROCEED.
+
+:::
 
 - **Network-dispatcher** is a dispatcher daemon for systemd-networkd connection status changes.
 
 ```sh
-sudo apt remove --purge networkd-dispatcher -y
+sudo apt remove --purge networkd-dispatcher
 ```
 
 - **ModemManager** is a DBus-activated daemon that controls mobile broadband (2G/3G/4G) interfaces. If you do not have a mobile broadband interface, you do not need this.
@@ -347,13 +352,13 @@ Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally
 For XanMod
 
 ```sh
-sudo apt autoremove --purge linux-xanmod -y
+sudo apt autoremove --purge linux-xanmod
 ```
 
 For Liquorix
 
 ```sh
-sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y
+sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 ```
 
 2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
@@ -388,7 +393,7 @@ uname -r
 2. Removing the Kernel
 
 ```sh
-sudo apt remove <kernel name> -y
+sudo apt remove <kernel name>
 ```
 
 3. Getting, remaining Kernel files
@@ -400,7 +405,7 @@ apt list --installed *xanmod* *liquorix*
 4. Removing the remaining Kernel files
 
 ```sh
-sudo apt remove <name of kernel files> -y
+sudo apt remove <name of kernel files>
 ```
 
 [Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/)

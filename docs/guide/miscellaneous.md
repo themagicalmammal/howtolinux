@@ -85,7 +85,7 @@ sudo apt autoclean
 I use Bleachbit because it is good to remove unnecessary junk from your computer.
 
 ```sh
-sudo apt install bleachbit -y
+sudo apt install bleachbit
 ```
 
 **Steps:** BleachBit (root) > Select every option (except free disk) > **Clean**  

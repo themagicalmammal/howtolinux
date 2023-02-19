@@ -107,6 +107,14 @@ const coreMembers = [
     ]
   },
   {
+    avatar: 'https://www.kevin-custer.com/assets/static/author.7b0d364.c64c93cdc7d614fa259fd56e0e762425.jpg',
+    name: 'kevincuster',
+    title: 'Content Writer',
+    links: [
+      { icon: { svg: linux, }, link: 'https://www.kevin-custer.com'},
+    ]
+  },
+  {
     avatar: 'https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png',
     name: 'ObserverOfTime',
     title: 'Contributor',

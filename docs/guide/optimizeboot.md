@@ -1,6 +1,6 @@
-# Optimize Boot-time & Ram Usage
+# Optimize Boot time & Ram Usage
 
-My original boot-time was 1min 4sec after removing apps it is now 58sec.
+Original boot time before optimisation: 
 
 ```sh
 $ systemd-analyze // [!code focus]
@@ -11,16 +11,75 @@ graphical.target reached after 42.165s in userspace
 
 ## Disabling Plymouth
 
-**For EFI systems**
+This Plymouth boot screen is that boot screen you see when you are booting.
+
+### EFI stub
 
 ```sh
 sudo kernelstub --delete-options "quiet systemd.show_status=false splash"
 ```
 
-**For Ubuntu**
-Go through [this](https://www.kevin-custer.com/blog/disabling-the-plymouth-boot-screen-in-ubuntu-20-04/) guide.
+### GRUB
 
-**This reduces my boot-time to 35sec**
+1. Edit grub config
+
+```sh
+sudo nano /etc/default/grub
+```
+
+Find the `GRUB_CMDLINE_LINUX_DEFAULT` line, and you will see:
+
+```sh
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
+
+2. To disable the boot screen, simply remove the word splash from this line, like so:
+
+```sh
+GRUB_CMDLINE_LINUX_DEFAULT="quiet"
+```
+
+3. In order to apply the config changes to the grub bootloader, run this command:
+
+```sh
+sudo update-grub
+```
+
+4. Now reboot your system!
+
+5. Finally, uninstall the plymouth package from your system:
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -Rns plymouth
+```
+
+```sh [Debian]
+sudo apt purge plymouth && sudo apt autoremove
+```
+
+```sh [Fedora]
+sudo dnf remove plymouth
+```
+
+```sh [Ubuntu]
+sudo apt purge plymouth && sudo apt autoremove
+```
+
+```sh [Void]
+sudo xbps-remove plymouth
+```
+
+:::
+
+6. Remove lingering config directories
+
+```sh
+sudo rm -rf /usr/share/plymouth
+```
+
+
 
 ## Adjusting the Swappiness Property
 
@@ -69,41 +128,6 @@ To check its status
 ```sh
 systemctl status earlyoom
 ```
-
-## Wayland
-
-Wayland is a new protocol that enables 3D compositors to be used as primary display servers, instead of running the 3D compositor as an extension under the (2D) X.org display server. Or, in layman's terms, it assumes you're using a 3D desktop from the start, instead of bolting on 3D capabilities to an 2D framework.
-
-X.org is the default display manager but, X.org is old and is very bloated, thus uses more resources. So in this way, Wayland can be a better option. But, Wayland is a newer display protocol and thus is incomplete in a way giving the birth yo many bugs, and one of them being **NVIDIA**. So, if you have an NVIDIA GPU, Wayland is a bad option. Also, if you don't have NVIDIA GPU, still there might be bugs, so if you have bugs/glitches, remove it.(Remove the #).
-
-1. Edit the /etc/gdm3/custom.conf to either disable or enable Wayland.
-
-```sh
-sudo nano /etc/gdm3/custom.conf
-```
-
-2. Add # before this line
-
-```sh
-WaylandEnable=false
-```
-
-3. Then
-
-```sh
-sudo systemctl restart gdm3
-```
-
-4. Then select it in the login
-   ![wayland](https://i.imgur.com/R26e6rN.png)
-
-1To confirm
-
-```sh
-echo $XDG_SESSION_TYPE
-```
-
-Output should be Wayland
 
 ## Disabling Unnecessary Extensions
 

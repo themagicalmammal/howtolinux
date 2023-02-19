@@ -22,23 +22,26 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 
 ### 1. Neofetch Mod
 
-Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU,GPU blah blah blah. Me being a minimalist only use some information out of this.
-So, my custom config, makes the neofetch look like this.  
-![neofetch](https://i.imgur.com/5TFEWLs.png)
-To make your neofetch look this, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md).
+Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU, GPU blah blah blah. Me being a minimalist only use some information out of this.
+So, my custom config, makes the neofetch look like this. To make your neofetch look this, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/README.md).
+
+<p align='center'>
+  <img src='https://i.imgur.com/5TFEWLs.png'>
+</p>
 
 ### 2. Shell Config
 
 I am currently using [Starship](https://starship.rs/) shell config with Dark Patrol from [Gogh](https://github.com/Mayccoll/Gogh).
 **Note:** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/).
 To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md).
-![terminal](https://i.imgur.com/p2pDFEi.png)
+
+<p align='center'>
+  <img src='https://i.imgur.com/p2pDFEi.png'>
+</p>
 
 ### 3. Bash Alias
 
-A Bash Alias is a method of supplementing or overriding Bash commands with new ones.
-
-Get my .bash_alias file from [here](https://gist.github.com/themagicalmammal/94c5210122e75b63db230d364ffe73c0). Add this to your .bash.rc
+A Bash Alias is a method of supplementing or overriding Bash commands with new ones. Get my .bash_alias file from [here](https://gist.github.com/themagicalmammal/94c5210122e75b63db230d364ffe73c0). Add this to your .bash.rc
 
 ```sh
 if [ -f ~/.bash_alias ]; then . ~/.bash_alias fi
@@ -66,7 +69,6 @@ Disable Frequents Tab in Gnome app menu. This option is not required for Gnome >
 
 ```sh
 gsettings set org.gnome.desktop.privacy remember-app-usage false
-
 ```
 
 ## Clean your System

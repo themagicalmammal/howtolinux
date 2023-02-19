@@ -1,6 +1,6 @@
 # Optimize Boot time & Ram Usage
 
-Original boot time before optimisation: 
+Original boot time before optimisation:
 
 ```sh
 $ systemd-analyze // [!code focus]
@@ -78,8 +78,6 @@ sudo xbps-remove plymouth
 ```sh
 sudo rm -rf /usr/share/plymouth
 ```
-
-
 
 ## Adjusting the Swappiness Property
 

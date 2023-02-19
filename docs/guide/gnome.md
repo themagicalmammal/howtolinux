@@ -82,7 +82,7 @@ sudo xbps-install -S nautilus-admin && nautilus -q
 
 ## Disabling Unnecessary Extensions
 
-The built-in extensions I use are -  
+The built-in extensions I use are -
 
 <p align="center">
     <img src='https://i.imgur.com/F7y1nMQ.png'>

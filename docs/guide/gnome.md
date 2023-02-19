@@ -138,6 +138,7 @@ The beautiful thing I like about Pop OS is its feature-rich environment to incre
 ## Customization
 
 ### 1. We need to add gnome-shell-integration for Chrome.
+
 [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions' repository, make it easy to add extensions via your browser.
 
 ![gsi](https://i.imgur.com/d8M3YpY.png)
@@ -153,18 +154,19 @@ The beautiful thing I like about Pop OS is its feature-rich environment to incre
 
 - [Showtime - Desktop Widget](https://extensions.gnome.org/extension/1429/showtime/)
 - [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)
-- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)  
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
   ![dashtodock](https://i.imgur.com/75pDvsf.png)
 
 - [Frippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
 - [Remove Accessibility](https://extensions.gnome.org/extension/112/remove-accesibility/)
 - [Dynamic Panel Transparency](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
-- [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)  
+- [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
   ![dashtopanel](https://i.imgur.com/aim0WOW.png)
   To get the start button I [have](https://i.imgur.com/JQOGhRx.png).
   f
+
 - [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
 - [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 
@@ -209,4 +211,3 @@ Wallpaper - [Colorful New York](https://imgur.com/gallery/kBwTMX5)
 ![bigsurlikelook](https://i.imgur.com/2zDuo9S.png)
 
 ### To fix qt5 applications like KolourPaint to respect system theme, go [here](https://gist.github.com/tur1ngb0x/82f6fa2fff3d05fe2e3c73d83ee3b6a4).
-

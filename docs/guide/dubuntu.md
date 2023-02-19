@@ -66,3 +66,8 @@ sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
 ```sh
 Exec=io.elemantry.appcenter -s
 ```
+
+
+## Disabling Startup Application Preferences
+
+![application-pref](https://i.imgur.com/Raz4w8j.png)

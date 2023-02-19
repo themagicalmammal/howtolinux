@@ -158,8 +158,6 @@ sudo systemctl disable ModemManager.service
 sudo systemctl mask ModemManager.service
 ```
 
-**Note:** - If you are not using this and don't want Wi-Fi to disable wpa_supplicant.service.
-
 - **fwupd** is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines
   Disable thunderbolt_power
 
@@ -167,14 +165,13 @@ sudo systemctl mask ModemManager.service
 sudo nano /etc/fwupd/daemon.conf
 ```
 
-Make it
+&emsp; Edit the `BlacklistPlugins` line to
 
 ```sh
 BlacklistPlugins=test;invalid;thunderbolt_power
 ```
 
-![blacklist_thunderbold](https://i.imgur.com/pf0WSGt.png)
-Remove fwupd from boot
+&emsp; Remove fwupd from boot
 
 ```sh
 sudo systemctl disable fwupd.service
@@ -228,7 +225,7 @@ sudo systemctl mask lvm2-monitor.service
 
 - **Systemd-resolved** [Restart Required] is a system service that provides network name resolution to local applications. It implements a caching and validating DNS/DNSSEC stub resolver.
 
-1. Disable & Mask the systemd-resolved service
+&emsp; Disable & Mask the systemd-resolved service
 
 ```sh
 sudo systemctl stop systemd-resolved.service
@@ -236,21 +233,22 @@ sudo systemctl disable systemd-resolved.service
 sudo systemctl mask systemd-resolved.service
 ```
 
-2. Then put dns=default in the [main] section of
+&emsp; Then put dns=default in the [main] section of
 
 ```sh
 sudo nano /etc/NetworkManager/NetworkManager.conf
 ```
 
-3. Delete the symlink /etc/resolv.conf
+&emsp; Delete the symlink /etc/resolv.conf
 
 ```sh
 sudo rm /etc/resolv.conf
 ```
 
-4. Restart
+&emsp; Now, **Restart**
 
-**Might be UnSafe**
+::: danger Might be Unsafe
+:::
 
 - **Switcheroo-control** [Required on Dual-GPU systems] is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
 
@@ -274,21 +272,22 @@ sudo systemctl disable thermald.service
 sudo systemctl mask thermald.service
 ```
 
-**Enable them back**
-Let the service name be xyz.service
+## Q. How to enable this services? 
+Let's say the service name be xyz.service then to enable it -
 
 ```sh
 sudo systemctl unmask xyz.service
 sudo systemctl enable xyz.service
 ```
 
-- Disabling **Startup Application Preferences**
-
-![application-pref](https://i.imgur.com/Raz4w8j.png)
-
 ## Boot-time after disabling those stuff
 
-![prekernelbootime](https://i.imgur.com/yFgVXs3.png)
+```sh
+$ systemd-analyze // [!code focus]
+Startup finished in 3.862s (firmware) + 808ms (loader) + 5.171s (kernel) + 15.52
+Os (userspace) = 25.363s
+graphical.target reached after 15.507s in userspace
+```
 
 ## Custom kernel
 
@@ -303,52 +302,20 @@ Custom Kernels are known and used by fewer people, but these kernels add a signi
 
 Initial benchmarks on intel make Xanmod a winner whereas, AMD hardware generally goes better with Liquorix. Also, if you are having heating issues go for Liquorix for a better thermal response. I use Xanmod normal because long term release felt slow for me on both my PC & lappy.
 
-[Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1)
-[Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1)
-[Linux Generic vs Xanmod vs Liquorix](https://www.youtube.com/watch?v=EAe95sWrv0U) (Not English, but you can see the benchmark scores.)
+- [Reference of Xanmod being compared to Clear Linux](https://www.phoronix.com/scan.php?page=article&item=ubuntu-xanmod-clear&num=1)
+- [Reference of Liquorix Kernel Benchmarks For AMD Ryzen](https://www.phoronix.com/scan.php?page=article&item=radeon-gaming-liquorix54&num=1)
 
-**Note:** At this point, boot is the fastest.
-
-## Getting rid of Custom Kernel
-
-**IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.**
-
-1. Removing the Kernel apt modules
-
-For XanMod
+## Final Boot time
 
 ```sh
-sudo apt autoremove --purge linux-xanmod
+$ systemd-analyze // [!code focus]
+Startup finished in 3.910s (firmware) + 863ms (loader) + 4.456s (kernel) + 11.81
+6§ (userspace) = 21.046s
+graphical.target reached after 11.805s in userspace
 ```
 
-For Liquorix
-
-```sh
-sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64
-```
-
-2. [XanMod Only] Remove FQ-PIE Queue Discipline for systemd
-
-```sh
-sudo rm /etc/sysctl.d/90-override.conf
-```
-
-3. Removing the Kernel Repos
-
-For XanMod
-Download this [deb](https://dl.xanmod.org/xanmod-repository.deb) and uninstall it.
-
-For Liquorix
-
-```sh
-sudo add-apt-repository -r ppa:damentz/liquorix
-```
-
-**Tip: -r can be after or before the repo, so you can also write,**
-
-```sh
-sudo add-apt-repository ppa:damentz/liquorix -r
-```
+## Q. How to remove a kernel?
+**Ans.** These are the general steps to follow:
 
 1. Getting, name of the Kernel
 
@@ -365,7 +332,7 @@ sudo apt remove <kernel name>
 3. Getting, remaining Kernel files
 
 ```sh
-apt list --installed *xanmod* *liquorix*
+apt list --installed *kernel-name*
 ```
 
 4. Removing the remaining Kernel files
@@ -374,13 +341,46 @@ apt list --installed *xanmod* *liquorix*
 sudo apt remove <name of kernel files>
 ```
 
-[Reference of installing and removing XanMod](https://www.reddit.com/r/pop_os/comments/jlrney/psa_installing_and_removing_the_xanmod_kernel_in/)
 
-## Final Boot-Time
+## Q. How to I uninstall custom Kernel?
 
-```sh
-$ systemd-analyze // [!code focus]
-Startup finished in 3.910s (firmware) + 863ms (loader) + 4.456s (kernel) + 11.81
-6§ (userspace) = 21.046s
-graphical.target reached after 11.805s in userspace
+::: danger IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.
+:::
+
+1. Removing the Kernel apt modules
+
+::: code-group
+
+```sh [XanMod]
+sudo apt autoremove --purge linux-xanmod
 ```
+
+```sh [Liquorix]
+sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-amd64
+```
+:::
+
+2. Remove FQ-PIE Queue Discipline for systemd
+
+::: code-group
+```sh [Xanmod]
+sudo rm /etc/sysctl.d/90-override.conf
+```
+:::
+
+**Note-** Not required for Liquorix.
+
+3. Removing the Kernel Repos
+
+::: code-group
+
+```sh [Xanmod]
+sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg del "Xanmod Kernel Signing Key"
+sudo rm /etc/apt/sources.list.d/xanmod-kernel.list
+```
+
+```sh [Liquorix]
+sudo add-apt-repository ppa:damentz/liquorix -r
+```
+
+:::

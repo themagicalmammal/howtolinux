@@ -129,40 +129,6 @@ To check its status
 systemctl status earlyoom
 ```
 
-## Disabling Unnecessary Extensions
-
-The built-in extensions I use are -  
-
-<p align="center">
-    <img src='https://i.imgur.com/F7y1nMQ.png'>
-</p>
-
-## I have disabled these
-
-1. **Alt-Tab** - By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.
-2. **Always show workspaces** - Always show workspaces in the overview.
-3. **Desktop Icons** - Add icons to the desktop.
-4. **Pop Battery Icon Fix** - Fixes the battery icon to match the current battery level. (Useless for desktop pc)
-5. **Pop Shop Details** - Adds a Show Details item to applications if Pop Shop is installed.
-6. **System76 Power** - system76-power is a utility for managing graphics and power profiles. Options show up under battery menu. (Useful for hybrid and NVIDIA GPU)
-
-## Disabling Pop Shop on Boot
-
-Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram.  
-**Steps:**
-
-1. Edit App center daemon from opening it at start
-
-```sh
-sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
-```
-
-2. Put # here before this line
-
-```sh
-Exec=io.elemantry.appcenter -s
-```
-
 ## Clearing buff/cache
 
 The computer accumulates high buff/cache over time and makes the user force reboot. To clear buff cache, you can use this.

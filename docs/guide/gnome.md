@@ -80,15 +80,30 @@ sudo xbps-install -S nautilus-admin && nautilus -q
 
 :::
 
-##
+## Disabling Unnecessary Extensions
 
-# Settings Tweaks
+The built-in extensions I use are -  
 
-## Privacy Tweaks
+<p align="center">
+    <img src='https://i.imgur.com/F7y1nMQ.png'>
+</p>
+
+## I have disabled these
+
+1. **Alt-Tab** - By default, Alt+Tab will raise all windows of an application. This extension still groups windows by application.
+2. **Always show workspaces** - Always show workspaces in the overview.
+3. **Desktop Icons** - Add icons to the desktop.
+4. **Pop Battery Icon Fix** - Fixes the battery icon to match the current battery level. (Useless for desktop pc)
+5. **Pop Shop Details** - Adds a Show Details item to applications if Pop Shop is installed.
+6. **System76 Power** - system76-power is a utility for managing graphics and power profiles. Options show up under battery menu. (Useful for hybrid and NVIDIA GPU)
+
+## Settings Tweaks
+
+### Prvacy Tweaks
 
 ![privacy-tweaks1](https://i.imgur.com/RNgA0vI.png)
 ![privacy-tweaks2](https://i.imgur.com/Aj3OupA.png)
 
-## Over Amplification
+### Over Amplification
 
 ![over-amplification](https://i.imgur.com/AIvJc4i.png)

@@ -49,3 +49,20 @@ App password & keys > Login > Change Password > Type your Current Pass > Continu
 ## Browser Extensions
 
 - **GNOME Shell integration** [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions' repository, make it easy to add extensions via your browser.
+
+## Disabling Pop Shop on Boot (Pop OS)
+
+Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram.  
+**Steps:**
+
+1. Edit App center daemon from opening it at start
+
+```sh
+sudo nano /usr/share/applications/io.elementary.appcenter-daemon.desktop
+```
+
+2. Put # here before this line
+
+```sh
+Exec=io.elemantry.appcenter -s
+```

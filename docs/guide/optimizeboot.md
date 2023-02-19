@@ -1,6 +1,6 @@
 # Optimize Boot time & Ram Usage
 
-Original boot time before optimisation: 
+Original boot time before optimisation:
 
 ```sh
 $ systemd-analyze // [!code focus]
@@ -79,8 +79,6 @@ sudo xbps-remove plymouth
 sudo rm -rf /usr/share/plymouth
 ```
 
-
-
 ## Adjusting the Swappiness Property
 
 This is required to adjust swap usage. If you have huge rams like 16GB ram then you can reduce this value to as low as 0. But if you have low ram devices like 1GB you should make this 90 or higher. Interactions with the swap file are costlier since swaps are slower than RAMs, and they can cause a reduction in performance.
@@ -131,7 +129,7 @@ systemctl status earlyoom
 
 ## Disabling Unnecessary Extensions
 
-The built-in extensions I use are -  
+The built-in extensions I use are -
 
 <p align="center">
     <img src='https://i.imgur.com/F7y1nMQ.png'>

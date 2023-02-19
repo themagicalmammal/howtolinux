@@ -117,7 +117,7 @@ sudo pacman -S lutris
 ```
 
 ```sh [Debian]
-sudo dpkg --add-architecture i386 
+sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 echo "deb https://dl.winehq.org/wine-builds/debian/ buster main" | sudo tee /etc/apt/sources.list.d/winehq.list

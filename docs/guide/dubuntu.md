@@ -46,10 +46,6 @@ App password & keys > Login > Change Password > Type your Current Pass > Continu
 ![disable-keyring1](https://i.imgur.com/vvbqR7b.png)
 ![disable-keyring2](https://i.imgur.com/lzxb68t.png)
 
-## Browser Extensions
-
-- **GNOME Shell integration** [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) - This extension provides integration with GNOME Shell and the corresponding extensions' repository, make it easy to add extensions via your browser.
-
 ## Disabling Pop Shop on Boot (Pop OS)
 
 Pop Shop always opens on the startup of the system there is a way to stop that. This also helps in saving some ram.  

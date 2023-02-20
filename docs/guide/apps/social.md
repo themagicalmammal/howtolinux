@@ -94,22 +94,28 @@ Replace `[COMMAND]` with `install` to install BD for the first time,
 or `uninstall` to uninstall an existing installation.
 
 ::: code-group
+
 ```sh [Stable]
 betterdiscordctl [COMMAND]
 ```
+
 ```sh [PTB]
 betterdiscordctl --flavor PTB [COMMAND]
 ```
+
 ```sh [Canary]
 betterdiscordctl --flavor Canary [COMMAND]
 ```
+
 ```sh [Snap]
 betterdiscordctl --d-install snap [COMMAND]
 ```
+
 ```sh [Flatpak]
 betterdiscordctl --d-install flatpak [COMMAND]
 ```
-::: 
+
+:::
 
 ## Facebook Messenger ([Caprine](https://github.com/sindresorhus/caprine))
 

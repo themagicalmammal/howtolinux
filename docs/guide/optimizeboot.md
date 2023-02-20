@@ -245,7 +245,8 @@ sudo rm /etc/resolv.conf
 
 &emsp; Now, **Restart**
 
-::: danger Might be Unsafe
+::: danger 
+This might be extremely unsafe!
 :::
 
 - **Switcheroo-control** [Required on Dual-GPU systems] is a D-Bus service to check the availability of dual-GPU. Keep this only if you have 2 GPUs.
@@ -343,7 +344,8 @@ sudo apt remove <name of kernel files>
 
 ## Q. How to I uninstall custom Kernel?
 
-::: danger IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.
+::: danger 
+IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.
 :::
 
 1. Removing the Kernel apt modules

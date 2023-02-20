@@ -33,7 +33,7 @@ The "status" parameter in the dd command may not work on all versions of dd. If 
 If a functional swap file is present on the subvolume, the btrfs filesystem does not permit the creation of snapshots. This indicates that putting a swap file on a different subvolume is highly recommended. Swap file can't be located on a btrfs raid of any sort.
 
 
-::: details
+::: details Add Swap to Btrfs
 Let's assume that the current swap is already off, the `/` is on `/dev/sda1` and Ubuntu is installed with `/` on `@` subvolume and `/home` is on `@home` subvolume.
 
 1. Mount `/dev/sda1` to `/mnt`.
@@ -124,7 +124,9 @@ UUID=XXXXXXXXXXXXXXX /swap btrfs subvol=@swap 0 0 // [!code focus]
 
 #### Ext4
 Ext4 is fits perfectly with swap file you can create a swap file using this instructions.
-::: details
+
+::: details Add Swap to Ext4
+
 1. Instruction set for the Swap file
 
 ```sh

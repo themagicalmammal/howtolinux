@@ -62,68 +62,54 @@ To install themes and customize discord's interface according your liking.
 
 ::: details
 
-## To install BetterDiscord
+# To install BetterDiscord
 
 For more thorough documentation,
 take a look at `betterdiscordctl`'s [README](https://github.com/bb010g/betterdiscordctl#betterdiscordctl).
 
-## Install dependencies
+### Install dependencies
 
 ### Curl
 
 Install using your [package manager](https://curl.se/download.html#Linux)
 
-## Install betterdiscordctl
+### Install betterdiscordctl
 
+```sh
+curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+chmod +x betterdiscordctl
+sudo mv betterdiscordctl /usr/local/bin
 ```
-$ curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
-$ chmod +x betterdiscordctl
-$ sudo mv betterdiscordctl /usr/local/bin
+
+You can then keep `betterdiscordctl` up to date with this command:
+
+```sh
+sudo betterdiscordctl self-upgrade
 ```
 
-> You can then keep `betterdiscordctl` up to date with this command:
->
-> ```
-> $ sudo betterdiscordctl self-upgrade
-> ```
-
-## Install BetterDiscord
+### Install BetterDiscord
 
 Replace `[COMMAND]` with `install` to install BD for the first time,
 `reinstall` to reinstall BD after a Discord update,
 or `uninstall` to uninstall an existing installation.
 
-- For Stable
-
+::: code-group
+```sh [Stable]
+betterdiscordctl [COMMAND]
 ```
-$ betterdiscordctl [COMMAND]
+```sh [PTB]
+betterdiscordctl --flavor PTB [COMMAND]
 ```
-
-- For PTB
-
+```sh [Canary]
+betterdiscordctl --flavor Canary [COMMAND]
 ```
-$ betterdiscordctl --flavor PTB [COMMAND]
+```sh [Snap]
+betterdiscordctl --d-install snap [COMMAND]
 ```
-
-- For Canary
-
+```sh [Flatpak]
+betterdiscordctl --d-install flatpak [COMMAND]
 ```
-$ betterdiscordctl --flavor Canary [COMMAND]
-```
-
-- For Snap
-
-```
-$ betterdiscordctl --d-install snap [COMMAND]
-```
-
-- For Flatpak
-
-```
-$ betterdiscordctl --d-install flatpak [COMMAND]
-```
-
-:::
+::: 
 
 ## Facebook Messenger ([Caprine](https://github.com/sindresorhus/caprine))
 

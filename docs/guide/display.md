@@ -46,9 +46,7 @@ sudo xbps-install wayland
 
 :::
 
-::: details
-
-# Switch from X11 to Wayland
+::: details Switch from X11 to Wayland
 
 X11 is the most widely used display server on Linux, but it has some limitations when it comes to modern graphics and security. Wayland is a newer display server that aims to overcome these limitations and provide a better experience. In this tutorial, we'll show you how to switch from X11 to Wayland on Linux, regardless of the distribution or desktop environment you are using.
 

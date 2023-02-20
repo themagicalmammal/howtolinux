@@ -23,6 +23,43 @@ To install bedrock linux you can go [here](https://bedrocklinux.org/0.7/installa
 
 Compared to Flatpak, Snap can support more apps. It operates as intended by the creator. Some even go so far as to claim that "Snap is the future." However, Flatpak now beats Snap, which is why I don't choose Snap, but it's still up to you.
 
-::: warning
-If you are a newbie I won't recommend you remove snap. But, if you want to remove snap you can go [here](https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/)
+::: warning 
+If you are a newbie I won't recommend you to remove snap.
+:::
+
+::: code-group
+
+```sh [Arch]
+sudo pacman -Rns snapd
+sudo rm -rf /var/lib/snapd
+```
+
+```sh [Debian]
+sudo apt remove snapd && sudo apt autoremove
+sudo rm -rf ~/snap
+sudo rm -rf /snap
+sudo rm -rf /var/snap
+```
+
+```sh [Fedora]
+sudo dnf remove snapd && sudo dnf autoremove
+sudo rm -rf ~/snap
+sudo rm -rf /snap
+sudo rm -rf /var/snap
+```
+
+```sh [Ubuntu]
+sudo apt remove snapd && sudo apt autoremove
+sudo rm -rf ~/snap
+sudo rm -rf /snap
+sudo rm -rf /var/snap
+```
+
+```sh [Void]
+sudo xbps-remove -Oo snapd
+sudo rm -rf ~/snap
+sudo rm -rf /snap
+sudo rm -rf /var/snap
+```
+
 :::

@@ -253,7 +253,6 @@ sudo apt install -f
 
 :::
 
-
 ::: details Install Librewolf on Void
 You can install Librewolf on Void Linux using xbps-src, which is Void's package building tool.
 

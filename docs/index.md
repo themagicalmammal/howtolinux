@@ -52,7 +52,7 @@ features:
   </div>
 </section>
 
-<style>
+<style setup>
   section {
     display: flex;
     flex-flow: column;
@@ -61,14 +61,11 @@ features:
 
   section div.container {
     transition: all 0.3s ease;
+    margin: 15px 0 25px 0; /* added margin */
   }
 
   section div.container h1 {
-    margin: 15px 0 0 0;
-  }
-
-  section div.container h3 {
-    margin: 0 0 25px 0;
+    margin: 0; /* removed top margin */
   }
 
   @media (max-width: 992px) {
@@ -78,17 +75,17 @@ features:
   }
 
   section.slide-option {
-    margin: 0 0 50px 0;
+    margin-bottom: 50px; /* updated margin property */
   }
 
   section.slide-option .no-marg {
-    margin: 0 0 0 0;
+    margin: 0; /* removed margin */
   }
 
   .sticky-section {
-   position: fixed;
-   bottom: 5%;
-   width: 100%;
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
   }
 
   div.highway-slider {

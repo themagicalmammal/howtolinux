@@ -23,29 +23,29 @@ features:
 	<div id="infinite" class="highway-slider">
 		<div class="container highway-barrier">
 			<ul class="highway-lane">
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
-				<li class="highway-car"><span class="fab fa-fedora"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><span class="fab fa-linux"></span></li>
 			</ul>
 		</div>
 	</div>

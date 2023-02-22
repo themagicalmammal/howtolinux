@@ -23,29 +23,30 @@ features:
 	<div id="infinite" class="highway-slider">
 		<div class="container highway-barrier">
 			<ul class="highway-lane">
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
-				<li class="highway-car"><span class="fab fa-linux"></span></li>
+				<li class="highway-car"><img src='https://i.imgur.com/I3nZgfb.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/A2nJm85.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/2bOJNYO.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/Y7WQN0Q.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/AuIPhjc.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/c0k3DKL.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/bo7NtUF.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/aHRAQNS.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/I3nZgfb.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/A2nJm85.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/2bOJNYO.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/Y7WQN0Q.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/AuIPhjc.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/c0k3DKL.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/bo7NtUF.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/aHRAQNS.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/I3nZgfb.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/A2nJm85.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/2bOJNYO.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/Y7WQN0Q.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/AuIPhjc.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/c0k3DKL.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/bo7NtUF.png' width='70px'></li>
+				<li class="highway-car"><img src='https://i.imgur.com/aHRAQNS.png' width='70px'></li>
 			</ul>
 		</div>
 	</div>
@@ -184,5 +185,3 @@ features:
     background: #6091b0;
   }
 </style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">

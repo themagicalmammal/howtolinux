@@ -19,36 +19,38 @@ hero:
 features:
 ---
 
-<template>
-  <section class="slide-option sticky-section">
-    <div id="infinite" class="highway-slider">
-      <div class="container highway-barrier">
-        <ul class="highway-lane">
-          <li v-for="car in cars" class="highway-car"><img :src="car"></li>
-        </ul>
-      </div>
+<section class="slide-option sticky-section">
+  <div class="highway-slider">
+    <div class="container highway-barrier">
+      <ul class="highway-lane">
+        <li class="highway-car"><img src="https://i.imgur.com/I3nZgfb.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/A2nJm85.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/2bOJNYO.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/Y7WQN0Q.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/AuIPhjc.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/c0k3DKL.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/bo7NtUF.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/aHRAQNS.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/I3nZgfb.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/A2nJm85.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/2bOJNYO.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/Y7WQN0Q.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/AuIPhjc.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/c0k3DKL.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/bo7NtUF.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/aHRAQNS.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/I3nZgfb.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/A2nJm85.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/2bOJNYO.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/Y7WQN0Q.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/AuIPhjc.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/c0k3DKL.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/bo7NtUF.png"></li>
+        <li class="highway-car"><img src="https://i.imgur.com/aHRAQNS.png"></li>
+      </ul>
     </div>
-  </section>
-</template>
-
-<script>
-export default {
-  data() {
-    return {
-      cars: [
-        'https://i.imgur.com/I3nZgfb.png',
-        'https://i.imgur.com/A2nJm85.png',
-        'https://i.imgur.com/2bOJNYO.png',
-        'https://i.imgur.com/Y7WQN0Q.png',
-        'https://i.imgur.com/AuIPhjc.png',
-        'https://i.imgur.com/c0k3DKL.png',
-        'https://i.imgur.com/bo7NtUF.png',
-        'https://i.imgur.com/aHRAQNS.png'
-      ]
-    };
-  }
-};
-</script>
+  </div>
+</section>
 
 <style>
   section {
@@ -85,7 +87,7 @@ export default {
 
   .sticky-section {
    position: fixed;
-   bottom: 10%;
+   bottom: 5%;
    width: 100%;
   }
 

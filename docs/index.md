@@ -19,7 +19,7 @@ hero:
 features:
 ---
 
-<section class="slide-option">
+<section class="slide-option sticky-section">
 	<div id="infinite" class="highway-slider">
 		<div class="container highway-barrier">
 			<ul class="highway-lane">
@@ -77,6 +77,11 @@ features:
   }
   section.slide-option .no-marg {
     margin: 0 0 0 0;
+  }
+  .sticky-section {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
   }
   div.highway-slider {
     display: flex;

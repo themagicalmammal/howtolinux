@@ -29,9 +29,10 @@ The "status" parameter in the dd command may not work on all versions of dd. If 
 :::
 
 ## Instructions to add Swap File
-#### Btrfs
-If a functional swap file is present on the subvolume, the btrfs filesystem does not permit the creation of snapshots. This indicates that putting a swap file on a different subvolume is highly recommended. Swap file can't be located on a btrfs raid of any sort.
 
+#### Btrfs
+
+If a functional swap file is present on the subvolume, the btrfs filesystem does not permit the creation of snapshots. This indicates that putting a swap file on a different subvolume is highly recommended. Swap file can't be located on a btrfs raid of any sort.
 
 ::: details Add Swap to Btrfs
 Let's assume that the current swap is already off, the `/` is on `/dev/sda1` and Ubuntu is installed with `/` on `@` subvolume and `/home` is on `@home` subvolume.
@@ -106,7 +107,6 @@ sudo swapon /swap/swapfile
 
 12. Now the new swap should be working.
 
-
 13. Open the `/etc/fstab` file
 
 ```sh
@@ -116,13 +116,15 @@ sudo nano /etc/fstab
 ##### Add this line
 
 ```sh
-// Rest of your fstab 
+// Rest of your fstab
 UUID=XXXXXXXXXXXXXXX /swap btrfs subvol=@swap 0 0 // [!code focus]
 /swap/swapfile none swap sw 0 0 // [!code focus]
 ```
+
 :::
 
 #### Ext4
+
 Ext4 is fits perfectly with swap file you can create a swap file using this instructions.
 
 ::: details Add Swap to Ext4
@@ -156,12 +158,12 @@ sudo nano /etc/fstab
 ##### Add this line
 
 ```sh
-// Rest of your fstab 
+// Rest of your fstab
 /swapfile none swap defaults 0 0  // [!code focus]
 ```
 
 5. Reboot
-:::
+   :::
 
 ## Q. What about ZRAM?
 

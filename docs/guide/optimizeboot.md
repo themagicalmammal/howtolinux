@@ -245,7 +245,7 @@ sudo rm /etc/resolv.conf
 
 &emsp; Now, **Restart**
 
-::: danger 
+::: danger
 This might be extremely unsafe!
 :::
 
@@ -344,7 +344,7 @@ sudo apt remove <name of kernel files>
 
 ## Q. How to I uninstall custom Kernel?
 
-::: danger 
+::: danger
 IF YOU ARE A NEW USER AND DON'T KNOW WHAT YOU ARE DOING, PLEASE SEARCH SOME THREADS OR ASK SOMEONE BEFORE TAKING ANY ACTION. BECAUSE THIS IS A VERY RISKY STEP AND CAN POTENTIALLY KILL YOUR SYSTEM.
 :::
 

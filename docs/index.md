@@ -2,7 +2,7 @@
 layout: home
 
 title: howtolinux
-titleTemplate: A extensive guide of tips and tricks in linux.
+titleTemplate: 🏠
 
 hero:
   name: howtolinux

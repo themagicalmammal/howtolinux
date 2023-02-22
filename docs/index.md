@@ -80,7 +80,7 @@ features:
   }
   .sticky-section {
    position: fixed;
-   bottom: 0;
+   bottom: 10%;
    width: 100%;
   }
   div.highway-slider {

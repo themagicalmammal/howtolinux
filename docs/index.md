@@ -80,7 +80,7 @@ features:
   }
   .sticky-section {
    position: fixed;
-   bottom: 5%;
+   bottom: 7%;
    width: 100%;
   }
   div.highway-slider {
@@ -102,7 +102,7 @@ features:
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #161618;
     color: #343434;
   }
   @-webkit-keyframes translatestf {
@@ -142,7 +142,7 @@ features:
     }
   }
   #infinite div.highway-barrier {
-    background: #fff;
+    background: #161618;
     box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
   }
   #infinite div.highway-barrier::before,
@@ -156,12 +156,12 @@ features:
   #infinite div.highway-barrier::before {
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, #161618 0%, rgba(255, 255, 255, 0) 100%);
   }
   #infinite div.highway-barrier::after {
     top: 0;
     right: 0;
-    background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to left, #161618 0%, rgba(255, 255, 255, 0) 100%);
   }
   #infinite div.highway-barrier ul.highway-lane {
     width: calc(180px * 24);
@@ -173,20 +173,5 @@ features:
   }
   #infinite div.highway-barrier ul.highway-lane li.highway-car span.fab {
     font-size: 65px;
-  }
-  #red {
-    background: #cb5454;
-  }
-  #orange {
-    background: #cb8054;
-  }
-  #yellow {
-    background: #cbba54;
-  }
-  #green {
-    background: #69b46e;
-  }
-  #blue {
-    background: #6091b0;
   }
 </style>

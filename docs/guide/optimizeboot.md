@@ -370,9 +370,11 @@ sudo apt autoremove --purge linux-image-liquorix-amd64 linux-headers-liquorix-am
 sudo rm /etc/sysctl.d/90-override.conf
 ```
 
-:::
+```sh [Liquorix]
+# Not required for Liquorix.
+```
 
-**Note-** Not required for Liquorix.
+:::
 
 3. Removing the Kernel Repos
 

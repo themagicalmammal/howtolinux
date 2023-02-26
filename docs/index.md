@@ -19,7 +19,7 @@ hero:
 features:
 ---
 
-<section class="slide-option sticky-section">
+<section class="section-infinite slide-option sticky-section">
 	<div id="infinite" class="highway-slider">
 		<div class="container highway-barrier">
 			<ul class="highway-lane">
@@ -53,7 +53,7 @@ features:
 </section>
 
 <style setup>
-  section {
+  .section-infinite {
     display: flex;
     flex-flow: column;
     align-items: center;

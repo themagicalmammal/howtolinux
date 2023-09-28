@@ -12,6 +12,12 @@ export default defineConfig({
     headers: {
       level: [0, 0],
     },
+    math: true,
+  },
+
+  
+  sitemap: {
+    hostname: 'https://howtolinux.vercel.app/',
   },
 
   themeConfig: {

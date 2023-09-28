@@ -14,9 +14,8 @@ export default defineConfig({
     },
   },
 
-  
   sitemap: {
-    hostname: 'https://howtolinux.vercel.app/',
+    hostname: "https://howtolinux.vercel.app/",
   },
 
   themeConfig: {

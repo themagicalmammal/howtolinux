@@ -13,6 +13,10 @@ export default defineConfig({
       level: [0, 0],
     },
   },
+  
+  sitemap: {
+    hostname: "https://howtolinux.vercel.app/",
+  },
 
   themeConfig: {
     nav: nav(),

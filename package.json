@@ -4,9 +4,9 @@
   "description": "Tweaks for Linux",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,9 @@
   },
   "homepage": "https://github.com/themagicalmammal/howtolinux#readme",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.45",
-    "vue": "^3.2.47"
+    "vitepress": "1.0.0-rc.20"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.14.3"
+    "@algolia/client-search": "^4.20.0"
   }
 }

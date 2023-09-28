@@ -1,10 +1,9 @@
-import { defineConfig, type DefaultTheme } from 'vitepress'
-
-export default defineConfig({
+export default({
   lang: "en-US",
   title: "howtolinux",
   description: "Tweaks for Linux",
 
+  ignoreDeadLinks: true,
   lastUpdated: true,
   cleanUrls: true,
 
@@ -53,7 +52,7 @@ export default defineConfig({
  * Top Nav bar function that returns an array of objects, each of which has a
  * text, link, and activeMatch property @returns An array of objects.
  */
-function nav(): DefaultTheme.NavItem[] {
+function nav(){
   return [
     {
       text: "Guide",
@@ -77,7 +76,7 @@ function nav(): DefaultTheme.NavItem[] {
  * Side bar function that returns an array of objects, each of which has a text,
  * link.
  */
-function sidebarGuide(): DefaultTheme.SidebarItem[]  {
+function sidebarGuide() {
   return [
     {
       text: "Basic",

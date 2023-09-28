@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/themagicalmammal/howtolinux#readme",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.45",
-    "vue": "^3.2.47"
+    "vitepress": "1.0.0-rc.20",
+    "vue": "^3.3.4"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.14.3"
+    "@algolia/client-search": "^4.20.0"
   }
 }

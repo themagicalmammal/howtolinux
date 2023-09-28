@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export default defineConfig({
   lang: "en-US",
@@ -15,7 +15,7 @@ export default defineConfig({
   },
   
   sitemap: {
-    hostname: "https://howtolinux.vercel.app/",
+    hostname: "https://howtolinux.vercel.app",
   },
 
   themeConfig: {
@@ -53,7 +53,7 @@ export default defineConfig({
  * Top Nav bar function that returns an array of objects, each of which has a
  * text, link, and activeMatch property @returns An array of objects.
  */
-function nav() {
+function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "Guide",
@@ -77,7 +77,7 @@ function nav() {
  * Side bar function that returns an array of objects, each of which has a text,
  * link.
  */
-function sidebarGuide() {
+function sidebarGuide(): DefaultTheme.SidebarItem[]  {
   return [
     {
       text: "Basic",

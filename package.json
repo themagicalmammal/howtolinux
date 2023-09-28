@@ -21,10 +21,8 @@
     "url": "https://github.com/themagicalmammal/howtolinux/issues"
   },
   "homepage": "https://github.com/themagicalmammal/howtolinux#readme",
-  "devDependencies": {
-    "vitepress": "1.0.0-rc.20"
-  },
   "dependencies": {
-    "@algolia/client-search": "^4.20.0"
+    "@algolia/client-search": "^4.20.0",
+    "vitepress": "1.0.0-rc.20"
   }
 }

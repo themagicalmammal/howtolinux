@@ -3,7 +3,6 @@ export default({
   title: "howtolinux",
   description: "Tweaks for Linux",
 
-  ignoreDeadLinks: true,
   lastUpdated: true,
   cleanUrls: true,
 

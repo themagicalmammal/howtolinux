@@ -12,7 +12,6 @@ export default defineConfig({
     headers: {
       level: [0, 0],
     },
-    math: true,
   },
 
   

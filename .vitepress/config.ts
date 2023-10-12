@@ -41,7 +41,7 @@ export default({
     },
     algolia: {
       appId: "VOBGBTBQEC",
-      apiKey: "dedf00e140269ea8f5b7c88e670873f2",
+      apiKey: "45c50b062601b6001ed6a708995e4e89",
       indexName: "howtolinux",
     },
   },

@@ -30,7 +30,7 @@ export default defineConfig({
     logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/logo.svg",
     editLink: {
       pattern:
-        "https://github.com/themagicalmammal/howtolinux/edit/main/docs/:path",
+        "https://github.com/themagicalmammal/howtolinux/edit/main/:path",
       text: "Edit this page on GitHub",
     },
     sidebar: {

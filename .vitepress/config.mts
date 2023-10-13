@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, type DefaultTheme } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,27 +10,10 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      {
-        text: "Guide",
-        link: "/guide/installation",
-        activeMatch: "/guide/",
-      },
-      {
-        text: "Team",
-        link: "/team",
-        activeMatch: "/team",
-      },
-      {
-        text: "Credits",
-        link: "/credits",
-        activeMatch: "/credits",
-      },
-    ],
+    nav: nav(),
     logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/logo.svg",
     editLink: {
-      pattern:
-        "https://github.com/themagicalmammal/howtolinux/edit/main/:path",
+      pattern: "https://github.com/themagicalmammal/howtolinux/edit/main/:path",
       text: "Edit this page on GitHub",
     },
     sidebar: {
@@ -43,24 +26,51 @@ export default defineConfig({
       },
     ],
     footer: {
-      message:
-        'Released under the <a href="https://github.com/themagicalmammal/howtolinux/blob/master/LICENSE">MIT License</a>.',
-      copyright:
-        'Copyright © 2023 <a href="https://github.com/themagicalmammal">Dipan Nanda</a>',
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2023 Dipan Nanda",
     },
-    algolia: {
-      appId: "VOBGBTBQEC",
-      apiKey: "45c50b062601b6001ed6a708995e4e89",
-      indexName: "howtolinux",
+    search: {
+      provider: "algolia",
+      options: {
+        appId: "VOBGBTBQEC",
+        apiKey: "45c50b062601b6001ed6a708995e4e89",
+        indexName: "howtolinux",
+      },
     },
   },
 });
 
 /**
- * Side bar function that returns an array of objects, each of which has a text,
- * link.
+ * Returns an array of `DefaultTheme.NavItem` objects representing the navigation items.
+ *
+ * @return {DefaultTheme.NavItem[]} An array of `DefaultTheme.NavItem` objects.
  */
-function sidebarGuide() {
+function nav(): DefaultTheme.NavItem[] {
+  return [
+    {
+      text: "Guide",
+      link: "/guide/installation",
+      activeMatch: "/guide/",
+    },
+    {
+      text: "Team",
+      link: "/team",
+      activeMatch: "/team",
+    },
+    {
+      text: "Credits",
+      link: "/credits",
+      activeMatch: "/credits",
+    },
+  ];
+}
+
+/**
+ * Returns an array of sidebar items for the default theme.
+ *
+ * @return {DefaultTheme.SidebarItem[]} The array of sidebar items.
+ */
+function sidebarGuide(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "Basic",

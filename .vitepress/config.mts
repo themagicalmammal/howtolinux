@@ -1,31 +1,40 @@
-export default({
-  lang: "en-US",
+import { defineConfig } from "vitepress";
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
   title: "howtolinux",
-  description: "Tweaks for Linux",
-
+  description: "A Webpage for tips, tricks and guides for Linux.",
   lastUpdated: true,
-  cleanUrls: true,
-
-  markdown: {
-    headers: {
-      level: [0, 0],
-    },
-  },
-  
   sitemap: {
     hostname: "https://howtolinux.vercel.app",
   },
-
   themeConfig: {
-    nav: nav(),
-    sidebar: {
-      "/guide/": sidebarGuide(),
-    },
-    logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/docs/logo.svg",
+    // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      {
+        text: "Guide",
+        link: "/guide/installation",
+        activeMatch: "/guide/",
+      },
+      {
+        text: "Team",
+        link: "/team",
+        activeMatch: "/team",
+      },
+      {
+        text: "Credits",
+        link: "/credits",
+        activeMatch: "/credits",
+      },
+    ],
+    logo: "/logo.svg",
     editLink: {
       pattern:
         "https://github.com/themagicalmammal/howtolinux/edit/main/docs/:path",
       text: "Edit this page on GitHub",
+    },
+    sidebar: {
+      "/guide/": sidebarGuide(),
     },
     socialLinks: [
       {
@@ -46,30 +55,6 @@ export default({
     },
   },
 });
-
-/**
- * Top Nav bar function that returns an array of objects, each of which has a
- * text, link, and activeMatch property @returns An array of objects.
- */
-function nav(){
-  return [
-    {
-      text: "Guide",
-      link: "/guide/installation",
-      activeMatch: "/guide/",
-    },
-    {
-      text: "Team",
-      link: "/team",
-      activeMatch: "/team",
-    },
-    {
-      text: "Credits",
-      link: "/credits",
-      activeMatch: "/credits",
-    },
-  ];
-}
 
 /**
  * Side bar function that returns an array of objects, each of which has a text,

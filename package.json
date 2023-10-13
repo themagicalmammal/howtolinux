@@ -1,28 +1,12 @@
 {
-  "name": "howtolinux",
-  "version": "1.0.0",
-  "description": "Tweaks for Linux",
-  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.21",
+    "vue": "^3.3.4"
+  },
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/themagicalmammal/howtolinux.git"
-  },
-  "keywords": [
-    "linux"
-  ],
-  "author": "Dipan Nanda",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/themagicalmammal/howtolinux/issues"
-  },
-  "homepage": "https://github.com/themagicalmammal/howtolinux#readme",
-  "dependencies": {
-    "@algolia/client-search": "^4.20.0",
-    "vitepress": "1.0.0-rc.20"
   }
 }

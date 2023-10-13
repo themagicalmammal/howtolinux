@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm docs:build",
+  "buildCommand": "bun docs:build",
   "outputDirectory": "/.vitepress/dist",
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }

@@ -53,14 +53,9 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: "/guide/",
     },
     {
-      text: "Team",
-      link: "/team",
-      activeMatch: "/team",
-    },
-    {
-      text: "Credits",
-      link: "/credits",
-      activeMatch: "/credits",
+      text: "Contributors",
+      link: "/contributors",
+      activeMatch: "/contributors",
     },
   ];
 }

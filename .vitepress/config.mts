@@ -4,7 +4,6 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 export default defineConfig({
   title: "howtolinux",
   description: "A Webpage for tips, tricks and guides for Linux.",
-  cleanUrls: true,
   lastUpdated: true,
   sitemap: {
     hostname: "https://howtolinux.vercel.app",

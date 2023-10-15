@@ -107,7 +107,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     },
     {
       text: "Advanced",
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: "Display", link: "/guide/display" },
         { text: "Optimize Boot", link: "/guide/optimizeboot" },

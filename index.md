@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 title: howtolinux
@@ -14,6 +13,9 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/themagicalmammal/howtolinux
+  image:
+    src: https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/logo.svg
+    alt: howtolinux
 ---
 
 <section class="section-infinite slide-option sticky-section">

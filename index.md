@@ -16,7 +16,6 @@ hero:
       link: https://github.com/themagicalmammal/howtolinux
 ---
 
-
 <section class="section-infinite slide-option sticky-section">
   <div id="infinite" class="highway-slider">
     <div class="container highway-barrier">
@@ -42,12 +41,6 @@ hero:
   }
   section div.container {
     transition: all 0.3s ease;
-  }
-  section div.container h1 {
-    margin: 15px 0 0 0;
-  }
-  section div.container h3 {
-    margin: 0 0 25px 0;
   }
   @media (max-width: 992px) {
     section {
@@ -107,20 +100,17 @@ hero:
     width: 500%;
   }
   #stffull div.highway-barrier ul.highway-lane li.highway-car {
-    -webkit-animation: translatestf 30s linear infinite;
-            animation: translatestf 30s linear infinite;
-  }
-  #stffull div.highway-barrier ul.highway-lane li.highway-car h4 {
-    font-size: 28px;
+    -webkit-animation: translatestf 10s linear infinite;
+            animation: translatestf 10s linear infinite;
   }
   @-webkit-keyframes translateinfinite {
     100% {
-      transform: translateX(calc(-180px * 12));
+      transform: translateX(calc(-50px * 8));
     }
   }
   @keyframes translateinfinite {
     100% {
-      transform: translateX(calc(-180px * 12));
+      transform: translateX(calc(-50px * 8));
     }
   }
   #infinite div.highway-barrier {
@@ -146,14 +136,11 @@ hero:
     background: linear-gradient(to left, #161618 0%, rgba(255, 255, 255, 0) 100%);
   }
   #infinite div.highway-barrier ul.highway-lane {
-    width: calc(180px * 24);
+    width: calc(180px * 10);
   }
   #infinite div.highway-barrier ul.highway-lane li.highway-car {
     width: 180px;
-    -webkit-animation: translateinfinite 25s linear infinite;
-            animation: translateinfinite 25s linear infinite;
-  }
-  #infinite div.highway-barrier ul.highway-lane li.highway-car span.fab {
-    font-size: 65px;
+    -webkit-animation: translateinfinite 4s linear infinite;
+            animation: translateinfinite 4s linear infinite;
   }
 </style>

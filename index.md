@@ -108,7 +108,7 @@ hero:
     }
   }
   #infinite div.highway-barrier {
-    background: rgba(22, 22, 24, 0.25);
+    background: rgba(22, 22, 24, 0.15);
   }
   #infinite div.highway-barrier::before,
   #infinite div.highway-barrier::after {

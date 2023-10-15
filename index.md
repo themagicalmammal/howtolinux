@@ -125,7 +125,7 @@ hero:
   }
   #infinite div.highway-barrier ul.highway-lane li.highway-car {
     width: 180px;
-    -webkit-animation: translateinfinite 3s linear infinite;
-            animation: translateinfinite 3s linear infinite;
+    -webkit-animation: translateinfinite 5s linear infinite;
+            animation: translateinfinite 5s linear infinite;
   }
 </style>

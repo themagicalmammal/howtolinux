@@ -42,11 +42,6 @@ hero:
   section div.container {
     transition: all 0.3s ease;
   }
-  @media (max-width: 992px) {
-    section {
-      padding: 0 20px 0 20px;
-    }
-  }
   section.slide-option {
     margin: 0 0 50px 0;
   }
@@ -54,9 +49,9 @@ hero:
     margin: 0 0 0 0;
   }
   .sticky-section {
-   position: fixed;
-   bottom: 8%;
-   width: 100%;
+    position: fixed;
+    bottom: 8%;
+    width: 100%;
   }
   div.highway-slider {
     display: flex;
@@ -77,8 +72,7 @@ hero:
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #161618;
-    color: #343434;
+    color: rgba(52, 52, 52, 0.8); /* Text color with 80% opacity */
   }
   @-webkit-keyframes translatestf {
     0% {
@@ -105,17 +99,16 @@ hero:
   }
   @-webkit-keyframes translateinfinite {
     100% {
-      transform: translateX(calc(-50px * 8));
+      transform: translateX(calc(-45px * 8));
     }
   }
   @keyframes translateinfinite {
     100% {
-      transform: translateX(calc(-50px * 8));
+      transform: translateX(calc(-45px * 8));
     }
   }
   #infinite div.highway-barrier {
-    background: #161618;
-    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+    background: rgba(22, 22, 24, 0.25);
   }
   #infinite div.highway-barrier::before,
   #infinite div.highway-barrier::after {
@@ -125,22 +118,12 @@ hero:
     width: 180px;
     height: 100%;
   }
-  #infinite div.highway-barrier::before {
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, #161618 0%, rgba(255, 255, 255, 0) 100%);
-  }
-  #infinite div.highway-barrier::after {
-    top: 0;
-    right: 0;
-    background: linear-gradient(to left, #161618 0%, rgba(255, 255, 255, 0) 100%);
-  }
   #infinite div.highway-barrier ul.highway-lane {
     width: calc(180px * 10);
   }
   #infinite div.highway-barrier ul.highway-lane li.highway-car {
     width: 180px;
-    -webkit-animation: translateinfinite 4s linear infinite;
-            animation: translateinfinite 4s linear infinite;
+    -webkit-animation: translateinfinite 3s linear infinite;
+            animation: translateinfinite 3s linear infinite;
   }
 </style>

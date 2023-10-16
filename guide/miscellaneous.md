@@ -35,7 +35,7 @@ mv config.conf ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
   <img src='https://i.imgur.com/5TFEWLs.png'>
 </p>
 
-::: note
+::: tip NOTE
 FOR NON-POP USERS
 
 - Open the config file

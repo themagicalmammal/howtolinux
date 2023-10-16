@@ -119,7 +119,7 @@ To change Terminal font, Go to preferences, then to profiles, then in custom fon
 To get my fonts,
 
 ```sh
-wget https://github.com/themagicalmammal/howtopopbuntu/raw/master/.local/share/fonts.tar.xz
+wget https://github.com/themagicalmammal/howtopopbuntu/raw/master/fonts.tar.xz
 tar -xf $(xdg-user-dir DOWNLOAD)/fonts.tar.xz -C ${XDG_CONFIG_HOME:-~/.local}/share
 rm $(xdg-user-dir DOWNLOAD)/fonts.tar.xz
 ```

@@ -22,8 +22,13 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 
 ### 1. Neofetch Mod
 
-Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU, GPU blah blah blah. Me being a minimalist only use some information out of this.
-So, my custom config, makes the neofetch look like this. You can follow this -
+Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU, GPU blah blah blah. Me being a minimalist only use some information out of this. My custom config of neofetch looks like this -
+
+<p align='center'>
+  <img src='https://i.imgur.com/5TFEWLs.png'>
+</p>
+
+If you want something similar you can get my [config](https://gist.github.com/themagicalmammal/1a0fa96f4131c77b5d1de4a846915ce8) using -
 
 ```sh
 wget https://gist.githubusercontent.com/themagicalmammal/1a0fa96f4131c77b5d1de4a846915ce8/raw/85a6b500e3d0de26c68a8ea734ef69e2fd23a610/config.conf
@@ -34,10 +39,6 @@ mv config.conf ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
 ::: tip NOTE
 If you are using any distro other than POP OS. You can open the config file (/.config/neofetch/config.conf) and find, "ascii_distro" change your distro icon according the comment on names listed above the text.
 :::
-
-<p align='center'>
-  <img src='https://i.imgur.com/5TFEWLs.png'>
-</p>
 
 
 

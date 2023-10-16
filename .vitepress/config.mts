@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "howtolinux",
-  description: "A Webpage for tips, tricks and guides for Linux.",
+  description: "A Webpage with tips, tricks and guides for Linux.",
   lastUpdated: true,
   sitemap: {
     hostname: "https://howtolinux.vercel.app",

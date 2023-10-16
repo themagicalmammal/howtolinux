@@ -13,7 +13,7 @@ export default defineConfig({
     nav: nav(),
     logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/master/logo.svg",
     editLink: {
-      pattern: "https://github.com/themagicalmammal/howtolinux/edit/main/:path",
+      pattern: "https://github.com/themagicalmammal/howtolinux/edit/dev/:path",
       text: "Edit this page on GitHub",
     },
     sidebar: {

@@ -11,7 +11,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
-    logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/main/logo.svg",
+    logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/master/logo.svg",
     editLink: {
       pattern: "https://github.com/themagicalmammal/howtolinux/edit/main/:path",
       text: "Edit this page on GitHub",

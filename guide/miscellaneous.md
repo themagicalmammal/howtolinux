@@ -31,20 +31,15 @@ mkdir ${XDG_CONFIG_HOME:-~/.config}/neofetch
 mv config.conf ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
 ```
 
+::: tip NOTE
+If you are using any distro other than POP OS. You can open the config file (/.config/neofetch/config.conf) and find, "ascii_distro" change your distro icon according the comment on names listed above the text.
+:::
+
 <p align='center'>
   <img src='https://i.imgur.com/5TFEWLs.png'>
 </p>
 
-::: tip NOTE
-FOR NON-POP USERS
 
-- Open the config file
-  ```sh
-  gedit ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
-  ```
-- Ctrl + F then find, "ascii_distro"
-- Change your distro name according the comment on names listed above the text.
-:::
 
 ### 2. Shell Config
 

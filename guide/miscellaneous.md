@@ -23,11 +23,28 @@ sudo mv $(xdg-user-dir DOWNLOAD)/hosts.txt /etc/hosts
 ### 1. Neofetch Mod
 
 Neofetch displays information about your operating system, software and hardware. This comes with a default config which has a lot of information including CPU, GPU blah blah blah. Me being a minimalist only use some information out of this.
-So, my custom config, makes the neofetch look like this. To make your neofetch look this, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/README.md).
+So, my custom config, makes the neofetch look like this. You can follow this -
+
+```sh
+wget https://gist.githubusercontent.com/themagicalmammal/1a0fa96f4131c77b5d1de4a846915ce8/raw/85a6b500e3d0de26c68a8ea734ef69e2fd23a610/config.conf
+mkdir ${XDG_CONFIG_HOME:-~/.config}/neofetch
+mv config.conf ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
+```
 
 <p align='center'>
   <img src='https://i.imgur.com/5TFEWLs.png'>
 </p>
+
+::: note
+FOR NON-POP USERS
+
+- Open the config file
+  ```sh
+  gedit ${XDG_CONFIG_HOME:-~/.config}/neofetch/config.conf
+  ```
+- Ctrl + F then find, "ascii_distro"
+- Change your distro name according the comment on names listed above the text.
+:::
 
 ### 2. Shell Config
 

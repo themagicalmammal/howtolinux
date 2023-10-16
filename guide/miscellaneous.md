@@ -33,10 +33,10 @@ So, my custom config, makes the neofetch look like this. To make your neofetch l
 
 I am currently using [Starship](https://starship.rs/) shell config with Dark Patrol from [Gogh](https://github.com/Mayccoll/Gogh).
 **Note:** If you have troubles installing starship with shell script you can install it via [brew](https://brew.sh/).
-To make your terminal look like mine, go [here](https://github.com/themagicalmammal/howtopopbuntu/blob/master/.config/Config.md).
+To make your terminal look like mine, go [here](https://gist.github.com/themagicalmammal/dd4905509d6e3bd297eb92fd750dad98).
 
 <p align='center'>
-  <img src='https://i.imgur.com/p2pDFEi.png'>
+  <img src='https://imgur.com/wOLDJbQ'>
 </p>
 
 ### 3. Bash Alias

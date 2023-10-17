@@ -1,8 +1,7 @@
 ---
 layout: home
 
-title: howtolinux
-titleTemplate: A Guide for tips & tricks for linux
+title: howtolinux 🐧
 
 hero:
   name: howtolinux

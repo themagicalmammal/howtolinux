@@ -2,6 +2,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   title: "howtolinux",
   description: "A Webpage with tips, tricks and guides for Linux.",
   lastUpdated: true,
@@ -11,7 +12,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
-    logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/master/logo.svg",
+    logo: "/logo.svg",
     editLink: {
       pattern: "https://github.com/themagicalmammal/howtolinux/edit/dev/:path",
       text: "Edit this page on GitHub",

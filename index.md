@@ -15,7 +15,7 @@ hero:
       text: View on GitHub
       link: https://github.com/themagicalmammal/howtolinux
   image:
-    src: https://raw.githubusercontent.com/themagicalmammal/howtolinux/master/logo.svg
+    src: /logo.svg
     alt: howtolinux
 
 features:

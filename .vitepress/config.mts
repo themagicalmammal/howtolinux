@@ -8,10 +8,18 @@ export default defineConfig({
   sitemap: {
     hostname: "https://howtolinux.vercel.app",
   },
+  /* prettier-ignore */
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'en' }],
+    ['meta', { name: 'og:site_name', content: 'howtolinux' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
-    logo: "https://raw.githubusercontent.com/themagicalmammal/howtolinux/master/logo.svg",
+    logo: "/logo.svg",
     editLink: {
       pattern: "https://github.com/themagicalmammal/howtolinux/edit/dev/:path",
       text: "Edit this page on GitHub",

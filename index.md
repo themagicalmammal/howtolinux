@@ -2,6 +2,7 @@
 layout: home
 
 title: howtolinux 🐧
+titleTemplate: A Guide for tips & tricks for linux
 
 hero:
   name: howtolinux

@@ -163,7 +163,8 @@ sudo nano /etc/fstab
 ```
 
 5. Reboot
-   :::
+
+:::
 
 ## Q. Should I Encrypt?
 

@@ -57,7 +57,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "Guide",
-      link: "/guide/installation",
+      link: "/guide/basic/installation",
       activeMatch: "/guide/",
     },
     {
@@ -79,16 +79,16 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: "Basic",
       collapsed: false,
       items: [
-        { text: "Installation", link: "/guide/installation" },
-        { text: "Post Installation", link: "/guide/postinstallation" },
-        { text: "Tweaks", link: "/guide/tweaks" },
+        { text: "Installation", link: "/guide/basic/installation" },
+        { text: "Post Installation", link: "/guide/basic/postinstallation" },
+        { text: "Tweaks", link: "/guide/basic/tweaks" },
       ],
     },
     {
       text: "Distros",
       link: "/guide/distros/distro",
       collapsed: true,
-      items: [{ text: "Ubuntu", link: "/guide/distros/dubuntu" }],
+      items: [{ text: "Ubuntu", link: "/guide/distros/ubuntu" }],
     },
     {
       text: "Desktop",
@@ -117,9 +117,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: "Advanced",
       collapsed: true,
       items: [
-        { text: "Display", link: "/guide/display" },
-        { text: "Optimize Boot", link: "/guide/optimizeboot" },
-        { text: "Miscellaneous", link: "/guide/miscellaneous" },
+        { text: "Display", link: "/guide/advanced/display" },
+        { text: "Terminal", link: "/guide/advanced/terminal" },
+        { text: "Optimize Boot", link: "/guide/advanced/optimizeboot" },
+        { text: "Miscellaneous", link: "/guide/advanced/miscellaneous" },
       ],
     },
   ];

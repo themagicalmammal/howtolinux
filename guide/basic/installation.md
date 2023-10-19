@@ -163,56 +163,8 @@ sudo nano /etc/fstab
 ```
 
 5. Reboot
-   :::
-
-## Q. What about ZRAM?
-
-First, you should know what ZRAM is. ZRAM creates a block device in RAM, where pages would otherwise be written to swap before it is compressed, then stored. Allowing for a much faster I/O and, the data compression provides a lot of memory savings. The downside of ZRAM is the usage of CPU for compression but this is usually balanced by the gains from avoiding swap and with overall memory savings of compression.  
-This is very useful on my PC with 4GB ram and a 3.4GHz CPU.
-
-## Q. How to enable ZRAM?
-
-1. Install zram-config
-
-::: code-group
-
-```sh [Arch]
-sudo pacman -S zram-config
-```
-
-```sh [Debian]
-sudo apt install zram-config
-```
-
-```sh [Fedora]
-sudo dnf install zram-config
-```
-
-```sh [Ubuntu]
-sudo apt install zram-config
-```
-
-```sh [Void]
-sudo xbps-install -S zram-config
-```
 
 :::
-
-2. To check use
-
-```sh
-$ cat /proc/swaps // [!code focus]
-Filename                Type         Size        Used        Priority
-/dev/dm-0               partition    16776696    0           -2
-/dev/zramo              partition    1003404     0           5
-/dev/zram1              partition    1003404     0           5
-/dev/zram2              partition    1003404     0           5
-/dev/zram3              partition    1003404     0           5
-```
-
-The `/dev/zram` are the zrams.
-
-3. If it doesn't show up, try **rebooting**.
 
 ## Q. Should I Encrypt?
 

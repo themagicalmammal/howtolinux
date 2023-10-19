@@ -43,11 +43,14 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:regular,italic,700,700italic);
+
  :root {
-  --vp-c-orange-1: #f9844a;
-  --vp-c-orange-2: #f8961e;
-  --vp-c-orange-3: #f3722c;
-  --vp-c-orange-soft: #f94144;
+  --vp-c-orange-1: #ff7340;
+  --vp-c-orange-2: #ff5719;
+  --vp-c-orange-3: #ff7340;
+  --vp-c-orange-soft: #ff622d;
 
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
@@ -73,6 +76,16 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+
+
+  /* Typography */
+  --vp-font-family-base: "Space Grotesk", "Inter var experimental", "Inter var",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  /* Code Snippet font */
+  --vp-font-family-mono: "Space Mono", Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 /**

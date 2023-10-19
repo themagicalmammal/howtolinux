@@ -120,6 +120,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "Display", link: "/guide/advanced/display" },
         { text: "Terminal", link: "/guide/advanced/terminal" },
         { text: "Optimize Boot", link: "/guide/advanced/optimizeboot" },
+        { text: "Mem & Perf Tweaks", link: "/guide/advanced/memperf" },
         { text: "Miscellaneous", link: "/guide/advanced/miscellaneous" },
       ],
     },
